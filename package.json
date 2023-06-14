@@ -29,6 +29,8 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "17.6.5",
+    "@commitlint/config-conventional": "17.6.5",
     "@storybook/addon-essentials": "^7.0.11",
     "@storybook/addon-interactions": "^7.0.11",
     "@storybook/addon-links": "^7.0.11",
@@ -46,6 +48,7 @@
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
     "storybook": "^7.0.11",
+    "ts-node": "^10.9.1",
     "tsconfig-paths-webpack-plugin": "^4.0.1"
   },
   "lint-staged": {
