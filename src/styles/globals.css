@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+    box-sizing: "border-box";
+}
+
+* {
+    margin: "0";
+}
+
+img {
+    max-width: "100%";
+    display: "block";
+}
