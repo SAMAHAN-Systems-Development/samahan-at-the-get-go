@@ -16,7 +16,22 @@ export const Primary: Story = {
     href: "www.samahan.addu.edu.ph",
   },
   render: (args) => (
-    <Button {...args} className="bg-blue-300">
+    <Button {...args} className="font-sans text-white bg-blue p-3 rounded-lg">
+      Click me!
+    </Button>
+  ),
+};
+
+export const Secondary: Story = {
+  args: {
+    children: "Click me!",
+    href: "www.samahan.addu.edu.ph",
+  },
+  render: (args) => (
+    <Button
+      {...args}
+      className="font-artega text-white bg-beige p-3 rounded-lg"
+    >
       Click me!
     </Button>
   ),

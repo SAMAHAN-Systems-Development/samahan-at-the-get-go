@@ -5,12 +5,20 @@ import Button from "@/components/ui/Button";
 
 const HomePage: FC = () => {
   return (
-    <Button
-      href="https://www.samahan.addu.edu.ph/"
-      className="bg-pink-900 text-lg"
-    >
-      Click me!
-    </Button>
+    <>
+      <Button
+        href="https://www.samahan.addu.edu.ph/"
+        className="font-artega bg-beige text-white"
+      >
+        Click Me!
+      </Button>
+      <Button
+        href="https://www.samahan.addu.edu.ph/"
+        className="font-appleGaramound bg-beige text-white"
+      >
+        Click Me!
+      </Button>
+    </>
   );
 };
 
