@@ -1,5 +1,5 @@
 import React from "react";
-import { inter } from "../src/styles/fonts";
+import { appleGaramound, artega } from "../src/styles/fonts";
 import "src/styles/globals.css";
 import type { Preview } from "@storybook/react";
 
@@ -15,7 +15,9 @@ const preview: Preview = {
   },
   decorators: [
     (Story) => (
-      <div className={`${inter.className} ${inter.variable}`}>
+      <div
+        className={`${artega.className} ${artega.variable} ${appleGaramound.className} ${appleGaramound.variable}`}
+      >
         <Story />
       </div>
     ),

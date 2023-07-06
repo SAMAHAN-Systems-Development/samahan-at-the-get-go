@@ -1,9 +1,16 @@
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 
-export const inter = Inter({
-  style: "normal",
-  subsets: ["latin"],
-  display: "swap",
-  axes: ["slnt"],
-  variable: "--font-inter",
+export const artega = localFont({
+  src: "../../public/fonts/Artega.otf",
+  variable: "--font-artega",
+});
+
+export const appleGaramound = localFont({
+  src: "../../public/fonts/AppleGaramond.ttf",
+  variable: "--font-appleGaramound",
+});
+
+export const helvetica = localFont({
+  src: "../../public/fonts/Helvetica.ttf",
+  variable: "--font-helvetica",
 });
