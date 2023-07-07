@@ -1,24 +1,19 @@
 import type { FC } from "react";
 import React from "react";
 
-import Button from "@/components/ui/Button";
+import SCBOfficerCard from "@/components/ui/SCB/SCBOfficerCard";
 
 const HomePage: FC = () => {
   return (
-    <>
-      <Button
-        href="https://www.samahan.addu.edu.ph/"
-        className="font-artega bg-beige text-white"
-      >
-        Click Me!
-      </Button>
-      <Button
-        href="https://www.samahan.addu.edu.ph/"
-        className="font-appleGaramound bg-beige text-white"
-      >
-        Click Me!
-      </Button>
-    </>
+    <div className="m-5">
+      <SCBOfficerCard
+        firstName="Chyna Marie"
+        lastName="Legaspina"
+        position="President"
+        imageUrl="/"
+        link="/"
+      />
+    </div>
   );
 };
 
