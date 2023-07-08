@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-white: #faf6f2;
+    --color-blue: #001c79;
+    --color-light-blue: #263167;
+    --color-orange: #ed751f;
+    --color-yellow: #ffbb46;
+    --color-light-yellow: #fcd64d;
+    --color-beige: #dccdbb;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: "border-box";
+}
+
+* {
+    margin: "0";
+}
+
+img {
+    max-width: "100%";
+    display: "block";
+}

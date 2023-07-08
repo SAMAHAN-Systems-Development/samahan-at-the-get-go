@@ -1,8 +1,6 @@
-import { Inter } from "next/font/google";
+import "src/styles/globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font--inter" });
-
-import "src/app/globals.css";
+import { appleGaramound, artega } from "@/styles/fonts";
 
 export const metadata = {
   title: "Next.js",
@@ -15,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${artega.variable} ${appleGaramound.variable}`}>
       <body>{children}</body>
     </html>
   );
