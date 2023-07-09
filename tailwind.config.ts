@@ -21,6 +21,7 @@ const config = {
     colors: {
       white: "var(--color-white)",
       blue: "var(--color-blue)",
+      "blue-opacity-25": "rgba(var(--color-blue), 0.25)",
       lightBlue: "var(--color-light-blue)",
       orange: "var(--color-orange)",
       yellow: "var(--color-yellow)",

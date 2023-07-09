@@ -1,0 +1,32 @@
+{
+  "SCBOfficers": [
+    {
+      "position": "President",
+      "firstName": "Chyna Marie",
+      "lastName": "Legaspina",
+      "yearSection": "4 BS Marketing",
+      "imageUrl": "/../public/images/Officers Photos/Legaspina.jpg"
+    },
+    {
+      "position": "Vice President",
+      "firstName": "Daniel Dave",
+      "lastName": "Gomez",
+      "yearSection": "4 AB Political Science",
+      "imageUrl": "/../public/images/Officers Photos/Gomez.jpg"
+    },
+    {
+      "position": "Secretary-General",
+      "firstName": "Zoreyn Victorio",
+      "lastName": "Dabon",
+      "yearSection": "4 AB Political Science",
+      "imageUrl": "/../public/images/Officers Photos/Dabon.jpg"
+    },
+    {
+      "position": "Treasurer",
+      "firstName": "Michelle Anne",
+      "lastName": "Cunanan",
+      "yearSection": "3 BS Entrepreneurship",
+      "imageUrl": "/../public/images/Officers Photos/Cunanan.jpg"
+    }
+  ]
+}

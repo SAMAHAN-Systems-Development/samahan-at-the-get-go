@@ -15,7 +15,7 @@ export const Primary: Story = {
     firstName: "Chyna Marie",
     lastName: "Legaspina",
     position: "President",
-    imageUrl: "/../../public/images/legaspina.jpg",
+    imageUrl: "/../public/images/Officers Photos/Legaspina.jpg",
     link: "/",
   },
   render: (args) => <SCBOfficerCard {...args} />,

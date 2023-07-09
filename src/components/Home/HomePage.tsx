@@ -1,19 +1,16 @@
 import type { FC } from "react";
 import React from "react";
+import Link from "next/link";
 
-import SCBOfficerCard from "@/components/ui/SCB/SCBOfficerCard";
+import Button from "@/components/ui/Button";
 
 const HomePage: FC = () => {
   return (
-    <div className="m-5">
-      <SCBOfficerCard
-        firstName="Chyna Marie"
-        lastName="Legaspina"
-        position="President"
-        imageUrl="/"
-        link="/"
-      />
-    </div>
+    <>
+      <Link href="/SamahanCentralBoard">
+        <Button className="font-artega bg-beige text-white">To SCB</Button>
+      </Link>
+    </>
   );
 };
 

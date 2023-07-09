@@ -19,7 +19,7 @@ const SCBOfficerCard: React.FC<SCBOfficerCardProps> = ({
   return (
     <a
       href={link}
-      className="h-60 relative block overflow-hidden bg-blue max-w-sm rounded-lg shadow hover:cursor-pointer"
+      className="w-full h-60 relative block overflow-hidden bg-blue max-w-sm rounded-lg shadow hover:cursor-pointer"
     >
       <Image
         src={imageUrl}
@@ -28,7 +28,7 @@ const SCBOfficerCard: React.FC<SCBOfficerCardProps> = ({
         width={626}
         height={417}
       />
-      <div className="absolute bottom-0 left-0 flex items-end p-4 text-white w-full h-full hover:bg-gray-800 hover:bg-opacity-50">
+      <div className="absolute bottom-0 left-0 flex items-end p-4 text-white w-full h-full hover:bg-blue-opacity-25">
         <div>
           <h2 className="font-appleGaramound italic">{firstName}</h2>
           <h1 className="font-artega">{lastName}</h1>
