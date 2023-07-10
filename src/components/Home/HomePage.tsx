@@ -1,15 +1,23 @@
 import type { FC } from "react";
 import React from "react";
-import Link from "next/link";
 
 import Button from "@/components/ui/Button";
 
 const HomePage: FC = () => {
   return (
     <>
-      <Link href="/SamahanCentralBoard">
-        <Button className="font-artega bg-beige text-white">To SCB</Button>
-      </Link>
+      <Button
+        href="https://www.samahan.addu.edu.ph/"
+        className="font-artega bg-beige text-white"
+      >
+        Click Me!
+      </Button>
+      <Button
+        href="https://www.samahan.addu.edu.ph/"
+        className="font-appleGaramound bg-beige text-white"
+      >
+        Click Me!
+      </Button>
     </>
   );
 };

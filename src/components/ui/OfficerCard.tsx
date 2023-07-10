@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-interface SCBOfficerCardProps {
+interface OfficerCardProps {
   firstName: string;
   lastName: string;
   position: string;
@@ -9,7 +9,7 @@ interface SCBOfficerCardProps {
   link: string;
 }
 
-const SCBOfficerCard: React.FC<SCBOfficerCardProps> = ({
+const OfficerCard: React.FC<OfficerCardProps> = ({
   firstName,
   lastName,
   position,
@@ -39,4 +39,4 @@ const SCBOfficerCard: React.FC<SCBOfficerCardProps> = ({
   );
 };
 
-export default SCBOfficerCard;
+export default OfficerCard;
