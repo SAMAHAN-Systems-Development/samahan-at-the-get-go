@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import SCBOfficerCard from "@/components/ui/SCB/SCBOfficerCard";
+import OfficerCard from "@/components/ui/OfficerCard";
 
-const meta: Meta<typeof SCBOfficerCard> = {
+const meta: Meta<typeof OfficerCard> = {
   title: "UI/SCBCard",
-  component: SCBOfficerCard,
+  component: OfficerCard,
 };
 
 export default meta;
-type Story = StoryObj<typeof SCBOfficerCard>;
+type Story = StoryObj<typeof OfficerCard>;
 
 export const Primary: Story = {
   args: {
@@ -18,5 +18,5 @@ export const Primary: Story = {
     imageUrl: "/../public/images/Officers Photos/Legaspina.jpg",
     link: "/",
   },
-  render: (args) => <SCBOfficerCard {...args} />,
+  render: (args) => <OfficerCard {...args} />,
 };

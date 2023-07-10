@@ -1,7 +1,5 @@
-import SCBClickableCardsSection from "@/components/SCB/SCBClickableCardsSection";
-
 const SamahanCentralBoard = () => {
-  return <SCBClickableCardsSection />;
+  return <>SCB</>;
 };
 
 export default SamahanCentralBoard;
