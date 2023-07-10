@@ -2,6 +2,7 @@ import React from "react";
 
 import AboutFirstSection from "@/components/About/AboutFirstSection";
 import AboutSecondSection from "@/components/About/AboutSecondSection";
+import Divider from "@/components/ui/Divider";
 
 const AboutPage = () => {
   return (
@@ -12,11 +13,9 @@ const AboutPage = () => {
           <AboutFirstSection />
         </div>
         {/* Divider */}
-        <div className="w-full ">
-          <div className="bg-orange-500 rounded-md mx-5">fd</div>
-        </div>
+        <Divider />
         {/* Second Section */}
-        <div className="w-full h-screen flex justify-center">
+        <div className="w-full flex md:h-screen h-full justify-center">
           <AboutSecondSection />
         </div>
       </div>
