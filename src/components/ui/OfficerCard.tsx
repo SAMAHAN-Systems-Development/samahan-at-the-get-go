@@ -25,8 +25,8 @@ const OfficerCard: React.FC<OfficerCardProps> = ({
         src={imageUrl}
         alt={lastName}
         className="w-full h-full object-cover"
-        width={626}
-        height={417}
+        width={607}
+        height={280}
       />
       <div className="absolute bottom-0 left-0 flex items-end p-4 text-white w-full h-full hover:bg-blue-opacity-25">
         <div>

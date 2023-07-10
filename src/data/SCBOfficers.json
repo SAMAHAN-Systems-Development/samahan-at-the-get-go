@@ -5,28 +5,28 @@
       "firstName": "Chyna Marie",
       "lastName": "Legaspina",
       "yearSection": "4 BS Marketing",
-      "imageUrl": "/../public/images/Officers Photos/Legaspina.jpg"
+      "imageUrl": "/../public/assets/images/Legaspina.jpg"
     },
     {
       "position": "Vice President",
       "firstName": "Daniel Dave",
       "lastName": "Gomez",
       "yearSection": "4 AB Political Science",
-      "imageUrl": "/../public/images/Officers Photos/Gomez.jpg"
+      "imageUrl": "/../public/assets/images/Gomez.jpg"
     },
     {
       "position": "Secretary-General",
       "firstName": "Zoreyn Victorio",
       "lastName": "Dabon",
       "yearSection": "4 AB Political Science",
-      "imageUrl": "/../public/images/Officers Photos/Dabon.jpg"
+      "imageUrl": "/../public/assets/images/Dabon.jpg"
     },
     {
       "position": "Treasurer",
       "firstName": "Michelle Anne",
       "lastName": "Cunanan",
       "yearSection": "3 BS Entrepreneurship",
-      "imageUrl": "/../public/images/Officers Photos/Cunanan.jpg"
+      "imageUrl": "/../public/assets/images/Cunanan.jpg"
     }
   ]
 }
