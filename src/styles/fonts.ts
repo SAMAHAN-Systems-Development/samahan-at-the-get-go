@@ -9,8 +9,3 @@ export const appleGaramound = localFont({
   src: "../../public/fonts/AppleGaramond.ttf",
   variable: "--font-appleGaramound",
 });
-
-export const helvetica = localFont({
-  src: "../../public/fonts/Helvetica.ttf",
-  variable: "--font-helvetica",
-});
