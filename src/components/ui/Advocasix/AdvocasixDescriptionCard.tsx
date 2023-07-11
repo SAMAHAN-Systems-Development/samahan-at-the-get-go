@@ -12,10 +12,17 @@ type CardType = {
 const AdvocasixDescriptionCard: FC<CardType> = ({ title, desc }) => {
   return (
     <>
-      <div className="w-full h-[41.25rem] bg-blue rounded-xl p-12 flex flex-col justify-end">
+      <div className="w-full h-[41.25rem] bg-blue rounded-xl p-12 pt-14 flex flex-col justify-end">
         <div className="flex mb-auto">
           <div className="font-artega text-white mr-auto">{title}</div>
-          <Image alt="/" src={arrow} height={20} />
+          <div className="relative w-64 ml-3">
+            <Image
+              alt="/"
+              src={arrow}
+              fill={true}
+              style={{ objectFit: "contain" }}
+            />
+          </div>
         </div>
         <div className="text-white">{desc}</div>
       </div>
