@@ -1,6 +1,10 @@
 import React from "react";
 
-const AboutFirstSection = () => {
+type TitleProps = {
+  title: string;
+};
+
+const AboutFirstSection = (props: TitleProps) => {
   return (
     <>
       <div className="relative w-full m-5 border-2 border-blue rounded-lg flex flex-col">
@@ -18,7 +22,7 @@ const AboutFirstSection = () => {
             THIS is
           </h1>
           <h1 className="text-blue text-2xl lg:text-8xl md:text-5xl font-semibold tracking-wide font-artega">
-            SAMAHAN
+            {props.title}
           </h1>
         </div>
       </div>
