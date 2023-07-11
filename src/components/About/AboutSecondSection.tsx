@@ -8,7 +8,9 @@ const AboutSecondSection = () => {
         <div className="xl:w-3/5 md:w-full w-full border-2 border-blue rounded-lg flex flex-col ">
           <div className="flex flex-row justify-between m-11">
             <p className="text-blue">a</p>
-            <p className="text-blue text-lg font-bold">Since 92839</p>
+            <p className="text-blue text-base font-light font-artega">
+              Since 1982
+            </p>
           </div>
 
           <div className="flex flex-col justify-center">
@@ -66,10 +68,12 @@ const AboutSecondSection = () => {
         {/* +++++++++++++++++++++++++++++++++++++++++++++second card+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
 
         <div className="relative xl:w-2/5 md:w-full w-full bg-blue rounded-lg flex flex-col justify-center items-center gap-3">
-          <div className="flex items-center xl:flex-col lg:flex-row justify-between gap-10 my-5 flex-col">
-            <p className="text-5xl text-white">Logo</p>
+          <div className="flex xl:items-center sm:items-end xl:flex-col lg:flex-row md:flex-row md:mx-0 lg:mx-0 justify-between gap-10 my-5 flex-col">
+            <div className="flex justify-end ">
+              <p className="text-xl text-white flex">Logo</p>
+            </div>
 
-            <h1 className="text-white xl:text-7xl lg:text-5xl text-2xl tracking-wider font-semibold font-helvetica mt-5">
+            <h1 className="text-white xl:text-7xl text-5xl tracking-wider font-semibold font-helvetica mt-5">
               This Year
             </h1>
           </div>
