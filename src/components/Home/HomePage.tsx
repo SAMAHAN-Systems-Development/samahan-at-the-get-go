@@ -2,6 +2,7 @@ import type { FC } from "react";
 import React from "react";
 
 import Button from "@/components/ui/Button";
+import OfficerSmallCard from "@/components/ui/OfficerSmallCard";
 
 const HomePage: FC = () => {
   return (
@@ -18,6 +19,12 @@ const HomePage: FC = () => {
       >
         Click Me!
       </Button>
+      <OfficerSmallCard
+        firstName="Vincent Cesar"
+        lastName="CANONIGO"
+        position="Accountancy Representative"
+        imageUrl="/assets/images/Canonigo.jpg"
+      />
     </>
   );
 };
