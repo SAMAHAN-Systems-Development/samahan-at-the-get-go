@@ -1,13 +1,18 @@
 import React from "react";
 
-const AboutSecondSectionWhiteCard = () => {
+type CardProps = {
+  first_header: string;
+  second_header: string;
+};
+
+const AboutSecondSectionWhiteCard = (props: CardProps) => {
   return (
     <>
       {/* first card */}
       <div className="xl:w-3/5 md:w-full w-full border-2 border-blue rounded-lg flex flex-col ">
         <div className="flex flex-row justify-between m-11">
           <p className="text-blue">a</p>
-          <p className="text-blue text-base font-light font-artega">
+          <p className="text-blue text-base font-bold font-artega">
             Since 1982
           </p>
         </div>
@@ -29,7 +34,7 @@ const AboutSecondSectionWhiteCard = () => {
           <div className="flex flex-row gap-3 my-6 ml-10">
             <p className="text-blue">arrow</p>
             <p className="text-blue font-bold font-2xl italic font-appleGaramound">
-              Commitment
+              {props.first_header}
             </p>
           </div>
 
@@ -49,7 +54,7 @@ const AboutSecondSectionWhiteCard = () => {
           <div className="flex flex-row gap-3 my-6 ml-10">
             <p className="text-blue">arrow</p>
             <p className="text-blue font-bold font-2xl italic font-appleGaramound">
-              Commitment
+              {props.second_header}
             </p>
           </div>
 
