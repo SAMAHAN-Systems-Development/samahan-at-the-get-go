@@ -5,6 +5,9 @@
 :root {
     --color-white: #faf6f2;
     --color-blue: #001c79;
+    --color-blue-opacity-70: hsl(226, 70%, 24%);
+    --color-blue-opacity-50: hsl(226, 50%, 24%);
+    --color-blue-opacity-30: hsl(226, 30%, 24%);
     --color-light-blue: #263167;
     --color-orange: #ed751f;
     --color-yellow: #ffbb46;

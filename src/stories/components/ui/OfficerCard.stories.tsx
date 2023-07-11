@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import OfficerCard from "@/components/ui/OfficerCard";
 
 const meta: Meta<typeof OfficerCard> = {
-  title: "UI/SCBCard",
+  title: "UI/OfficerCard",
   component: OfficerCard,
 };
 
@@ -15,7 +15,7 @@ export const Primary: Story = {
     firstName: "Chyna Marie",
     lastName: "Legaspina",
     position: "President",
-    imageUrl: "/../public/images/Officers Photos/Legaspina.jpg",
+    imageUrl: "/assets/images/Legaspina.jpg",
     link: "/",
   },
   render: (args) => <OfficerCard {...args} />,
