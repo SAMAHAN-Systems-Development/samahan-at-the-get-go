@@ -13,7 +13,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${artega.variable} ${appleGaramound.variable}`}>
+    <html
+      lang="en"
+      className={`${artega.variable} ${appleGaramound.variable} font-sans`}
+    >
       <body>{children}</body>
     </html>
   );
