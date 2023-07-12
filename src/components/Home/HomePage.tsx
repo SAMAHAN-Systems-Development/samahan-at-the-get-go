@@ -2,7 +2,7 @@ import type { FC } from "react";
 import React from "react";
 
 import Button from "@/components/ui/Button";
-
+import Footer from "@/components/ui/Footer";
 const HomePage: FC = () => {
   return (
     <>
@@ -18,6 +18,7 @@ const HomePage: FC = () => {
       >
         Click Me!
       </Button>
+      <Footer />
     </>
   );
 };
