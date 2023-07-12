@@ -30,6 +30,8 @@ const config = {
     fontFamily: {
       artega: ["var(--font-artega)"],
       appleGaramond: ["var(--font-appleGaramond)"],
+      "appleGaramond-light": ["var(--font-appleGaramondLight)"],
+      "appleGaramond-bold": ["var(--font-appleGaramondBold)"],
       sans: [
         "Helvetica",
         "system-ui",
