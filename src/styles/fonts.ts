@@ -7,5 +7,5 @@ export const artega = localFont({
 
 export const appleGaramound = localFont({
   src: "../../public/fonts/AppleGaramond.ttf",
-  variable: "--font-appleGaramound",
+  variable: "--font-appleGaramond",
 });
