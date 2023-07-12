@@ -29,7 +29,7 @@ const config = {
     },
     fontFamily: {
       artega: ["var(--font-artega)"],
-      appleGaramound: ["var(--font-appleGaramond)"],
+      appleGaramond: ["var(--font-appleGaramond)"],
       sans: [
         "Helvetica",
         "system-ui",
