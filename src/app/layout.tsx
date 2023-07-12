@@ -1,6 +1,11 @@
 import "src/styles/globals.css";
 
-import { appleGaramound, artega } from "@/styles/fonts";
+import {
+  appleGaramond,
+  appleGaramondBold,
+  appleGaramondLight,
+  artega,
+} from "@/styles/fonts";
 
 export const metadata = {
   title: "Next.js",
@@ -15,7 +20,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${artega.variable} ${appleGaramound.variable} font-sans`}
+      className={`${artega.variable} ${appleGaramond.variable} ${appleGaramondLight.variable} ${appleGaramondBold.variable} font-sans`}
     >
       <body>{children}</body>
     </html>
