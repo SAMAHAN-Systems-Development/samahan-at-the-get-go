@@ -11,7 +11,7 @@ const AboutSecondSection = (props: CardProps) => {
         {/* +++++++++++++++++++++++++++++++++++++++++++++second card+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
 
         <div className="relative xl:w-2/5 md:w-full w-full bg-blue rounded-lg flex flex-col justify-center items-center gap-3">
-          <div className="flex xl:items-center sm:items-end xl:flex-col lg:flex-row md:flex-row md:mx-0 lg:mx-0 justify-between gap-10 my-5 flex-col">
+          <div className="flex xl:items-center sm:items-end xl:flex-col lg:flex-row md:flex-row md:mx-0 lg:mx-0 justify-between lg:gap-80 md:gap-80 xl:gap-10 sm:gap-10 my-5 flex-col">
             <div className="flex justify-end ">
               <p className="text-xl text-white flex">Logo</p>
             </div>
