@@ -1,0 +1,194 @@
+[
+  {
+    "position": "Director",
+    "department": "Department of External Affairs",
+    "firstName": "Denise Maxyn",
+    "lastName": "Amarga",
+    "yearSection": "",
+    "imageSrc": "/assets/images/Amarga.jpg"
+  },
+  {
+    "position": "Deputy Director",
+    "department": "Department of External Affairs",
+    "firstName": "Chloe Mikaela",
+    "lastName": "Gempesaw",
+    "yearSection": "4 BS Accountancy",
+    "imageSrc": "/assets/images/Gempesaw.jpg"
+  },
+  {
+    "position": "Director",
+    "department": "Department of Campaigns & Advocacy",
+    "firstName": "Juven",
+    "lastName": "Bacusmo",
+    "yearSection": "4 BS Accountancy",
+    "imageSrc": "/assets/images/Bacusmo.jpg"
+  },
+  {
+    "position": "Deputy Director",
+    "department": "Department of Campaigns & Advocacy",
+    "firstName": "Algene Derek Louis",
+    "lastName": "Lago",
+    "yearSection": "2 AB Development Studies ",
+    "imageSrc": "/assets/images/Lago.jpg"
+  },
+  {
+    "position": "Director",
+    "department": "Ecoteneo Student Unit",
+    "firstName": "Mary Jastine",
+    "lastName": "Lapating",
+    "yearSection": "3 BS Social Work",
+    "imageSrc": "/assets/images/Lapating.jpg"
+  },
+  {
+    "position": "Deputy Director",
+    "department": "Ecoteneo Student Unit",
+    "firstName": "Joegold Raphaelle",
+    "lastName": "Cajes",
+    "yearSection": "3 AB Political Science",
+    "imageSrc": "/assets/images/Cajes.jpg"
+  },
+  {
+    "position": "Director",
+    "department": "Department of Academic Affairs",
+    "firstName": "Aliya",
+    "lastName": "Medida",
+    "yearSection": "3 BS Accountancy",
+    "imageSrc": "/assets/images/Medida.jpg"
+  },
+  {
+    "position": "Deputy Director",
+    "department": "Department of Academic Affairs",
+    "firstName": "Ralph Rae",
+    "lastName": "Pahinado",
+    "yearSection": "3 BS Human Resource Development and Management",
+    "imageSrc": "/assets/images/Pahinado.jpg"
+  },
+  {
+    "position": "Director",
+    "department": "Department of Disaster Risk Reduction & Management",
+    "firstName": "Justine Nicole",
+    "lastName": "Buccat",
+    "yearSection": "4 BS Aerospace Engineering",
+    "imageSrc": "/assets/images/Buccat.jpg"
+  },
+  {
+    "position": "Deputy Director",
+    "department": "Department of Disaster Risk Reduction & Management",
+    "firstName": "Joshua Emil",
+    "lastName": "Narisma",
+    "yearSection": "3 BS Aerospace Engineering",
+    "imageSrc": "/assets/images/Narisma.jpg"
+  },
+  {
+    "position": "SCT Director",
+    "department": "Samahan Creative Team",
+    "firstName": "Maria Caryl",
+    "lastName": "Manalo",
+    "yearSection": "4 BS Information Technology",
+    "imageSrc": "/assets/images/Manalo.jpg"
+  },
+  {
+    "position": "SCT Deputy Director",
+    "department": "Samahan Creative Team",
+    "firstName": "Miguel Antonio",
+    "lastName": "Estrada",
+    "yearSection": "3 AB IDS Media and Technology",
+    "imageSrc": "/assets/images/Estrada.jpg"
+  },
+  {
+    "position": "Director",
+    "department": "Ateneo Samahan Productions",
+    "firstName": "Hannah Nicole",
+    "lastName": "Bitana",
+    "yearSection": "3 AB International Studies major in Asian Studies",
+    "imageSrc": "/assets/images/Bitana.jpg"
+  },
+  {
+    "position": "Deputy Director",
+    "department": "Ateneo Samahan Productions",
+    "firstName": "Ken Ryle",
+    "lastName": "Hinojales",
+    "yearSection": "2 AB International Studies major in Asian Studies",
+    "imageSrc": "/assets/images/Hinojales.jpg"
+  },
+  {
+    "position": "Director",
+    "department": "Samahan Communications Department",
+    "firstName": "Julianne Kaye",
+    "lastName": "Cortez",
+    "yearSection": "3 BS Marketing",
+    "imageSrc": "/assets/images/Cortez.jpg"
+  },
+  {
+    "position": "Deputy Director",
+    "department": "Samahan Communications Department",
+    "firstName": "Andy Judd",
+    "lastName": "Lumain",
+    "yearSection": "2 AB Psychology",
+    "imageSrc": "/assets/images/Lumain.jpg"
+  },
+  {
+    "position": "Director",
+    "department": "Department of Research & Development",
+    "firstName": "Jerachris Megaela",
+    "lastName": "Rosal",
+    "yearSection": "3 BS Accountancy",
+    "imageSrc": "/assets/images/Rosal.jpg"
+  },
+  {
+    "position": "Deputy Director",
+    "department": "Department of Research & Development",
+    "firstName": "Tweeky",
+    "lastName": "Saure",
+    "yearSection": "3 BS Business Management ",
+    "imageSrc": "/assets/images/Saure.jpg"
+  },
+  {
+    "position": "Director",
+    "department": "Department of Systems Development",
+    "firstName": "Louis Miguel",
+    "lastName": "Pawaon",
+    "yearSection": "4 BS Computer Science",
+    "imageSrc": "/assets/images/Pawaon.jpg"
+  },
+  {
+    "position": "Deputy Director",
+    "department": "Department of Systems Development",
+    "firstName": "Angelli Kezzed",
+    "lastName": "Alkuino",
+    "yearSection": "4 BS Computer Science",
+    "imageSrc": "/assets/images/Alkuino.jpg"
+  },
+  {
+    "position": "Director",
+    "department": "Samahan Logistics Department",
+    "firstName": "Kristine Michaella",
+    "lastName": "Cagmat",
+    "yearSection": "4 BS Accountancy",
+    "imageSrc": "/assets/images/Cagmat.jpg"
+  },
+  {
+    "position": "Deputy Director",
+    "department": "Samahan Logistics Department",
+    "firstName": "Emmanuelle Adrian",
+    "lastName": "Ancog",
+    "yearSection": "3 BS Finance",
+    "imageSrc": "/assets/images/Ancog.jpg"
+  },
+  {
+    "position": "Director",
+    "department": "Department of Sponsorships & Support",
+    "firstName": "Raphael Ray",
+    "lastName": "Hernandez",
+    "yearSection": "4 AB Economics",
+    "imageSrc": "/assets/images/Hernandez.jpg"
+  },
+  {
+    "position": "Deputy Director",
+    "department": "Department of Sponsorships & Support",
+    "firstName": "Maxine Christiana",
+    "lastName": "Sy",
+    "yearSection": "3 BS Marketing",
+    "imageSrc": "/assets/images/Sy.jpg"
+  }
+]
