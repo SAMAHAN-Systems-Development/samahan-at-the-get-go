@@ -1,5 +1,10 @@
 import React from "react";
-import { appleGaramound, artega } from "../src/styles/fonts";
+import {
+  appleGaramond,
+  appleGaramondLight,
+  appleGaramondBold,
+  artega,
+} from "../src/styles/fonts";
 import "src/styles/globals.css";
 import type { Preview } from "@storybook/react";
 
@@ -16,7 +21,7 @@ const preview: Preview = {
   decorators: [
     (Story) => (
       <div
-        className={`${artega.className} ${artega.variable} ${appleGaramound.className} ${appleGaramound.variable}`}
+        className={`${artega.className} ${artega.variable} ${appleGaramond.className} ${appleGaramond.variable} ${appleGaramondLight.className} ${appleGaramondLight.variable} ${appleGaramondBold.className} ${appleGaramondBold.variable}`}
       >
         <Story />
       </div>

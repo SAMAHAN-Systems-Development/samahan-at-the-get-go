@@ -1,0 +1,23 @@
+[
+  {
+    "position": "Administrative Secretary",
+    "firstName": "Khrysha Louise",
+    "lastName": "Fernandez",
+    "yearSection": "3 BS Nursing",
+    "imageSrc": "/assets/images/Fernandez.png"
+  },
+  {
+    "position": "Administrative Undersecretary",
+    "firstName": "Philipina",
+    "lastName": "Gutierrez",
+    "yearSection": "2 BS Accountancy",
+    "imageSrc": "/assets/images/Gutierrez.png"
+  },
+  {
+    "position": "Administrative Undersecretary",
+    "firstName": "Jayle Mikyla",
+    "lastName": "Valdez",
+    "yearSection": "2 BS Medical Biology",
+    "imageSrc": "/assets/images/Valdez.png"
+  }
+]
