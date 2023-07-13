@@ -6,12 +6,13 @@ import AboutSecondSectionWhiteCard from "@/components/ui/AboutPage/AboutSecondSe
 const AboutSecondSection = () => {
   return (
     <>
-      <div className="relative flex flex-col justify-start w-full gap-2 m-5 xl:flex-row md:flex-col" />
-      <AboutSecondSectionWhiteCard
-        first_header="Commitmment"
-        second_header="dasdsa"
-      />
-      <AboutSecondSectionBlueCard title="This Year" />
+      <div className="relative flex flex-col justify-start w-full gap-2 m-5 xl:flex-row md:flex-col">
+        <AboutSecondSectionWhiteCard
+          first_header="Commitmment"
+          second_header="dasdsa"
+        />
+        <AboutSecondSectionBlueCard title="This Year" />
+      </div>
     </>
   );
 };
