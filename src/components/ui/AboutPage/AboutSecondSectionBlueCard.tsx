@@ -4,7 +4,7 @@ type CardProps = {
   title: string;
 };
 
-const AboutSecondSection = (props: CardProps) => {
+const AboutSecondSectionBlueCard = (props: CardProps) => {
   return (
     <>
       <div className="relative flex flex-col justify-start w-full gap-2 m-5 xl:flex-row md:flex-col">
@@ -36,4 +36,4 @@ const AboutSecondSection = (props: CardProps) => {
   );
 };
 
-export default AboutSecondSection;
+export default AboutSecondSectionBlueCard;
