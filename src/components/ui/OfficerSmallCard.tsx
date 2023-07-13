@@ -5,6 +5,7 @@ interface OfficerSmallCard {
   firstName: string;
   lastName: string;
   position: string;
+  department?: string;
   imageUrl: string;
 }
 
@@ -12,6 +13,7 @@ const OfficerSmallCard: React.FC<OfficerSmallCard> = ({
   firstName,
   lastName,
   position,
+  department,
   imageUrl,
 }) => {
   return (
@@ -28,7 +30,14 @@ const OfficerSmallCard: React.FC<OfficerSmallCard> = ({
         </div>
       </div>
       <div className="flex-col flex-shrink-0 flex max-w-[193px] max-h-[30px] text-[#263167] text-[13px] font-normal text-center">
-        {position}
+        {department ? (
+          <>
+            <span className="font-bold">{position}</span>
+            <span>{department}</span>
+          </>
+        ) : (
+          <span>{position}</span>
+        )}
       </div>
     </div>
   );

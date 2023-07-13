@@ -14,9 +14,9 @@ export const Primary: Story = {
   args: {
     firstName: "Vincent Cesar",
     lastName: "Canonigo",
-    position: "Accountancy Representative",
+    position: "Director",
+    department: "Department of Camapigns & Advocacies",
     imageUrl: "/assets/images/Canonigo.jpg",
-    //link: "/",
   },
   render: (args) => <OfficerSmallCard {...args} />,
 };
