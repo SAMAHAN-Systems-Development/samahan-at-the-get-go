@@ -12,7 +12,6 @@ type OfficesCardComponentStory = StoryObj<typeof OfficesCardComponent>;
 
 export const Primary: OfficesCardComponentStory = {
   args: {
-    officesNumber: "01",
     officesTitle: "Title",
     officesDescription: "Description",
   },
