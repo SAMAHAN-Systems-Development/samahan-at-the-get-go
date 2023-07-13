@@ -17,6 +17,16 @@ const config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      lineHeight: {
+        "title-lg": "6rem",
+        "title-md": "2.8rem",
+        "title-sm": "2.3rem",
+      },
+      fontSize: {
+        "title-lg": "5.6rem",
+        "title-md": "2.5rem",
+        "title-sm": "2rem",
+      },
     },
     colors: {
       white: "rgb(var(--color-white) / <alpha-value>)",
@@ -29,7 +39,9 @@ const config = {
     },
     fontFamily: {
       artega: ["var(--font-artega)"],
-      appleGaramound: ["var(--font-appleGaramound)"],
+      appleGaramond: ["var(--font-appleGaramond)"],
+      "appleGaramond-light": ["var(--font-appleGaramondLight)"],
+      "appleGaramond-bold": ["var(--font-appleGaramondBold)"],
       sans: [
         "Helvetica",
         "system-ui",

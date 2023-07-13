@@ -1,170 +1,194 @@
 [
   {
-    "position": "DEA Director",
+    "position": "Director",
+    "department": "Department of External Affairs",
     "firstName": "Denise Maxyn",
     "lastName": "Amarga",
     "yearSection": "",
-    "imageSrc": "/assets/images/Amarga.png"
+    "imageSrc": "/assets/images/Amarga.jpg"
   },
   {
-    "position": "DEA Deputy Director",
+    "position": "Deputy Director",
+    "department": "Department of External Affairs",
     "firstName": "Chloe Mikaela",
     "lastName": "Gempesaw",
     "yearSection": "4 BS Accountancy",
-    "imageSrc": "/assets/images/Gempesaw.png"
+    "imageSrc": "/assets/images/Gempesaw.jpg"
   },
   {
-    "position": "DCA Director",
+    "position": "Director",
+    "department": "Department of Campaigns & Advocacy",
     "firstName": "Juven",
     "lastName": "Bacusmo",
     "yearSection": "4 BS Accountancy",
-    "imageSrc": "/assets/images/Bacusmo.png"
+    "imageSrc": "/assets/images/Bacusmo.jpg"
   },
   {
-    "position": "DCA Deputy Director",
+    "position": "Deputy Director",
+    "department": "Department of Campaigns & Advocacy",
     "firstName": "Algene Derek Louis",
     "lastName": "Lago",
     "yearSection": "2 AB Development Studies ",
-    "imageSrc": "/assets/images/Lago.png"
+    "imageSrc": "/assets/images/Lago.jpg"
   },
   {
-    "position": "ESU Director",
+    "position": "Director",
+    "department": "Ecoteneo Student Unit",
     "firstName": "Mary Jastine",
     "lastName": "Lapating",
     "yearSection": "3 BS Social Work",
-    "imageSrc": "/assets/images/Lapating.png"
+    "imageSrc": "/assets/images/Lapating.jpg"
   },
   {
-    "position": "ESU Deputy Director",
+    "position": "Deputy Director",
+    "department": "Ecoteneo Student Unit",
     "firstName": "Joegold Raphaelle",
     "lastName": "Cajes",
     "yearSection": "3 AB Political Science",
-    "imageSrc": "/assets/images/Cajes.png"
+    "imageSrc": "/assets/images/Cajes.jpg"
   },
   {
-    "position": "DAA Director",
+    "position": "Director",
+    "department": "Department of Academic Affairs",
     "firstName": "Aliya",
     "lastName": "Medida",
     "yearSection": "3 BS Accountancy",
-    "imageSrc": "/assets/images/Medida.png"
+    "imageSrc": "/assets/images/Medida.jpg"
   },
   {
-    "position": "DAA Deputy Director",
+    "position": "Deputy Director",
+    "department": "Department of Academic Affairs",
     "firstName": "Ralph Rae",
     "lastName": "Pahinado",
     "yearSection": "3 BS Human Resource Development and Management",
-    "imageSrc": "/assets/images/Pahinado.png"
+    "imageSrc": "/assets/images/Pahinado.jpg"
   },
   {
-    "position": "DRRM Director",
+    "position": "Director",
+    "department": "Department of Disaster Risk Reduction & Management",
     "firstName": "Justine Nicole",
     "lastName": "Buccat",
     "yearSection": "4 BS Aerospace Engineering",
-    "imageSrc": "/assets/images/Buccat.png"
+    "imageSrc": "/assets/images/Buccat.jpg"
   },
   {
-    "position": "DRRM Deputy Director",
+    "position": "Deputy Director",
+    "department": "Department of Disaster Risk Reduction & Management",
     "firstName": "Joshua Emil",
     "lastName": "Narisma",
     "yearSection": "3 BS Aerospace Engineering",
-    "imageSrc": "/assets/images/Narisma.png"
+    "imageSrc": "/assets/images/Narisma.jpg"
   },
   {
     "position": "SCT Director",
+    "department": "Samahan Creative Team",
     "firstName": "Maria Caryl",
     "lastName": "Manalo",
     "yearSection": "4 BS Information Technology",
-    "imageSrc": "/assets/images/Manalo.png"
+    "imageSrc": "/assets/images/Manalo.jpg"
   },
   {
     "position": "SCT Deputy Director",
+    "department": "Samahan Creative Team",
     "firstName": "Miguel Antonio",
     "lastName": "Estrada",
     "yearSection": "3 AB IDS Media and Technology",
-    "imageSrc": "/assets/images/Estrada.png"
+    "imageSrc": "/assets/images/Estrada.jpg"
   },
   {
-    "position": "ASP Director",
+    "position": "Director",
+    "department": "Ateneo Samahan Productions",
     "firstName": "Hannah Nicole",
     "lastName": "Bitana",
     "yearSection": "3 AB International Studies major in Asian Studies",
-    "imageSrc": "/assets/images/Bitana.png"
+    "imageSrc": "/assets/images/Bitana.jpg"
   },
   {
-    "position": "ASP Deputy Director",
+    "position": "Deputy Director",
+    "department": "Ateneo Samahan Productions",
     "firstName": "Ken Ryle",
     "lastName": "Hinojales",
     "yearSection": "2 AB International Studies major in Asian Studies",
-    "imageSrc": "/assets/images/Hinojales.png"
+    "imageSrc": "/assets/images/Hinojales.jpg"
   },
   {
-    "position": "COMMS Director",
+    "position": "Director",
+    "department": "Samahan Communications Department",
     "firstName": "Julianne Kaye",
     "lastName": "Cortez",
     "yearSection": "3 BS Marketing",
-    "imageSrc": "/assets/images/Cortez.png"
+    "imageSrc": "/assets/images/Cortez.jpg"
   },
   {
-    "position": "COMMS Deputy Director",
+    "position": "Deputy Director",
+    "department": "Samahan Communications Department",
     "firstName": "Andy Judd",
     "lastName": "Lumain",
     "yearSection": "2 AB Psychology",
-    "imageSrc": "/assets/images/Lumain.png"
+    "imageSrc": "/assets/images/Lumain.jpg"
   },
   {
-    "position": "R&D Director",
+    "position": "Director",
+    "department": "Department of Research & Development",
     "firstName": "Jerachris Megaela",
     "lastName": "Rosal",
     "yearSection": "3 BS Accountancy",
-    "imageSrc": "/assets/images/Rosal.png"
+    "imageSrc": "/assets/images/Rosal.jpg"
   },
   {
-    "position": "R&D Deputy Director",
+    "position": "Deputy Director",
+    "department": "Department of Research & Development",
     "firstName": "Tweeky",
     "lastName": "Saure",
     "yearSection": "3 BS Business Management ",
-    "imageSrc": "/assets/images/Saure.png"
+    "imageSrc": "/assets/images/Saure.jpg"
   },
   {
-    "position": "SysDev Director",
+    "position": "Director",
+    "department": "Department of Systems Development",
     "firstName": "Louis Miguel",
     "lastName": "Pawaon",
     "yearSection": "4 BS Computer Science",
-    "imageSrc": "/assets/images/Pawaon.png"
+    "imageSrc": "/assets/images/Pawaon.jpg"
   },
   {
-    "position": "SysDev Deputy Director",
+    "position": "Deputy Director",
+    "department": "Department of Systems Development",
     "firstName": "Angelli Kezzed",
     "lastName": "Alkuino",
     "yearSection": "4 BS Computer Science",
-    "imageSrc": "/assets/images/Alkuino.png"
+    "imageSrc": "/assets/images/Alkuino.jpg"
   },
   {
-    "position": "SLD Director",
+    "position": "Director",
+    "department": "Samahan Logistics Department",
     "firstName": "Kristine Michaella",
     "lastName": "Cagmat",
     "yearSection": "4 BS Accountancy",
-    "imageSrc": "/assets/images/Cagmat.png"
+    "imageSrc": "/assets/images/Cagmat.jpg"
   },
   {
-    "position": "SLD Deputy Director",
+    "position": "Deputy Director",
+    "department": "Samahan Logistics Department",
     "firstName": "Emmanuelle Adrian",
     "lastName": "Ancog",
     "yearSection": "3 BS Finance",
-    "imageSrc": "/assets/images/Ancog.png"
+    "imageSrc": "/assets/images/Ancog.jpg"
   },
   {
-    "position": "SAS Director",
+    "position": "Director",
+    "department": "Department of Sponsorships & Support",
     "firstName": "Raphael Ray",
     "lastName": "Hernandez",
     "yearSection": "4 AB Economics",
-    "imageSrc": "/assets/images/Hernandez.png"
+    "imageSrc": "/assets/images/Hernandez.jpg"
   },
   {
-    "position": "SAS Deputy Director",
+    "position": "Deputy Director",
+    "department": "Department of Sponsorships & Support",
     "firstName": "Maxine Christiana",
     "lastName": "Sy",
     "yearSection": "3 BS Marketing",
-    "imageSrc": "/assets/images/Sy.png"
+    "imageSrc": "/assets/images/Sy.jpg"
   }
 ]
