@@ -6,7 +6,7 @@ import AboutForthSectionOrangeCard from "@/components/ui/AboutPage/AboutForthSec
 const AboutFourthSection = () => {
   return (
     <>
-      <div className="relative flex flex-col justify-start w-full gap-2 m-5">
+      <div className="relative flex flex-col justify-start w-full gap-2 bg-beige m-5">
         <AboutForthSectionBlueCard year="This 2023" />
         <AboutForthSectionOrangeCard year="SAMAHAN that is at the get-go. " />
       </div>

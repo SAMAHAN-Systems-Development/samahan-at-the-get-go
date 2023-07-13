@@ -8,7 +8,7 @@ const AboutForthSectionOrangeCard = (props: CardProps) => {
   return (
     <>
       {/* first card */}
-      <div className="w-full bg-orange rounded-lg flex flex-col">
+      <div className="w-full bg-orange rounded-lg flex flex-col h-1/2">
         <div className="flex flex-col justify-center mt-7">
           <div className="flex mx-12 my-4">
             <p className="text-white font-bold lg:text-lg md:text-base text-sm">

@@ -1,5 +1,6 @@
 import React from "react";
 
+import AboutFourthSection from "@/components/ui/AboutFourthSection";
 import AboutFirstSection from "@/components/ui/AboutPage/AboutPageSections/AboutFirstSection";
 import AboutSecondSection from "@/components/ui/AboutSecondSection";
 
@@ -13,8 +14,11 @@ const AboutPage = () => {
       {/* Divider */}
       {/* <Divider /> */}
       {/* Second Section */}
-      <div className="w-full flex md:h-screen h-full justify-center">
+      <div className="w-full flex h-full justify-center">
         <AboutSecondSection />
+      </div>
+      <div className="w-full flex h-full justify-center">
+        <AboutFourthSection />
       </div>
     </>
   );
