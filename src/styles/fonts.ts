@@ -5,12 +5,17 @@ export const artega = localFont({
   variable: "--font-artega",
 });
 
-export const appleGaramound = localFont({
+export const appleGaramond = localFont({
   src: "../../public/fonts/AppleGaramond.ttf",
-  variable: "--font-appleGaramound",
+  variable: "--font-appleGaramond",
 });
 
-export const helvetica = localFont({
-  src: "../../public/fonts/Helvetica.ttf",
-  variable: "--font-helvetica",
+export const appleGaramondLight = localFont({
+  src: "../../public/fonts/AppleGaramond-Light.ttf",
+  variable: "--font-appleGaramondLight",
+});
+
+export const appleGaramondBold = localFont({
+  src: "../../public/fonts/AppleGaramond-Bold.ttf",
+  variable: "--font-appleGaramondBold",
 });
