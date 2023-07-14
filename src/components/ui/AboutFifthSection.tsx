@@ -25,7 +25,7 @@ const AboutFifthSection = (props: TitleProps) => {
 
           <div className="flex flex-col">
             <div className="sm:mx-14 mx-6 mt-4">
-              <p className="text-orange font-artega font-bold sm:text-lg text-sm text-justify">
+              <p className="text-orange font-artega font-bold xl:text-2xl md:text-lg text-xs text-justify">
                 Rooted in our renewed sense of purpose, we aspire to start up
                 once more and invigorate a fullest comeback, to Ateneo and
                 beyond
@@ -33,7 +33,7 @@ const AboutFifthSection = (props: TitleProps) => {
             </div>
 
             <div className="sm:mx-14 mx-6 mt-4 overflow-hidden">
-              <p className="text-lightBlue text-lg sm:text-base text-justify">
+              <p className="text-lightBlue text-sm lg:text-xl md:text-lg text-justify">
                 As we reignite the ambitions we once shared together, we dream
                 of bringing them to life by leading our actions into limitless
                 opportunities, striving to advance leadership towards

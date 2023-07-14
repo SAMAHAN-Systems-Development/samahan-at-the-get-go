@@ -11,7 +11,7 @@ const AboutForthSectionOrangeCard = (props: CardProps) => {
       <div className="w-full bg-orange rounded-lg flex flex-col h-1/2 justify-center">
         <div className="flex flex-col sm:m-12 m-6">
           <div className="flex sm:mx-12 m-3 my-4">
-            <p className="text-white lg:text-lg md:text-base text-sm font-light text-justify">
+            <p className="text-white lg:text-xl md:text-base text-sm font-light text-justify">
               But this time, as we move forward to reclaim the life we used to
               own, we envision a community that starts anew, a student body that
               expands to new directions, and a

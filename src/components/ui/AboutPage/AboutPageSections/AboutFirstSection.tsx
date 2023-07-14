@@ -8,7 +8,7 @@ const AboutFirstSection = (props: TitleProps) => {
   return (
     <>
       <div className="w-full h-screen flex justify-center">
-        <div className="relative w-full m-5 border-2 border-blue rounded-lg flex flex-col">
+        <div className="relative w-full m-5 border-card border-blue rounded-section-card flex flex-col">
           <div className="flex flex-row justify-between m-14">
             <p className="text-blue font-light sm:text-xl text-sm font-artega">
               About us
