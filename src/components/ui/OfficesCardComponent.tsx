@@ -10,7 +10,7 @@ const OfficesCardComponent: React.FC<OfficesCardComponentProps> = ({
   officesDescription,
 }) => {
   return (
-    <div className="grid h-[300px] content-between w-full p-8 text-white bg-orange border-solid border-card rounded-card sm:h-[320px] md:h-[470px] lg:h-[428px] ">
+    <div className="grid h-[300px] overflow-auto content-between w-full p-8 text-white bg-orange border-solid border-card rounded-card sm:h-[320px] md:h-[470px] lg:h-[428px] ">
       <div className="flex flex-row text-sm w-full justify-between">
         <p className="font-artega font-medium text-[0.875rem] sm:text-[1rem] md:text-[1.25rem] lg:text-[1.5625rem]">
           {" "}
