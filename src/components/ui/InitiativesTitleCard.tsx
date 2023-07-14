@@ -2,7 +2,7 @@ import React from "react";
 
 const InitiativesTitleCard: React.FC = () => {
   return (
-    <div className="h-[566px] w-auto md:h-[1154px] xl:h-[562px] bg-[#ED751F] m-1 p-4 flex flex-col justify-between rounded-[20px] text-[#FFFF]">
+    <div className="h-[502px] w-auto md:h-[772px] lg:h-[562px] bg-[#ED751F] m-1 p-4 flex flex-col justify-between rounded-[20px] text-[#FFFF]">
       <div className="flex justify-between">
         <span className="flex font-artega text-[20px] md:text-[20px] lg:text-[30px] font-[500]">
           04
