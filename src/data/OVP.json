@@ -1,0 +1,23 @@
+[
+  {
+    "position": "Legislative Secretary",
+    "firstName": "Chang Hyun",
+    "lastName": "Park",
+    "yearSection": "3 BS Aerospace Engineering",
+    "imageSrc": "/assets/images/Park.png"
+  },
+  {
+    "position": "Legislative Undersecretary",
+    "firstName": "Iesha Jaesamin Twaye",
+    "lastName": "Bastian",
+    "yearSection": "2 BS Management Accounting",
+    "imageSrc": "/assets/images/Bastian.png"
+  },
+  {
+    "position": "Legislative Undersecretary",
+    "firstName": "Andrea Petetricia",
+    "lastName": "Giron",
+    "yearSection": "3 AB Political Science",
+    "imageSrc": "/assets/images/Giron.png"
+  }
+]
