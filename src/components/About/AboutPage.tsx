@@ -1,5 +1,6 @@
 import React from "react";
 
+import AboutFifthSection from "@/components/ui/AboutFifthSection";
 import AboutFourthSection from "@/components/ui/AboutFourthSection";
 import AboutFirstSection from "@/components/ui/AboutPage/AboutPageSections/AboutFirstSection";
 import AboutSecondSection from "@/components/ui/AboutSecondSection";
@@ -19,6 +20,9 @@ const AboutPage = () => {
       </div>
       <div className="w-full flex h-full justify-center">
         <AboutFourthSection />
+      </div>
+      <div className="w-full flex h-full justify-center">
+        <AboutFifthSection title="Year of Magis" />
       </div>
     </>
   );

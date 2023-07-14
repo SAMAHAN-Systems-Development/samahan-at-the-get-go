@@ -22,11 +22,11 @@ const AboutSecondSectionBlueCard = (props: CardProps) => {
 
         <div className="flex mx-10 my-6">
           <p className="text-white font-base text-lg text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit
+            We venture back to the University life we yearned for so long, and
+            actualize what we collectively envision as the next generation of
+            Blue Knights. Not only do we thrive to achieve our fullest
+            potential, we are also looking forward to working with the entire
+            Ateneo Community to make it all happen.
           </p>
         </div>
       </div>

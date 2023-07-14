@@ -40,9 +40,9 @@ const AboutSecondSectionWhiteCard = (props: CardProps) => {
 
           <div className="flex mx-10 mb-6">
             <p className="text-blue font-bold lg:text-lg md:text-base text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim
+              remains committed in our collective agenda of creating impactful
+              results, solutions, and initiatives{" "}
+              <span className="text-orange">for the greater communities.</span>
             </p>
           </div>
 
@@ -60,10 +60,10 @@ const AboutSecondSectionWhiteCard = (props: CardProps) => {
 
           <div className="flex mx-10 mb-6">
             <p className="text-blue font-bold lg:text-lg md:text-base text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo
+              endures, and actively continues to be at the heart of navigating{" "}
+              <span className="text-orange">
+                our ever-changing University with, for, and by our students.
+              </span>
             </p>
           </div>
         </div>
