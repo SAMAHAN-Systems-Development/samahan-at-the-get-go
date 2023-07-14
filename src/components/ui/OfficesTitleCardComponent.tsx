@@ -11,7 +11,7 @@ const OfficesTitleCardComponent: React.FC<OfficesTitleCardComponentProps> = ({
   officesPosition,
 }) => {
   return (
-    <div className="grid h-[262px] p-4 w-full content-between text-lightBlue bg-transparent rounded-card border-card border-lightBlue sm:h-[400px] md:h-[622px] md:p-8 lg:h-[738px] lg:p-16">
+    <div className="grid h-[262px] p-4 w-full content-between text-lightBlue bg-transparent rounded-card border-card border-lightBlue sm:h-[400px] md:h-[622px] md:p-8 lg:h-[681px] lg:p-16">
       <div className="flex flex-row w-full justify-between">
         <p className="font-artega font-medium text-sm sm:text-l md:text-xl lg:text-2xl">
           00
