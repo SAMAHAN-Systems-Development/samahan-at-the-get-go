@@ -11,8 +11,6 @@ export default meta;
 type Story = StoryObj<typeof SCBTitleCard>;
 
 export const Primary: Story = {
-  args: {
-    title: "Samahan Central Board",
-  },
-  render: (args) => <SCBTitleCard {...args} />,
+  args: {},
+  render: () => <SCBTitleCard />,
 };
