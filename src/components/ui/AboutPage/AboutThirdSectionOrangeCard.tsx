@@ -5,7 +5,7 @@ type CardProps = {
   second_header: string;
 };
 
-const AboutSecondSection = (props: CardProps) => {
+const AboutThirdSectionOrangeCard = (props: CardProps) => {
   return (
     <>
       {/* first card */}
@@ -38,4 +38,4 @@ const AboutSecondSection = (props: CardProps) => {
   );
 };
 
-export default AboutSecondSection;
+export default AboutThirdSectionOrangeCard;
