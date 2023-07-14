@@ -32,6 +32,9 @@ const config = {
         "section-card": "20px",
         card: "15px ",
       },
+      borderWidth: {
+        card: "2.5px",
+      },
       textShadow: {
         soft: "1px 1px 3px rgba(0, 0, 0, 0.1)",
         bold: "2px 2px 4px rgba(0, 0, 0, 0.5)",
