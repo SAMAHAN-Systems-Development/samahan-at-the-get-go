@@ -1,12 +1,12 @@
 import type { FC } from "react";
 import React from "react";
 
-import Button from "@/components/ui/Button";
+import AboutSecondSectionWhiteCard from "@/components/ui/AboutPage/AboutSecondSectionWhiteCard";
 
 const HomePage: FC = () => {
   return (
     <>
-      <Button
+      {/* <Button
         href="https://www.samahan.addu.edu.ph/"
         className="font-artega bg-beige text-white"
       >
@@ -17,7 +17,11 @@ const HomePage: FC = () => {
         className="font-appleGaramound bg-beige text-white"
       >
         Click Me!
-      </Button>
+      </Button> */}
+      <AboutSecondSectionWhiteCard
+        first_header="Commitment"
+        second_header="Navigate"
+      />
     </>
   );
 };
