@@ -15,11 +15,11 @@ const SCBTitleCard = () => {
         />
       </div>
       <div className="font-artega uppercase text-lightBlue text-[1.25rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[5.6rem] leading-[1.3rem] sm:leading-[2.3rem] md:leading-[3rem] lg:leading-[6rem]">
-        <p className="uppercase">
+        <h1 className="uppercase">
           <span className="block">Samahan</span>
           <span className="block">Central</span>
           <span className="block">Board</span>
-        </p>
+        </h1>
       </div>
     </div>
   );
