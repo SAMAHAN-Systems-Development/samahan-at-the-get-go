@@ -10,13 +10,24 @@ const meta: Meta<typeof OfficerLargeCard> = {
 export default meta;
 type Story = StoryObj<typeof OfficerLargeCard>;
 
-export const Primary: Story = {
+export const Clickable: Story = {
   args: {
     firstName: "Chyna Marie",
     lastName: "Legaspina",
     position: "President",
     imageUrl: "/assets/images/Legaspina.jpg",
-    link: "/",
+    isButton: true,
+  },
+  render: (args) => <OfficerLargeCard {...args} />,
+};
+
+export const Unclickable: Story = {
+  args: {
+    firstName: "Chyna Marie",
+    lastName: "Legaspina",
+    position: "President",
+    imageUrl: "/assets/images/Legaspina.jpg",
+    isButton: false,
   },
   render: (args) => <OfficerLargeCard {...args} />,
 };
