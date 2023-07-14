@@ -11,9 +11,5 @@ export default meta;
 type Story = StoryObj<typeof AdvocasixHeaderCard>;
 
 export const Primary: Story = {
-  args: {
-    title: "We Are:",
-    subTitle: "Six Pillar Advocacies",
-  },
-  render: (args) => <AdvocasixHeaderCard {...args} />,
+  render: () => <AdvocasixHeaderCard />,
 };
