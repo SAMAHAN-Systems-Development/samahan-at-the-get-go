@@ -5,11 +5,12 @@
 :root {
     --color-white: 250 246 242;
     --color-blue: 0 28 121;
-    --color-light-blue: 38 49 103;
+    --color-lightBlue: 38 49 103;
     --color-orange: 237 117 31;
     --color-yellow: 255 187 70;
-    --color-light-yellow: 252 214 77;
+    --color-lightYellow: 252 214 77;
     --color-beige: 220 205 187;
+    --tw-shadow-color: rgb(128, 128, 128);
 }
 
 *,

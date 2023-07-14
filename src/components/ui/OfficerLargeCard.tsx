@@ -27,11 +27,13 @@ const OfficerCard: React.FC<OfficerLargeCardProps> = ({
         className="object-cover object-top"
         fill
       />
-      <div className="absolute bottom-0 left-0 flex items-end p-4 text-white w-full h-full group/overlay hover:bg-blue/25 transition-all ease-in-out duration-300">
-        <div className="text-xl md:text-2xl lg:text-3xl group-hover/overlay:translate-x-3 transition-all ease-in-out duration-300">
-          <p className="font-appleGaramond-bold italic">{firstName}</p>
-          <p className="font-artega">{lastName}</p>
-          <p className="font-sans">{position}</p>
+      <div className="absolute bottom-0 left-0 flex items-end text-white w-full h-full p-4 lg:p-6 group/overlay hover:bg-blue/25 transition-all ease-in-out duration-300">
+        <div className="text-shadow-lg text-xl leading-6 sm:text-[1.5rem] sm:leading-7 md:text-title-sm md:leading-title-sm lg:text-title-md lg:leading-title-md group-hover/overlay:translate-x-3 transition-all ease-in-out duration-300">
+          <p className="drop-shadow-2xl font-appleGaramond-bold italic">
+            {firstName}
+          </p>
+          <p className="font-artega uppercase">{lastName}</p>
+          <p className="font-sans uppercase">{position}</p>
         </div>
       </div>
     </a>
