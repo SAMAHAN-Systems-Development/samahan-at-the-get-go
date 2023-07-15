@@ -1,7 +1,7 @@
 import React from "react";
 
-import AboutSecondSectionBlueCard from "@/components/ui/AboutPage/AboutSecondSection/AboutSecondSection/AboutSecondSectionBlueCard";
-import AboutSecondSectionWhiteCard from "@/components/ui/AboutPage/AboutSecondSection/AboutSecondSection/AboutSecondSectionWhiteCard";
+import AboutSecondSectionBlueCard from "@/components/ui/AboutPage/AboutSecondSection/AboutSecondSectionBlueCard";
+import AboutSecondSectionWhiteCard from "@/components/ui/AboutPage/AboutSecondSection/AboutSecondSectionWhiteCard";
 
 const AboutSecondSection = () => {
   return (
