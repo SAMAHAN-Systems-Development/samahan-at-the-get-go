@@ -19,7 +19,7 @@ const HomePage: FC = () => {
       >
         Click Me!
       </Button>
-      <OfficesTitleCardComponent officesPosition="PRESIDENT" />
+      <OfficesTitleCardComponent officesPosition="SECRETARY GENERAL" />
     </>
   );
 };
