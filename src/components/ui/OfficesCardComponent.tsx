@@ -20,11 +20,11 @@ const OfficesCardComponent: React.FC<OfficesCardComponentProps> = ({
           #AtTheGetGo
         </p>
       </div>
-      <div className="flex flex-col justify-self-center sm:w-[320px] md:w-[392px] lg:w-[897px]">
-        <h1 className="text-center font-artega  text-[1.9375rem] font-medium justify-self-center sm:text-[2.615rem] md:text-[3.8125rem] lg:text-[4.75rem]">
+      <div className="flex flex-col my-2 justify-self-center sm:w-[320px] md:w-[392px] lg:w-[897px]">
+        <h1 className="text-center font-artega mt-2 text-[1.9375rem] font-medium justify-self-center sm:text-[2.615rem] md:text-[3.8125rem] lg:text-[4.75rem]">
           {officesTitle}
         </h1>
-        <p className="font-sans flex-wrap text-justify flex text-[0.875rem] sm:[1rem] md:text-[1.1875rem] lg:text-[1.5625rem] lg:text-center">
+        <p className="font-sans mt-2 flex-wrap text-justify flex text-[0.875rem] sm:[1rem] md:text-[1.1875rem] lg:text-[1.5625rem] lg:text-center">
           {officesDescription}
         </p>
       </div>
