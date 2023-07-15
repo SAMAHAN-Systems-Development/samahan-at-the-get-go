@@ -11,8 +11,8 @@ const AboutSecondSectionBlueCard = (props: CardProps) => {
       {/* +++++++++++++++++++++++++++++++++++++++++++++second card+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
 
       <div className="relative xl:w-2/5 md:w-full w-full bg-blue rounded-card flex flex-col justify-center items-center gap-3 ">
-        <div className="flex xl:items-center items-end xl:flex-col lg:flex-row md:flex-row justify-between lg:gap-80 md:gap-80 xl:gap-10 sm:gap-10 my-5 flex-col">
-          <div className="flex justify-end xl:w-40 xl:h-40 md:w-24 md:h-24 w-12 h-12 relative ">
+        <div className="flex xl:items-center items-end xl:flex-col lg:flex-row md:flex-row justify-between lg:gap-80 md:gap-50 xl:gap-10 w-full px-16 sm:gap-10 my-5 flex-col">
+          <div className="flex justify-end xl:w-40 xl:h-40 md:w-16 md:h-16 w-12 h-12 relative">
             <Image
               src="/assets/images/whiteArrow.png"
               alt="White Arrow"
@@ -21,7 +21,7 @@ const AboutSecondSectionBlueCard = (props: CardProps) => {
             />
           </div>
 
-          <h1 className="text-white xl:text-7xl text-5xl tracking-wider font-semibold font-helvetica mt-5">
+          <h1 className="text-white xl:text-7xl text-3xl tracking-wider font-semibold font-helvetica mt-5 text-center">
             {props.title}
           </h1>
         </div>

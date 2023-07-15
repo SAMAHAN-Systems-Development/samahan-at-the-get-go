@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import React from "react";
 
-import AboutSecondSection from "@/components/ui/AboutPage/AboutSecondSection/AboutSecondSection";
+import AboutSecondSection from "@/components/ui/AboutPage/AboutSecondSection/AboutSecondSection/AboutSecondSection";
 
 const HomePage: FC = () => {
   return (
