@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 type CardProps = {
   first_header: string;
@@ -11,7 +12,14 @@ const AboutSecondSectionWhiteCard = (props: CardProps) => {
       {/* first card */}
       <div className="xl:w-3/5 md:w-full w-full border-card border-blue rounded-card flex flex-col ">
         <div className="flex flex-row justify-between sm:m-11 m-6">
-          <p className="text-blue">a</p>
+          <div className="relative w-16 h-5">
+            <Image
+              src="/assets/images/BlueArrow.png"
+              alt="Blue Arrow"
+              className="object-contain"
+              fill
+            />
+          </div>
           <p className="text-blue sm:text-base text-sm font-bold font-artega">
             Since 1982
           </p>
@@ -32,7 +40,14 @@ const AboutSecondSectionWhiteCard = (props: CardProps) => {
           </div>
 
           <div className="flex flex-row gap-3 my-6 ml-10">
-            <p className="text-blue">arrow</p>
+            <div className="relative w-10 h-5">
+              <Image
+                src="/assets/images/SmallBlueArrow.png"
+                alt="Blue Arrow"
+                className="object-contain"
+                fill
+              />
+            </div>
             <p className="text-blue font-bold font-2xl italic font-appleGaramound">
               {props.first_header}
             </p>
@@ -52,7 +67,14 @@ const AboutSecondSectionWhiteCard = (props: CardProps) => {
           </div>
 
           <div className="flex flex-row gap-3 my-6 ml-10">
-            <p className="text-blue">arrow</p>
+            <div className="relative w-10 h-5">
+              <Image
+                src="/assets/images/SmallBlueArrow.png"
+                alt="Blue Arrow"
+                className="object-contain"
+                fill
+              />
+            </div>
             <p className="text-blue font-bold font-2xl italic font-appleGaramound">
               {props.second_header}
             </p>
