@@ -18,11 +18,11 @@ const AboutFifthSection = (props: TitleProps) => {
               fill
             />
           </div>
-          <div className="flex flex-col sm:mx-14 sm:mb-14 mx-6 mt-6 gap-3">
-            <h1 className="text-blue sm:text-2xl text-sm font-appleGaramound italic font-semibold">
-              We aim to be in our
-            </h1>
-            <h1 className="text-blue text-2xl lg:text-6xl md:text-5xl font-semibold tracking-wide font-artega">
+          <div className="flex flex-col sm:mx-14 sm:mb-14 mx-6 mt-6 gap-3 text-2xl lg:text-6xl md:text-5xl">
+            <h1 className=" flex flex-col gap-2 text-blue font-semibold tracking-wide font-artega">
+              <span className="text-blue sm:text-2xl text-sm font-appleGaramound italic font-semibold">
+                We aim to be in our
+              </span>{" "}
               {props.title}
             </h1>
           </div>
