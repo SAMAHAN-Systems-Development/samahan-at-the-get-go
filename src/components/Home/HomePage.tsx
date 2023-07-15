@@ -1,14 +1,13 @@
 import type { FC } from "react";
 import React from "react";
 
-import AboutThirdSectionOrangeCard from "@/components/ui/AboutPage/AboutThirdSectionOrangeCard";
-import Button from "@/components/ui/Button";
+import AboutThirdSectionOrangeCard from "@/components/ui/AboutPage/AboutThirdSection/AboutThirdSectionOrangeCard";
 
 const HomePage: FC = () => {
   return (
     <>
       <AboutThirdSectionOrangeCard first_header="We" second_header="Navigate" />
-      <Button
+      {/* <Button
         href="https://www.samahan.addu.edu.ph/"
         className="font-artega bg-beige text-white"
       >
@@ -19,7 +18,7 @@ const HomePage: FC = () => {
         className="font-appleGaramound bg-beige text-white"
       >
         Click Me!
-      </Button>
+      </Button> */}
     </>
   );
 };
