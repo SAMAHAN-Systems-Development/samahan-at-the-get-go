@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import InitativesTitleCard from "@/components/ui/Offices/InitiativesTitleCard";
 
 const meta: Meta<typeof InitativesTitleCard> = {
-  title: "UI/InitativesTitleCard",
+  title: "UI/Initatives Title Card",
   component: InitativesTitleCard,
 };
 
