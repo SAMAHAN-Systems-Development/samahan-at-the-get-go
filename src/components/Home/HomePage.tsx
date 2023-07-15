@@ -1,6 +1,7 @@
 import type { FC } from "react";
 import React from "react";
 
+import AboutForthSectionBlueCard from "@/components/ui/AboutPage/AboutFourthSection/AboutForthSectionBlueCard";
 import Button from "@/components/ui/Button";
 
 const HomePage: FC = () => {
@@ -18,6 +19,7 @@ const HomePage: FC = () => {
       >
         Click Me!
       </Button>
+      <AboutForthSectionBlueCard year="This 2023" />
     </>
   );
 };
