@@ -11,7 +11,7 @@ const AboutThirdSectionOrangeCard = (props: CardProps) => {
     <>
       {/* first card */}
       <div className="xl:w-3/5 md:w-full w-full bg-orange rounded-lg flex flex-col ">
-        <div className="relative w-24 h-24 mx-11 my-5">
+        <div className="relative w-24 h-24 mx-11 my-5 ">
           <Image
             src="/assets/images/BigBlueArrow.png"
             alt="Blue Arrow"
