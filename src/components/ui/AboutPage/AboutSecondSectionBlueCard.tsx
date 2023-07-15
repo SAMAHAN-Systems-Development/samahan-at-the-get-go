@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 type CardProps = {
   title: string;
@@ -10,9 +11,14 @@ const AboutSecondSectionBlueCard = (props: CardProps) => {
       {/* +++++++++++++++++++++++++++++++++++++++++++++second card+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
 
       <div className="relative xl:w-2/5 md:w-full w-full bg-blue rounded-card flex flex-col justify-center items-center gap-3">
-        <div className="flex xl:items-center sm:items-end xl:flex-col lg:flex-row md:flex-row  justify-between lg:gap-80 md:gap-80 xl:gap-10 sm:gap-10 my-5 flex-col">
-          <div className="flex justify-end ">
-            <p className="text-xl text-white flex">Logo</p>
+        <div className="flex xl:items-center items-end xl:flex-col lg:flex-row md:flex-row justify-between lg:gap-80 md:gap-80 xl:gap-10 sm:gap-10 my-5 flex-col">
+          <div className="flex justify-end xl:w-40 xl:h-40 md:w-24 md:h-24 w-12 h-12 relative ">
+            <Image
+              src="/assets/images/whiteArrow.png"
+              alt="White Arrow"
+              className="object-contain"
+              fill
+            />
           </div>
 
           <h1 className="text-white xl:text-7xl text-5xl tracking-wider font-semibold font-helvetica mt-5">
@@ -20,7 +26,7 @@ const AboutSecondSectionBlueCard = (props: CardProps) => {
           </h1>
         </div>
 
-        <div className="flex mx-10 my-6">
+        <div className="flex mx-10 mt-4 mb-6">
           <p className="text-white font-base text-lg text-justify">
             We venture back to the University life we yearned for so long, and
             actualize what we collectively envision as the next generation of
