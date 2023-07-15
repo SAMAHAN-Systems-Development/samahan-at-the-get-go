@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import React from "react";
 
-import AboutSecondSectionWhiteCard from "@/components/ui/AboutPage/AboutSecondSectionWhiteCard";
+import AboutSecondSection from "@/components/ui/AboutPage/AboutSecondSection/AboutSecondSection";
 
 const HomePage: FC = () => {
   return (
@@ -18,10 +18,7 @@ const HomePage: FC = () => {
       >
         Click Me!
       </Button> */}
-      <AboutSecondSectionWhiteCard
-        first_header="Commitment"
-        second_header="Navigate"
-      />
+      <AboutSecondSection />
     </>
   );
 };
