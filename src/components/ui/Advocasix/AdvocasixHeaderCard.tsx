@@ -15,12 +15,12 @@ const AdvocasixHeaderCard = () => {
             style={{ objectFit: "contain" }}
           />
         </div>
-        <div className="font-appleGaramound italic text-white text-xl lg:text-title-md">
+        <p className="font-appleGaramound italic text-white text-xl lg:text-title-md">
           Six Pillar Advocacies
-        </div>
-        <div className="font-artega text-white text-title-md lg:text-title-lg">
+        </p>
+        <p className="font-artega text-white text-title-md lg:text-title-lg">
           We Are:
-        </div>
+        </p>
       </div>
     </>
   );
