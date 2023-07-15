@@ -11,7 +11,7 @@ const AboutThirdSection = () => {
           first_header="We"
           second_header="Navigate"
         />
-        <div className="relative w-2/5 h-96">
+        <div className="relative xl:w-2/5 md:w-full w-full xl:h-auto lg:h-96 h-96 rounded-card">
           <Image
             src="/assets/images/RoxasGate (2).png"
             alt="Ateneo Gate"
