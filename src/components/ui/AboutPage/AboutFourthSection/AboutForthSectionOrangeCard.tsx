@@ -19,7 +19,7 @@ const AboutForthSectionOrangeCard = (props: CardProps) => {
           </div>
 
           <div className="flex flex-col ml-12 mb-6">
-            <h1 className="text-white lg:text-4xl text-3xl font-normal font-artega">
+            <h1 className="text-white lg:text-4xl text-xl font-normal font-artega">
               {props.year}
             </h1>
           </div>
