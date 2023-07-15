@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="w-full bg-beige text-lightBlue p-10">
       <div className="grid grid-cols-1">
-        <div className="lg:grid lg:grid-cols-2">
+        <div className="lg:grid lg:grid-cols-2 ">
           <div>
             <div className="flex flex-row">
               <div className="h-20 w-20 relative mb-5">
@@ -42,8 +42,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="mb-10 md:text-sm lg:flex lg:flex-col lg:absolute lg:justify-self-end">
-            <div className="md:grid md:grid-cols-2 md:gap-10 md:w-[415px] lg:flex lg:flex-col">
+          <div className="mb-10 md:text-sm lg:grid lg:grid-cols-1 lg:justify-items-end lg:text-right">
+            <div className="md:grid md:grid-cols-2 md:gap-10 md:w-[415px] lg:grid lg:grid-cols-1 lg:gap-2">
               <div className="mb-2 md:flex md:flex-wrap md:w-[215px]">
                 <p className="font-bold">Address</p>
                 <p className="font-normal leading-[0.875rem]">
@@ -57,7 +57,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="md:grid md:grid-cols-2 gap-10 md:w-[415px]">
+            <div className="md:grid md:grid-cols-2 gap-10 md:w-[415px] lg:grid lg:grid-cols-1 lg:gap-2 ">
               <div className="mb-2">
                 <p className="font-bold">E-mail</p>
                 <p className="font-normal">samahan@addu.edu.ph</p>
