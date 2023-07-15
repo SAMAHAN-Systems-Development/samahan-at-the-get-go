@@ -11,27 +11,27 @@ const OfficesTitleCardComponent: React.FC<OfficesTitleCardComponentProps> = ({
   officesPosition,
 }) => {
   return (
-    <div className="grid content-between mx-4 p-4 h-[262px] overflow-hidden text-lightBlue bg-transparent rounded-card border-card border-lightBlue sm:h-[400px] md:h-[622px] md:p-11 lg:h-[613px] lg:p-16">
+    <div className="w-full overflow-hidden grid content-between border-solid border-card border-lightBlue rounded-section-card text-lightBlue py-4 px-7 h-[16.375rem] sm:h-[22.45rem] sm:py-5 sm:px-12 md:h-[34.375rem] md:py-6 md:px-16 lg:h-[42.5625rem] lg:px-22 lg:py-7">
       <div className="flex flex-row w-full justify-between">
         <p className="font-artega font-medium text-sm sm:text-l md:text-xl lg:text-2xl">
           00
         </p>
-        <div className="relative mr-4 ">
+        <div className="relative ml-auto h-[3.23444rem] w-[2rem] sm:h-[3.23444rem] sm:w-[2rem] md:w-[3.3125rem] md:h-[5.357rem] lg:w-[3.3125rem] lg:h-[5.357rem]">
           <Image
             alt="AtTheGetGoLogo"
             src={SamahanAtTheGetGoLogo}
-            className="object-contain h-[52px] w-[32px] sm:h-[62px] sm:w-[41px] md:w-[53px] md:h-[86px] lg:w-[53px] lg:h-[86px]"
+            className="object-contain"
           />
         </div>
       </div>
-      <div className="">
-        <p className="font-appleGaramond  italic font-bold text-[1.5625rem] -mb-2 sm:text-[2.1rem] sm:-mb-4 md:text-[3.0625rem] md:-mb-6 lg:text-[4.75rem] lg:-mb-8 ">
+      <h1>
+        <span className="font-appleGaramond block italic font-bold text-[1.5625rem] sm:text-[2.1rem] md:text-[3.0625rem] lg:text-[4.75rem] leading-[1.2rem] sm:leading-[2rem] md:leading-[2.7rem] lg:leading-[4rem]">
           Office of the
-        </p>
-        <h1 className="font-artega text-wrap font-medium text-[1.9375rem] w-[240px] sm:text-[2.5rem] md:text-[3.8125rem] md:w-[530px] lg:w-[860px] lg:text-[7.4375rem]">
+        </span>
+        <span className="font-artega block text-wrap font-medium text-[1.5rem] w-[20.3125rem] sm:text-[2.5rem] md:text-[3.8125rem] md:w-[46rem] lg:w-[60rem] lg:text-[7rem] leading-[2rem] sm:leading-[3rem] md:leading-[4.5rem] lg:leading-[8rem]">
           {officesPosition}
-        </h1>
-      </div>
+        </span>
+      </h1>
     </div>
   );
 };
