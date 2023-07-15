@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 type CardProps = {
   first_header: string;
@@ -9,16 +10,23 @@ const AboutSecondSectionWhiteCard = (props: CardProps) => {
   return (
     <>
       {/* first card */}
-      <div className="xl:w-3/5 md:w-full w-full border-2 border-blue rounded-lg flex flex-col ">
-        <div className="flex flex-row justify-between m-11">
-          <p className="text-blue">a</p>
-          <p className="text-blue text-base font-bold font-artega">
+      <div className="xl:w-3/5 md:w-full w-full border-card border-blue rounded-card flex flex-col ">
+        <div className="flex flex-row justify-between sm:m-11 m-6">
+          <div className="relative w-16 h-5">
+            <Image
+              src="/assets/images/BlueArrow.png"
+              alt="Blue Arrow"
+              className="object-contain"
+              fill
+            />
+          </div>
+          <p className="text-blue sm:text-base text-sm font-bold font-artega">
             Since 1982
           </p>
         </div>
 
         <div className="flex flex-col justify-center">
-          <div className="flex flex-col ml-10 mb-6">
+          <div className="flex flex-col sm:ml-10 ml-5 mb-6">
             <h1 className="text-blue text-4xl italic font-appleGaramound">
               The
             </h1>
@@ -32,7 +40,14 @@ const AboutSecondSectionWhiteCard = (props: CardProps) => {
           </div>
 
           <div className="flex flex-row gap-3 my-6 ml-10">
-            <p className="text-blue">arrow</p>
+            <div className="relative w-10 h-5">
+              <Image
+                src="/assets/images/SmallBlueArrow.png"
+                alt="Blue Arrow"
+                className="object-contain"
+                fill
+              />
+            </div>
             <p className="text-blue font-bold font-2xl italic font-appleGaramound">
               {props.first_header}
             </p>
@@ -40,9 +55,9 @@ const AboutSecondSectionWhiteCard = (props: CardProps) => {
 
           <div className="flex mx-10 mb-6">
             <p className="text-blue font-bold lg:text-lg md:text-base text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim
+              remains committed in our collective agenda of creating impactful
+              results, solutions, and initiatives{" "}
+              <span className="text-orange">for the greater communities.</span>
             </p>
           </div>
 
@@ -52,7 +67,14 @@ const AboutSecondSectionWhiteCard = (props: CardProps) => {
           </div>
 
           <div className="flex flex-row gap-3 my-6 ml-10">
-            <p className="text-blue">arrow</p>
+            <div className="relative w-10 h-5">
+              <Image
+                src="/assets/images/SmallBlueArrow.png"
+                alt="Blue Arrow"
+                className="object-contain"
+                fill
+              />
+            </div>
             <p className="text-blue font-bold font-2xl italic font-appleGaramound">
               {props.second_header}
             </p>
@@ -60,10 +82,10 @@ const AboutSecondSectionWhiteCard = (props: CardProps) => {
 
           <div className="flex mx-10 mb-6">
             <p className="text-blue font-bold lg:text-lg md:text-base text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo
+              endures, and actively continues to be at the heart of navigating{" "}
+              <span className="text-orange">
+                our ever-changing University with, for, and by our students.
+              </span>
             </p>
           </div>
         </div>
