@@ -1,9 +1,9 @@
 import React from "react";
 
-interface OfficesCardComponentProps {
+type OfficesCardComponentProps = {
   officesTitle: string;
   officesDescription: string;
-}
+};
 
 const OfficesCardComponent: React.FC<OfficesCardComponentProps> = ({
   officesTitle,
