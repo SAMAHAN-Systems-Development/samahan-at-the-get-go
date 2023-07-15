@@ -20,8 +20,8 @@ const HomePage: FC = () => {
         Click Me!
       </Button>
       <OfficesCardComponent
-        officesTitle="The OSP"
-        officesDescription="is the highest executive office, aims to establish harmony and efficiency in both the internal operations of the student government and external relations."
+        Title="The OSP"
+        Description="is the highest executive office, aims to establish harmony and efficiency in both the internal operations of the student government and external relations."
       />
     </>
   );
