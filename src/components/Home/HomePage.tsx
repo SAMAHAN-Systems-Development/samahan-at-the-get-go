@@ -1,12 +1,12 @@
 import type { FC } from "react";
 import React from "react";
 
-import AboutFirstSection from "@/components/ui/AboutPage/AboutFirstSection/AboutFirstSection";
+import Button from "@/components/ui/Button";
 
 const HomePage: FC = () => {
   return (
     <>
-      {/* <Button
+      <Button
         href="https://www.samahan.addu.edu.ph/"
         className="font-artega bg-beige text-white"
       >
@@ -17,8 +17,7 @@ const HomePage: FC = () => {
         className="font-appleGaramound bg-beige text-white"
       >
         Click Me!
-      </Button> */}
-      <AboutFirstSection title="SAMAHAN" />
+      </Button>
     </>
   );
 };
