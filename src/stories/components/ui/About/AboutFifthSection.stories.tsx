@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import AboutFifthSection from "@/components/ui/AboutFifthSection";
+import AboutFifthSection from "@/components/ui/AboutPage/AboutFifthSection/AboutFifthSection";
 
 const meta: Meta<typeof AboutFifthSection> = {
-  title: "UI/ AboutFifthSection",
+  title: "About/AboutFifthSection",
   component: AboutFifthSection,
 };
 
