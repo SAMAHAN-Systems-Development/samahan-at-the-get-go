@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import React from "react";
 
-import AboutSecondSectionWhiteCard from "@/components/ui/AboutPage/AboutSecondSectionWhiteCard";
+import AboutSecondSectionWhiteCard from "@/components/ui/AboutPage/AboutSecondSection/AboutSecondSectionWhiteCard";
 
 const HomePage: FC = () => {
   return (
