@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import AdvocasixCard from '@/components/ui/Advocasix/AdvocasixCard';
+import AdvocasixCard from '@/components/ui/ModalCardButton';
 
 const meta: Meta<typeof AdvocasixCard> = {
   title: 'UI/AdvocasixCard',

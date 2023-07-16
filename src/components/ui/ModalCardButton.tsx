@@ -13,7 +13,7 @@ type CardType = {
 const cardSize = cva(['relative w-full rounded-card overflow-hidden'], {
   variants: {
     size: {
-      fat: 'h-44 md:h-48 lg:h-56',
+      fat: 'h-[11.5rem] lg:h-56',
       thin: 'h-28 md:h-32',
     },
   },
@@ -26,14 +26,14 @@ const cardContent = cva(
   {
     variants: {
       size: {
-        fat: 'text-xl md:text-3xl px-10 py-8 md:px-18 md:py-11',
-        thin: 'text-lg md:text-xl px-10 py-2 md:px-14',
+        fat: 'text-xl lg:text-3xl px-5 md:px-10 py-4 lg:px-20 lg:py-11',
+        thin: 'text-xs md:text-base lg:text-xl px-4 py-2 md:px-7 lg:px-14',
       },
     },
   }
 );
 
-const AdvocasixCard: FC<CardType> = ({ title, imageUrl, size }) => {
+const ModalCardButton: FC<CardType> = ({ title, imageUrl, size }) => {
   return (
     <div className={cardSize({ size })}>
       <Image
@@ -53,4 +53,4 @@ const AdvocasixCard: FC<CardType> = ({ title, imageUrl, size }) => {
   );
 };
 
-export default AdvocasixCard;
+export default ModalCardButton;

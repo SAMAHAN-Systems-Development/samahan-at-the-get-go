@@ -1,24 +1,24 @@
-import AdvocasixCard from '@/components/ui/Advocasix/AdvocasixCard';
+import ModalCardButton from '@/components/ui/ModalCardButton';
 
 export default function page() {
   return (
     <div className="flex flex-col gap-4 p-4">
-      <AdvocasixCard
+      <ModalCardButton
         title="Climate Action"
         imageUrl="/assets/images/placeholder.jpg"
         size="fat"
       />
-      <AdvocasixCard
+      <ModalCardButton
         title="Gay Pride"
         imageUrl="/assets/images/placeholder.jpg"
         size="fat"
       />
-      <AdvocasixCard
+      <ModalCardButton
         title="Ecolocation"
         imageUrl="/assets/images/placeholder.jpg"
         size="thin"
       />
-      <AdvocasixCard
+      <ModalCardButton
         title="Ecolocation"
         imageUrl="/assets/images/placeholder.jpg"
         size="thin"
