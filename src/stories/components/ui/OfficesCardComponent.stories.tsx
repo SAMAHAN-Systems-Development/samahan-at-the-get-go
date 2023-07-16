@@ -1,9 +1,9 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from '@storybook/react';
 
-import OfficesCardComponent from "@/components/ui/OfficesCardComponent";
+import OfficesCardComponent from '@/components/ui/OfficesCardComponent';
 
 const meta: Meta<typeof OfficesCardComponent> = {
-  title: "UI/Offices Card Component",
+  title: 'UI/Offices Card Component',
   component: OfficesCardComponent,
 };
 
@@ -12,8 +12,8 @@ type OfficesCardComponentStory = StoryObj<typeof OfficesCardComponent>;
 
 export const Primary: OfficesCardComponentStory = {
   args: {
-    Title: "Title",
-    Description: "Description",
+    title: 'Title',
+    description: 'Description',
   },
   render: (args) => <OfficesCardComponent {...args} />,
 };
