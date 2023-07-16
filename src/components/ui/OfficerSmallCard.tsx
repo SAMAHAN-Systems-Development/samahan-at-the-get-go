@@ -1,18 +1,17 @@
 import React from "react";
 import Image from "next/image";
 
-interface Officer {
-  firstName: string;
-  lastName: string;
-  position: string;
-}
-interface OfficerSmallCard {
-  officer: Officer;
+type OfficerSmallCardProps = {
+  officer: {
+    firstName: string;
+    lastName: string;
+    position: string;
+  };
   department?: string;
   imageUrl: string;
-}
+};
 
-const OfficerSmallCard: React.FC<OfficerSmallCard> = ({
+const OfficerSmallCard: React.FC<OfficerSmallCardProps> = ({
   officer,
   department,
   imageUrl,
