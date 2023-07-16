@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+  --tw-shadow-color: rgb(128, 128, 128);
   --color-white: 250 246 242;
   --color-blue: 0 28 121;
   --color-lightBlue: 38 49 103;
