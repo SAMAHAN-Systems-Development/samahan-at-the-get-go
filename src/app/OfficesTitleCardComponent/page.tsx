@@ -5,10 +5,10 @@ import OfficesTitleCardComponent from "@/components/ui/OfficesTitleCardComponent
 const page = () => {
   return (
     <div>
-      <OfficesTitleCardComponent officesPosition="SECRETARY GENERAL" />
-      <OfficesTitleCardComponent officesPosition="PRESIDENT" />
-      <OfficesTitleCardComponent officesPosition="VICE PRESIDENT" />
-      <OfficesTitleCardComponent officesPosition="TREASURER" />
+      <OfficesTitleCardComponent position="SECRETARY GENERAL" />
+      <OfficesTitleCardComponent position="PRESIDENT" />
+      <OfficesTitleCardComponent position="VICE PRESIDENT" />
+      <OfficesTitleCardComponent position="TREASURER" />
     </div>
   );
 };

@@ -12,7 +12,7 @@ type Story = StoryObj<typeof OfficesTitleCardComponent>;
 
 export const Primary: Story = {
   args: {
-    officesPosition: "PRESIDENT",
+    position: "PRESIDENT",
   },
   render: (args) => <OfficesTitleCardComponent {...args} />,
 };

@@ -2,7 +2,6 @@ import type { FC } from "react";
 import React from "react";
 
 import Button from "@/components/ui/Button";
-import OfficesTitleCardComponent from "@/components/ui/OfficesTitleCardComponent";
 
 const HomePage: FC = () => {
   return (
@@ -19,7 +18,6 @@ const HomePage: FC = () => {
       >
         Click Me!
       </Button>
-      <OfficesTitleCardComponent officesPosition="SECRETARY GENERAL" />
     </>
   );
 };
