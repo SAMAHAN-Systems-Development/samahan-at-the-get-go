@@ -1,44 +1,46 @@
 import React from "react";
 import Image from "next/image";
 
-interface OfficerSmallCard {
+interface Officer {
   firstName: string;
   lastName: string;
   position: string;
+}
+interface OfficerSmallCard {
+  officer: Officer;
   department?: string;
   imageUrl: string;
 }
 
 const OfficerSmallCard: React.FC<OfficerSmallCard> = ({
-  firstName,
-  lastName,
-  position,
+  officer,
   department,
   imageUrl,
 }) => {
+  const { firstName, lastName, position } = officer;
   return (
-    <div className="flex flex-col items-center gap-y-5">
-      <div className="h-[163px] md:h-[187px] w-[148px] md:w-[171px] relative rounded-card">
-        <Image src={imageUrl} alt={lastName} fill />
+    <div className="flex flex-col items-center gap-y-5 p-4">
+      <div className="h-[10.188rem] md:h-[11.688rem] w-[9.25rem] md:w-[10.688rem] relative rounded-card">
+        <Image src={imageUrl} alt={lastName} fill quality={100} />
       </div>
       <div className="flex flex-col items-center">
-        <div className=" flex flex-col items-center">
-          <h2 className="text-[13px] md:text-[16px] text-[#1A275F] font-appleGaramond font-bold italic text-shadow-soft leading-5">
+        <div className="flex flex-col items-center">
+          <p className="text-[0.813rem] md:text-[1rem] text-blue font-appleGaramond font-bold italic text-shadow-soft leading-5">
             {firstName}
-          </h2>
-          <h2 className="text-[16px] md:text-[20px] font-artega text-[#1A275F] uppercase leading-5 font-medium">
+          </p>
+          <p className="text-[1rem] md:text-[1.25rem] font-artega text-blue uppercase leading-5 font-medium">
             {lastName}
-          </h2>
+          </p>
         </div>
       </div>
-      <div className="flex-col flex-shrink-0 flex max-w-[193px] max-h-[30px] text-[#263167] text-[13px] font-normal text-center leading-normal">
+      <div className="flex-col flex-shrink-0 flex max-w-[12.063rem] max-h-[1.875rem] text-blue text-[0.813rem] font-normal text-center leading-normal">
         {department ? (
           <>
-            <span className="font-bold">{position}</span>
-            <span>{department}</span>
+            <p className="font-bold">{position}</p>
+            <p>{department}</p>
           </>
         ) : (
-          <span>{position}</span>
+          <p>{position}</p>
         )}
       </div>
     </div>
