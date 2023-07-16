@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
+import imgSrc from 'public/assets/images/Legaspina.jpg';
 
 import OfficerLargeCard from '@/components/ui/OfficerLargeCard';
 
@@ -17,7 +18,7 @@ export const Default: Story = {
       lastName: 'Legaspina',
       position: 'President',
     },
-    imageUrl: '/assets/images/Legaspina.jpg',
+    imageUrl: imgSrc,
     isButton: true,
   },
   render: (args) => <OfficerLargeCard {...args} />,
