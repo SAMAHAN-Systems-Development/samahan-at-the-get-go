@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
-import OfficesCardComponent from "@/components/ui/OfficesCardComponent";
+import OfficesCardComponent from '@/components/ui/OfficesCardComponent';
 
 const page = () => {
   return (
     <div>
       <OfficesCardComponent
-        Title="The OSP"
-        Description="is the highest executive office, aims to establish harmony and efficiency in both the internal operations of the student government and external relations."
+        title="The OSP"
+        description="is the highest executive office, aims to establish harmony and efficiency in both the internal operations of the student government and external relations."
       />
     </div>
   );

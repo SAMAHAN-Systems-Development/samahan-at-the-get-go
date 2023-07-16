@@ -1,8 +1,7 @@
-import type { FC } from "react";
-import React from "react";
+import type { FC } from 'react';
+import React from 'react';
 
-import Button from "@/components/ui/Button";
-import OfficesCardComponent from "@/components/ui/OfficesCardComponent";
+import Button from '@/components/ui/Button';
 
 const HomePage: FC = () => {
   return (
@@ -19,10 +18,6 @@ const HomePage: FC = () => {
       >
         Click Me!
       </Button>
-      <OfficesCardComponent
-        Title="The OSP"
-        Description="is the highest executive office, aims to establish harmony and efficiency in both the internal operations of the student government and external relations."
-      />
     </>
   );
 };
