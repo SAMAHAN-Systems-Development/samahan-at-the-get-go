@@ -3,27 +3,28 @@
 @tailwind utilities;
 
 :root {
-    --color-white: 250 246 242;
-    --color-blue: 0 28 121;
-    --color-lightBlue: 38 49 103;
-    --color-orange: 237 117 31;
-    --color-yellow: 255 187 70;
-    --color-lightYellow: 252 214 77;
-    --color-beige: 220 205 187;
-    --tw-shadow-color: rgb(128, 128, 128);
+  --tw-shadow-color: rgb(128, 128, 128);
+  --color-white: 250 246 242;
+  --color-blue: 0 28 121;
+  --color-lightBlue: 38 49 103;
+  --color-orange: 237 117 31;
+  --color-yellow: 255 187 70;
+  --color-lightYellow: 252 214 77;
+  --color-beige: 220 205 187;
+  --color-darkBeige: 184 170 152;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: "border-box";
+  box-sizing: 'border-box';
 }
 
 * {
-    margin: "0";
+  margin: '0';
 }
 
 img {
-    max-width: "100%";
-    display: "block";
+  max-width: '100%';
+  display: 'block';
 }
