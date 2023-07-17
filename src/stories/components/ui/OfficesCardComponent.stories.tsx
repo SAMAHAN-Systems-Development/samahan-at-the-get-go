@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import OfficesCardComponent from '@/components/ui/OfficesCardComponent';
+import OfficesCardComponent from '@/components/ui/Offices/OfficesCardComponent';
 
 const meta: Meta<typeof OfficesCardComponent> = {
   title: 'UI/Offices Card Component',

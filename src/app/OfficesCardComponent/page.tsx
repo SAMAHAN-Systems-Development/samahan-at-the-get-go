@@ -1,6 +1,6 @@
 import React from 'react';
 
-import OfficesCardComponent from '@/components/ui/OfficesCardComponent';
+import OfficesCardComponent from '@/components/ui/Offices/OfficesCardComponent';
 
 const page = () => {
   return (
