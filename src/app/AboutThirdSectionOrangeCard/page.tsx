@@ -1,9 +1,9 @@
-import AboutThirdSectionOrangeCard from "@/components/ui/AboutPage/AboutThirdSection/AboutThirdSectionOrangeCard";
+import AboutThirdSectionOrangeCard from '@/components/ui/AboutPage/AboutThirdSection/WeNavigateCard';
 
 export default function Home() {
   return (
     <main>
-      <AboutThirdSectionOrangeCard first_header="We" second_header="Navigate" />
+      <AboutThirdSectionOrangeCard />
     </main>
   );
 }
