@@ -1,12 +1,7 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
 
-type CardProps = {
-  first_header: string;
-  second_header: string;
-};
-
-const AboutSecondSectionWhiteCard = (props: CardProps) => {
+const TheSamahanCard = () => {
   return (
     <>
       {/* first card */}
@@ -26,13 +21,13 @@ const AboutSecondSectionWhiteCard = (props: CardProps) => {
         </div>
 
         <div className="flex flex-col justify-center">
-          <div className="flex flex-col sm:ml-10 ml-5 mb-6">
-            <h1 className="text-blue text-4xl italic font-appleGaramound">
-              The
-            </h1>
-            <h1 className="text-blue lg:text-6xl md:text-4xl text-xl font-semibold font-artega">
+          <div className="flex sm:ml-10 ml-5 mb-6">
+            <h2 className=" flex flex-col text-blue lg:text-6xl md:text-4xl text-xl font-semibold font-artega">
+              <span className="text-blue text-4xl italic font-appleGaramond">
+                The
+              </span>
               SAMAHAN
-            </h1>
+            </h2>
           </div>
           {/* divider */}
           <div className="flex justify-center items-center my-4">
@@ -48,15 +43,15 @@ const AboutSecondSectionWhiteCard = (props: CardProps) => {
                 fill
               />
             </div>
-            <p className="text-blue font-bold font-2xl italic font-appleGaramound">
-              {props.first_header}
+            <p className="text-blue font-bold font-2xl font-appleGaramond">
+              Commitment
             </p>
           </div>
 
           <div className="flex mx-10 mb-6">
             <p className="text-blue font-bold lg:text-lg md:text-base text-sm">
               remains committed in our collective agenda of creating impactful
-              results, solutions, and initiatives{" "}
+              results, solutions, and initiatives{' '}
               <span className="text-orange">for the greater communities.</span>
             </p>
           </div>
@@ -75,14 +70,14 @@ const AboutSecondSectionWhiteCard = (props: CardProps) => {
                 fill
               />
             </div>
-            <p className="text-blue font-bold font-2xl italic font-appleGaramound">
-              {props.second_header}
+            <p className="text-blue font-bold font-2xl font-appleGaramond">
+              Navigate
             </p>
           </div>
 
           <div className="flex mx-10 mb-6">
             <p className="text-blue font-bold lg:text-lg md:text-base text-sm">
-              endures, and actively continues to be at the heart of navigating{" "}
+              endures, and actively continues to be at the heart of navigating{' '}
               <span className="text-orange">
                 our ever-changing University with, for, and by our students.
               </span>
@@ -94,4 +89,4 @@ const AboutSecondSectionWhiteCard = (props: CardProps) => {
   );
 };
 
-export default AboutSecondSectionWhiteCard;
+export default TheSamahanCard;
