@@ -1,9 +1,9 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from '@storybook/react';
 
-import SCBTitleCard from "@/components/ui/SCB/SCBTitleCard";
+import SCBTitleCard from '@/components/ui/SCB/SCBTitleCard';
 
 const meta: Meta<typeof SCBTitleCard> = {
-  title: "UI/SCB/SCB Title Card",
+  title: 'UI/SCB/SCB Title Card',
   component: SCBTitleCard,
 };
 
