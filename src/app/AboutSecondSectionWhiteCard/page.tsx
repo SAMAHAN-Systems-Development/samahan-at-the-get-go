@@ -1,12 +1,9 @@
-import AboutSecondSectionWhiteCard from "@/components/ui/AboutPage/AboutSecondSection/AboutSecondSectionWhiteCard";
+import AboutSecondSectionWhiteCard from '@/components/ui/AboutPage/AboutSecondSection/TheSamahanCard';
 
 export default function Home() {
   return (
     <main>
-      <AboutSecondSectionWhiteCard
-        first_header="Commitment"
-        second_header="Navigate"
-      />
+      <AboutSecondSectionWhiteCard />
     </main>
   );
 }
