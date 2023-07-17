@@ -1,18 +1,15 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from '@storybook/react';
 
-import AboutSecondSectionBlueCard from "@/components/ui/AboutPage/AboutSecondSection/AboutSecondSectionBlueCard";
+import ThisYearCard from '@/components/ui/AboutPage/AboutSecondSection/ThisYearCard';
 
-const meta: Meta<typeof AboutSecondSectionBlueCard> = {
-  title: "UI/AboutSecondSectionBlueCard",
-  component: AboutSecondSectionBlueCard,
+const meta: Meta<typeof ThisYearCard> = {
+  title: 'About /This Year Card',
+  component: ThisYearCard,
 };
 
 export default meta;
-type Story = StoryObj<typeof AboutSecondSectionBlueCard>;
+type Story = StoryObj<typeof ThisYearCard>;
 
 export const Primary: Story = {
-  args: {
-    title: "This Year",
-  },
-  render: (args) => <AboutSecondSectionBlueCard {...args} />,
+  render: () => <ThisYearCard />,
 };
