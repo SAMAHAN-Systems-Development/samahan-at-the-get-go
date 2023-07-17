@@ -1,0 +1,30 @@
+[
+  {
+    "position": "Chief-of-Staff",
+    "firstName": "John Paul",
+    "lastName": "Sapsal",
+    "yearSection": "4 BS Accountancy",
+    "imageSrc": "/assets/images/Sapsal.png"
+  },
+  {
+    "position": "Executive Secretary",
+    "firstName": "Alvin",
+    "lastName": "Parreñol",
+    "yearSection": "3 BS Civil Engineering",
+    "imageSrc": "/assets/images/Parreñol.png"
+  },
+  {
+    "position": "Executive Undersecretary",
+    "firstName": "Lendon John",
+    "lastName": "Gabato",
+    "yearSection": "2 BS Business Management",
+    "imageSrc": "/assets/images/Gabato.png"
+  },
+  {
+    "position": "Executive Undersecretary",
+    "firstName": "Mark Loyd",
+    "lastName": "Lipasan",
+    "yearSection": "2 AB Political Science",
+    "imageSrc": "/assets/images/Lipasan.png"
+  }
+]
