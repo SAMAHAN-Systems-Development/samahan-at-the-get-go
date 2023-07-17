@@ -1,16 +1,16 @@
-import React from "react";
+import React from 'react';
 import {
   appleGaramond,
   appleGaramondLight,
   appleGaramondBold,
   artega,
-} from "../src/styles/fonts";
-import "src/styles/globals.css";
-import type { Preview } from "@storybook/react";
+} from '../src/styles/fonts';
+import 'src/styles/globals.css';
+import type { Preview } from '@storybook/react';
 
 const preview: Preview = {
   parameters: {
-    actions: { argTypesRegex: "^on[A-Z].*" },
+    actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
       matchers: {
         color: /(background|color)$/i,
