@@ -1,7 +1,7 @@
-import type { FC } from "react";
-import React from "react";
+import type { FC } from 'react';
+import React from 'react';
 
-import Button from "@/components/ui/Button";
+import Button from '@/components/ui/Button';
 
 const HomePage: FC = () => {
   return (
