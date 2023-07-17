@@ -1,6 +1,6 @@
-import { cx } from "class-variance-authority";
-import type { ClassValue } from "class-variance-authority/dist/types";
-import { twMerge } from "tailwind-merge";
+import { cx } from 'class-variance-authority';
+import type { ClassValue } from 'class-variance-authority/dist/types';
+import { twMerge } from 'tailwind-merge';
 
 /**
  * This utility function merges and avoids styling conflicts in TailwindCSS.
