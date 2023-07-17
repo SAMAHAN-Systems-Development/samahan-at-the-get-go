@@ -1,22 +1,18 @@
-import React from "react";
+import React from 'react';
 
-type CardProps = {
-  year: string;
-};
-
-const AboutForthSectionBlueCard = (props: CardProps) => {
+const AboutForthSectionBlueCard = () => {
   return (
     <>
       {/* first card */}
-      <div className="w-full bg-blue rounded-lg flex flex-col">
-        <div className="flex flex-col justify-center mt-7">
-          <div className="flex flex-col ml-12 mb-4">
+      <div className="w-full bg-lightBlue rounded-lg flex flex-col p-14">
+        <div className="flex flex-col justify-center">
+          <div className="flex flex-col">
             <h1 className="text-white lg:text-5xl text-3xl font-medium font-artega">
-              {props.year}
+              This 2023
             </h1>
           </div>
 
-          <div className="flex mx-12 mb-6">
+          <div className="flex mt-8">
             <p className="text-white font-normal text-justify lg:text-lg md:text-base text-sm">
               For the past years, our SAMAHAN navigated a full circle of putting
               visions of every Atenean at the center. From there, we took a leap
