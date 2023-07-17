@@ -1,17 +1,11 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
 
-type CardProps = {
-  title: string;
-};
-
-const AboutSecondSectionBlueCard = (props: CardProps) => {
+const ThisYearCard = () => {
   return (
     <>
-      {/* +++++++++++++++++++++++++++++++++++++++++++++second card+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-
-      <div className="relative xl:w-2/5 md:w-full w-full bg-blue rounded-card flex flex-col justify-center items-center gap-3 ">
-        <div className="flex xl:items-center items-end xl:flex-col lg:flex-row md:flex-row justify-between lg:gap-80 md:gap-50 xl:gap-10 w-full px-16 sm:gap-10 my-5 flex-col">
+      <div className="relative xl:w-2/5 md:w-full w-full bg-lightBlue rounded-card flex flex-col justify-center items-center gap-3 py-14 ">
+        <div className="flex xl:items-center items-end xl:flex-col lg:flex-row md:flex-row justify-between w-full px-16 flex-col">
           <div className="flex justify-end xl:w-40 xl:h-40 md:w-16 md:h-16 w-12 h-12 relative">
             <Image
               src="/assets/images/whiteArrow.png"
@@ -22,7 +16,7 @@ const AboutSecondSectionBlueCard = (props: CardProps) => {
           </div>
 
           <h1 className="text-white xl:text-7xl text-3xl tracking-wider font-semibold font-helvetica mt-5 text-center">
-            {props.title}
+            This Year
           </h1>
         </div>
 
@@ -40,4 +34,4 @@ const AboutSecondSectionBlueCard = (props: CardProps) => {
   );
 };
 
-export default AboutSecondSectionBlueCard;
+export default ThisYearCard;

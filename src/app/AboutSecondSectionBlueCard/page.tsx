@@ -1,9 +1,9 @@
-import AboutSecondSectionBlueCard from "@/components/ui/AboutPage/AboutSecondSection/AboutSecondSectionBlueCard";
+import AboutSecondSectionBlueCard from '@/components/ui/AboutPage/AboutSecondSection/ThisYearCard';
 
 export default function Home() {
   return (
     <main>
-      <AboutSecondSectionBlueCard title="This Year" />
+      <AboutSecondSectionBlueCard />
     </main>
   );
 }
