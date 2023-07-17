@@ -1,4 +1,4 @@
-import AboutFirstSection from "@/components/ui/AboutPage/AboutFirstSection/AboutFirstSection";
+import AboutFirstSection from '@/components/ui/AboutPage/AboutFirstSection/AboutHeroSection';
 
 export default function Home() {
   return (
