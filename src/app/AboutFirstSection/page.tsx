@@ -3,7 +3,7 @@ import AboutFirstSection from '@/components/ui/AboutPage/AboutFirstSection/About
 export default function Home() {
   return (
     <main>
-      <AboutFirstSection title="SAMAHAN" />
+      <AboutFirstSection />
     </main>
   );
 }
