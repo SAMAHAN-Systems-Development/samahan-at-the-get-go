@@ -1,15 +1,9 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
 
-type OfficerSmallCardProps = {
-  officer: {
-    firstName: string;
-    lastName: string;
-    position: string;
-  };
-  department?: string;
-  imageUrl: string;
-};
+import type { OfficerSmallCardType } from 'library/types/OfficerSmallCardType';
+
+type OfficerSmallCardProps = OfficerSmallCardType;
 
 const OfficerSmallCard: React.FC<OfficerSmallCardProps> = ({
   officer,
