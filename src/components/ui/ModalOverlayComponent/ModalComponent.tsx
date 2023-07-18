@@ -1,17 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
+import Logo from '/public/assets/images/SamahanAtTheGetGoLogo.png';
 
-import Logo from 'public/assets/images/SamahanAtTheGetGoLogo.png';
-
-interface ModalOverlayComponentProps {
+interface ModalComponentProps {
   imageUrl: string;
-  hashTag: string;
+  hashTag?: string;
   title: string;
   description: string;
   link: string;
 }
 
-const ModalOverlayComponent: React.FC<ModalOverlayComponentProps> = ({
+const ModalOverlayComponent: React.FC<ModalComponentProps> = ({
   imageUrl,
   hashTag,
   title,
@@ -27,14 +26,16 @@ const ModalOverlayComponent: React.FC<ModalOverlayComponentProps> = ({
         <div>
           <div className="px-[2.25rem] bg-[#FAF6F2] text-[#263167]">
             <div className="pt-[2.5rem]">
-              <p className="font-appleGaramond text-[0.7rem] text-[#ED751F] italic pb-[0.001rem] font-bold">
-                {hashTag}
-              </p>
+              {hashTag && (
+                <p className="font-appleGaramond text-[0.7rem] text-[#ED751F] italic pb-[0.001rem] font-bold">
+                  {hashTag}
+                </p>
+              )}
               <div className="flex items-center justify-between">
                 <p className="font-artega text-xl">{title}</p>
                 <div className="ml-auto">
                   <Image
-                    alt=""
+                    alt="/"
                     src={Logo}
                     width={18}
                     height={50}

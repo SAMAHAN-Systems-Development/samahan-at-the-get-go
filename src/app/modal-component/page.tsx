@@ -1,6 +1,5 @@
 import React from 'react';
-
-import ModalOverlay from '@/components/ui/ModalOverlayComponent/ModalOverlayComponent';
+import ModalOverlay from '../../components/ui/ModalOverlayComponent/ModalComponent';
 
 const page = () => {
   return (
