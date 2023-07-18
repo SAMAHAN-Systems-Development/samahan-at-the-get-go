@@ -35,7 +35,7 @@ const OfficerLargeCard: React.FC<OfficerLargeCardProps> = ({
   isButton,
 }) => {
   return (
-    <div className="h-64 relative block overflow-hidden bg-blue max-w-2xl rounded-[0.938rem] shadow lg:h-72">
+    <div className="h-64 relative block overflow-hidden bg-blue w-full max-w-2xl rounded-[0.938rem] shadow lg:h-72">
       <Image
         src={imageUrl}
         alt={lastName}
@@ -44,7 +44,7 @@ const OfficerLargeCard: React.FC<OfficerLargeCardProps> = ({
         placeholder="blur"
       />
       <div className={cardVariants({ isButton })}>
-        <div className="text-shadow text-xl leading-6 sm:text-[1.5rem] sm:leading-7 md:text-title-sm md:leading-title-sm lg:text-title-md lg:leading-title-md group-hover/overlay:translate-x-3 transition-all ease-in-out duration-300">
+        <div className="text-shadow text-xl leading-6 sm:text-title-sm sm:leading-title-sm lg:text-title-md lg:leading-title-md group-hover/overlay:translate-x-3 transition-all ease-in-out duration-300">
           <p className="font-appleGaramond-bold italic">{firstName}</p>
           <p className="font-artega uppercase">{lastName}</p>
           <p className="font-sans uppercase">{position}</p>
