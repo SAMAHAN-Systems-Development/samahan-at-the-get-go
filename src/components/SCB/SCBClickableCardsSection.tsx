@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-import type { largeOfficer } from 'lib/types/largeOfficerType';
+import type { officer } from 'lib/types/officerType';
 
 import CunananImage from '/public/assets/images/Cunanan.jpg';
 import DabonImage from '/public/assets/images/Dabon.jpg';
@@ -10,7 +10,7 @@ import LegaspinaImage from '/public/assets/images/Legaspina.jpg';
 import OfficerLargeCard from '@/components/ui/OfficerLargeCard';
 import { cn } from '@/utils/cvaUtils';
 
-const SCBOfficers: largeOfficer[] = [
+const SCBOfficers: officer[] = [
   {
     officer: {
       firstName: 'Chyna Marie',
@@ -53,7 +53,7 @@ const SCBClickableCardsSection = () => {
   return (
     <section className="bg-lightBlue mt-5 rounded-section-card py-12 px-5 md:py-12 lg:py-16 lg:px-7">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-        {SCBOfficers.map((officer: largeOfficer, index: number) => {
+        {SCBOfficers.map((officer: officer, index: number) => {
           if (officer.link) {
             return (
               <Link
