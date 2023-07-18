@@ -1,3 +1,5 @@
+import placeholder from 'public/assets/images/placeholder.jpg';
+
 import ModalCardButton from '@/components/ui/ModalCardButton';
 
 export default function page() {
@@ -5,24 +7,12 @@ export default function page() {
     <div className="flex flex-col gap-4 p-4">
       <ModalCardButton
         title="Climate Action"
-        imageUrl="/assets/images/placeholder.jpg"
+        imageUrl={placeholder}
         size="fat"
       />
-      <ModalCardButton
-        title="Gay Pride"
-        imageUrl="/assets/images/placeholder.jpg"
-        size="fat"
-      />
-      <ModalCardButton
-        title="Ecolocation"
-        imageUrl="/assets/images/placeholder.jpg"
-        size="thin"
-      />
-      <ModalCardButton
-        title="Ecolocation"
-        imageUrl="/assets/images/placeholder.jpg"
-        size="thin"
-      />
+      <ModalCardButton title="Gay Pride" imageUrl={placeholder} size="fat" />
+      <ModalCardButton title="Ecolocation" imageUrl={placeholder} size="thin" />
+      <ModalCardButton title="Ecolocation" imageUrl={placeholder} size="thin" />
     </div>
   );
 }
