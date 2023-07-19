@@ -5,7 +5,7 @@ import SCBTitleSection from '@/components/SCB/SCBTitleSection';
 
 const page = () => {
   return (
-    <div className="px-8">
+    <div className="container-2xl">
       <SCBTitleSection />
       <SCBClickableCardsSection />
     </div>

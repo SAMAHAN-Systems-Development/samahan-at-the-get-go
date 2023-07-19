@@ -53,11 +53,11 @@ const SCBClickableCardsSection = () => {
   return (
     <section className="bg-lightBlue mt-5 rounded-section-card py-12 px-5 md:py-12 lg:py-16 lg:px-7">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-        {SCBOfficers.map((officer: officer, index: number) => {
-          if (officer.link) {
+        {SCBOfficers.map((person: officer, index: number) => {
+          if (person.link) {
             return (
               <Link
-                href={officer.link}
+                href={person.link}
                 key={index}
                 className={cn(
                   'flex sm:justify-center',
@@ -66,11 +66,11 @@ const SCBClickableCardsSection = () => {
               >
                 <OfficerLargeCard
                   officer={{
-                    firstName: officer.officer.firstName,
-                    lastName: officer.officer.lastName,
-                    position: officer.officer.position,
+                    firstName: person.officer.firstName,
+                    lastName: person.officer.lastName,
+                    position: person.officer.position,
                   }}
-                  imageUrl={officer.imageUrl}
+                  imageUrl={person.imageUrl}
                   isButton={true}
                 />
               </Link>
