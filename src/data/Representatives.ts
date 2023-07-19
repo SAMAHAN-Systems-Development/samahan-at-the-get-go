@@ -1,16 +1,22 @@
-import type { OfficerSmallCardType } from 'library/types/OfficerSmallCardType';
+import type { officer } from 'lib/types/officerType';
+import Canonigo from 'public/assets/images/Canonigo.jpg';
+import Cortes from 'public/assets/images/Cortes.jpg';
+import Lapatis from 'public/assets/images/Lapatis.jpg';
+import Mendez from 'public/assets/images/Mendez.jpg';
+import Nazareno from 'public/assets/images/Nazareno.jpg';
+import Nobleza from 'public/assets/images/Nobleza.jpg';
+import Reyes from 'public/assets/images/Reyes.jpg';
+import Santella from 'public/assets/images/Santella.jpg';
+import Tulipas from 'public/assets/images/Tulipas.jpg';
 
-// reminder: put images here
-
-export const Representatives: OfficerSmallCardType[] = [
+export const Representatives: officer[] = [
   {
     officer: {
       position: 'Accountancy Cluster Representative',
       firstName: 'Vincent Cesar',
       lastName: 'Canonigo',
     },
-    yearSection: '4 BS Management Accounting',
-    imageUrl: '/assets/images/Canonigo.jpg',
+    imageUrl: Canonigo,
   },
   {
     officer: {
@@ -18,8 +24,7 @@ export const Representatives: OfficerSmallCardType[] = [
       firstName: 'Justin Matthew',
       lastName: 'Nazareno',
     },
-    yearSection: '3 Bachelor of Public Management',
-    imageUrl: '/assets/images/Nazareno.jpg',
+    imageUrl: Nazareno,
   },
   {
     officer: {
@@ -27,8 +32,7 @@ export const Representatives: OfficerSmallCardType[] = [
       firstName: 'Ariane Mae',
       lastName: 'Mendez',
     },
-    yearSection: '4 BS Data Science',
-    imageUrl: '/assets/images/Mendez.jpg',
+    imageUrl: Mendez,
   },
   {
     officer: {
@@ -36,8 +40,7 @@ export const Representatives: OfficerSmallCardType[] = [
       firstName: 'Donnabel',
       lastName: 'Nobleza',
     },
-    yearSection: '3 AB Communication',
-    imageUrl: '/assets/images/Nobleza.jpg',
+    imageUrl: Nobleza,
   },
   {
     officer: {
@@ -45,8 +48,7 @@ export const Representatives: OfficerSmallCardType[] = [
       firstName: 'Carrie Louie',
       lastName: 'Tulipas',
     },
-    yearSection: '4 Medical Biology',
-    imageUrl: '/assets/images/Tulipas.jpg',
+    imageUrl: Tulipas,
   },
   {
     officer: {
@@ -54,8 +56,7 @@ export const Representatives: OfficerSmallCardType[] = [
       firstName: 'Cai Roxana',
       lastName: 'Reyes',
     },
-    yearSection: '3 BS Aerospace Engineering',
-    imageUrl: '/assets/images/Reyes.jpg',
+    imageUrl: Reyes,
   },
   {
     officer: {
@@ -63,8 +64,7 @@ export const Representatives: OfficerSmallCardType[] = [
       firstName: 'Monica Gwen',
       lastName: 'Cortes',
     },
-    yearSection: '4 BSEd Social Studies',
-    imageUrl: '/assets/images/Cortes.jpg',
+    imageUrl: Cortes,
   },
   {
     officer: {
@@ -72,8 +72,7 @@ export const Representatives: OfficerSmallCardType[] = [
       firstName: 'Leen Juliet',
       lastName: 'Lapatis',
     },
-    yearSection: '2 BS Nursing',
-    imageUrl: '/assets/images/Lapatis.jpg',
+    imageUrl: Lapatis,
   },
   {
     officer: {
@@ -81,7 +80,6 @@ export const Representatives: OfficerSmallCardType[] = [
       firstName: 'Rey Angelo',
       lastName: 'Santella',
     },
-    yearSection: '3 AB Political Science',
-    imageUrl: '/assets/images/Santella.jpg',
+    imageUrl: Santella,
   },
 ];
