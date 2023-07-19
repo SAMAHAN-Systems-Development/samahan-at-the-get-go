@@ -29,11 +29,11 @@ const config = {
         'title-sm': '2rem',
       },
       borderRadius: {
-        'section-card': '20px',
-        card: '15px ',
+        'section-card': '1.25rem',
+        card: '0.9375rem',
       },
       borderWidth: {
-        card: '2.5px',
+        card: '0.125rem',
       },
       textShadow: {
         soft: '1px 1px 3px rgba(0, 0, 0, 0.1)',
