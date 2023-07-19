@@ -1,21 +1,20 @@
-import React from "react";
+import React from 'react';
 
-import OfficerSmallCard from "@/components/ui/OfficerSmallCard";
+import Canonigo from 'public/assets/images/Canonigo.jpg';
+
+import OfficerSmallCard from '@/components/ui/OfficerSmallCard';
 
 const officer = {
-  firstName: "Vincent Cesar",
-  lastName: "Canonigo",
-  position: "Director",
+  firstName: 'Vincent Cesar',
+  lastName: 'Canonigo',
+  position: 'Director',
+  department: 'Department of Camapigns & Advocacies',
 };
 
 const page = () => {
   return (
     <div>
-      <OfficerSmallCard
-        officer={officer}
-        department="Department of Camapigns & Advocacies"
-        imageUrl="/assets/images/Canonigo.jpg"
-      />
+      <OfficerSmallCard officer={officer} imageUrl={Canonigo} />
     </div>
   );
 };

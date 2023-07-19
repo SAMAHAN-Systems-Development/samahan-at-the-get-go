@@ -1,9 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from '@storybook/react';
+import Canonigo from 'public/assets/images/Canonigo.jpg';
 
-import OfficerSmallCard from "@/components/ui/OfficerSmallCard";
+import OfficerSmallCard from '@/components/ui/OfficerSmallCard';
 
 const meta: Meta<typeof OfficerSmallCard> = {
-  title: "UI/Officer Small Card",
+  title: 'UI/Officer Small Card',
   component: OfficerSmallCard,
 };
 
@@ -13,12 +14,13 @@ type Story = StoryObj<typeof OfficerSmallCard>;
 export const Primary: Story = {
   args: {
     officer: {
-      firstName: "Vincent Cesar",
-      lastName: "Canonigo",
-      position: "Director",
+      firstName: 'Vincent Cesar',
+      lastName: 'Canonigo',
+      position: 'Director',
+      department: 'Department of Camapigns & Advocacies',
     },
-    department: "Department of Camapigns & Advocacies",
-    imageUrl: "/assets/images/Canonigo.jpg",
+
+    imageUrl: Canonigo,
   },
   render: (args) => <OfficerSmallCard {...args} />,
 };
