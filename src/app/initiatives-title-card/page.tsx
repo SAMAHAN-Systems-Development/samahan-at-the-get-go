@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import InitiativesTitleCard from "@/components/ui/Offices/InitiativesTitleCard";
+import InitiativesTitleCard from '@/components/ui/Offices/InitiativesTitleCard';
 
 const page = () => {
   return (
