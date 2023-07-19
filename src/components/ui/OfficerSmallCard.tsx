@@ -3,6 +3,8 @@ import Image from 'next/image';
 
 import type { officer } from 'lib/types/officerType';
 
+import { cn } from '@/utils/cvaUtils';
+
 type OfficerSmallCardProps = officer;
 
 const OfficerSmallCard: React.FC<OfficerSmallCardProps> = ({
@@ -13,7 +15,7 @@ const OfficerSmallCard: React.FC<OfficerSmallCardProps> = ({
   return (
     <div className="flex flex-col items-center gap-y-5 p-4">
       <div className="h-[10.188rem] md:h-[11.688rem] w-[9.25rem] md:w-[10.688rem] relative rounded-card">
-        <Image src={imageUrl} alt={lastName} fill quality={100} />
+        <Image src={imageUrl} alt={lastName} fill placeholder="blur" />
       </div>
       <div className="flex flex-col items-center">
         <div className="flex flex-col items-center">
@@ -26,14 +28,8 @@ const OfficerSmallCard: React.FC<OfficerSmallCardProps> = ({
         </div>
       </div>
       <div className="flex-col flex-shrink-0 flex max-w-[12.063rem] max-h-[1.875rem] text-blue text-[0.813rem] font-normal text-center leading-normal">
-        {department ? (
-          <>
-            <p className="font-bold">{position}</p>
-            <p>{department}</p>
-          </>
-        ) : (
-          <p>{position}</p>
-        )}
+        <p className={cn(department ? 'font-bold' : '')}>{position}</p>
+        {department ? <p>{department}</p> : null}
       </div>
     </div>
   );
