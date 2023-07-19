@@ -2,6 +2,7 @@ import React from 'react';
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { FiArrowUpRight } from 'react-icons/fi';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import SamahanAtTheGetGoLogo from 'public/assets/images/SamahanAtTheGetGoLogo.png';
 import UniversitySealLogo from 'public/assets/images/UniversitySealLogo.png';
@@ -24,7 +25,6 @@ const Footer = () => {
                 alt="AtTheGetGoLogo"
                 src={SamahanAtTheGetGoLogo}
                 className="object-contain"
-                fill={true}
               />
             </div>
           </div>
@@ -43,22 +43,40 @@ const Footer = () => {
         <div className="grid row-start-3 sm:grid-cols-3 md:grid-cols-3 md:row-start-3 lg:grid-cols-3 lg:row-start-2 sm:w-[26rem] md:w-[28.8125rem] lg:w-[32rem] text-xs md:text-sm lg:text-sm gap-y-[1.12rem] sm:gap-x-[3rem] md:gap-x-[3.12rem] lg:gap-x-[3.12rem] lg:-mt-8">
           <div className="grid gap-y-[0.75rem] ">
             <h4 className="font-bold text-sm">Quick Links</h4>
-            <p className="font-normal">About</p>
-            <p className="font-normal">Student Judicial Court</p>
-            <p className="font-normal">Events</p>
+            <p className="font-normal">
+              <Link href="/">About</Link>
+            </p>
+            <p className="font-normal">
+              <Link href="/">Student Judicial Court</Link>
+            </p>
+            <p className="font-normal">
+              <Link href="/">Events</Link>
+            </p>
           </div>
 
           <div className="grid gap-y-[0.75rem]">
             <h4 className="font-bold text-sm">Offices</h4>
-            <p className="font-normal">President</p>
-            <p className="font-normal">Vice-President</p>
-            <p className="font-normal">Secretary-General</p>
-            <p className="font-normal">Treasurer</p>
+            <p className="font-normal">
+              <Link href="/">President</Link>
+            </p>
+            <p className="font-normal">
+              <Link href="/">Vice-President</Link>
+            </p>
+            <p className="font-normal">
+              <Link href="/">Secretary-General</Link>
+            </p>
+            <p className="font-normal">
+              <Link href="/">Treasurer</Link>
+            </p>
           </div>
           <div className="grid grid-rows-4 gap-y-[0.75rem]">
             <h4 className="font-bold text-sm">Policies</h4>
-            <p className="font-normal sm:-mt-1.5 md:-mt-3  ">Privacy Policy</p>
-            <p className=" font-normal sm:-mt-1.5 md:-mt-3 lg:-mt-5">Data</p>
+            <p className="font-normal sm:-mt-1.5 md:-mt-3">
+              <Link href="/">Privacy Policy</Link>
+            </p>
+            <p className=" font-normal sm:-mt-1.5 md:-mt-3 lg:-mt-5">
+              <Link href="/">Data</Link>
+            </p>
           </div>
         </div>
         <div className="grid row-start-2 md:row-start-2 lg:col-start-12 lg:row-span-full text-xs md:text-sm lg:text-sm sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-1 gap-y-[1.12rem] lg:gap-y-auto sm:w-[28rem] md:w-[28rem] lg:w-auto">
