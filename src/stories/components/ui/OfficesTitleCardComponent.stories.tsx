@@ -1,18 +1,18 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import OfficesTitleCardComponent from "@/components/ui/OfficesTitleCardComponent";
+import OfficesHeader from "@/components/ui/Offices/OfficesHeader";
 
-const meta: Meta<typeof OfficesTitleCardComponent> = {
-  title: "UI/OfficesTitleCardComponent",
-  component: OfficesTitleCardComponent,
+const meta: Meta<typeof OfficesHeader> = {
+  title: "UI/Offices Title Card Component",
+  component: OfficesHeader,
 };
 
 export default meta;
-type Story = StoryObj<typeof OfficesTitleCardComponent>;
+type Story = StoryObj<typeof OfficesHeader>;
 
 export const Primary: Story = {
   args: {
     position: "PRESIDENT",
   },
-  render: (args) => <OfficesTitleCardComponent {...args} />,
+  render: (args) => <OfficesHeader {...args} />,
 };

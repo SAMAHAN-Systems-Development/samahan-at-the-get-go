@@ -3,13 +3,11 @@ import Image from "next/image";
 
 import SamahanAtTheGetGoLogo from "public/assets/images/SamahanAtTheGetGoLogo.png";
 
-interface OfficesTitleCardComponentProps {
+interface OfficesHeaderProps {
   position: string;
 }
 
-const OfficesTitleCardComponent: React.FC<OfficesTitleCardComponentProps> = ({
-  position,
-}) => {
+const OfficesHeader: React.FC<OfficesHeaderProps> = ({ position }) => {
   return (
     <div className="w-full overflow-hidden grid content-between border-solid border-card border-lightBlue rounded-section-card text-lightBlue py-4 px-7 h-[16.375rem] sm:h-[22.45rem] sm:py-5 sm:px-12 md:h-[34.375rem] md:py-6 md:px-16 lg:h-[42.5625rem] lg:px-22 lg:py-7">
       <div className="flex flex-row w-full justify-between">
@@ -21,6 +19,7 @@ const OfficesTitleCardComponent: React.FC<OfficesTitleCardComponentProps> = ({
             alt="AtTheGetGoLogo"
             src={SamahanAtTheGetGoLogo}
             className="object-contain"
+            draggable={false}
           />
         </div>
       </div>
@@ -36,4 +35,4 @@ const OfficesTitleCardComponent: React.FC<OfficesTitleCardComponentProps> = ({
   );
 };
 
-export default OfficesTitleCardComponent;
+export default OfficesHeader;
