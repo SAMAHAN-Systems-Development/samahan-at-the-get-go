@@ -48,7 +48,7 @@ const ModalCardButton: FC<CardType> = ({ title, imageUrl, size }) => {
       />
       <div className={cardContent({ size })}>
         <h4
-          className={`font-artega text-white text-shadow-bold group-hover:translate-x-3 ease-in-out duration-300`}
+          className={`font-artega text-left text-white text-shadow-bold group-hover:translate-x-3 ease-in-out duration-300`}
         >
           {title}
         </h4>
