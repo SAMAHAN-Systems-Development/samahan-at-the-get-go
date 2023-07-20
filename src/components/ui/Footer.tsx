@@ -7,13 +7,6 @@ import Link from 'next/link';
 import SamahanAtTheGetGoLogo from 'public/assets/images/SamahanAtTheGetGoLogo.png';
 import UniversitySealLogo from 'public/assets/images/UniversitySealLogo.png';
 
-const contactInfo = {
-  address:
-    'Mezzanine Level, Martin Building Ateneo de Davao University E. Jacinto Street, Davao City 8000',
-  telephone: '(082) 221 2411 LOC 8328',
-  email: 'samahan@addu.edu.ph',
-};
-
 const quickLinksData = [
   {
     title: 'Quick Links',
@@ -41,27 +34,52 @@ const quickLinksData = [
   },
 ];
 
+const iconClassName =
+  'w-[1.26525rem] h-[1.26525rem] md:w-[1.69075rem] md:h-[1.69075rem] lg:w-[1.69075rem] lg:h-[1.69075rem] hover:-translate-y-0.5 transition duration-150 ease-out active:ease-in';
+
 const socialIconsData = [
   {
-    icon: (
-      <FaFacebookF className="w-[1.26525rem] h-[1.26525rem] md:w-[1.69075rem] md:h-[1.69075rem] lg:w-[1.69075rem] lg:h-[1.69075rem] hover:-translate-y-0.5 transition duration-150 ease-out active:ease-in" />
-    ),
+    icon: <FaFacebookF className={iconClassName} />,
     url: 'https://www.facebook.com/AdDUSAMAHAN',
     label: 'Facebook',
   },
   {
-    icon: (
-      <FaInstagram className="w-[1.26525rem] h-[1.26525rem] md:w-[1.69075rem] md:h-[1.69075rem] lg:w-[1.69075rem] lg:h-[1.69075rem] hover:-translate-y-0.5 transition duration-150 ease-out active:ease-in" />
-    ),
+    icon: <FaInstagram className={iconClassName} />,
     url: 'https://www.instagram.com/samahan_ateneo',
     label: 'Instagram',
   },
   {
-    icon: (
-      <FaTwitter className="w-[1.26525rem] h-[1.26525rem] md:w-[1.69075rem] md:h-[1.69075rem] lg:w-[1.69075rem] lg:h-[1.69075rem] hover:-translate-y-0.5 transition duration-150 ease-out active:ease-in" />
-    ),
+    icon: <FaTwitter className={iconClassName} />,
     url: 'https://twitter.com/addusamahan',
     label: 'Twitter',
+  },
+];
+
+const contactSection = [
+  {
+    title: 'Address',
+    content:
+      'Mezzanine Level, Martin Building Ateneo de Davao University E. Jacinto Street, Davao City 8000',
+    className: 'mb-2',
+  },
+  {
+    title: 'Telephone',
+    content: '(082) 221 2411 LOC 8328',
+    className: '',
+  },
+  {
+    title: 'E-mail',
+    content: 'samahan@addu.edu.ph',
+    className: 'mb-2',
+  },
+  {
+    title: 'Socials',
+    content: socialIconsData.map((iconData, index) => (
+      <a href={iconData.url} key={index} aria-label={iconData.label}>
+        {iconData.icon}
+      </a>
+    )),
+    className: '',
   },
 ];
 
@@ -117,29 +135,18 @@ const Footer = () => {
         </div>
 
         <div className="grid font-normal row-start-2 md:row-start-2 lg:col-start-12 lg:row-span-full text-xs md:text-sm lg:text-sm sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-1 gap-y-[1.12rem] lg:gap-y-auto sm:max-w-[28rem] md:max-w-[28rem] lg:max-w-[13.4375rem] lg:text-right flex-wrap">
-          <div className="mb-2">
-            <h4 className="font-bold">Address</h4>
-            <p className="leading-[0.875rem]">{contactInfo.address}</p>
-          </div>
-          <div>
-            <h4 className="font-bold">Telephone</h4>
-            <p>{contactInfo.telephone}</p>
-          </div>
-
-          <div className="mb-2">
-            <h4 className="font-bold">E-mail</h4>
-            <p>{contactInfo.email}</p>
-          </div>
-          <div className="flex md:flex flex-col">
-            <h4 className="font-bold">Socials</h4>
-            <div className="grid grid-flow-col w-fit gap-x-5 mt-2 lg:ml-auto">
-              {socialIconsData.map((iconData, index) => (
-                <a href={iconData.url} key={index} aria-label={iconData.label}>
-                  {iconData.icon}
-                </a>
-              ))}
+          {contactSection.map((content, index) => (
+            <div className={content.className} key={index}>
+              <h4 className="font-bold">{content.title}</h4>
+              {content.title === 'Socials' ? (
+                <div className="grid grid-flow-col w-fit gap-x-5 mt-2 lg:ml-auto">
+                  {content.content}
+                </div>
+              ) : (
+                <p className="leading-[0.875rem]">{content.content}</p>
+              )}
             </div>
-          </div>
+          ))}
         </div>
       </div>
 
