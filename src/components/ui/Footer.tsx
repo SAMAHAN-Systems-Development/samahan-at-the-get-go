@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
-import { FiArrowUpRight } from 'react-icons/fi';
+import { TbArrowUpRight } from 'react-icons/Tb';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -153,13 +153,13 @@ const Footer = () => {
       <hr className="my-[1.12rem] sm:my-[1.12rem] md:my-[1.5rem] lg:my-[1.5rem]" />
       <div className="flex flex-col lg:flex-row w-full justify-between text-xs md:text-sm lg:text-sm mt-[1.12rem] md:mt-[1.5rem] lg:mt-[1.5rem]">
         <div className="flex-col mb-2">
-          <p className="mb-2 md:flex">
+          <p className="mb-2 flex flex-col sm:flex-row md:flex-row lg:flex-row">
             <span className="font-normal mr-1">Assets by</span>
             <a href="https://www.facebook.com/SAMAHANCreativeTeam">
               <span className="font-bold">SAMAHAN Creative Team</span>
             </a>
           </p>
-          <p className="mb-2 md:flex">
+          <p className="mb-2 flex flex-col sm:flex-row md:flex-row lg:flex-row">
             <span className="font-normal mr-1">Developed by</span>
             <a href="https://www.facebook.com/SAMAHANSysDev">
               <span className="font-bold">
@@ -167,9 +167,13 @@ const Footer = () => {
               </span>
             </a>
           </p>
-          <p className="flex">
-            <span className="font-normal">About the Developers</span>
-            <FiArrowUpRight />
+          <p>
+            <Link className="flex flex-row" href="*">
+              <span className="align-baseline font-normal">
+                About the Developers
+              </span>
+              <TbArrowUpRight className="align-baseline text-base md:text-lg lg:text-lg" />
+            </Link>
           </p>
         </div>
 
