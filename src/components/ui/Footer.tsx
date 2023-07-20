@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
-import { TbArrowUpRight } from 'react-icons/Tb';
+import { TbArrowUpRight } from 'react-icons/tb';
 import Image from 'next/image';
 import Link from 'next/link';
 
