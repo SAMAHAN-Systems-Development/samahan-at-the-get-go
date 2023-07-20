@@ -1,9 +1,9 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from '@storybook/react';
 
-import AdvocasixHeaderCard from "@/components/ui/Advocasix/AdvocasixHeaderCard";
+import AdvocasixHeaderCard from '@/components/ui/Advocasix/AdvocasixHeaderCard';
 
 const meta: Meta<typeof AdvocasixHeaderCard> = {
-  title: "UI/AdvocasixHeaderCard",
+  title: 'UI/Advocasix Header Card',
   component: AdvocasixHeaderCard,
 };
 
