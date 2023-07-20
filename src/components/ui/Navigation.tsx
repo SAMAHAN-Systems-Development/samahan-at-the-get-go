@@ -287,7 +287,7 @@ const Navigation: FC = () => {
                             <NavigationMenu.Link asChild>
                               <Link
                                 href={subLink.href}
-                                className="block whitespace-nowrap py-3 hover:bg-darkBeige rounded-lg px-8"
+                                className="block whitespace-nowrap py-3 hover:bg-darkBeige rounded-lg px-8 transition-colors duration-300"
                               >
                                 {subLink.label}
                               </Link>
