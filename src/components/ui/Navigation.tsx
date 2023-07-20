@@ -137,7 +137,7 @@ const Navigation: FC = () => {
 
   // Adds the resize listener to the window object.
   useEffect(() => {
-    if (isTablet) setIsMenuOpen(false);
+    setIsMenuOpen(false);
 
     lastScrollPosition.current = window.scrollY;
     scrollListener();
@@ -239,7 +239,7 @@ const Navigation: FC = () => {
           </div>
         </NavigationMenu.Root>
       ) : (
-        <NavigationMenu.Root className="bg-beige rounded-full py-3 px-10 hidden lg:block shadow-sm">
+        <NavigationMenu.Root className="bg-beige rounded-full py-3 px-10 hidden lg:block lg:px-6 shadow-sm">
           <NavigationMenu.List className="flex flex-row justify-between items-stretch w-full">
             <Link
               href="/"
@@ -247,7 +247,7 @@ const Navigation: FC = () => {
             >
               <Image src={logo} alt="SAMAHAN At the Get Go" fill priority />
             </Link>
-            <div className="grid grid-flow-col gap-1 font-artega text-xs text-lightBlue items-center">
+            <div className="grid grid-flow-col gap-1 font-artega text-[0.7rem] text-lightBlue items-center xl:text-xs">
               {navLinks.map((link, index) =>
                 !('list' in link) ? (
                   <NavigationMenu.Item
@@ -279,7 +279,7 @@ const Navigation: FC = () => {
                     </NavigationMenu.Trigger>
                     <NavigationMenu.Content
                       asChild
-                      className="absolute top-[calc(100%+1.6rem)] left-[50%] translate-x-[-50%] overflow-hidden rounded-md shadow-sm"
+                      className="absolute top-[calc(100%+1.2rem)] left-[50%] translate-x-[-50%] overflow-hidden rounded-md shadow-sm"
                     >
                       <ul className="bg-beige">
                         {link.list.map((subLink, index) => (
@@ -287,7 +287,7 @@ const Navigation: FC = () => {
                             <NavigationMenu.Link asChild>
                               <Link
                                 href={subLink.href}
-                                className="block whitespace-nowrap py-3 hover:bg-darkBeige rounded-lg px-8 transition-colors duration-300"
+                                className="block whitespace-nowrap py-3 hover:bg-darkBeige rounded-lg px-8 transition-colors duration-300 text-[0.7rem] xl:text-xs"
                               >
                                 {subLink.label}
                               </Link>
@@ -302,7 +302,7 @@ const Navigation: FC = () => {
             </div>
             <Link
               href="#"
-              className="bg-lightBlue text-white py-4 my-auto px-4 font-artega text-xs rounded-full hover:scale-105 transition-all duration-300 flex items-center lg:px-6"
+              className="bg-lightBlue text-white py-4 my-auto px-4 font-artega xl:text-xs rounded-full hover:scale-105 transition-all duration-300 flex items-center lg:px-6 text-[0.7rem]"
             >
               HELP PORTAL
             </Link>
