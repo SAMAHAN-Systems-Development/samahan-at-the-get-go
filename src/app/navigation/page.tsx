@@ -4,7 +4,7 @@ import Navigation from '@/components/ui/Navigation';
 
 const Page = () => {
   return (
-    <div>
+    <div className="h-[200vh]">
       <Navigation />
     </div>
   );

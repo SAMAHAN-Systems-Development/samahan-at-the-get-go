@@ -1,6 +1,12 @@
 'use client';
 
-import React, { type FC, useState } from 'react';
+import React, {
+  type FC,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from 'react';
 import { BiChevronDown } from 'react-icons/bi';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -100,13 +106,71 @@ NavigationHamburgerButton.displayName = 'NavigationHamburgerButton';
 
 const Navigation: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigationRef = useRef<HTMLElement>(null);
+  const lastScrollPosition = useRef(0);
+
   /**
    * Check if viewport width is 992px below
    */
   const isTablet = useMediaQuery('(max-width: 61.9375rem)');
 
+  // The resize listener. Used for responsiveness and JS media queries.
+  const resizeListener = useCallback(() => {
+    const doc = document.documentElement;
+
+    // Sets the height of the viewport in mobile, taking into account the height of the browser bars.
+    doc.style.setProperty('--app-height', `${window.innerHeight}px`);
+  }, []);
+
+  // The scroll listener. Used for hiding and showing Navigation component based on scrolling.
+  const scrollListener = useCallback(() => {
+    if (navigationRef.current) {
+      if (
+        lastScrollPosition.current < window.scrollY &&
+        window.scrollY > navigationRef.current.offsetHeight
+      ) {
+        // If scroll direction is UPWARD and position is NOT at the top
+        navigationRef.current.classList.remove('translate-y-0');
+        navigationRef.current.classList.add('translate-y-[calc(-100%-2rem)]');
+      } else {
+        navigationRef.current.classList.remove(
+          'translate-y-[calc(-100%-2rem)]'
+        );
+        navigationRef.current.classList.add('translate-y-0');
+      }
+    }
+
+    lastScrollPosition.current = window.scrollY;
+  }, []);
+
+  // Adds the resize listener to the window object.
+  useEffect(() => {
+    if (isTablet) setIsMenuOpen(false);
+
+    resizeListener();
+    window.addEventListener('resize', resizeListener);
+
+    lastScrollPosition.current = window.scrollY;
+    scrollListener();
+    window.addEventListener('scroll', scrollListener);
+
+    return () => {
+      window.removeEventListener('resize', resizeListener);
+      window.removeEventListener('scroll', scrollListener);
+    };
+  }, [scrollListener, isTablet, resizeListener]);
+
+  // Adds no-scroll when Navigation menu is open
+  useEffect(() => {
+    if (isMenuOpen) document.body.classList.add('overflow-hidden');
+    else document.body.classList.remove('overflow-hidden');
+  }, [isMenuOpen]);
+
   return (
-    <header className="container-xl top-4 left-[50%] translate-x-[-50%] z-[999] fixed lg:top-8">
+    <header
+      className="container-xl top-4 left-[50%] translate-x-[-50%] z-[999] fixed lg:top-8 transition-all duration-300"
+      ref={navigationRef}
+    >
       {isTablet ? (
         <NavigationMenu.Root className="lg:hidden relative">
           <div className="flex justify-between bg-beige items-center rounded-full flex-row px-8 py-3 relative shadow-sm">
@@ -118,6 +182,7 @@ const Navigation: FC = () => {
                 src={logo}
                 alt="SAMAHAN At the Get Go"
                 style={{ objectFit: 'contain', width: '100%' }}
+                draggable={false}
                 priority
               />
             </Link>
@@ -129,15 +194,10 @@ const Navigation: FC = () => {
           <div
             className={cn(
               'bg-beige rounded-3xl pt-5 pb-8 shadow-sm mt-2 transition-all duration-300 z-[-1] absolute left-0 right-0',
-              !isMenuOpen && 'translate-y-[-100vh]'
+              !isMenuOpen && 'translate-y-[calc(-100%-10vh)]'
             )}
           >
-            <Accordion.Root
-              type="single"
-              defaultValue="nav-1"
-              collapsible
-              asChild
-            >
+            <Accordion.Root type="single" collapsible asChild>
               <NavigationMenu.List>
                 {navLinks.map((link, index) =>
                   !('list' in link) ? (
@@ -155,7 +215,7 @@ const Navigation: FC = () => {
                       key={`nav-${index}`}
                       className="font-artega text-lightBlue text-[0.75rem] sm:text-sm mx-3"
                     >
-                      <Accordion.Trigger className="flex flex-row w-full justify-between group items-center hover:bg-darkBeige py-3 rounded-lg px-5 transition-colors duration-100">
+                      <Accordion.Trigger className="flex flex-row w-full justify-between group items-center hover:bg-darkBeige py-3 rounded-lg px-5 transition-colors duration-300">
                         {link.label}
                         <BiChevronDown
                           aria-hidden
@@ -170,7 +230,7 @@ const Navigation: FC = () => {
                           {link.list.map((subLink, index) => (
                             <li
                               key={`subNav-${index}`}
-                              className="font-artega text-lightBlue text-[0.75rem] sm:text-sm hover:bg-darkBeige rounded-lg py-3 pl-8 pr-5 transition-colors duration-100"
+                              className="font-artega text-lightBlue text-[0.75rem] sm:text-sm hover:bg-darkBeige rounded-lg py-3 pl-8 pr-5 transition-colors duration-300"
                             >
                               <Link href={subLink.href}>{subLink.label}</Link>
                             </li>
@@ -209,7 +269,7 @@ const Navigation: FC = () => {
                     <NavigationMenu.Link asChild>
                       <Link
                         href={link.href}
-                        className="hover:bg-darkBeige rounded-lg h-full flex items-center px-2"
+                        className="hover:bg-darkBeige rounded-lg h-full flex items-center px-2 transition-colors duration-300"
                       >
                         {link.label}
                       </Link>
