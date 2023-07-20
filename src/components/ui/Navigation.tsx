@@ -114,14 +114,6 @@ const Navigation: FC = () => {
    */
   const isTablet = useMediaQuery('(max-width: 61.9375rem)');
 
-  // The resize listener. Used for responsiveness and JS media queries.
-  const resizeListener = useCallback(() => {
-    const doc = document.documentElement;
-
-    // Sets the height of the viewport in mobile, taking into account the height of the browser bars.
-    doc.style.setProperty('--app-height', `${window.innerHeight}px`);
-  }, []);
-
   // The scroll listener. Used for hiding and showing Navigation component based on scrolling.
   const scrollListener = useCallback(() => {
     if (navigationRef.current) {
@@ -147,18 +139,14 @@ const Navigation: FC = () => {
   useEffect(() => {
     if (isTablet) setIsMenuOpen(false);
 
-    resizeListener();
-    window.addEventListener('resize', resizeListener);
-
     lastScrollPosition.current = window.scrollY;
     scrollListener();
     window.addEventListener('scroll', scrollListener);
 
     return () => {
-      window.removeEventListener('resize', resizeListener);
       window.removeEventListener('scroll', scrollListener);
     };
-  }, [scrollListener, isTablet, resizeListener]);
+  }, [scrollListener, isTablet]);
 
   // Adds no-scroll when Navigation menu is open
   useEffect(() => {
