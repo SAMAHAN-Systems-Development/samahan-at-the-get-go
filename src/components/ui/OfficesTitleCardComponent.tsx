@@ -16,7 +16,7 @@ const OfficesTitleCardComponent: React.FC<OfficesTitleCardComponentProps> = ({
         <p className="font-artega font-medium text-sm sm:text-l md:text-xl lg:text-2xl">
           00
         </p>
-        <div className="relative ml-auto h-[3.23444rem] w-[2rem] sm:h-[3.23444rem] sm:w-[2rem] md:w-[3.3125rem] md:h-[5.357rem] lg:w-[3.3125rem] lg:h-[5.357rem]">
+        <div className="relative flex-shrink-0 h-[3.23444rem] w-[2rem] sm:h-[3.23444rem] sm:w-[2rem] md:w-[3.3125rem] md:h-[5.357rem] lg:w-[3.3125rem] lg:h-[5.357rem] max-w-[3.3125rem]">
           <Image
             alt="AtTheGetGoLogo"
             src={SamahanAtTheGetGoLogo}
@@ -28,7 +28,7 @@ const OfficesTitleCardComponent: React.FC<OfficesTitleCardComponentProps> = ({
         <span className="font-appleGaramond block italic font-bold text-[1.5625rem] sm:text-[2.1rem] md:text-[3.0625rem] lg:text-[4.75rem] leading-[1.2rem] sm:leading-[2rem] md:leading-[2.7rem] lg:leading-[4rem]">
           Office of the
         </span>
-        <span className="font-artega block text-wrap font-medium text-[1.5rem] w-[20.3125rem] sm:text-[2.5rem] md:text-[3.8125rem] md:w-[46rem] lg:w-[60rem] lg:text-[7rem] leading-[2rem] sm:leading-[3rem] md:leading-[4.5rem] lg:leading-[8rem]">
+        <span className="font-artega block text-wrap font-medium text-[1.5rem] max-w-[20.3125rem] sm:text-[2.5rem] md:text-[3.8125rem] md:w-[46rem] lg:w-[60rem] lg:text-[7rem] leading-[2rem] sm:leading-[3rem] md:leading-[4.5rem] lg:leading-[8rem]">
           {position}
         </span>
       </h1>
