@@ -1,8 +1,8 @@
 import React from 'react';
 
 type OfficesCardComponentProps = {
-  title: string;
   description: string;
+  title: string;
 };
 
 const OfficesCardComponent: React.FC<OfficesCardComponentProps> = ({
