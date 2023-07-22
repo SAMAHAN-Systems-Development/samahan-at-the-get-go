@@ -13,9 +13,8 @@ import Link from 'next/link';
 
 import * as Accordion from '@radix-ui/react-accordion';
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
-import logo from 'public/assets/images/Logo.png';
+import logoType from 'public/assets/images/logoType.png';
 
-import { useMediaQuery } from '@/hooks/useMediaQuery';
 import { cn } from '@/utils/cvaUtils';
 
 type NavLinkType = {
@@ -47,14 +46,16 @@ const navLinks: (NavLinkType | NavListType)[] = [
     ],
   },
   {
-    label: 'STUDENT JUDICIAL COURT',
-    href: '#',
-  },
-  {
-    label: 'EVENTS',
+    label: 'RECRUITMENT WEEK',
     href: '#',
   },
 ];
+
+/**
+ * The spacing between navigation items in DesktopNavigation.
+ * Adjust depending on the amount of items.
+ */
+const desktopGapX = 'gap-4';
 
 /**
  * This is used to toggle the mobile navigation menu.
@@ -109,11 +110,6 @@ const Navigation: FC = () => {
   const navigationRef = useRef<HTMLElement>(null);
   const lastScrollPosition = useRef(0);
 
-  /**
-   * Check if viewport width is 992px below
-   */
-  const isTablet = useMediaQuery('(max-width: 61.9375rem)');
-
   // The scroll listener. Used for hiding and showing Navigation component based on scrolling.
   const scrollListener = useCallback(() => {
     if (navigationRef.current) {
@@ -146,7 +142,7 @@ const Navigation: FC = () => {
     return () => {
       window.removeEventListener('scroll', scrollListener);
     };
-  }, [scrollListener, isTablet]);
+  }, [scrollListener]);
 
   // Adds no-scroll when Navigation menu is open
   useEffect(() => {
@@ -159,129 +155,148 @@ const Navigation: FC = () => {
       className="container-xl top-4 left-[50%] translate-x-[-50%] z-[999] fixed lg:top-8 transition-all duration-300"
       ref={navigationRef}
     >
-      {isTablet ? (
-        <NavigationMenu.Root className="lg:hidden relative">
-          <div className="flex justify-between bg-beige items-center rounded-full flex-row px-8 py-3 relative shadow-sm">
-            <Link
-              href="/"
-              className="w-[8.125rem] h-[2.125rem] relative flex items-center justify-center"
-            >
-              <Image
-                src={logo}
-                alt="SAMAHAN At the Get Go"
-                style={{ objectFit: 'contain', width: '100%' }}
-                draggable={false}
-                priority
-              />
-            </Link>
-            <NavigationHamburgerButton
-              isOpen={isMenuOpen}
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            />
-          </div>
-          <div
-            className={cn(
-              'bg-beige rounded-3xl pt-5 pb-8 shadow-sm mt-2 transition-all duration-300 z-[-1] absolute left-0 right-0',
-              !isMenuOpen && 'translate-y-[calc(-100%-10vh)]'
-            )}
+      {/* 
+      = = = = = = = = = = MOBILE NAVIGATION = = = = = = = = = =
+      */}
+      <NavigationMenu.Root className="lg:hidden relative">
+        <div className="flex justify-between bg-beige items-center rounded-full flex-row px-8 py-3 relative shadow-sm">
+          <Link
+            href="/"
+            className="w-[8.125rem] h-[2.125rem] relative flex items-center justify-center"
           >
-            <Accordion.Root type="single" collapsible asChild>
-              <NavigationMenu.List>
-                {navLinks.map((link, index) =>
-                  !('list' in link) ? (
-                    <NavigationMenu.Item key={`nav-${index}`}>
-                      <NavigationMenu.Link
-                        asChild
-                        className="font-artega text-lightBlue text-[0.75rem] sm:text-sm block py-3 hover:bg-darkBeige rounded-lg px-5 mx-3 transition-colors duration-100"
-                      >
-                        <Link href={link.href}>{link.label}</Link>
-                      </NavigationMenu.Link>
-                    </NavigationMenu.Item>
-                  ) : (
-                    <Accordion.Item
-                      value="nav-1"
-                      key={`nav-${index}`}
-                      className="font-artega text-lightBlue text-[0.75rem] sm:text-sm mx-3"
-                    >
-                      <Accordion.Trigger className="flex flex-row w-full justify-between group items-center hover:bg-darkBeige py-3 rounded-lg px-5 transition-colors duration-300">
-                        {link.label}
-                        <BiChevronDown
-                          aria-hidden
-                          className="ease-[cubic-bezier(0.87,_0,_0.13,_1)] transition-transform duration-300 group-data-[state=open]:rotate-180 h-[2em] w-[2em]"
-                        />
-                      </Accordion.Trigger>
-                      <Accordion.Content
-                        asChild
-                        className="data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp overflow-hidden"
-                      >
-                        <ul>
-                          {link.list.map((subLink, index) => (
-                            <li
-                              key={`subNav-${index}`}
-                              className="font-artega text-lightBlue text-[0.75rem] sm:text-sm hover:bg-darkBeige rounded-lg py-3 pl-8 pr-5 transition-colors duration-300"
-                            >
-                              <Link href={subLink.href}>{subLink.label}</Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </Accordion.Content>
-                    </Accordion.Item>
-                  )
-                )}
-              </NavigationMenu.List>
-            </Accordion.Root>
-            <Link
-              href="#"
-              className="bg-lightBlue text-white py-2 px-4 font-artega text-xs rounded-full block w-fit mx-auto mt-3 hover:scale-105 transition-all duration-300"
-            >
-              <span className="mt-[0.1rem] inline-block">HELP PORTAL</span>
-            </Link>
-          </div>
-        </NavigationMenu.Root>
-      ) : (
-        <NavigationMenu.Root className="bg-beige rounded-full py-3 px-10 hidden lg:block lg:px-6 shadow-sm">
-          <NavigationMenu.List className="flex flex-row justify-between items-stretch w-full">
-            <Link
-              href="/"
-              className="w-[9.875rem] h-[2.5rem] relative flex items-center justify-center my-auto"
-            >
-              <Image src={logo} alt="SAMAHAN At the Get Go" fill priority />
-            </Link>
-            <div className="grid grid-flow-col gap-1 font-artega text-[0.7rem] text-lightBlue items-center xl:text-xs">
+            <Image
+              src={logoType}
+              alt="SAMAHAN At the Get Go"
+              style={{ objectFit: 'contain', width: '100%' }}
+              draggable={false}
+              priority
+            />
+          </Link>
+          <NavigationHamburgerButton
+            isOpen={isMenuOpen}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          />
+        </div>
+        <div
+          className={cn(
+            'bg-beige rounded-3xl pt-5 pb-8 shadow-sm mt-2 transition-all duration-300 z-[-1] absolute left-0 right-0',
+            !isMenuOpen && 'translate-y-[calc(-150%)]'
+          )}
+        >
+          <Accordion.Root type="single" collapsible asChild>
+            <NavigationMenu.List>
               {navLinks.map((link, index) =>
                 !('list' in link) ? (
-                  <NavigationMenu.Item
-                    key={`nav-${index}`}
-                    className="h-full block"
-                  >
-                    <NavigationMenu.Link asChild>
-                      <Link
-                        href={link.href}
-                        className="hover:bg-darkBeige rounded-lg h-full flex items-center px-2 transition-colors duration-300"
-                      >
-                        {link.label}
-                      </Link>
+                  <NavigationMenu.Item key={`nav-${index}`}>
+                    <NavigationMenu.Link
+                      asChild
+                      className="font-artega text-lightBlue text-[0.75rem] sm:text-sm block py-3 hover:bg-darkBeige rounded-lg px-5 mx-3 transition-colors duration-100"
+                    >
+                      <Link href={link.href}>{link.label}</Link>
                     </NavigationMenu.Link>
                   </NavigationMenu.Item>
                 ) : (
-                  <NavigationMenu.Item
+                  <Accordion.Item
+                    value="nav-1"
                     key={`nav-${index}`}
-                    className="relative"
+                    className="font-artega text-lightBlue text-[0.75rem] sm:text-sm mx-3"
                   >
-                    <NavigationMenu.Trigger className="group">
-                      <NavigationMenu.Link className="grid grid-flow-col gap-1 items-center hover:bg-darkBeige rounded-lg py-3 pl-2 pr-1">
-                        {link.label}
-                        <BiChevronDown
-                          aria-hidden
-                          className="mb-1 ease-[cubic-bezier(0.87,_0,_0.13,_1)] transition-transform duration-300 group-data-[state=open]:rotate-180 h-[2em] w-[2em]"
-                        />
-                      </NavigationMenu.Link>
-                    </NavigationMenu.Trigger>
-                    <NavigationMenu.Content
+                    <Accordion.Trigger className="flex flex-row w-full justify-between group items-center hover:bg-darkBeige py-3 rounded-lg px-5 transition-colors duration-300">
+                      {link.label}
+                      <BiChevronDown
+                        aria-hidden
+                        className="ease-[cubic-bezier(0.87,_0,_0.13,_1)] transition-transform duration-300 group-data-[state=open]:rotate-180 h-[2em] w-[2em]"
+                      />
+                    </Accordion.Trigger>
+                    <Accordion.Content
                       asChild
-                      className="absolute top-[calc(100%+1.2rem)] left-[50%] translate-x-[-50%] overflow-hidden rounded-md shadow-sm"
+                      className="data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp overflow-hidden"
                     >
-                      <ul className="bg-beige">
+                      <ul>
+                        {link.list.map((subLink, index) => (
+                          <li
+                            key={`subNav-${index}`}
+                            className="font-artega text-lightBlue text-[0.75rem] sm:text-sm hover:bg-darkBeige rounded-lg py-3 pl-8 pr-5 transition-colors duration-300"
+                          >
+                            <Link href={subLink.href}>{subLink.label}</Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </Accordion.Content>
+                  </Accordion.Item>
+                )
+              )}
+            </NavigationMenu.List>
+          </Accordion.Root>
+          <Link
+            href="#"
+            className="bg-lightBlue text-white py-2 px-4 font-artega text-xs rounded-full block w-fit mx-auto mt-3 hover:scale-105 transition-all duration-300"
+          >
+            <span className="mt-[0.1rem] inline-block">HELP PORTAL</span>
+          </Link>
+        </div>
+      </NavigationMenu.Root>
+      {/* 
+      = = = = = = = = = = DESKTOP NAVIGATION = = = = = = = = = =
+      */}
+      <NavigationMenu.Root className="bg-beige rounded-full py-3 px-10 hidden lg:block lg:px-6 shadow-sm">
+        <NavigationMenu.List className="flex flex-row justify-between items-stretch w-full">
+          <Link
+            href="/"
+            className="w-[9.875rem] h-[2.5rem] relative flex items-center justify-center my-auto"
+          >
+            <Image
+              src={logoType}
+              alt="SAMAHAN At the Get Go"
+              fill
+              sizes="
+              (min-width: 1200px) 80vw,
+              (min-width: 992px) 60vw,
+              (min-width: 768px) 40vw,
+              30vw
+              "
+              draggable={false}
+              priority
+            />
+          </Link>
+          <div
+            className={cn(
+              'grid grid-flow-col font-artega text-[0.7rem] text-lightBlue items-center xl:text-xs',
+              desktopGapX
+            )}
+          >
+            {navLinks.map((link, index) =>
+              !('list' in link) ? (
+                <NavigationMenu.Item
+                  key={`nav-${index}`}
+                  className="h-full block"
+                >
+                  <NavigationMenu.Link asChild>
+                    <Link
+                      href={link.href}
+                      className="hover:bg-darkBeige rounded-lg h-full flex items-center px-2 transition-colors duration-300"
+                    >
+                      {link.label}
+                    </Link>
+                  </NavigationMenu.Link>
+                </NavigationMenu.Item>
+              ) : (
+                <NavigationMenu.Item key={`nav-${index}`} className="relative">
+                  <NavigationMenu.Trigger className="group">
+                    <NavigationMenu.Link className="grid grid-flow-col gap-1 items-center hover:bg-darkBeige rounded-lg py-3 pl-2 pr-1">
+                      {link.label}
+                      <BiChevronDown
+                        aria-hidden
+                        className="mb-1 ease-[cubic-bezier(0.87,_0,_0.13,_1)] transition-transform duration-300 group-data-[state=open]:rotate-180 h-[2em] w-[2em]"
+                      />
+                    </NavigationMenu.Link>
+                  </NavigationMenu.Trigger>
+                  <NavigationMenu.Content
+                    asChild
+                    className="absolute top-[calc(100%)] left-[50%] translate-x-[-50%]"
+                  >
+                    <div className="pt-5">
+                      <ul className="bg-beige overflow-hidden rounded-md shadow-sm">
                         {link.list.map((subLink, index) => (
                           <li key={`subNav-${index}`} className="block">
                             <NavigationMenu.Link asChild>
@@ -295,20 +310,20 @@ const Navigation: FC = () => {
                           </li>
                         ))}
                       </ul>
-                    </NavigationMenu.Content>
-                  </NavigationMenu.Item>
-                )
-              )}
-            </div>
-            <Link
-              href="#"
-              className="bg-lightBlue text-white py-4 my-auto px-4 font-artega xl:text-xs rounded-full hover:scale-105 transition-all duration-300 flex items-center lg:px-6 text-[0.7rem]"
-            >
-              HELP PORTAL
-            </Link>
-          </NavigationMenu.List>
-        </NavigationMenu.Root>
-      )}
+                    </div>
+                  </NavigationMenu.Content>
+                </NavigationMenu.Item>
+              )
+            )}
+          </div>
+          <Link
+            href="#"
+            className="bg-lightBlue text-white py-4 my-auto px-4 font-artega xl:text-xs rounded-full hover:scale-105 transition-all duration-300 flex items-center lg:px-6 text-[0.7rem]"
+          >
+            HELP PORTAL
+          </Link>
+        </NavigationMenu.List>
+      </NavigationMenu.Root>
     </header>
   );
 };
