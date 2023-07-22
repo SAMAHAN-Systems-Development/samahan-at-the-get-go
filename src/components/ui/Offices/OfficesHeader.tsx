@@ -1,7 +1,7 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
 
-import SamahanAtTheGetGoLogo from "public/assets/images/SamahanAtTheGetGoLogo.png";
+import SamahanAtTheGetGoLogo from 'public/assets/images/SamahanAtTheGetGoLogo.png';
 
 interface OfficesHeaderProps {
   position: string;

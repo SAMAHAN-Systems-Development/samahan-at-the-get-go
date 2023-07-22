@@ -18,8 +18,8 @@ import logoType from 'public/assets/images/logoType.png';
 import { cn } from '@/utils/cvaUtils';
 
 type NavLinkType = {
-  label: string;
   href: string;
+  label: string;
 };
 
 type NavListType = {

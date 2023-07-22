@@ -6,9 +6,9 @@ import Image from 'next/image';
 import { cva } from 'class-variance-authority';
 
 type CardType = {
-  title: string;
   imageUrl: StaticImageData;
   size: 'fat' | 'thin';
+  title: string;
 };
 
 const cardSize = cva(
