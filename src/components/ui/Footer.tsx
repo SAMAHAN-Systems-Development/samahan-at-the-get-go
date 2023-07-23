@@ -7,29 +7,35 @@ import Link from 'next/link';
 import SamahanAtTheGetGoLogo from 'public/assets/images/SamahanAtTheGetGoLogo.png';
 import UniversitySealLogo from 'public/assets/images/UniversitySealLogo.png';
 
+const getCurrentYear = () => {
+  return new Date().getFullYear();
+};
+
+const currentYear = getCurrentYear();
+
 const quickLinksData = [
   {
     title: 'Quick Links',
     links: [
-      { title: 'About', href: '*' },
-      { title: 'Student Judicial Court', href: '*' },
-      { title: 'Events', href: '*' },
+      { title: 'About', href: '#' },
+      { title: 'Student Judicial Court', href: '#' },
+      { title: 'Events', href: '#' },
     ],
   },
   {
     title: 'Offices',
     links: [
-      { title: 'President', href: '*' },
-      { title: 'Vice-President', href: '*' },
-      { title: 'Secretary-General', href: '*' },
-      { title: 'Treasurer', href: '*' },
+      { title: 'President', href: '#' },
+      { title: 'Vice-President', href: '#' },
+      { title: 'Secretary-General', href: '#' },
+      { title: 'Treasurer', href: '#' },
     ],
   },
   {
     title: 'Policies',
     links: [
-      { title: 'Privacy Policy', href: '*' },
-      { title: 'Data', href: '*' },
+      { title: 'Privacy Policy', href: '#' },
+      { title: 'Data', href: '#' },
     ],
   },
 ];
@@ -60,17 +66,14 @@ const contactSection = [
     title: 'Address',
     content:
       'Mezzanine Level, Martin Building Ateneo de Davao University E. Jacinto Street, Davao City 8000',
-    className: 'mb-2',
   },
   {
     title: 'Telephone',
     content: '(082) 221 2411 LOC 8328',
-    className: '',
   },
   {
     title: 'E-mail',
     content: 'samahan@addu.edu.ph',
-    className: 'mb-2',
   },
   {
     title: 'Socials',
@@ -87,14 +90,15 @@ const Footer = () => {
   return (
     <footer className="w-full bg-beige text-lightBlue p-10">
       <div className="grid grid-cols-1 gap-y-[2rem] sm:gap-y-[1.5rem] md:gap-y-[2.3rem] lg:grid-cols-2 lg:grid-rows-2 lg:gap-y-0">
-        <div className="grid grid-flow-row lg:grid-flow-col">
-          <div className="flex flex-row lg:mr-[2rem]">
-            <div className="relative h-[3.34975rem] w-[3.36206rem] md:h-[5.01006rem] md:w-[5.0285rem] lg:h-[5.01006rem] lg:w-[5.0285rem] mr-[0.81rem] md:mr-[1.21rem] lg:mr-[1.21rem] mb-[1.12rem] md:mb-[1.5rem] lg:mb-[1.5rem]">
+        <div className="grid grid-flow-row lg:grid-flow-col gap-[1.12rem] sm:gap-[1.5rem] md:gap-[1.5rem] lg:gap-[2rem]">
+          <div className="grid grid-flow-col gap-[1.21rem] w-fit">
+            <div className="relative h-[3.34975rem] w-[3.36206rem] md:h-[5.01006rem] md:w-[5.0285rem] lg:h-[5.01006rem] lg:w-[5.0285rem]">
               <Image
                 alt="UniversitySealLogo"
                 src={UniversitySealLogo}
                 className="object-contain"
                 draggable={false}
+                placeholder="blur"
               />
             </div>
             <div className="relative h-[3.33175rem] w-[2.09863rem] md:h-[4.98313rem] md:w-[3.13881rem] lg:h-[4.98313rem] lg:w-[3.13881rem]">
@@ -103,6 +107,7 @@ const Footer = () => {
                 src={SamahanAtTheGetGoLogo}
                 className="object-contain"
                 draggable={false}
+                placeholder="blur"
               />
             </div>
           </div>
@@ -118,7 +123,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="grid row-start-3 sm:grid-cols-3 md:grid-cols-3 md:row-start-3 lg:grid-cols-3 lg:row-start-2 sm:w-[26rem] md:w-[28.8125rem] lg:w-[32rem] text-xs md:text-sm lg:text-sm gap-y-[1.12rem] sm:gap-x-[3rem] md:gap-x-[3.12rem] lg:gap-x-[3.12rem] lg:-mt-8">
+        <div className="grid row-start-3 sm:grid-cols-3 md:grid-cols-3 md:row-start-3 lg:grid-cols-3 lg:row-start-2 sm:w-[26rem] md:w-[28.8125rem] lg:w-[32rem] text-xs md:text-sm lg:text-sm gap-y-[1.12rem] sm:gap-x-[3rem] md:gap-x-[3.12rem] lg:gap-x-[3.12rem] lg:-mt-6">
           {quickLinksData.map((section, index) => (
             <div
               className="grid grid-flow-row h-fit gap-y-[0.75rem] font-normal"
@@ -136,7 +141,7 @@ const Footer = () => {
 
         <div className="grid font-normal row-start-2 md:row-start-2 lg:col-start-12 lg:row-span-full text-xs md:text-sm lg:text-sm sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-1 gap-y-[1.12rem] lg:gap-y-auto sm:max-w-[28rem] md:max-w-[28rem] lg:max-w-[13.4375rem] lg:text-right flex-wrap">
           {contactSection.map((content, index) => (
-            <div className={content.className} key={index}>
+            <div key={index}>
               <h4 className="font-bold">{content.title}</h4>
               {content.title === 'Socials' ? (
                 <div className="grid grid-flow-col w-fit gap-x-5 mt-2 lg:ml-auto">
@@ -155,20 +160,24 @@ const Footer = () => {
         <div className="flex-col mb-2">
           <p className="mb-2 flex flex-col sm:flex-row md:flex-row lg:flex-row">
             <span className="font-normal mr-1">Assets by</span>
-            <a href="https://www.facebook.com/SAMAHANCreativeTeam">
-              <span className="font-bold">SAMAHAN Creative Team</span>
+            <a
+              className="font-bold"
+              href="https://www.facebook.com/SAMAHANCreativeTeam"
+            >
+              SAMAHAN Creative Team
             </a>
           </p>
           <p className="mb-2 flex flex-col sm:flex-row md:flex-row lg:flex-row">
             <span className="font-normal mr-1">Developed by</span>
-            <a href="https://www.facebook.com/SAMAHANSysDev">
-              <span className="font-bold">
-                SAMAHAN Department of Systems Development
-              </span>
+            <a
+              className="font-bold"
+              href="https://www.facebook.com/SAMAHANSysDev"
+            >
+              SAMAHAN Department of Systems Development
             </a>
           </p>
           <p>
-            <Link className="flex flex-row" href="*">
+            <Link className="flex flex-row" href="#">
               <span className="align-baseline font-normal">
                 About the Developers
               </span>
@@ -179,7 +188,7 @@ const Footer = () => {
 
         <div>
           <p className="font-normal justify-end">
-            Copyright © 2023 | SAMAHAN At the Get-Go
+            Copyright © {currentYear} | SAMAHAN At the Get-Go
           </p>
         </div>
       </div>
