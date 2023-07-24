@@ -1,15 +1,15 @@
 import React from 'react';
 
-const AboutForthSectionBlueCard = () => {
+const ThisYearSamahanCard = () => {
   return (
     <>
       {/* first card */}
       <div className="w-full bg-lightBlue rounded-lg flex flex-col p-14">
         <div className="flex flex-col justify-center">
           <div className="flex flex-col">
-            <h1 className="text-white lg:text-5xl text-3xl font-medium font-artega">
+            <h3 className="text-white lg:text-5xl text-3xl font-medium font-artega">
               This 2023
-            </h1>
+            </h3>
           </div>
 
           <div className="flex mt-8">
@@ -26,4 +26,4 @@ const AboutForthSectionBlueCard = () => {
   );
 };
 
-export default AboutForthSectionBlueCard;
+export default ThisYearSamahanCard;
