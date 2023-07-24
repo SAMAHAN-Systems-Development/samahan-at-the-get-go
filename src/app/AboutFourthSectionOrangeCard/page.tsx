@@ -1,4 +1,4 @@
-import AboutForthSectionOrangeCard from '@/components/ui/AboutPage/AboutFourthSection/AboutForthSectionOrangeCard';
+import AboutForthSectionOrangeCard from '@/components/ui/AboutPage/AboutFourthSection/AtTheGetGoCard';
 
 export default function Home() {
   return (

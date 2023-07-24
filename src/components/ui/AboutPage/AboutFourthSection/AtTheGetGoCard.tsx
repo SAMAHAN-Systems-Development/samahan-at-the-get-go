@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AboutForthSectionOrangeCard = () => {
+const AtTheGetGoCard = () => {
   return (
     <>
       <div className="w-full bg-orange rounded-lg flex flex-col p-14">
@@ -12,9 +12,9 @@ const AboutForthSectionOrangeCard = () => {
           </p>
 
           <div className="flex flex-col mt-9">
-            <h1 className="text-white lg:text-4xl text-xl font-normal font-artega">
+            <h3 className="text-white lg:text-4xl text-xl font-normal font-artega">
               SAMAHAN that is at the get-go.
-            </h1>
+            </h3>
           </div>
         </div>
       </div>
@@ -22,4 +22,4 @@ const AboutForthSectionOrangeCard = () => {
   );
 };
 
-export default AboutForthSectionOrangeCard;
+export default AtTheGetGoCard;
