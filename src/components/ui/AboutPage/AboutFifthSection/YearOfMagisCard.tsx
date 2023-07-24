@@ -1,26 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
 
-const AboutFifthSection = () => {
+import imgSrc from 'public/assets/images/LeftBlueArrow.png';
+
+const YearofMagis = () => {
   return (
     <>
       <div className="w-full h-screen flex justify-center">
         <div className="relative w-full m-5 border-2 border-blue rounded-lg flex flex-col sm:p-14 p-5">
           <div className="relative sm:w-36 sm:h-36 w-20 h-20">
             <Image
-              src="/assets/images/LeftBlueArrow.png"
+              src={imgSrc}
+              placeholder="blur"
               alt="Blue Arrow"
               className="object-contain"
               fill
             />
           </div>
           <div className="flex flex-col gap-3 text-2xl lg:text-6xl md:text-5xl">
-            <h1 className=" flex flex-col gap-2 text-blue font-semibold tracking-wide font-artega">
+            <h2 className=" flex flex-col gap-2 text-blue font-semibold tracking-wide font-artega">
               <span className="text-blue sm:text-3xl text-sm font-appleGaramond italic font-semibold">
                 We aim to be in our
               </span>{' '}
               Year of Magis
-            </h1>
+            </h2>
           </div>
 
           <div className="flex flex-col mt-10">
@@ -47,4 +50,4 @@ const AboutFifthSection = () => {
   );
 };
 
-export default AboutFifthSection;
+export default YearofMagis;
