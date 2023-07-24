@@ -4,8 +4,8 @@ import type { LinkProps } from 'next/link';
 
 type ButtonType = React.ButtonHTMLAttributes<HTMLButtonElement> &
   Omit<LinkProps, 'href'> & {
-    href?: string;
     children?: React.ReactNode;
+    href?: string;
   };
 
 const Button: FC<ButtonType> = ({ children, ...props }) => {
