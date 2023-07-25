@@ -4,7 +4,9 @@ import type { VariantProps } from 'class-variance-authority';
 import { cva } from 'class-variance-authority';
 
 const dividerVariants = cva(
-  ['w-full h-8 overflow-hidden rounded-md relative'],
+  [
+    'w-full h-8 overflow-hidden rounded-md relative flex justify-center items-center',
+  ],
   {
     variants: {
       color: {
