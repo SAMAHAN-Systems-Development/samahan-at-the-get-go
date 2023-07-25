@@ -20,13 +20,13 @@ const cardVariants = cva(
 );
 
 type OfficerLargeCardProps = {
+  imageUrl: StaticImageData;
+  isButton: boolean;
   officer: {
     firstName: string;
     lastName: string;
     position: string;
   };
-  imageUrl: StaticImageData;
-  isButton: boolean;
 } & VariantProps<typeof cardVariants>;
 
 const OfficerLargeCard: React.FC<OfficerLargeCardProps> = ({
