@@ -1,6 +1,7 @@
 import React from 'react';
 
-import Image from '/public/assets/images/Mendez.jpg';
+import Image from 'public/assets/images/Mendez.jpg';
+
 import ModalOverlay from '@/components/ui/ModalOverlayComponent/ModalComponent';
 
 const page = () => {

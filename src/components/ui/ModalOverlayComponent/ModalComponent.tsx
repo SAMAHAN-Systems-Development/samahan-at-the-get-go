@@ -4,13 +4,13 @@ import Image from 'next/image';
 
 import Logo from 'public/assets/images/SamahanAtTheGetGoLogo.png';
 
-type ModalComponentProps {
-  imageUrl: StaticImageData;
-  hashtag?: string;
-  title: string;
+type ModalComponentProps = {
   description: string;
+  imageUrl: StaticImageData;
   link: string;
-}
+  title: string;
+  hashtag?: string;
+};
 
 const ModalOverlayComponent: React.FC<ModalComponentProps> = ({
   imageUrl,
