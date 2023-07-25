@@ -1,7 +1,7 @@
 import React from "react";
 
-import AboutForthSectionBlueCard from "@/components/ui/AboutPage/AboutForthSectionBlueCard";
-import AboutForthSectionOrangeCard from "@/components/ui/AboutPage/AboutForthSectionOrangeCard";
+import AboutForthSectionBlueCard from "@/components/ui/AboutPage/FourthSection/AboutForthSectionBlueCard";
+import AboutForthSectionOrangeCard from "@/components/ui/AboutPage/FourthSection/AboutForthSectionOrangeCard";
 
 const AboutFourthSection = () => {
   return (

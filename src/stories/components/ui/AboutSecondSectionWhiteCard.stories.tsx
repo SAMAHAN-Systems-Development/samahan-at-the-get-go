@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import AboutSecondSectionWhiteCard from "@/components/ui/AboutPage/AboutSecondSectionWhiteCard";
+import AboutSecondSectionWhiteCard from "@/components/ui/AboutPage/SecondSection/AboutSecondSectionWhiteCard";
 
 const meta: Meta<typeof AboutSecondSectionWhiteCard> = {
   title: "UI/AboutSecondSectionWhiteCard",
