@@ -40,26 +40,54 @@ const quickLinksData = [
   },
 ];
 
-const iconClassName =
-  'w-[1.26525rem] h-[1.26525rem] md:w-[1.69075rem] md:h-[1.69075rem] lg:w-[1.69075rem] lg:h-[1.69075rem] hover:-translate-y-0.5 transition duration-150 ease-out active:ease-in';
-
 const socialIconsData = [
   {
-    icon: <FaFacebookF className={iconClassName} />,
     url: 'https://www.facebook.com/AdDUSAMAHAN',
     label: 'Facebook',
   },
   {
-    icon: <FaInstagram className={iconClassName} />,
     url: 'https://www.instagram.com/samahan_ateneo',
     label: 'Instagram',
   },
   {
-    icon: <FaTwitter className={iconClassName} />,
     url: 'https://twitter.com/addusamahan',
     label: 'Twitter',
   },
 ];
+
+function renderIcon(socialName: string) {
+  switch (socialName.toUpperCase()) {
+    case 'FACEBOOK':
+      return (
+        <FaFacebookF
+          className={
+            'w-[1.26525rem] h-[1.26525rem] md:w-[1.69075rem] md:h-[1.69075rem] lg:w-[1.69075rem] lg:h-[1.69075rem] hover:-translate-y-0.5 transition duration-150 ease-out active:ease-in'
+          }
+        />
+      );
+
+    case 'INSTAGRAM':
+      return (
+        <FaInstagram
+          className={
+            'w-[1.26525rem] h-[1.26525rem] md:w-[1.69075rem] md:h-[1.69075rem] lg:w-[1.69075rem] lg:h-[1.69075rem] hover:-translate-y-0.5 transition duration-150 ease-out active:ease-in'
+          }
+        />
+      );
+
+    case 'TWITTER':
+      return (
+        <FaTwitter
+          className={
+            'w-[1.26525rem] h-[1.26525rem] md:w-[1.69075rem] md:h-[1.69075rem] lg:w-[1.69075rem] lg:h-[1.69075rem] hover:-translate-y-0.5 transition duration-150 ease-out active:ease-in'
+          }
+        />
+      );
+
+    default:
+      throw 'NotFound';
+  }
+}
 
 const contactSection = [
   {
@@ -74,15 +102,6 @@ const contactSection = [
   {
     title: 'E-mail',
     content: 'samahan@addu.edu.ph',
-  },
-  {
-    title: 'Socials',
-    content: socialIconsData.map((iconData, index) => (
-      <a href={iconData.url} key={index} aria-label={iconData.label}>
-        {iconData.icon}
-      </a>
-    )),
-    className: '',
   },
 ];
 
@@ -143,15 +162,19 @@ const Footer = () => {
           {contactSection.map((content, index) => (
             <div key={index}>
               <h4 className="font-bold">{content.title}</h4>
-              {content.title === 'Socials' ? (
-                <div className="grid grid-flow-col w-fit gap-x-5 mt-2 lg:ml-auto">
-                  {content.content}
-                </div>
-              ) : (
-                <p className="leading-[0.875rem]">{content.content}</p>
-              )}
+              <p className="leading-[0.875rem]">{content.content}</p>
             </div>
           ))}
+          <div>
+            <h4 className="font-bold">Socials</h4>
+            <div className="grid grid-flow-col w-fit gap-x-5 mt-2 lg:ml-auto">
+              {socialIconsData.map((iconData, index) => (
+                <a href={iconData.url} key={index} aria-label={iconData.label}>
+                  {renderIcon(iconData.label)}
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 
