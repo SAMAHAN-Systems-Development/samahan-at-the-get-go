@@ -1,8 +1,4 @@
-'use client';
-
-import React, { useEffect, useState } from 'react';
-
-import type { officer } from 'lib/types/officerType';
+import React from 'react';
 
 import OfficerLargeCard from '@/components/ui/OfficerLargeCard';
 import {
@@ -20,30 +16,20 @@ type OfficesDeputiesSectionProps = {
 const OfficesDeputiesSection: React.FC<OfficesDeputiesSectionProps> = ({
   office,
 }) => {
-  const [deputies, setDeputies] = useState<officer[]>([]);
-
-  const handleData = () => {
+  const handleData = (office: OfficesDeputiesSectionProps['office']) => {
     switch (office) {
       case 'OSP':
-        setDeputies(OSPDeputies);
-        break;
+        return OSPDeputies;
       case 'OVP':
-        setDeputies(OVPDeputies);
-        break;
+        return OVPDeputies;
       case 'OSG':
-        setDeputies(OSGDeputies);
-        break;
+        return OSGDeputies;
       case 'OST':
-        setDeputies(OSTDeputies);
-        break;
+        return OSTDeputies;
       default:
-        break;
+        return [];
     }
   };
-
-  useEffect(() => {
-    handleData();
-  }, [office]);
 
   return (
     <section className="container bg-white border-card border-lightBlue mt-5 rounded-section-card py-12 px-5 md:py-12 lg:py-16 lg:px-7">
@@ -52,7 +38,7 @@ const OfficesDeputiesSection: React.FC<OfficesDeputiesSectionProps> = ({
         <p className="uppercase">Deputies</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-        {deputies.map((person: officer, index: number) => {
+        {handleData(office).map((officer, index) => {
           return (
             <div
               key={index}
@@ -63,11 +49,11 @@ const OfficesDeputiesSection: React.FC<OfficesDeputiesSectionProps> = ({
             >
               <OfficerLargeCard
                 officer={{
-                  firstName: person.officer.firstName,
-                  lastName: person.officer.lastName,
-                  position: person.officer.position,
+                  firstName: officer.firstName,
+                  lastName: officer.lastName,
+                  position: officer.position,
+                  imageUrl: officer.imageUrl,
                 }}
-                imageUrl={person.imageUrl}
                 isButton={false}
               />
             </div>
