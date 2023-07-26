@@ -1,9 +1,9 @@
 import React from 'react';
-import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 
 import type { VariantProps } from 'class-variance-authority';
 import { cva } from 'class-variance-authority';
+import type { OfficerType } from 'lib/types/officerType';
 
 const cardVariants = cva(
   [
@@ -21,12 +21,7 @@ const cardVariants = cva(
 
 type OfficerLargeCardProps = {
   isButton: boolean;
-  officer: {
-    firstName: string;
-    imageUrl: StaticImageData;
-    lastName: string;
-    position: string;
-  };
+  officer: OfficerType;
 } & VariantProps<typeof cardVariants>;
 
 const OfficerLargeCard: React.FC<OfficerLargeCardProps> = ({
@@ -43,10 +38,12 @@ const OfficerLargeCard: React.FC<OfficerLargeCardProps> = ({
         placeholder="blur"
       />
       <div className={cardVariants({ isButton })}>
-        <div className="text-shadow text-xl leading-6 sm:text-title-sm sm:leading-title-sm lg:text-title-md lg:leading-title-md group-hover/overlay:translate-x-3 transition-all ease-in-out duration-300">
-          <p className="font-appleGaramond-bold italic">{firstName}</p>
-          <p className="font-artega uppercase">{lastName}</p>
-          <p className="font-sans uppercase">{position}</p>
+        <div className="text-shadow group-hover/overlay:translate-x-3 transition-all ease-in-out duration-300">
+          <div className="text-xl leading-6 sm:text-title-sm sm:leading-title-sm lg:text-title-md lg:leading-title-md">
+            <p className="font-appleGaramond-bold italic">{firstName}</p>
+            <p className="font-artega uppercase">{lastName}</p>
+          </div>
+          <p className="text-sm lg:text-xl font-sans uppercase">{position}</p>
         </div>
       </div>
     </div>
