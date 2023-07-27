@@ -1,7 +1,7 @@
 import type { officer } from 'lib/types/officerType';
 import placeholder from 'public/assets/images/Canonigo.jpg';
 
-export const Department: officer[] = [
+export const OSPDepartment: officer[] = [
   {
     officer: {
       position: 'Director',
@@ -56,6 +56,9 @@ export const Department: officer[] = [
     },
     imageUrl: placeholder,
   },
+];
+
+export const OVPDepartment: officer[] = [
   {
     officer: {
       position: 'Director',
@@ -92,6 +95,9 @@ export const Department: officer[] = [
     },
     imageUrl: placeholder,
   },
+];
+
+export const OSGDepartment: officer[] = [
   {
     officer: {
       position: 'Director',
@@ -182,6 +188,9 @@ export const Department: officer[] = [
     },
     imageUrl: placeholder,
   },
+];
+
+export const OSTDepartment: officer[] = [
   {
     officer: {
       position: 'Director',
