@@ -47,8 +47,8 @@ const DepartmentSection: React.FC<OfficeDepartmentSectionProps> = ({
   return (
     <section className="container border-card border-lightBlue mt-5 rounded-section-card py-12 px-5 md:py-12 lg:py-16 lg:px-7">
       <div className="flex justify-between text-xl text-lightBlue mb-11 px-4">
-        <p className="font-artega">03</p>
-        <p className="uppercase">Departments</p>
+        <h2 className="font-artega">03</h2>
+        <h2 className="uppercase">Departments</h2>
       </div>
       <div className={cn(`gap-4 grid ${gridColumns}`)}>
         {departmentData.map((officer, index) => (
