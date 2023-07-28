@@ -11,5 +11,5 @@ export default meta;
 type Story = StoryObj<typeof DepartmentSection>;
 
 export const Primary: Story = {
-  render: () => <DepartmentSection />,
+  render: () => <DepartmentSection office="OST" />,
 };
