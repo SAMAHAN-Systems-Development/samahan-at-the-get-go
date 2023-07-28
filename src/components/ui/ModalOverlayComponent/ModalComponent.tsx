@@ -23,7 +23,12 @@ const ModalOverlayComponent: React.FC<ModalComponentProps> = ({
     <div className="flex justify-center">
       <div className=" w-[45rem] border border-[#263167]">
         <div className="relative bg-[#1A275F] h-[15rem]">
-          <Image className="object-cover" alt="/" src={imageUrl} fill={true} />
+          <Image
+            className="object-cover object-center"
+            alt="/"
+            src={imageUrl}
+            fill={true}
+          />
         </div>
         <div>
           <div className="px-[2.25rem] bg-[#FAF6F2] text-[#263167]">
