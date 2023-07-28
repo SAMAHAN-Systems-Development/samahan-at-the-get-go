@@ -1,12 +1,9 @@
 import type { StaticImageData } from 'next/image';
 
-export type officer = {
+export type OfficerType = {
+  firstName: string;
   imageUrl: StaticImageData;
-  officer: {
-    firstName: string;
-    lastName: string;
-    position: string;
-    department?: string;
-  };
-  link?: string;
+  lastName: string;
+  position: string;
+  department?: string;
 };
