@@ -7,6 +7,7 @@ import {
   OSTDepartment,
   OVPDepartment,
 } from '@/data/Departments';
+import { cn } from '@/utils/cvaUtils';
 
 type OfficeDepartmentSectionProps = {
   office: 'OSP' | 'OVP' | 'OSG' | 'OST';
@@ -33,12 +34,12 @@ const DepartmentSection: React.FC<OfficeDepartmentSectionProps> = ({
   const departmentData = handleData(office);
 
   const departmentGridColumns: {
-    [key in OfficeDepartmentSectionProps['office']]: number;
+    [key in OfficeDepartmentSectionProps['office']]: string;
   } = {
-    OSP: 3,
-    OVP: 4,
-    OSG: 2,
-    OST: 4,
+    OSP: 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3',
+    OVP: 'grid-cols-1 md:grid-cols-4',
+    OSG: 'grid-cols-1 md:grid-cols-2',
+    OST: 'grid-cols-1 md:grid-cols-4',
   };
 
   const gridColumns = departmentGridColumns[office];
@@ -49,9 +50,7 @@ const DepartmentSection: React.FC<OfficeDepartmentSectionProps> = ({
         <p className="font-artega">03</p>
         <p className="uppercase">Departments</p>
       </div>
-      <div
-        className={`gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-${gridColumns}`}
-      >
+      <div className={cn(`gap-4 grid ${gridColumns}`)}>
         {departmentData.map((officer, index) => (
           <div key={index} className="flex flex-col items-center">
             <OfficerSmallCard
