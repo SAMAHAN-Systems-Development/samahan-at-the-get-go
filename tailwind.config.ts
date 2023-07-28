@@ -143,8 +143,8 @@ const config = {
       theme,
       addUtilities,
     }: {
-      matchUtilities: Function;
       addUtilities: Function;
+      matchUtilities: Function;
       theme: Function;
     }) {
       matchUtilities(

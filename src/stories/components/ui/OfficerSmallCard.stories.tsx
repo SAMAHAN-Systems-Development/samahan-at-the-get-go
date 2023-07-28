@@ -13,14 +13,11 @@ type Story = StoryObj<typeof OfficerSmallCard>;
 
 export const Primary: Story = {
   args: {
-    officer: {
-      firstName: 'Vincent Cesar',
-      lastName: 'Canonigo',
-      position: 'Director',
-      department: 'Department of Camapigns & Advocacies',
-    },
-
+    firstName: 'Vincent Cesar',
+    lastName: 'Canonigo',
+    position: 'Director',
     imageUrl: Canonigo,
+    department: 'Department of Camapigns & Advocacies',
   },
   render: (args) => <OfficerSmallCard {...args} />,
 };
