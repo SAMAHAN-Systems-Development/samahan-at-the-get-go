@@ -5,7 +5,10 @@ import DepartmentSection from '@/components/ui/Offices/DepartmentSection';
 const page = () => {
   return (
     <div>
-      <DepartmentSection />
+      <DepartmentSection office="OSP" />
+      <DepartmentSection office="OVP" />
+      <DepartmentSection office="OSG" />
+      <DepartmentSection office="OST" />
     </div>
   );
 };
