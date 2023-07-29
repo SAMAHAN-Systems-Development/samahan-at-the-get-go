@@ -1,15 +1,17 @@
 import React from 'react';
 import Image from 'next/image';
 
+import imgSrc from 'public/assets/images/BlueArrow.png';
+
 const TheSamahanCard = () => {
   return (
     <>
-      {/* first card */}
-      <div className="xl:w-3/5 md:w-full w-full border-card border-blue rounded-card flex flex-col ">
+      <div className="xl:w-3/5 md:w-full w-full border-card border-blue rounded-card flex flex-col">
         <div className="flex flex-row justify-between sm:m-11 m-6">
           <div className="relative w-16 h-5">
             <Image
-              src="/assets/images/BlueArrow.png"
+              src={imgSrc}
+              placeholder="blur"
               alt="Blue Arrow"
               className="object-contain"
               fill
@@ -22,7 +24,7 @@ const TheSamahanCard = () => {
 
         <div className="flex flex-col justify-center">
           <div className="flex sm:ml-10 ml-5 mb-6">
-            <h2 className=" flex flex-col text-blue lg:text-6xl md:text-4xl text-xl font-semibold font-artega">
+            <h2 className="flex flex-col text-blue lg:text-6xl md:text-4xl text-xl font-semibold font-artega">
               <span className="text-blue text-4xl italic font-appleGaramond">
                 The
               </span>

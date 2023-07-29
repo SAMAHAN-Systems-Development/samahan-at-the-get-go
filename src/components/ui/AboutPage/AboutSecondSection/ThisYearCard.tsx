@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 
+import imgSrc from 'public/assets/images/whiteArrow.png';
+
 const ThisYearCard = () => {
   return (
     <>
@@ -8,16 +10,17 @@ const ThisYearCard = () => {
         <div className="flex xl:items-center items-end xl:flex-col lg:flex-row md:flex-row justify-between w-full px-16 flex-col">
           <div className="flex justify-end xl:w-40 xl:h-40 md:w-16 md:h-16 w-12 h-12 relative">
             <Image
-              src="/assets/images/whiteArrow.png"
+              src={imgSrc}
+              placeholder="blur"
               alt="White Arrow"
               className="object-contain"
               fill
             />
           </div>
 
-          <h1 className="text-white xl:text-7xl text-3xl tracking-wider font-semibold font-helvetica mt-5 text-center">
+          <h2 className="text-white xl:text-7xl text-3xl tracking-wider font-semibold font-helvetica mt-5 text-center">
             This Year
-          </h1>
+          </h2>
         </div>
 
         <div className="flex xl:mx-10 md:mx-20 mx-16 mt-4 mb-6">

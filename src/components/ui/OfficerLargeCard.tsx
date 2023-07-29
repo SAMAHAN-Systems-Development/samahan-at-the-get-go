@@ -1,9 +1,9 @@
 import React from 'react';
-import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 
 import type { VariantProps } from 'class-variance-authority';
 import { cva } from 'class-variance-authority';
+import type { OfficerType } from 'lib/types/officerType';
 
 const cardVariants = cva(
   [
@@ -20,22 +20,16 @@ const cardVariants = cva(
 );
 
 type OfficerLargeCardProps = {
-  officer: {
-    firstName: string;
-    lastName: string;
-    position: string;
-  };
-  imageUrl: StaticImageData;
   isButton: boolean;
+  officer: OfficerType;
 } & VariantProps<typeof cardVariants>;
 
 const OfficerLargeCard: React.FC<OfficerLargeCardProps> = ({
-  officer: { firstName, lastName, position },
-  imageUrl,
+  officer: { firstName, lastName, position, imageUrl },
   isButton,
 }) => {
   return (
-    <div className="h-64 relative block overflow-hidden bg-blue max-w-2xl rounded-[0.938rem] shadow lg:h-72">
+    <div className="h-64 relative block overflow-hidden bg-blue w-full max-w-2xl rounded-[0.938rem] shadow lg:h-72">
       <Image
         src={imageUrl}
         alt={lastName}
@@ -44,10 +38,12 @@ const OfficerLargeCard: React.FC<OfficerLargeCardProps> = ({
         placeholder="blur"
       />
       <div className={cardVariants({ isButton })}>
-        <div className="text-shadow text-xl leading-6 sm:text-[1.5rem] sm:leading-7 md:text-title-sm md:leading-title-sm lg:text-title-md lg:leading-title-md group-hover/overlay:translate-x-3 transition-all ease-in-out duration-300">
-          <p className="font-appleGaramond-bold italic">{firstName}</p>
-          <p className="font-artega uppercase">{lastName}</p>
-          <p className="font-sans uppercase">{position}</p>
+        <div className="text-shadow group-hover/overlay:translate-x-3 transition-all ease-in-out duration-300">
+          <div className="text-xl leading-6 sm:text-title-sm sm:leading-title-sm lg:text-title-md lg:leading-title-md">
+            <p className="font-appleGaramond-bold italic">{firstName}</p>
+            <p className="font-artega uppercase">{lastName}</p>
+          </div>
+          <p className="text-sm lg:text-xl font-sans uppercase">{position}</p>
         </div>
       </div>
     </div>
