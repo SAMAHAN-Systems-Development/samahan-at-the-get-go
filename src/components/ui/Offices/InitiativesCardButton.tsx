@@ -17,6 +17,7 @@ const InitiativesCardButton: FC<CardType> = ({ title, imageUrl }) => {
         src={imageUrl}
         fill={true}
         style={{ objectFit: 'cover' }}
+        placeholder="blur"
       />
       <div className="absolute bottom-0 left-0  w-full h-full flex flex-col justify-between group hover:bg-blue/25 ease-in-out duration-300 p-7 pb-11 xl:p-8 xl:pb-12">
         <div className="flex w-full justify-between">
