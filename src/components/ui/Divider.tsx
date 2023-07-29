@@ -18,11 +18,11 @@ const dividerVariants = cva(
 );
 
 type TextProps = {
-  text: string;
   color: string;
+  text: string;
 } & VariantProps<typeof dividerVariants>;
 
-const Divider: React.FC<TextProps> = ({ text, color }) => {
+const Divider: React.FC<TextProps> = ({ color, text }) => {
   return (
     <div className={dividerVariants({ color })}>
       <p className="text-white inline-block absolute">{text}</p>
