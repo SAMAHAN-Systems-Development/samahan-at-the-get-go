@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 
+import imgSrc from 'public/assets/images/RoxasGate (2).png';
+
 import WeNavigateCard from '@/components/ui/AboutPage/AboutThirdSection/WeNavigateCard';
 
 const AboutThirdSection = () => {
@@ -10,7 +12,8 @@ const AboutThirdSection = () => {
         <WeNavigateCard />
         <div className="relative xl:w-2/5 md:w-full w-full xl:h-auto lg:h-96 h-96 rounded-card">
           <Image
-            src="/assets/images/RoxasGate (2).png"
+            src={imgSrc}
+            placeholder="blur"
             alt="Ateneo Gate"
             className="object-fill"
             fill
