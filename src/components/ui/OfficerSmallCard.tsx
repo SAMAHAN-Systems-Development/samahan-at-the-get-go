@@ -1,17 +1,19 @@
 import React from 'react';
 import Image from 'next/image';
 
-import type { officer } from 'lib/types/officerType';
+import type { OfficerType } from 'lib/types/officerType';
 
 import { cn } from '@/utils/cvaUtils';
 
-type OfficerSmallCardProps = officer;
+type OfficerSmallCardProps = OfficerType;
 
 const OfficerSmallCard: React.FC<OfficerSmallCardProps> = ({
-  officer,
+  firstName,
+  lastName,
+  position,
+  department,
   imageUrl,
 }) => {
-  const { firstName, lastName, position, department } = officer;
   return (
     <div className="flex flex-col items-center gap-y-5 p-4">
       <div className="h-[10.188rem] md:h-[11.688rem] w-[9.25rem] md:w-[10.688rem] relative rounded-card">
