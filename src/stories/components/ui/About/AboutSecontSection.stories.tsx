@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import AboutSecondSection from '@/components/ui/AboutPage/AboutSecondSection/AboutSecondSection';
 
 const meta: Meta<typeof AboutSecondSection> = {
-  title: 'About/ About Second Section',
+  title: 'About/About Second Section',
   component: AboutSecondSection,
 };
 
