@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import AboutForthSectionOrangeCard from '@/components/ui/AboutPage/AboutFourthSection/AboutForthSectionOrangeCard';
+import AboutForthSectionOrangeCard from '@/components/ui/AboutPage/AboutFourthSection/AtTheGetGoCard';
 
 const meta: Meta<typeof AboutForthSectionOrangeCard> = {
-  title: 'About/About Forth Section Orange Card',
+  title: 'About/At The Get Go Card',
   component: AboutForthSectionOrangeCard,
 };
 
