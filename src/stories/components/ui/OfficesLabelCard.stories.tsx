@@ -1,9 +1,9 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from '@storybook/react';
 
-import OfficesLabelCard from "@/components/ui/OfficesLabelCard";
+import OfficesLabelCard from '@/components/ui/OfficesLabelCard';
 
 const meta: Meta<typeof OfficesLabelCard> = {
-  title: "UI/OfficesLabelCard",
+  title: 'UI/Offices Label Card',
   component: OfficesLabelCard,
 };
 
@@ -12,7 +12,7 @@ type Story = StoryObj<typeof OfficesLabelCard>;
 
 export const Defaul: Story = {
   args: {
-    title: "Cluster Representatives",
+    title: 'Cluster Representatives',
   },
   render: (args) => <OfficesLabelCard {...args} />,
 };

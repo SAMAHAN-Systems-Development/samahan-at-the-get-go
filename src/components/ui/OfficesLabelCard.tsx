@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 
+import OrangeArrowImage from '/public/assets/images/orange_arrow.png';
+
 type OfficesLabelCardProps = {
   title: string;
 };
@@ -13,9 +15,10 @@ const OfficesLabelCard: React.FC<OfficesLabelCardProps> = ({ title }) => {
       </p>
       <div className="relative h-10 w-16 sm:w-32 lg:w-40 ">
         <Image
-          src="/assets/images/orange_arrow.png"
+          src={OrangeArrowImage}
           alt="Orange Arrow"
           className="object-contain"
+          placeholder="blur"
           fill
         />
       </div>
