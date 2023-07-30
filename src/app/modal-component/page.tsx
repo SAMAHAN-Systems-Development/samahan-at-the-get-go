@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Image from 'public/assets/images/HolisticHealth.jpg';
+import Image from 'public/assets/images/HolisticHealth.png';
 
 import ModalOverlay from '@/components/ui/ModalOverlayComponent/ModalComponent';
 
