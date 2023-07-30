@@ -28,6 +28,7 @@ const ModalOverlayComponent: React.FC<ModalComponentProps> = ({
             alt="/"
             src={imageUrl}
             fill={true}
+            placeholder="blur"
           />
         </div>
         <div>
