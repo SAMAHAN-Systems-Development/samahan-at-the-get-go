@@ -47,6 +47,7 @@ const ModalOverlayComponent: React.FC<ModalComponentProps> = ({
                     src={Logo}
                     width={18}
                     height={50}
+                    placeholder="blur"
                     style={{ objectFit: 'contain' }}
                   />
                 </div>
