@@ -14,6 +14,7 @@ const ThisYearCard = () => {
               placeholder="blur"
               alt="White Arrow"
               className="object-contain"
+              draggable={false}
               fill
             />
           </div>

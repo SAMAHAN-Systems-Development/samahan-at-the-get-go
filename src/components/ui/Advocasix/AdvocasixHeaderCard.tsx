@@ -13,6 +13,8 @@ const AdvocasixHeaderCard = () => {
             src={logo}
             fill={true}
             style={{ objectFit: 'contain' }}
+            placeholder="blur"
+            draggable={false}
           />
         </div>
         <p className="font-appleGaramound italic text-white text-xl md:text-3xl lg:text-title-md">

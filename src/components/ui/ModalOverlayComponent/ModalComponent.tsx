@@ -29,6 +29,7 @@ const ModalOverlayComponent: React.FC<ModalComponentProps> = ({
             src={imageUrl}
             fill={true}
             placeholder="blur"
+            draggable={false}
           />
         </div>
         <div>
@@ -49,6 +50,7 @@ const ModalOverlayComponent: React.FC<ModalComponentProps> = ({
                     height={50}
                     placeholder="blur"
                     style={{ objectFit: 'contain' }}
+                    draggable={false}
                   />
                 </div>
               </div>

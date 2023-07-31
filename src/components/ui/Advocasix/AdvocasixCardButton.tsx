@@ -16,6 +16,8 @@ const AdvocasixCardButton: FC<CardType> = ({ title, imageUrl }) => {
         src={imageUrl}
         fill={true}
         style={{ objectFit: 'cover' }}
+        placeholder="blur"
+        draggable={false}
       />
       <div className="absolute bottom-0 left-0  w-full h-full flex items-end group hover:bg-blue/25 ease-in-out duration-300 text-xl lg:text-3xl px-5 md:px-10 py-4 lg:px-20 lg:py-11">
         <h4 className="font-artega text-left text-white text-shadow-bold group-hover:translate-x-3 ease-in-out duration-300">
