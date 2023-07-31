@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import NextButtonForOffices from '@/components/ui/Offices/OfficesFloatingCard/NextButtonForOffices';
+import NextButtonForOffices from '@/components/ui/Offices/NextButtonForOffices';
 
 const meta: Meta<typeof NextButtonForOffices> = {
   title: 'UI/Next Button For Offices',
