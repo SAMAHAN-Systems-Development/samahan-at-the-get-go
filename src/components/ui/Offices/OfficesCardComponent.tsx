@@ -10,7 +10,7 @@ const OfficesCardComponent: React.FC<OfficesCardComponentProps> = ({
   description,
 }) => {
   return (
-    <div className="grid h-[18.6875rem] overflow-auto content-between w-full p-8 text-white bg-orange border-solid border-card rounded-card sm:h-[22rem] md:h-[29.375rem] lg:h-[26.75rem] ">
+    <div className="grid h-[18.6875rem] overflow-auto content-between w-full p-8 text-white bg-orange border-solid border-card rounded-card sm:h-[22rem] md:h-[29.375rem] lg:h-[26.75rem]">
       <div className="flex flex-row text-sm w-full justify-between">
         <p className="font-artega font-medium text-[0.875rem] sm:text-[1rem] md:text-[1.25rem] lg:text-[1.5625rem]">
           01
@@ -23,7 +23,7 @@ const OfficesCardComponent: React.FC<OfficesCardComponentProps> = ({
         <h2 className="text-center font-artega mt-2 text-[1.9375rem] font-medium justify-self-center sm:text-[2.615rem] md:text-[3.8125rem] lg:text-[4.75rem]">
           {title}
         </h2>
-        <h3 className="font-sans  flex-wrap text-justify flex text-[0.875rem] sm:[1rem] md:text-[1.1875rem] lg:text-[1.5625rem] sm:text-center lg:text-center">
+        <h3 className="font-sans flex-wrap text-justify flex text-[0.875rem] sm:[1rem] md:text-[1.1875rem] lg:text-[1.5625rem] sm:text-center lg:text-center">
           {description}
         </h3>
       </div>
