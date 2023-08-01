@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import imgSrc from 'public/assets/images/BlueArrow.png';
+import imgSrc2 from 'public/assets/images/SmallBlueArrow.png';
 
 const TheSamahanCard = () => {
   return (
@@ -40,7 +41,7 @@ const TheSamahanCard = () => {
           <div className="flex flex-row gap-3 my-6 ml-10">
             <div className="relative w-10 h-5">
               <Image
-                src="/assets/images/SmallBlueArrow.png"
+                src={imgSrc2}
                 alt="Blue Arrow"
                 className="object-contain"
                 placeholder="blur"
@@ -69,7 +70,7 @@ const TheSamahanCard = () => {
           <div className="flex flex-row gap-3 my-6 ml-10">
             <div className="relative w-10 h-5">
               <Image
-                src="/assets/images/SmallBlueArrow.png"
+                src={imgSrc2}
                 alt="Blue Arrow"
                 className="object-contain"
                 placeholder="blur"
