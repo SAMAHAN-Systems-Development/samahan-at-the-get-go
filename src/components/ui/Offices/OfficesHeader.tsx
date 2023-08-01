@@ -20,6 +20,7 @@ const OfficesHeader: React.FC<OfficesHeaderProps> = ({ position }) => {
             src={SamahanAtTheGetGoLogo}
             className="object-contain"
             draggable={false}
+            placeholder="blur"
           />
         </div>
       </div>

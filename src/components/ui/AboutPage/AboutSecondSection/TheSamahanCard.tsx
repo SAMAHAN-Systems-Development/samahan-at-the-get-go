@@ -14,6 +14,7 @@ const TheSamahanCard = () => {
               placeholder="blur"
               alt="Blue Arrow"
               className="object-contain"
+              draggable={false}
               fill
             />
           </div>
@@ -42,6 +43,8 @@ const TheSamahanCard = () => {
                 src="/assets/images/SmallBlueArrow.png"
                 alt="Blue Arrow"
                 className="object-contain"
+                placeholder="blur"
+                draggable={false}
                 fill
               />
             </div>
@@ -69,6 +72,8 @@ const TheSamahanCard = () => {
                 src="/assets/images/SmallBlueArrow.png"
                 alt="Blue Arrow"
                 className="object-contain"
+                placeholder="blur"
+                draggable={false}
                 fill
               />
             </div>
