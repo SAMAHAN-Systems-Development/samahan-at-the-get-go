@@ -3,11 +3,13 @@ import Alkuino from 'public/assets/images/Alkuino.jpg';
 import Amarga from 'public/assets/images/Amarga.jpg';
 import Ancog from 'public/assets/images/Ancog.jpg';
 import Bacusmo from 'public/assets/images/Bacusmo.jpg';
+import Batoon from 'public/assets/images/Batoon.jpg';
 import Bitana from 'public/assets/images/Bitana.jpg';
+import Buccat from 'public/assets/images/Buccat.jpg';
 import Cagmat from 'public/assets/images/Cagmat.jpg';
 import Cajes from 'public/assets/images/Cajes.jpg';
-import placeholder from 'public/assets/images/Canonigo.jpg';
 import Cortez from 'public/assets/images/Cortez.jpg';
+import Donga from 'public/assets/images/Donga.jpg';
 import Estrada from 'public/assets/images/Estrada.jpg';
 import Gempesaw from 'public/assets/images/Gempesaw.jpg';
 import Hernandez from 'public/assets/images/Hernandez.jpg';
@@ -47,9 +49,9 @@ export const OSPDepartment: OfficerType[] = [
   {
     position: 'Deputy Director',
     department: 'Department of Campaigns & Advocacy',
-    firstName: 'Algene Derek Louis',
-    lastName: 'Lago',
-    imageUrl: placeholder,
+    firstName: 'Jewel',
+    lastName: 'Batoon',
+    imageUrl: Batoon,
   },
   {
     position: 'Director',
@@ -87,14 +89,14 @@ export const OVPDepartment: OfficerType[] = [
     department: 'Department of Disaster Risk Reduction & Management',
     firstName: 'Justine Nicole',
     lastName: 'Buccat',
-    imageUrl: placeholder,
+    imageUrl: Buccat,
   },
   {
     position: 'Deputy Director',
     department: 'Department of Disaster Risk Reduction & Management',
-    firstName: 'Joshua Emil',
-    lastName: 'Narisma',
-    imageUrl: placeholder,
+    firstName: 'Lian Arabela',
+    lastName: 'Donga',
+    imageUrl: Donga,
   },
 ];
 
