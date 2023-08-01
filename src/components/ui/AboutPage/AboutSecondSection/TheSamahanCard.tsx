@@ -45,7 +45,7 @@ const TheSamahanCard = () => {
                 fill
               />
             </div>
-            <p className="text-blue font-bold font-2xl font-appleGaramond">
+            <p className="text-blue font-bold sm:text-lg text-base font-appleGaramond">
               Commitment
             </p>
           </div>
@@ -72,7 +72,7 @@ const TheSamahanCard = () => {
                 fill
               />
             </div>
-            <p className="text-blue font-bold font-2xl font-appleGaramond">
+            <p className="text-blue font-bold sm:text-lg text-base font-appleGaramond">
               Navigate
             </p>
           </div>
