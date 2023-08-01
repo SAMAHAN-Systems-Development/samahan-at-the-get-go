@@ -11,6 +11,8 @@ const SCBTitleCard = () => {
           src={SamahanAtTheGetGoLogo}
           alt="SamahanAtTheGetGoLogo"
           className="object-contain"
+          placeholder="blur"
+          draggable={false}
           fill
         />
       </div>

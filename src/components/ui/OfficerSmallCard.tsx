@@ -17,7 +17,13 @@ const OfficerSmallCard: React.FC<OfficerSmallCardProps> = ({
   return (
     <div className="flex flex-col items-center gap-y-5 p-4">
       <div className="h-[10.188rem] md:h-[11.688rem] w-[9.25rem] md:w-[10.688rem] relative rounded-card">
-        <Image src={imageUrl} alt={lastName} fill placeholder="blur" />
+        <Image
+          src={imageUrl}
+          alt={lastName}
+          placeholder="blur"
+          draggable={false}
+          fill
+        />
       </div>
       <div className="flex flex-col items-center">
         <div className="flex flex-col items-center">

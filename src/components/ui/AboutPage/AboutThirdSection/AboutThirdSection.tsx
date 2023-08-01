@@ -16,6 +16,7 @@ const AboutThirdSection = () => {
             placeholder="blur"
             alt="Ateneo Gate"
             className="object-fill"
+            draggable={false}
             fill
           />
         </div>
