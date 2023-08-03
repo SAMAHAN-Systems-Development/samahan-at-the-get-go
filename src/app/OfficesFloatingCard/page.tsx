@@ -9,7 +9,7 @@ const page = () => {
     <div>
       <SCBClickableCardsSection />
       <OfficesDeputiesSection office="OSP" />
-      <OfficesFloatingCard office="office-of-the-president" />
+      <OfficesFloatingCard office="OSP" />
     </div>
   );
 };
