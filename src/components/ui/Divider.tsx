@@ -10,9 +10,9 @@ const dividerVariants = cva(
   {
     variants: {
       page: {
-        aboutPage:
+        AboutPage:
           'bg-orange py-[1rem] px-4 text-sm sm:text-sm md:text-base lg:text-base italic',
-        scbPage:
+        SCBPage:
           'bg-blue py-8 px-4 md:py-[2rem] lg:py-[2rem] text-sm font-medium font-artega sm:text-base md:text-base lg:text-[1.625rem]',
       },
     },
