@@ -13,6 +13,7 @@ const WeNavigateCard = () => {
             placeholder="blur"
             alt="Blue Arrow"
             className="object-contain"
+            draggable={false}
             fill
           />
         </div>

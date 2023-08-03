@@ -34,8 +34,9 @@ const OfficerLargeCard: React.FC<OfficerLargeCardProps> = ({
         src={imageUrl}
         alt={lastName}
         className="object-cover object-top"
-        fill
         placeholder="blur"
+        draggable={false}
+        fill
       />
       <div className={cardVariants({ isButton })}>
         <div className="text-shadow group-hover/overlay:translate-x-3 transition-all ease-in-out duration-300">
