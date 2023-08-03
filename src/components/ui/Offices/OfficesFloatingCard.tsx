@@ -19,6 +19,8 @@ const OfficesFloatingCard: React.FC<OfficesFloatingCardProps> = ({
           src={SamahanAtTheGetGoLogo}
           alt="SamahanAtTheGetGoLogo"
           className="object-contain"
+          placeholder="blur"
+          draggable={false}
           fill
         />
       </div>
