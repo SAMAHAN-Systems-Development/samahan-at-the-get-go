@@ -1,13 +1,15 @@
-import ModalUI from '@/components/ui/ModalUI';
+import React from 'react';
+
+import ModalUI from '@/components/ui/Advocasix/AdvocasixModalUI';
 import { advocasixData } from '@/data/AdvocasixData';
 
 export default function page() {
   return (
     <div className="flex flex-col p-6 gap-6">
       {advocasixData.map((item, index) => (
-        <div key={index}>
+        <React.Fragment key={index}>
           <ModalUI {...item} />
-        </div>
+        </React.Fragment>
       ))}
     </div>
   );
