@@ -42,7 +42,6 @@ const TheSamahanCard = () => {
             <div className="relative w-10 h-5">
               <Image
                 src={imgSrc2}
-                placeholder="blur"
                 alt="Blue Arrow"
                 className="object-contain"
                 draggable={false}
