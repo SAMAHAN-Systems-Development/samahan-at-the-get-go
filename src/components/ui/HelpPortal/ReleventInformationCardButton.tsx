@@ -6,7 +6,7 @@ const ReleventInformationCardButton: React.FC<
   ReleventInformationCardButtonProps
 > = ({ title }) => {
   return (
-    <div className="border-card border-lightBlue rounded-card px-7 py-3 m-2 group hover:cursor-pointer">
+    <div className="border-card border-lightBlue rounded-card px-7 py-3 group hover:cursor-pointer">
       <p className="font-artega bold text-xs lg:text-sm text-lightBlue capitalize group-hover:translate-x-3 transition-all ease-in-out duration-300">
         {title}
       </p>
