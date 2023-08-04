@@ -1,14 +1,14 @@
 import React from 'react';
 
-import ModalUI from '@/components/ui/Advocasix/AdvocasixModalUI';
-import { advocasixData } from '@/data/AdvocasixData';
+import ModalUI from '@/components/ui/Offices/InitiativesModalUI';
+import { initiativesOSP } from '@/data/InitiativesOSP';
 
 export default function page() {
   return (
-    <div className="flex flex-col p-6 gap-6">
-      {advocasixData.map((item, index) => (
+    <div className="flex flex-col md:flex-row md:flex-wrap justify-center p-6 gap-6">
+      {initiativesOSP.map((item, index) => (
         <React.Fragment key={index}>
-          <ModalUI {...item} />
+          <ModalUI {...item} number={String(index + 1).padStart(2, '0')} />
         </React.Fragment>
       ))}
     </div>
