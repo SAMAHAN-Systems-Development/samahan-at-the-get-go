@@ -30,7 +30,6 @@ const AtTheGetGoLogo: React.FC = () => {
             type: 'loop',
             arrows: false,
             speed: 2000,
-            lazyLoad: 'nearby',
             interval: 4000,
           }}
         >
