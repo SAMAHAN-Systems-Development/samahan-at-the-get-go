@@ -15,8 +15,8 @@ const InitiativesCardButton: FC<CardType> = ({ title, imageUrl }) => {
       <Image
         alt={title}
         src={imageUrl}
-        fill={true}
-        style={{ objectFit: 'cover' }}
+        fill
+        className="object-cover"
         placeholder="blur"
         draggable={false}
       />

@@ -13,12 +13,12 @@ const AdvocasixDescriptionCard = () => {
           </p>
           <div className="relative w-[268px] ml-3 justify-end">
             <Image
-              alt="/"
+              alt="arrow"
               src={arrow}
               fill
-              style={{ objectFit: 'contain' }}
+              className="object-contain"
               placeholder="blur"
-              draggable="false"
+              draggable={false}
             />
           </div>
         </div>
