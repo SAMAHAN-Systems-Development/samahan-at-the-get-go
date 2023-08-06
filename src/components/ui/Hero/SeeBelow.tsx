@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
 const SeeBelow: React.FC = () => {
   return (
-    <div className="m-2 flex items-center bg-orange px-2 md:px-10 rounded-[12.5rem] text-white w-auto h-[1.25rem] md:h-[2rem]">
+    <div className="m-2 flex items-center bg-orange px-2 md:px-10 rounded-[12.5rem] text-white w-full h-[1.25rem] md:h-[2rem]">
       <div className="flex-none text-[0.563rem] md:text-[.813rem] lg:text-[1rem] font-normal">
         SAMAHAN
       </div>
