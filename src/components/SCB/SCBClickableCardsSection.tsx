@@ -56,7 +56,7 @@ const SCBOfficers: SCBOfficerType[] = [
 
 const SCBClickableCardsSection = () => {
   return (
-    <section className="bg-lightBlue mt-5 rounded-section-card py-12 px-5 md:py-12 lg:py-16 lg:px-7">
+    <section className="container bg-lightBlue mt-5 rounded-section-card py-12 px-5 md:py-12 lg:py-16 lg:px-7">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
         {SCBOfficers.map((scbOfficer, index) => {
           if (scbOfficer.link) {
