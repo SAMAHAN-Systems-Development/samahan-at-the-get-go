@@ -6,4 +6,5 @@ export type ModalDataType = {
   imageUrl2: StaticImageData;
   title: string;
   hashtag?: string;
+  number?: string;
 };

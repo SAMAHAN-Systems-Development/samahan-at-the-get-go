@@ -6,8 +6,8 @@ import Image from 'next/image';
 
 type CardType = {
   imageUrl: StaticImageData;
-  number: string;
   title: string;
+  number?: string;
 };
 
 const InitiativesCardButton: FC<CardType> = ({ title, imageUrl, number }) => {

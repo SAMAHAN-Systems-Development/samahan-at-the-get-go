@@ -8,11 +8,7 @@ import type { ModalDataType } from 'library/types/ModalDataType';
 import ModalOverlayComponent from '@/components/ui/ModalOverlayComponent/ModalComponent';
 import InitiativesCardButton from '@/components/ui/Offices/InitiativesCardButton';
 
-type InitiativesModalType = ModalDataType & {
-  number: string;
-};
-
-const ModalUI: FC<InitiativesModalType> = ({
+const InitiativesModalUI: FC<ModalDataType> = ({
   title,
   imageUrl1,
   imageUrl2,
@@ -43,4 +39,4 @@ const ModalUI: FC<InitiativesModalType> = ({
   );
 };
 
-export default ModalUI;
+export default InitiativesModalUI;
