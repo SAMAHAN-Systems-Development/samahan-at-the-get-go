@@ -97,6 +97,7 @@ const config = {
       animation: {
         slideDown: 'slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1)',
         slideUp: 'slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1)',
+        fade: 'fadeIn 5s ease-in-out enterFromRight',
         marquee: 'marquee 25s linear infinite',
         marquee2: 'marquee2 25s linear infinite',
       },

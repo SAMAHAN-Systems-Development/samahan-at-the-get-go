@@ -29,7 +29,7 @@ const AboutPage = () => {
       </div>
       {/* At the get go image */}
       <div className="w-full h-screen flex justify-center items-center">
-        <div className="w-10/12 h-5/6 flex justify-center relative">
+        <div className="w-10/12 h-5/6 flex justify-center relative animate-fade">
           <Image
             src={imgSrc}
             placeholder="blur"
@@ -39,7 +39,6 @@ const AboutPage = () => {
           />
         </div>
       </div>
-
       {/* Third Section */}
       <div className="w-full flex sm:h-screen h-5/6 justify-center">
         <AboutThirdSection />
@@ -54,7 +53,7 @@ const AboutPage = () => {
       </div>
       {/* SAMAHAN Picture */}
       <div className="w-full sm:h-screen h-52 flex justify-center items-center px-6">
-        <div className="w-full sm:h-full h-96 flex justify-center relative">
+        <div className="w-full sm:h-full h-96 flex justify-center relative animate-fade">
           <Image
             src={imgSrc2}
             placeholder="blur"
