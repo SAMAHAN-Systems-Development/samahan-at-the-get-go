@@ -27,7 +27,7 @@ const WeNavigateCard = () => {
           </div>
 
           <div className="flex mt-14">
-            <p className="text-white text-justify font-medium lg:text-lg md:text-base text-sm ">
+            <p className="text-white text-justify font-medium lg:text-xl md:text-base text-sm xl:leading-9">
               A community that continues to defy with stories of hope and
               resilience. Punctuated by the pandemic times, our university life
               was confined to just being there instead of being more. However,

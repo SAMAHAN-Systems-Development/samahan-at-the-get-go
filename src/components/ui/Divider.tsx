@@ -26,7 +26,7 @@ type TextProps = {
 
 const Divider: React.FC<TextProps> = ({ page, text }) => {
   return (
-    <div className="relative flex overflow-x-hidden">
+    <div className="relative flex overflow-x-hidden px-6">
       <div className={dividerVariants({ page })}>
         <p className="text-white absolute animate-marquee">{text}</p>
         <p className="text-white absolute animate-marquee2">{text}</p>

@@ -10,7 +10,7 @@ const AboutThirdSection = () => {
     <>
       <div className="flex flex-col justify-start w-full gap-2 p-5 xl:flex-row md:flex-col">
         <WeNavigateCard />
-        <div className="relative xl:w-2/5 md:w-full w-full xl:h-auto lg:h-96 h-96 rounded-card">
+        <div className="relative xl:w-2/5 md:w-full w-full xl:h-auto lg:h-96 h-screen rounded-card">
           <Image
             src={imgSrc}
             placeholder="blur"
