@@ -6,7 +6,7 @@ type RIACardType = {
   title: string;
 };
 
-const Button: FC<RIACardType> = ({ title, children }) => {
+const RIACard: FC<RIACardType> = ({ title, children }) => {
   return (
     <div className="w-full overflow-hidden border-solid border-card border-lightBlue rounded-section-card">
       <div className="border-b-card border-lightBlue md:py-4 md:px-7 lg:py-6 lg:px-14">
@@ -21,4 +21,4 @@ const Button: FC<RIACardType> = ({ title, children }) => {
   );
 };
 
-export default Button;
+export default RIACard;
