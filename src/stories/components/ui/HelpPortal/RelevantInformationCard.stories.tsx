@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import RelevantInformationAreaCard from '@/components/ui/HelpPortal/RelevantInformationAreaCard';
 
 const meta: Meta<typeof RelevantInformationAreaCard> = {
-  title: 'About/About Second Section',
+  title: 'Relevant Information Card',
   component: RelevantInformationAreaCard,
 };
 

@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import FrequentlyAskedQuestionCard from '@/components/ui/HelpPortal/FrequentlyAskedQuestionCard';
 
 const meta: Meta<typeof FrequentlyAskedQuestionCard> = {
-  title: 'About/About Second Section',
+  title: 'Frequently Asked Question Card',
   component: FrequentlyAskedQuestionCard,
 };
 

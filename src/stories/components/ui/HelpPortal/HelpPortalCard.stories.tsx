@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import HelpPortalCard from '@/components/ui/HelpPortal/HelpPortalCard';
 
 const meta: Meta<typeof HelpPortalCard> = {
-  title: 'About/About Second Section',
+  title: 'Help Portal Card',
   component: HelpPortalCard,
 };
 

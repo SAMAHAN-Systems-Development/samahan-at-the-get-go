@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import SamahanGuideBookCard from '@/components/ui/HelpPortal/SamahanGuideBookCard';
 
 const meta: Meta<typeof SamahanGuideBookCard> = {
-  title: 'About/About Second Section',
+  title: 'Samahan GuideBook Card',
   component: SamahanGuideBookCard,
 };
 
