@@ -85,10 +85,22 @@ const config = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' },
         },
+        rotateIn: {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(-180deg)' },
+        },
+        rotateOut: {
+          from: { transform: 'rotate(-180deg)' },
+          to: { transform: 'rotate(0deg)' },
+        },
       },
       animation: {
         slideDown: 'slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1)',
         slideUp: 'slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1)',
+        fadeIn: 'fadeIn 0.5s ease-in-out',
+        fadeOut: 'fadeOut 0.5s ease-out',
+        rotateIn: 'rotateIn 0.5s ease-in-out',
+        rotateOut: 'rotateOut 0.5s ease-in-out',
       },
     },
     colors: {
