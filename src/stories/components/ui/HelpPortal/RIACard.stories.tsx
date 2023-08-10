@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import RIACard from '@/components/ui/RIACard';
+import RIACard from '@/components/ui/HelpPortal/RIACard';
 
 const meta: Meta<typeof RIACard> = {
   title: 'UI/Relevant Information Area Card',
