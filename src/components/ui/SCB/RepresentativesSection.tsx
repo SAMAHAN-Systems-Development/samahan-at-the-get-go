@@ -24,7 +24,7 @@ const RepresentativesSection: React.FC = () => {
               : ''
           )}
         >
-          <OfficerSmallCard {...item} />
+          <OfficerSmallCard {...item} textColorClass="text-white" />
         </div>
       ))}
     </section>
