@@ -19,6 +19,7 @@ const OfficesLabelCard: React.FC<OfficesLabelCardProps> = ({ title }) => {
           alt="Orange Arrow"
           className="object-contain"
           placeholder="blur"
+          draggable={false}
           fill
         />
       </div>

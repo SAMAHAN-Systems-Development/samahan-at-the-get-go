@@ -14,6 +14,7 @@ const YearofMagis = () => {
               placeholder="blur"
               alt="Blue Arrow"
               className="object-contain"
+              draggable={false}
               fill
             />
           </div>
