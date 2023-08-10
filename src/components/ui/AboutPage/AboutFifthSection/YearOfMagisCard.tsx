@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import imgSrc from 'public/assets/images/LeftBlueArrow.png';
+import imgSrc from 'public/assets/images/WhiteArrow3.png';
 
 const YearofMagis = () => {
   return (
