@@ -22,7 +22,7 @@ const RIAModalUI: FC<RIAMOdalUIProps> = ({ title, children }) => {
       </Dialog.Trigger>
       <Dialog.Portal>
         <ModalWrapper>
-          <div className="bg-white p-6 rounded-section-card">
+          <div className="bg-white p-6  h-[40rem] w-full md:w-[45rem] overflow-y-auto border-solid border-card border-lightBlue">
             <TitlePill color="orange" title={title} />
             {children}
           </div>
