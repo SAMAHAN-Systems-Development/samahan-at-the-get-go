@@ -2,12 +2,9 @@ import React from 'react';
 
 const InitiativesTitleCard: React.FC = () => {
   return (
-    <div className="h-[31.375rem] w-auto md:h-[48.25rem] lg:h-[35.125rem] bg-orange m-1 p-4 md:px-8 md:py-[3.75rem] lg:px-[3.75rem] lg:py-8 flex flex-col justify-between rounded-section-card text-white">
+    <div className="h-[31.375rem] w-auto md:h-[48.25rem] lg:h-[35.125rem] bg-[#263167] m-1 p-4 md:px-8 md:py-[3.75rem] lg:px-[3.75rem] lg:py-8 flex flex-col justify-between rounded-section-card text-white">
       <div className="flex justify-between">
-        <h2 className="flex font-artega text-[1.25rem] md:text-[1.25rem] lg:text-[1.875rem] font-medium">
-          04
-        </h2>
-        <h2 className="flex font-appleGaramond italic font-bold text-[1.25rem] md:text-[1.25rem] lg:text-[1.875rem]">
+        <h2 className="flex font-appleGaramond italic font-bold text-[1.25rem] md:text-[1.25rem] lg:text-[1.875rem] ml-auto">
           #AtTheGetGo
         </h2>
       </div>

@@ -1,17 +1,17 @@
 import React from 'react';
 import Image from 'next/image';
 
-import imgSrc from 'public/assets/images/BigBlueArrow.png';
+import imgSrc from 'public/assets/images/WhiteArrow2.png';
 
 const WeNavigateCard = () => {
   return (
     <>
-      <div className="w-full h-full bg-lightBlue rounded-lg flex flex-col sm:p-28 px-10 py-20">
+      <div className="w-full h-full bg-lightBlue rounded-lg flex gap-5 flex-col sm:p-28 px-10 py-20">
         <div className="relative w-24 h-24 sm:w-36 sm:h-36">
           <Image
             src={imgSrc}
             placeholder="blur"
-            alt="Blue Arrow"
+            alt="White Arrow"
             className="object-contain"
             draggable={false}
             fill

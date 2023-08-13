@@ -23,10 +23,6 @@ const AboutPage = () => {
         page="AboutPage"
         text="The Samahan ng mga Mag-aaral ng Pamantasang ng Ateneo de Davao, or SAMAHAN, is the lone autonomous Student Government of the College Unit of Ateneo de Davao University.&nbsp;"
       />
-      {/* Second Section */}
-      <div className="w-full flex h-5/6 justify-center">
-        <AboutSecondSection />
-      </div>
       {/* At the get go image */}
       <div className="w-full h-screen flex justify-center items-center">
         <div className="w-10/12 h-5/6 flex justify-center relative animate-fade">
@@ -38,6 +34,10 @@ const AboutPage = () => {
             fill
           />
         </div>
+      </div>
+      {/* Second Section */}
+      <div className="w-full flex h-5/6 justify-center">
+        <AboutSecondSection />
       </div>
       {/* Third Section */}
       <div className="w-full flex sm:h-screen h-5/6 justify-center">
