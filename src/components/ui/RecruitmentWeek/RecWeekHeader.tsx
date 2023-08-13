@@ -28,7 +28,7 @@ const RecWeekHeader = () => {
           <span className="font-appleGaramond uppercase italic font-medium text-[1.5625rem] sm:text-[1.75rem] md:text-[2.1875rem] lg:text-[3.125rem]">
             Samahan
           </span>
-          <span className="font-artega uppercase block text-[1.9375rem] sm:text-[1.75rem] md:text-[2.1875rem] lg:text-[3.8125rem] text-wrap max-w-[19rem] lg:w-full">
+          <span className="font-artega uppercase block text-[1.9375rem] sm:text-[1.75rem] md:text-[2.1875rem] lg:no-wrap lg:text-[3.8125rem] text-wrap max-w-[19rem] lg:w-full">
             Recruitment Week
           </span>
         </h1>
