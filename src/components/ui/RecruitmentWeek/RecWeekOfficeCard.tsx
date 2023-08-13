@@ -29,9 +29,9 @@ const RecWeekOfficeCard: React.FC<RecWeekOfficeCardProps> = ({
         </div>
       </div>
       <div>
-        <p className="font-artega uppercase font-normal text-wrap text-[1.25rem] sm:text-[1.5rem] md:text-[1.9375rem] lg:text-[3.0625rem] max-w-[15.0625rem] sm:max-w-[37rem] lg:max-w-[71.2rem]">
+        <h1 className="font-artega uppercase font-normal text-wrap text-[1.25rem] sm:text-[1.5rem] md:text-[1.9375rem] lg:text-[3.0625rem] max-w-[15.0625rem] sm:max-w-[37rem] lg:max-w-[71.2rem]">
           Office of the {position}
-        </p>
+        </h1>
       </div>
     </div>
   );
