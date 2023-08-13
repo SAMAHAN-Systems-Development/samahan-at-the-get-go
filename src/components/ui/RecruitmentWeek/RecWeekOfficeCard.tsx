@@ -13,7 +13,7 @@ const RecWeekOfficeCard: React.FC<RecWeekOfficeCardProps> = ({
   position,
 }) => {
   return (
-    <div className="grid content-between w-full text-white bg-lightBlue h-[17.875rem] md:h-[26.75rem] px-[3rem] py-[3.27rem] md:px-[3.39rem] md:py-[3.63rem] lg:px-[4.68rem] lg:pt-[5rem] lg:pb-[3.25rem]">
+    <div className="grid content-between w-full border-solid border-card border-lightBlue rounded-section-card text-white bg-lightBlue h-[17.875rem] md:h-[26.75rem] px-[3rem] py-[3.27rem] md:px-[3.39rem] md:py-[3.63rem] lg:px-[4.68rem] lg:pt-[5rem] lg:pb-[3.25rem]">
       <div className="flex flex-row w-full justify-between">
         <p className="font-artega font-medium text-[0.875rem] sm:text-[1rem] md:text-[1.5625rem]">
           {officeNumber}
