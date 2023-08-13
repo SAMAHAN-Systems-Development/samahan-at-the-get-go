@@ -1,0 +1,37 @@
+import Image from 'next/image';
+
+import OVPImage from 'public/assets/images/OVPImage.png';
+
+interface OfficesHeaderNewProps {
+  position: string;
+}
+
+const OfficesHeaderNew: React.FC<OfficesHeaderNewProps> = ({ position }) => {
+  return (
+    <div className="w-full grid content-between text-lightBlue">
+      <div className="overflow-y-hidden relative w-full h-[25rem] sm:h-[28rem] md:h-[42.0625rem] lg:h-screen">
+        <Image
+          alt="OfficeOfTheVicePresident"
+          src={OVPImage}
+          className="object-cover"
+          draggable={false}
+          placeholder="blur"
+          fill
+        />
+        <div className="absolute inset-0 bg-gradient-to-b to-white" />
+      </div>
+      <div className="mb-[3.81rem] mt-[5rem] md:mb-[3.81rem] md:mt-[9.25] lg:mb-[3.75rem] lg:mt-[12.5rem]">
+        <h1 className="text-center">
+          <span className="font-appleGaramond block italic font-bold text-[1.5625rem] sm:text-[2.4rem] md:text-[3.4375rem] lg:text-[3.9375rem] leading-[1.2rem] sm:leading-[2rem] md:leading-[2.7rem] lg:leading-none">
+            Office of the
+          </span>
+          <span className="font-artega uppercase text-wrap font-medium text-[1.5rem] max-w-[20.3125rem] sm:text-[2.5rem] md:text-[3.8125rem] md:w-[46rem] lg:w-[36rem] lg:text-[4.6875rem] leading-[2rem] sm:leading-[3rem] md:leading-[4.5rem] lg:leading-none">
+            {position}
+          </span>
+        </h1>
+      </div>
+    </div>
+  );
+};
+
+export default OfficesHeaderNew;
