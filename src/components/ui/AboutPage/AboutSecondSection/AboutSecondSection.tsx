@@ -28,12 +28,14 @@ const AboutSecondSection = () => {
         {/* divider */}
         <hr className="divider w-full flex justify-center items-center bg-blue" />
 
-        <div className="flex flex-row justify-center">
-          <p className="text-blue sm:text-base text-sm font-bold font-artega flex flex-col">
-            This Year
-          </p>
+        <div className="flex flex-row justify-center gap-5 px-24 pt-6 pb-11">
+          <div className="flex flex-col">
+            <p className="text-blue sm:text-4xl text-lg font-semibold font-artega flex flex-col">
+              This Year
+            </p>
+          </div>
 
-          <p>
+          <p className="text-blue text-justify text-lg font-normal">
             This year, we venture back to the University life we yearned for so
             long, and actualize what we collectively envision as the next
             generation of Blue Knights. Not only do we thrive to achieve our
