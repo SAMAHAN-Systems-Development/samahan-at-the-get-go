@@ -19,7 +19,7 @@ export const initiativesOSP: ModalDataType[] = [
       'With more students entering the university, the SAMAHAN opens the student office and provides more seating in the Arrupe and Claveria areas, bringing back regular curfew hours and making electric fans available in the Gazebo.',
   },
   {
-    title: 'Ateneo Alumi Card',
+    title: 'Ateneo Alumni Card',
     number: '03',
     imageUrl1: placeholder,
     imageUrl2: placeholder,

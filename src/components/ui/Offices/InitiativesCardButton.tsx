@@ -12,7 +12,7 @@ type CardType = {
 
 const InitiativesCardButton: FC<CardType> = ({ title, imageUrl, number }) => {
   return (
-    <div className="relative rounded-card overflow-hidden cursor-pointer w-full h-[15.5rem] min-[800px]:w-[22rem] min-[800px]:h-[25rem] 2xl:w-[25rem] 2xl:h-[28rem]">
+    <div className="relative rounded-card overflow-hidden cursor-pointer w-full h-[15.5rem] md:h-[25rem] xl:h-[28rem]">
       <Image
         alt={title}
         src={imageUrl}
@@ -21,14 +21,14 @@ const InitiativesCardButton: FC<CardType> = ({ title, imageUrl, number }) => {
         placeholder="blur"
         draggable={false}
       />
-      <div className="absolute bottom-0 left-0  w-full h-full flex flex-col justify-between group hover:bg-blue/25 ease-in-out duration-300 p-7 pb-11 2xl:p-8 2xl:pb-12">
+      <div className="absolute bottom-0 left-0  w-full h-full flex flex-col justify-between group hover:bg-blue/25 ease-in-out duration-300 p-7 pb-11 xl:p-8 xl:pb-12">
         <div className="flex w-full justify-between">
-          <p className="font-artega text-white text-shadow-bold text-base min-[800px]:text-xl">
+          <p className="font-artega text-white text-shadow-bold text-base md:text-xl">
             {number}
           </p>
-          <TbArrowUpRight className="text-white text-2xl min-[800px]:text-3xl" />
+          <TbArrowUpRight className="text-white text-2xl md:text-3xl" />
         </div>
-        <h4 className="font-artega text-left text-white text-shadow-bold group-hover:translate-x-3 ease-in-out duration-300 text-sm min-[800px]:text-base 2xl:text-xl">
+        <h4 className="font-artega text-left text-white text-shadow-bold group-hover:translate-x-3 ease-in-out duration-300 text-sm md:text-base xl:text-xl">
           {title}
         </h4>
       </div>

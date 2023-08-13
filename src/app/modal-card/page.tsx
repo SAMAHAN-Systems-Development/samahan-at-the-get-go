@@ -5,7 +5,7 @@ import { initiativesOSP } from '@/data/InitiativesOSP';
 
 export default function page() {
   return (
-    <div className="flex flex-col min-[800px]:flex-row min-[800px]:flex-wrap justify-center p-6 gap-6">
+    <div className="container-xl grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
       {initiativesOSP.map((item, index) => (
         <React.Fragment key={index}>
           <ModalUI {...item} />
