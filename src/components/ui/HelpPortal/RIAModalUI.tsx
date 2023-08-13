@@ -22,19 +22,6 @@ const RIAModalUI: FC<RIAMOdalUIProps> = ({ title, children }) => {
         <ReleventInformationCardButton title={title} />
       </Dialog.Trigger>
       <Dialog.Portal>
-        {/* <ModalWrapper>
-          <div className="bg-white p-6 max-h-[40rem] w-screen md:w-[45rem] overflow-y-auto border-solid border-card border-lightBlue">
-            <Dialog.Close asChild>
-              <button className="flex justify-end w-full text-lightBlue">
-                <FaTimes />
-              </button>
-            </Dialog.Close>
-            <div className="flex justify-center py-4">
-              <TitlePill color="orange" title={title} />
-            </div>
-            {children}
-          </div>
-        </ModalWrapper> */}
         <ModalWrapper>
           <div className="bg-white border-solid border-card border-lightBlue">
             <Dialog.Close asChild>
@@ -42,7 +29,7 @@ const RIAModalUI: FC<RIAMOdalUIProps> = ({ title, children }) => {
                 <FaTimes />
               </button>
             </Dialog.Close>
-            <div className="p-6 max-h-[40rem] max-w-5xl w-screen overflow-y-auto">
+            <div className="p-6 max-h-[35rem] max-w-5xl w-screen overflow-y-auto">
               <div className="flex justify-center pb-4">
                 <TitlePill color="orange" title={title} />
               </div>
