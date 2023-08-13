@@ -1,17 +1,17 @@
 import React from 'react';
 import Image from 'next/image';
 
-import imgSrc from 'public/assets/images/BigBlueArrow.png';
+import imgSrc from 'public/assets/images/WhiteArrow2.png';
 
 const WeNavigateCard = () => {
   return (
     <>
-      <div className="xl:w-3/5 md:w-full w-full bg-orange rounded-lg flex flex-col px-10 pt-11 py-20">
+      <div className="w-full h-full bg-lightBlue rounded-lg flex gap-5 flex-col sm:p-28 px-10 py-20">
         <div className="relative w-24 h-24 sm:w-36 sm:h-36">
           <Image
             src={imgSrc}
             placeholder="blur"
-            alt="Blue Arrow"
+            alt="White Arrow"
             className="object-contain"
             draggable={false}
             fill
@@ -27,7 +27,7 @@ const WeNavigateCard = () => {
           </div>
 
           <div className="flex mt-14">
-            <p className="text-white text-justify font-medium lg:text-lg md:text-base text-sm ">
+            <p className="text-white text-justify font-medium lg:text-xl md:text-base text-sm xl:leading-9">
               A community that continues to defy with stories of hope and
               resilience. Punctuated by the pandemic times, our university life
               was confined to just being there instead of being more. However,
