@@ -1,7 +1,8 @@
+import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 
 interface OfficesHeaderNewProps {
-  imageSrc: string;
+  imageSrc: StaticImageData;
   position: string; // Add a new prop for image source
 }
 
@@ -16,6 +17,7 @@ const OfficesHeaderNew: React.FC<OfficesHeaderNewProps> = ({
           alt={`Office Of The ${position}`}
           src={imageSrc}
           className="object-cover"
+          placeholder="blur"
           draggable={false}
           fill
         />
