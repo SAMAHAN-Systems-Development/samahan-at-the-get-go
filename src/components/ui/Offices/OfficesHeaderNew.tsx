@@ -1,24 +1,25 @@
 import Image from 'next/image';
 
-import OVPImage from 'public/assets/images/OVPImage.png';
-
 interface OfficesHeaderNewProps {
-  position: string;
+  imageSrc: string;
+  position: string; // Add a new prop for image source
 }
 
-const OfficesHeaderNew: React.FC<OfficesHeaderNewProps> = ({ position }) => {
+const OfficesHeaderNew: React.FC<OfficesHeaderNewProps> = ({
+  position,
+  imageSrc,
+}) => {
   return (
     <div className="w-full grid content-between text-lightBlue">
       <div className="overflow-y-hidden relative w-full h-[25rem] sm:h-[28rem] md:h-[42.0625rem] lg:h-screen">
         <Image
-          alt="OfficeOfTheVicePresident"
-          src={OVPImage}
+          alt={`Office Of The ${position}`}
+          src={imageSrc}
           className="object-cover"
           draggable={false}
-          placeholder="blur"
           fill
         />
-        <div className="absolute inset-x-0 bottom-0 h-[20rem] bg-gradient-to-b from-transparent via-white/50 to-white" />
+        <div className="absolute inset-x-0 bottom-0 h-[10rem] bg-gradient-to-b from-white/0 to-white" />
       </div>
       <div className="mb-[3.81rem] mt-[5rem] md:mb-[3.81rem] md:mt-[9.25] lg:mb-[3.75rem] lg:mt-[12.5rem]">
         <h1 className="text-center">
