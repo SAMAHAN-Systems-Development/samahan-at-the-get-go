@@ -237,6 +237,254 @@ const RIAModalsSection = () => {
           </RIACard>
         </div>
       </RIAModalUI>
+      <RIAModalUI title="Shifting">
+        <RIACard title="Shifting">
+          <ol className="list-decimal ml-[2ch]">
+            <li>Log on to your SIS Account.</li>
+            <li>
+              Open the Shifting Form which can be found on the upper left part
+              of the page.
+            </li>
+            <li>
+              Fill in the necessary information and click “Submit” button once
+              completed.
+            </li>
+            <li>
+              Wait for the notification of approval from the current Department
+              Chairperson and the Department Chairperson of the desired new
+              program. The notice will appear in the SIS account.
+            </li>
+            <li>
+              Note: If shifting application is approved, the student will be
+              released by his/her Department Chairperson. The Department
+              Chairperson of the new program is notified through the
+              Administrator Information Management account and will create a new
+              enrolment registration for the student. The Chairperson will also
+              determine maximum course load and academic status of the student.
+              The student may enroll following the online procedures once the
+              notification of approval to shift is received.
+            </li>
+          </ol>
+        </RIACard>
+      </RIAModalUI>
+      <RIAModalUI title="Appeals">
+        <div>
+          <RIACard title="QPI Appeal">
+            <div>
+              <ol className="list-decimal ml-[2ch]">
+                <li>Log on to your SIS Account.</li>
+                <li>
+                  Open the QPI Appeal Form which can be found on the upper left
+                  part of the page.
+                </li>
+                <li>
+                  Fill in the necessary information in the QPI Appeal Form and
+                  click the “Submit” button upon completion.
+                </li>
+                <div className="py-6 italic">
+                  Note: The University Standards Committee deliberates QPI
+                  Appeals endorsed by the Academic Vice President. If an
+                  application of a student for QPI Appeal has been approved for
+                  a probationary enrolment in his/her program, the Department
+                  Chairperson will be notified in his/her Administrator
+                  Information Management account. The Department Chairperson
+                  will advise the student of his/her maximum course load and
+                  list of courses to enroll in the following semester.
+                </div>
+                <li>
+                  A notification will appear in the SIS account. If approved,
+                  students can now enroll by following online enrollment
+                  procedures.
+                </li>
+                <li>
+                  Note: A disapproved notification means dismissal from the
+                  university. The student may re-appeal to AVP by sending an
+                  e-mail to vp.academics@addu.edu.ph.
+                </li>
+              </ol>
+            </div>
+          </RIACard>
+        </div>
+        <div className="mt-6">
+          <RIACard title="Grade Appeal">
+            <ol className="list-decimal ml-[2ch]">
+              <li>
+                Send an email to the faculty member containing the complaint on
+                the final grade received.
+              </li>
+              <li>
+                If the original grade needs to be changed, the faculty member
+                will email the grade appeal to standardscom@addu.edu.ph with the
+                reason for changing the grade and an attachment of a copy of the
+                class record.
+              </li>
+              <li>
+                If the appeal is approved by the University Standards Committee,
+                the AVP will email the Registrar to implement a change of grade.
+                A notification will be sent to both the faculty member and the
+                student.
+              </li>
+            </ol>
+          </RIACard>
+        </div>
+      </RIAModalUI>
+      <RIAModalUI title="Contact Details">
+        <div>
+          <RIACard title="Directory of Academic Departments">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <ol className="mb-8">
+                  <li className="font-bold">
+                    School of Arts and Sciences (SAS) Office
+                  </li>
+                  <li>
+                    Contact Number: <i>09435742785</i>
+                  </li>
+                  <li>
+                    Email: <i>sas.dean@addu.edu.ph</i>
+                  </li>
+                </ol>
+                <ol className="mb-8">
+                  <li className="font-bold">
+                    School of Engineering and Architecture (SEA) Office
+                  </li>
+                  <li>
+                    Contact Number: <i>09173036037 | 09563893829</i>
+                  </li>
+                  <li>
+                    Email: <i>enggarchi@addu.edu.ph</i>
+                  </li>
+                </ol>
+                <ol>
+                  <li className="font-bold">School of Nursing (SON) Office</li>
+                  <li>
+                    Contact Number: <i>09338599018</i>
+                  </li>
+                  <li>
+                    Email: <i>mmbulac@addu.edu.ph</i>
+                  </li>
+                </ol>
+              </div>
+              <div>
+                <ol className="mb-8">
+                  <li className="font-bold">
+                    School of Business and Governance (SBG) Office
+                  </li>
+                  <li>
+                    Contact Number: <i>09399160886</i>
+                  </li>
+                  <li>
+                    Email: <i>jychan@addu.edu.ph</i>
+                  </li>
+                </ol>
+                <ol>
+                  <li className="font-bold">
+                    School of Education (SOE) Office
+                  </li>
+                  <li>
+                    Contact Number: <i>09430057706</i>
+                  </li>
+                  <li>
+                    Email:{' '}
+                    <i>ajcasumpa@addu.edu.ph | dmherbabuena@addu.edu.ph</i>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </RIACard>
+        </div>
+        <div className="mt-6">
+          <RIACard title="Directory of Offices">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <ol className="mb-8">
+                  <li className="font-bold">
+                    Office of the Academic Vice President (AVP)
+                  </li>
+                  <li>
+                    Email: <i>vp.academics@addu.edu.ph</i>
+                  </li>
+                </ol>
+                <ol className="mb-8">
+                  <li className="font-bold">Office of Student Affairs (OSA)</li>
+                  <li>
+                    Email: <i>univ.studentsaffairs@addu.edu.ph</i>
+                  </li>
+                  <li>
+                    Facebook: <i>Addu Office of Student Affairs - Official</i>
+                  </li>
+                  <li>
+                    Twitter: <i>@AdDUOSA</i>
+                  </li>
+                </ol>
+                <ol className="mb-8 break-words">
+                  <li className="font-bold">Admissions Office</li>
+                  <li>
+                    Email: <i>admission@addu.edu.ph</i>
+                  </li>
+                  <li>
+                    Facebook/Messenger:{' '}
+                    <i>https://www.facebook.com/ADDUCollegeAdmission</i>
+                  </li>
+                  <li>
+                    Google Forms for Concerns: <i>tiny.cc/Admissions20</i>
+                  </li>
+                </ol>
+                <ol>
+                  <li className="font-bold">Physical Plant Office (PPO)</li>
+                  <li>
+                    Email: <i>fzremolino@addu.edu.ph</i>
+                  </li>
+                </ol>
+              </div>
+              <div>
+                <ol className="mb-8">
+                  <li className="font-bold">Finance Office</li>
+                  <li className="flex">
+                    <div className="mr-2">Email:</div>
+                    <ul className="italic">
+                      <li>tertiary.finance@addu.edu.ph</li>
+                      <li>addufinance1@gmail.com</li>
+                      <li>addufinance2@gmail.com</li>
+                      <li>addufinance3@gmail.com</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Telephone: <i>221-2411 local 8217 or 8237</i>
+                  </li>
+                  <li>
+                    Facebook/Messenger:{' '}
+                    <i>https://www.facebook.com/addufinance</i>
+                  </li>
+                  <li>
+                    Google Forms for Concerns: <i>tiny.cc/Finance20</i>
+                  </li>
+                </ol>
+                <ol className="mb-8">
+                  <li className="font-bold">Registrar</li>
+                  <li>
+                    Email: <i>registrar@addu.edu.ph</i>
+                  </li>
+                </ol>
+                <ol>
+                  <li className="font-bold">
+                    Management Information Office (MIS)
+                  </li>
+                  <li>
+                    Email: <i>mis@addu.edu.ph</i>
+                  </li>
+                  <li>
+                    Twitter: <i>@addu_mis</i>
+                  </li>
+                  <li>
+                    Google Forms for Concerns: <i>tiny.cc/MIS20</i>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </RIACard>
+        </div>
+      </RIAModalUI>
     </>
   );
 };

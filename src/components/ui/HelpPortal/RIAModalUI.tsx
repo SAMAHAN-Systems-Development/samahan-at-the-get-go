@@ -29,7 +29,7 @@ const RIAModalUI: FC<RIAMOdalUIProps> = ({ title, children }) => {
                 <FaTimes />
               </button>
             </Dialog.Close>
-            <div className="p-6 max-h-[35rem] max-w-5xl w-screen overflow-y-auto">
+            <div className="px-14 pb-14 max-h-[35rem] max-w-5xl w-screen overflow-y-auto">
               <div className="flex justify-center mb-6">
                 <TitlePill title={title} />
               </div>
