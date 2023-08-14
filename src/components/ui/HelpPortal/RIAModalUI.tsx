@@ -30,8 +30,8 @@ const RIAModalUI: FC<RIAMOdalUIProps> = ({ title, children }) => {
               </button>
             </Dialog.Close>
             <div className="p-6 max-h-[35rem] max-w-5xl w-screen overflow-y-auto">
-              <div className="flex justify-center pb-4">
-                <TitlePill color="orange" title={title} />
+              <div className="flex justify-center mb-6">
+                <TitlePill title={title} />
               </div>
               {children}
             </div>
