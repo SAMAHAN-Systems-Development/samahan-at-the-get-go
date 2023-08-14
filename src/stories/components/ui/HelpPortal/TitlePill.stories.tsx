@@ -12,7 +12,6 @@ type Story = StoryObj<typeof TitlePill>;
 
 export const Default: Story = {
   args: {
-    color: 'blue',
     title: '1st Semester Schedule',
   },
   render: (args) => <TitlePill {...args} />,
