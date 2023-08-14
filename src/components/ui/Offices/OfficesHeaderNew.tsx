@@ -18,7 +18,7 @@ const OfficesHeaderNew: React.FC<OfficesHeaderNewProps> = ({ position }) => {
           placeholder="blur"
           fill
         />
-        <div className="absolute inset-0 bg-gradient-to-b to-white" />
+        <div className="absolute inset-x-0 bottom-0 h-[20rem] bg-gradient-to-b from-transparent via-white/50 to-white" />
       </div>
       <div className="mb-[3.81rem] mt-[5rem] md:mb-[3.81rem] md:mt-[9.25] lg:mb-[3.75rem] lg:mt-[12.5rem]">
         <h1 className="text-center">
