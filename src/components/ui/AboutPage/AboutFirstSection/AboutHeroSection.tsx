@@ -14,7 +14,7 @@ const AboutHeroSection = () => {
       />
       <div className="absolute inset-x-0 bottom-0 h-[10rem] bg-gradient-to-b from-white/0 to-white" />
       <div className="grid content-between">
-        <div className="flex flex-row text-sm text-white w-full justify-between z-10">
+        <div className="flex flex-row text-sm text-white w-full justify-between z-10 px-7 pt-6">
           <p className="font-artega font-medium text-[0.875rem] sm:text-[1rem] md:text-[1.25rem] lg:text-[1.5625rem]">
             About Us
           </p>
