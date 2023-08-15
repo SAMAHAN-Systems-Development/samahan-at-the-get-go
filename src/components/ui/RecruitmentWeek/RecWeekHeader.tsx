@@ -25,10 +25,10 @@ const RecWeekHeader = () => {
       </div>
       <div className="text-white z-10">
         <h1>
-          <span className="font-appleGaramond uppercase italic font-medium text-[1.5625rem] sm:text-[1.75rem] md:text-[2.1875rem] lg:text-[3.125rem]">
+          <span className="font-appleGaramond block uppercase italic font-medium text-[1.2625rem] sm:text-[1.75rem] md:text-[2.1875rem] lg:text-[3.125rem]">
             Samahan
           </span>
-          <span className="font-artega uppercase block text-[1.9375rem] sm:text-[1.75rem] md:text-[2.1875rem] lg:no-wrap lg:text-[3.8125rem] text-wrap max-w-[19rem] lg:w-full">
+          <span className="font-artega uppercase text-[1.4375rem] sm:text-[1.75rem] md:text-[2.1875rem] lg:text-[3.8125rem] max-w-[19rem] lg:w-full sm:no-wrap text-wrap">
             Recruitment Week
           </span>
         </h1>
