@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import RecWeekHeaderImage from 'public/assets/images/RecWeekHeader.png';
-import WhiteArrowRight from 'public/assets/images/WhiteArrowRight.png';
+import WhiteArrowRight from 'public/assets/images/WhiteArrow4.png';
 
 const RecWeekHeader = () => {
   return (

@@ -26,7 +26,7 @@ const OfficerSmallCard: React.FC<OfficerSmallCardProps> = ({
           placeholder="blur"
           draggable={false}
           fill
-          className="rounded-card"
+          className="rounded-card object-cover object-center"
         />
       </div>
       <div className="flex flex-col items-center">
