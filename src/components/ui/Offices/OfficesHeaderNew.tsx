@@ -1,21 +1,21 @@
 import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 
-interface OfficesHeaderNewProps {
-  imageSrc: StaticImageData;
-  position: string; // Add a new prop for image source
-}
+type OfficesHeaderNewProps = {
+  imageUrl: StaticImageData;
+  officesPosition: string;
+};
 
 const OfficesHeaderNew: React.FC<OfficesHeaderNewProps> = ({
-  position,
-  imageSrc,
+  officesPosition,
+  imageUrl,
 }) => {
   return (
     <div className="w-full grid content-between text-lightBlue">
       <div className="overflow-y-hidden relative w-full h-[25rem] sm:h-[28rem] md:h-[42.0625rem] lg:h-screen">
         <Image
-          alt={`Office Of The ${position}`}
-          src={imageSrc}
+          src={imageUrl}
+          alt={`Office Of The ${officesPosition}`}
           className="object-cover"
           placeholder="blur"
           draggable={false}
@@ -29,7 +29,7 @@ const OfficesHeaderNew: React.FC<OfficesHeaderNewProps> = ({
             Office of the
           </span>
           <span className="font-artega uppercase text-wrap font-medium text-[1.5rem] max-w-[20.3125rem] sm:text-[2.5rem] md:text-[3.8125rem] md:w-[46rem] lg:w-[36rem] lg:text-[4.6875rem] leading-[2rem] sm:leading-[3rem] md:leading-[4.5rem] lg:leading-none">
-            {position}
+            {officesPosition}
           </span>
         </h1>
       </div>

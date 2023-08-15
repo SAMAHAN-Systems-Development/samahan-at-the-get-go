@@ -12,8 +12,8 @@ const page = () => {
       {OfficesDescriptionData.map((office: OfficesType, index: number) => (
         <div key={index} className="mb-16">
           <OfficesHeaderNew
-            position={office.officesPosition}
-            imageSrc={office.imageUrl}
+            officesPosition={office.officesPosition}
+            imageUrl={office.imageUrl}
           />
           <div className="mx-5">
             <OfficesCardNew
