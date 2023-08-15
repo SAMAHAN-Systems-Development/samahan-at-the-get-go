@@ -8,6 +8,7 @@ const AboutHeroSection = () => {
       <Image
         alt="AboutPageHeaderImage"
         src={AboutPageHeaderImage}
+        placeholder="blur"
         className="object-cover"
         draggable={false}
         fill
