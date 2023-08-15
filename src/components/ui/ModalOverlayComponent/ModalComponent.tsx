@@ -2,12 +2,12 @@ import React from 'react';
 import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 
+import * as Dialog from '@radix-ui/react-dialog';
 import Logo from 'public/assets/images/SamahanAtTheGetGoLogo.png';
 
 type ModalComponentProps = {
   description: string;
   imageUrl: StaticImageData;
-  link: string;
   title: string;
   hashtag?: string;
 };
@@ -17,11 +17,10 @@ const ModalOverlayComponent: React.FC<ModalComponentProps> = ({
   hashtag,
   title,
   description,
-  link,
 }) => {
   return (
     <div className="flex justify-center">
-      <div className=" w-[45rem] border border-[#263167]">
+      <div className=" w-full md:w-[45rem] border border-[#263167]">
         <div className="relative bg-[#1A275F] h-[15rem]">
           <Image
             className="object-cover object-center"
@@ -58,12 +57,11 @@ const ModalOverlayComponent: React.FC<ModalComponentProps> = ({
             <p className="font-Helvetica py-[2rem] text-[0.8rem] text-justify">
               {description}
             </p>
-            <a
-              href={link}
-              className="font-artega text-[0.6rem] font-semibold flex justify-center pb-[2rem]"
-            >
-              BACK
-            </a>
+            <Dialog.Close asChild>
+              <p className="font-artega text-[0.6rem] font-semibold flex justify-center pb-[2rem] cursor-pointer">
+                BACK
+              </p>
+            </Dialog.Close>
           </div>
         </div>
       </div>
