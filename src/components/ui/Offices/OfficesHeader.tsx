@@ -9,7 +9,7 @@ interface OfficesHeaderProps {
 
 const OfficesHeader: React.FC<OfficesHeaderProps> = ({ position }) => {
   return (
-    <div className="w-full overflow-hidden grid content-between border-solid border-card border-lightBlue rounded-section-card text-lightBlue py-4 px-7 h-[16.375rem] sm:h-[22.45rem] sm:py-5 sm:px-12 md:h-[34.375rem] md:py-6 md:px-16 lg:h-[42.5625rem] lg:px-22 lg:py-7">
+    <div className="w-full grid content-between border-solid border-card border-lightBlue rounded-section-card text-lightBlue py-4 px-7 h-[16.375rem] sm:h-[22.45rem] sm:py-5 sm:px-12 md:h-[34.375rem] md:py-6 md:px-16 lg:h-[42.5625rem] lg:px-22 lg:py-7">
       <div className="flex flex-row w-full justify-between">
         <p className="font-artega font-medium text-sm sm:text-l md:text-xl lg:text-2xl">
           00
