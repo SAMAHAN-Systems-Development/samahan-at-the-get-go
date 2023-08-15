@@ -1,13 +1,12 @@
 import React from 'react';
 
-import OfficerLargeCard from '@/components/ui/OfficerLargeCard';
+import OfficerSmallCard from '@/components/ui/OfficerSmallCard';
 import {
   OSGDeputies,
   OSPDeputies,
   OSTDeputies,
   OVPDeputies,
 } from '@/data/Deputies';
-import { cn } from '@/utils/cvaUtils';
 
 type OfficesDeputiesSectionProps = {
   office: string;
@@ -32,30 +31,15 @@ const OfficesDeputiesSection: React.FC<OfficesDeputiesSectionProps> = ({
   };
 
   return (
-    <section className="container bg-white border-card border-lightBlue mt-5 rounded-section-card py-12 px-5 md:py-12 lg:py-16 lg:px-7">
-      <div className="flex justify-between text-xl text-lightBlue mb-11 px-4">
-        <p className="font-artega">02</p>
-        <p className="uppercase">Deputies</p>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+    <section className="container mt-5 py-12 px-5 md:py-12 lg:py-16 lg:px-7">
+      <h3 className="font-artega uppercase text-lightBlue text-center mb-16 text-xl sm:text-title-sm lg:text-title-md">
+        Samahan Deputies
+      </h3>
+      <div className="flex flex-wrap justify-center gap-2">
         {handleData(office).map((officer, index) => {
           return (
-            <div
-              key={index}
-              className={cn(
-                'flex sm:justify-center',
-                index % 2 === 0 ? 'lg:justify-end' : 'lg:justify-start'
-              )}
-            >
-              <OfficerLargeCard
-                officer={{
-                  firstName: officer.firstName,
-                  lastName: officer.lastName,
-                  position: officer.position,
-                  imageUrl: officer.imageUrl,
-                }}
-                isButton={false}
-              />
+            <div key={index}>
+              <OfficerSmallCard {...officer} textColorClass="text-lightBlue" />
             </div>
           );
         })}
