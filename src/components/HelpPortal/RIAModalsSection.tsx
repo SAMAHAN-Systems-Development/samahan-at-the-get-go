@@ -5,7 +5,7 @@ import RIAModalUI from '@/components/ui/HelpPortal/RIAModalUI';
 
 const RIAModalsSection = () => {
   return (
-    <>
+    <section className="container-xl grid md:grid-cols-2 lg:grid-cols-3 gap-3">
       <RIAModalUI title="1st Semester Schedule">
         <RIACard title="Schedule for 1st Semester (A.Y. 2023-2024) Enrollment and Classes">
           <ul>
@@ -33,53 +33,6 @@ const RIAModalsSection = () => {
             </li>
           </ul>
         </RIACard>
-      </RIAModalUI>
-      <RIAModalUI title="Leave of Absences">
-        <RIACard title="Leave of Absences (LOA)">
-          <p>
-            LOA is processed by a student who needs to temporarily discontinue
-            his/her enrollment.
-          </p>
-          <ol className="list-decimal ml-[2ch]">
-            <li>Open the LOA form available in the SIS account.</li>
-            <li>
-              Fill in necessary information and click “Submit” button once the
-              form is completed.
-            </li>
-            <li>
-              Wait for the notification from the Finance Office in the SIS
-              account. Once cleared by the finance office, a notification of
-              approval from the Admission Director will be received in the SIS
-              account.
-            </li>
-          </ol>
-        </RIACard>
-        <div className="mt-4">
-          <RIACard title="Reinstatement of Application">
-            <ol className="list-decimal ml-[2ch]">
-              <li>
-                Accomplish the Leave of Absence (LOA) form and/or Reinstatement
-                Application.
-              </li>
-              <li>
-                Confirm with the Registrar regarding the accomplished
-                Reinstatement Application.
-              </li>
-              <li>
-                Contact the Management Information System (MIS) Office regarding
-                the Add and Drop button in the Student Information System (SIS).
-              </li>
-            </ol>
-            <div>
-              <p>
-                Registrar: <i>registrar@addu.edu.ph</i>
-              </p>
-              <p>
-                MIS: <i>mis@addu.edu.ph</i>
-              </p>
-            </div>
-          </RIACard>
-        </div>
       </RIAModalUI>
       <RIAModalUI title="Enrollment and Payment">
         <RIACard title="Enrollment">
@@ -232,97 +185,6 @@ const RIAModalsSection = () => {
                 to be retained in the University. The student has to contact the
                 concerned department/office to settle and unblock the hold
                 before his registration be created.
-              </li>
-            </ol>
-          </RIACard>
-        </div>
-      </RIAModalUI>
-      <RIAModalUI title="Shifting">
-        <RIACard title="Shifting">
-          <ol className="list-decimal ml-[2ch]">
-            <li>Log on to your SIS Account.</li>
-            <li>
-              Open the Shifting Form which can be found on the upper left part
-              of the page.
-            </li>
-            <li>
-              Fill in the necessary information and click “Submit” button once
-              completed.
-            </li>
-            <li>
-              Wait for the notification of approval from the current Department
-              Chairperson and the Department Chairperson of the desired new
-              program. The notice will appear in the SIS account.
-            </li>
-            <li>
-              Note: If shifting application is approved, the student will be
-              released by his/her Department Chairperson. The Department
-              Chairperson of the new program is notified through the
-              Administrator Information Management account and will create a new
-              enrolment registration for the student. The Chairperson will also
-              determine maximum course load and academic status of the student.
-              The student may enroll following the online procedures once the
-              notification of approval to shift is received.
-            </li>
-          </ol>
-        </RIACard>
-      </RIAModalUI>
-      <RIAModalUI title="Appeals">
-        <div>
-          <RIACard title="QPI Appeal">
-            <div>
-              <ol className="list-decimal ml-[2ch]">
-                <li>Log on to your SIS Account.</li>
-                <li>
-                  Open the QPI Appeal Form which can be found on the upper left
-                  part of the page.
-                </li>
-                <li>
-                  Fill in the necessary information in the QPI Appeal Form and
-                  click the “Submit” button upon completion.
-                </li>
-                <div className="py-6 italic">
-                  Note: The University Standards Committee deliberates QPI
-                  Appeals endorsed by the Academic Vice President. If an
-                  application of a student for QPI Appeal has been approved for
-                  a probationary enrolment in his/her program, the Department
-                  Chairperson will be notified in his/her Administrator
-                  Information Management account. The Department Chairperson
-                  will advise the student of his/her maximum course load and
-                  list of courses to enroll in the following semester.
-                </div>
-                <li>
-                  A notification will appear in the SIS account. If approved,
-                  students can now enroll by following online enrollment
-                  procedures.
-                </li>
-                <li>
-                  Note: A disapproved notification means dismissal from the
-                  university. The student may re-appeal to AVP by sending an
-                  e-mail to vp.academics@addu.edu.ph.
-                </li>
-              </ol>
-            </div>
-          </RIACard>
-        </div>
-        <div className="mt-6">
-          <RIACard title="Grade Appeal">
-            <ol className="list-decimal ml-[2ch]">
-              <li>
-                Send an email to the faculty member containing the complaint on
-                the final grade received.
-              </li>
-              <li>
-                If the original grade needs to be changed, the faculty member
-                will email the grade appeal to standardscom@addu.edu.ph with the
-                reason for changing the grade and an attachment of a copy of the
-                class record.
-              </li>
-              <li>
-                If the appeal is approved by the University Standards Committee,
-                the AVP will email the Registrar to implement a change of grade.
-                A notification will be sent to both the faculty member and the
-                student.
               </li>
             </ol>
           </RIACard>
@@ -485,7 +347,145 @@ const RIAModalsSection = () => {
           </RIACard>
         </div>
       </RIAModalUI>
-    </>
+      <RIAModalUI title="Appeals">
+        <div>
+          <RIACard title="QPI Appeal">
+            <div>
+              <ol className="list-decimal ml-[2ch]">
+                <li>Log on to your SIS Account.</li>
+                <li>
+                  Open the QPI Appeal Form which can be found on the upper left
+                  part of the page.
+                </li>
+                <li>
+                  Fill in the necessary information in the QPI Appeal Form and
+                  click the “Submit” button upon completion.
+                </li>
+                <div className="py-6 italic">
+                  Note: The University Standards Committee deliberates QPI
+                  Appeals endorsed by the Academic Vice President. If an
+                  application of a student for QPI Appeal has been approved for
+                  a probationary enrolment in his/her program, the Department
+                  Chairperson will be notified in his/her Administrator
+                  Information Management account. The Department Chairperson
+                  will advise the student of his/her maximum course load and
+                  list of courses to enroll in the following semester.
+                </div>
+                <li>
+                  A notification will appear in the SIS account. If approved,
+                  students can now enroll by following online enrollment
+                  procedures.
+                </li>
+                <li>
+                  Note: A disapproved notification means dismissal from the
+                  university. The student may re-appeal to AVP by sending an
+                  e-mail to vp.academics@addu.edu.ph.
+                </li>
+              </ol>
+            </div>
+          </RIACard>
+        </div>
+        <div className="mt-6">
+          <RIACard title="Grade Appeal">
+            <ol className="list-decimal ml-[2ch]">
+              <li>
+                Send an email to the faculty member containing the complaint on
+                the final grade received.
+              </li>
+              <li>
+                If the original grade needs to be changed, the faculty member
+                will email the grade appeal to standardscom@addu.edu.ph with the
+                reason for changing the grade and an attachment of a copy of the
+                class record.
+              </li>
+              <li>
+                If the appeal is approved by the University Standards Committee,
+                the AVP will email the Registrar to implement a change of grade.
+                A notification will be sent to both the faculty member and the
+                student.
+              </li>
+            </ol>
+          </RIACard>
+        </div>
+      </RIAModalUI>
+      <RIAModalUI title="Shifting">
+        <RIACard title="Shifting">
+          <ol className="list-decimal ml-[2ch]">
+            <li>Log on to your SIS Account.</li>
+            <li>
+              Open the Shifting Form which can be found on the upper left part
+              of the page.
+            </li>
+            <li>
+              Fill in the necessary information and click “Submit” button once
+              completed.
+            </li>
+            <li>
+              Wait for the notification of approval from the current Department
+              Chairperson and the Department Chairperson of the desired new
+              program. The notice will appear in the SIS account.
+            </li>
+            <li>
+              Note: If shifting application is approved, the student will be
+              released by his/her Department Chairperson. The Department
+              Chairperson of the new program is notified through the
+              Administrator Information Management account and will create a new
+              enrolment registration for the student. The Chairperson will also
+              determine maximum course load and academic status of the student.
+              The student may enroll following the online procedures once the
+              notification of approval to shift is received.
+            </li>
+          </ol>
+        </RIACard>
+      </RIAModalUI>
+      <RIAModalUI title="Leave of Absences">
+        <RIACard title="Leave of Absences (LOA)">
+          <p>
+            LOA is processed by a student who needs to temporarily discontinue
+            his/her enrollment.
+          </p>
+          <ol className="list-decimal ml-[2ch]">
+            <li>Open the LOA form available in the SIS account.</li>
+            <li>
+              Fill in necessary information and click “Submit” button once the
+              form is completed.
+            </li>
+            <li>
+              Wait for the notification from the Finance Office in the SIS
+              account. Once cleared by the finance office, a notification of
+              approval from the Admission Director will be received in the SIS
+              account.
+            </li>
+          </ol>
+        </RIACard>
+        <div className="mt-4">
+          <RIACard title="Reinstatement of Application">
+            <ol className="list-decimal ml-[2ch]">
+              <li>
+                Accomplish the Leave of Absence (LOA) form and/or Reinstatement
+                Application.
+              </li>
+              <li>
+                Confirm with the Registrar regarding the accomplished
+                Reinstatement Application.
+              </li>
+              <li>
+                Contact the Management Information System (MIS) Office regarding
+                the Add and Drop button in the Student Information System (SIS).
+              </li>
+            </ol>
+            <div>
+              <p>
+                Registrar: <i>registrar@addu.edu.ph</i>
+              </p>
+              <p>
+                MIS: <i>mis@addu.edu.ph</i>
+              </p>
+            </div>
+          </RIACard>
+        </div>
+      </RIAModalUI>
+    </section>
   );
 };
 

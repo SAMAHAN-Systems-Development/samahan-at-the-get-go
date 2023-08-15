@@ -7,7 +7,7 @@ import * as Dialog from '@radix-ui/react-dialog';
 
 import ModalWrapper from '@/components/ui/ModalWrapper';
 
-import ReleventInformationCardButton from '@/components/ui/HelpPortal/ReleventInformationCardButton';
+import RelevantInformationCardButton from '@/components/ui/HelpPortal/RelevantInformationCardButton';
 import TitlePill from '@/components/ui/HelpPortal/TitlePill';
 
 type RIAMOdalUIProps = {
@@ -19,7 +19,7 @@ const RIAModalUI: FC<RIAMOdalUIProps> = ({ title, children }) => {
   return (
     <Dialog.Root>
       <Dialog.Trigger>
-        <ReleventInformationCardButton title={title} />
+        <RelevantInformationCardButton title={title} />
       </Dialog.Trigger>
       <Dialog.Portal>
         <ModalWrapper>
