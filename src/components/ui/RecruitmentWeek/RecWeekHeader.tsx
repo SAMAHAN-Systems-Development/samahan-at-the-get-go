@@ -20,6 +20,7 @@ const RecWeekHeader = () => {
           alt="AtTheGetGoLogo"
           src={WhiteArrowRight}
           className="object-contain"
+          placeholder="blur"
           draggable={false}
         />
       </div>
