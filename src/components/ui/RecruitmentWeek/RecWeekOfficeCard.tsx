@@ -20,7 +20,7 @@ const RecWeekOfficeCard: React.FC<RecWeekOfficeCardProps> = ({
         </p>
         <div className="relative flex-shrink-0 h-[1.51613rem] w-[0.9375rem] sm:h-[3.13331rem] sm:w-[1.9375rem] lg:w-[3.3125rem] lg:h-[5.357rem]">
           <Image
-            alt="AtTheGetGoLogo"
+            alt="AtTheGetGo Logo"
             src={whiteArrow}
             className="object-contain"
             draggable={false}
