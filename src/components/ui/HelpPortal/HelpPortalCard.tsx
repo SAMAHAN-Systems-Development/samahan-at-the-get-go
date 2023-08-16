@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import HelpPortalImage from 'public/assets/images/HelpPortalImage.png';
-import WhiteArrowRight from 'public/assets/images/WhiteArrowRight.png';
+import WhiteArrowRight from 'public/assets/images/WhiteArrow4.png';
 
 const HelpPortalCard = () => {
   return (
