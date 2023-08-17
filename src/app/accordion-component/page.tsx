@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div>
       <div className="pt-[1.25rem]">
-        <AccordionComponent question="What are the Scholarship Programs offered by the School?">
+        <AccordionComponent question="What are the Scholarship Programs offered by the School?" isAccordionOpen={true}>
           <div className="leading-loose">
             <ol className="list-decimal list-inside">
               <li>JSF (Exclusive for Valedictorians and Salutatorians)</li>
@@ -16,7 +16,7 @@ const page = () => {
         </AccordionComponent>
       </div>
       <div className="pt-[1.25rem]">
-        <AccordionComponent question="How much is/are the grants given to students?">
+        <AccordionComponent question="How much is/are the grants given to students?" isAccordionOpen={true}>
           <div className=" leading-loose">
             <ol className="list-decimal px-4">
               <li>
@@ -38,7 +38,7 @@ const page = () => {
         </AccordionComponent>
       </div>
       <div className="pt-[1.25rem]">
-        <AccordionComponent question="How to apply for the Scholarship Program?">
+        <AccordionComponent question="How to apply for the Scholarship Program?" isAccordionOpen={true}>
           <div>
             Preregistration is the prelisting of students, prior to the
             enrollment period, of courses they desire to take for the succeeding
@@ -48,7 +48,7 @@ const page = () => {
         </AccordionComponent>
       </div>
       <div className="pt-[1.25rem]">
-        <AccordionComponent question="I have a Government Grant, is it okay to apply for GIA or JSF Program?">
+        <AccordionComponent question="I have a Government Grant, is it okay to apply for GIA or JSF Program?" isAccordionOpen={true}>
           <div>
             Preregistration is the prelisting of students, prior to the
             enrollment period, of courses they desire to take for the succeeding
@@ -58,7 +58,7 @@ const page = () => {
         </AccordionComponent>
       </div>
       <div className="pt-[1.25rem]">
-        <AccordionComponent question="What are the requirements?">
+        <AccordionComponent question="What are the requirements?" isAccordionOpen={true}>
           <div>
             Preregistration is the prelisting of students, prior to the
             enrollment period, of courses they desire to take for the succeeding
@@ -68,7 +68,7 @@ const page = () => {
         </AccordionComponent>
       </div>
       <div className="pt-[1.25rem]">
-        <AccordionComponent question="Does GIA or JSF have allowances?">
+        <AccordionComponent question="Does GIA or JSF have allowances?" isAccordionOpen={true}>
           <div>
             Preregistration is the prelisting of students, prior to the
             enrollment period, of courses they desire to take for the succeeding
@@ -78,7 +78,7 @@ const page = () => {
         </AccordionComponent>
       </div>
       <div className="pt-[1.25rem]">
-        <AccordionComponent question="How to know the result of the GIA Application?">
+        <AccordionComponent question="How to know the result of the GIA Application?" isAccordionOpen={true}>
           <div>
             Preregistration is the prelisting of students, prior to the
             enrollment period, of courses they desire to take for the succeeding
@@ -88,7 +88,7 @@ const page = () => {
         </AccordionComponent>
       </div>
       <div className="pt-[1.25rem]">
-        <AccordionComponent question="I am an ADDU Senior High School and have GIA, will I also apply?">
+        <AccordionComponent question="I am an ADDU Senior High School and have GIA, will I also apply?" isAccordionOpen={true}>
           <div>
             Preregistration is the prelisting of students, prior to the
             enrollment period, of courses they desire to take for the succeeding
@@ -98,7 +98,7 @@ const page = () => {
         </AccordionComponent>
       </div>
       <div className="pt-[1.25rem]">
-        <AccordionComponent question="How is/are grantees chosen? ">
+        <AccordionComponent question="How is/are grantees chosen?" isAccordionOpen={true}>
           <div>
             Preregistration is the prelisting of students, prior to the
             enrollment period, of courses they desire to take for the succeeding
@@ -108,7 +108,7 @@ const page = () => {
         </AccordionComponent>
       </div>
       <div className="pt-[1.25rem]">
-        <AccordionComponent question="Is there a grade that Scholars need to maintain?">
+        <AccordionComponent question="Is there a grade that Scholars need to maintain?" isAccordionOpen={true}>
           <div>
             Preregistration is the prelisting of students, prior to the
             enrollment period, of courses they desire to take for the succeeding
