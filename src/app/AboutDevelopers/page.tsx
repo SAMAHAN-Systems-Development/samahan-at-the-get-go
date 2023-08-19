@@ -1,8 +1,8 @@
 import React from 'react';
 
-import AboutDevelopersHeader from '@/components/ui/AboutDevelopers/AboutDevelopersHeader';
+import DeveloperSection from '@/components/ui/AboutDevelopers/DeveloperSection';
 const page = () => {
-  return <AboutDevelopersHeader />;
+  return <DeveloperSection />;
 };
 
 export default page;
