@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 
-import imgSrc from 'public/assets/images/AtTheGetGo.png';
-import imgSrc2 from 'public/assets/images/SAMAHAN.png';
+import AtTheGetGo from 'public/assets/images/AtTheGetGo.png';
+import Samahan from 'public/assets/images/SAMAHAN-Members.png';
 
 import YearofMagis from '@/components/ui/AboutPage/AboutFifthSection/YearOfMagisCard';
 import AboutHeroSection from '@/components/ui/AboutPage/AboutFirstSection/AboutHeroSection';
@@ -27,7 +27,7 @@ const AboutPage = () => {
       <div className="w-full h-screen flex justify-center items-center">
         <div className="w-10/12 h-5/6 flex justify-center relative animate-fade">
           <Image
-            src={imgSrc}
+            src={AtTheGetGo}
             placeholder="blur"
             alt="AtTheGetGo"
             className="object-contain"
@@ -48,17 +48,17 @@ const AboutPage = () => {
         <AboutFourthSection />
       </div>
       {/* Fifth Section */}
-      <div className="w-full flex justify-center h-5/6">
+      <div className="w-full flex justify-center h-5/6 sm:pb-4 pb-24">
         <YearofMagis />
       </div>
       {/* SAMAHAN Picture */}
-      <div className="w-full sm:h-screen h-52 flex justify-center items-center px-6">
-        <div className="w-full sm:h-full h-96 flex justify-center relative animate-fade">
+      <div className="w-full sm:h-screen h-52 flex justify-center items-center">
+        <div className="w-full sm:h-full h-96 flex justify-center relative">
           <Image
-            src={imgSrc2}
+            src={Samahan}
             placeholder="blur"
             alt="AtTheGetGo"
-            className="object-contain"
+            className="object-cover"
             fill
           />
         </div>
