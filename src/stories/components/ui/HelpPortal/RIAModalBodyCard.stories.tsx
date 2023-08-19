@@ -1,21 +1,21 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import RIACard from '@/components/ui/HelpPortal/RIACard';
+import RIAModalBodyCard from '@/components/ui/HelpPortal/RIAModalBodyCard';
 
-const meta: Meta<typeof RIACard> = {
-  title: 'UI/Relevant Information Area Card',
-  component: RIACard,
+const meta: Meta<typeof RIAModalBodyCard> = {
+  title: 'UI/RIA Modal Body Card',
+  component: RIAModalBodyCard,
 };
 
 export default meta;
-type Story = StoryObj<typeof RIACard>;
+type Story = StoryObj<typeof RIAModalBodyCard>;
 
 export const Primary: Story = {
   args: {
     title: 'Enrollment',
   },
   render: (args) => (
-    <RIACard {...args}>
+    <RIAModalBodyCard {...args}>
       <div className="">
         Clear all tagged obligations from the previous semester by contacting
         concerned offices. <br />
@@ -32,6 +32,6 @@ export const Primary: Story = {
         Print or screenshot the schedule and wait for the start of the semester.
         <br />
       </div>
-    </RIACard>
+    </RIAModalBodyCard>
   ),
 };
