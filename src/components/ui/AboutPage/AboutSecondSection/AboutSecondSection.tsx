@@ -16,7 +16,7 @@ const AboutSecondSection = () => {
             </h3>
           </div>
 
-          <p className="text-blue text-justify text-lg font-medium">
+          <p className="text-blue text-justify text-lg font-medium font-sans">
             The SAMAHAN remains committed in our collective agenda of creating
             impactful results, solutions, and initiatives for the greater
             communities. For 41 long years, the SAMAHAN remains, endures, and
@@ -37,7 +37,7 @@ const AboutSecondSection = () => {
             </h3>
           </div>
 
-          <p className="text-blue text-justify text-lg font-medium">
+          <p className="text-blue text-justify text-lg font-medium font-sans">
             This year, we venture back to the University life we yearned for so
             long, and actualize what we collectively envision as the next
             generation of Blue Knights. Not only do we thrive to achieve our
