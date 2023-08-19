@@ -13,7 +13,7 @@ type CardType = {
 const InitiativesCardButton: FC<CardType> = ({ title, imageUrl, number }) => {
   return (
     // w-full h-[15.5rem] md:h-[25rem] md:w- 2xl:h-[28rem] 2xl:w-
-    <div className="relative rounded-card overflow-hidden cursor-pointer w-full h-[15.5rem] md:h-[22rem] md:w-[19rem] 2xl:h-[25rem] 2xl:w-[22rem]">
+    <div className="relative rounded-card overflow-hidden cursor-pointer my-2 md:m-3 w-full h-[15.5rem] md:h-[22rem] md:w-[19rem] 2xl:h-[25rem] 2xl:w-[22rem]">
       <Image
         alt={title}
         src={imageUrl}

@@ -33,7 +33,7 @@ const InitiativesModalsSection: FC<InitiativesModalsSectionProps> = ({
 
   return (
     <section className="container">
-      <div className="flex flex-col md:flex-row md:flex-wrap justify-center space-x-6 space-y-6">
+      <div className="flex flex-col md:flex-row md:flex-wrap justify-center">
         {departmentData.map((item, index) => (
           <React.Fragment key={index}>
             <InitiativesModalUI {...item} />
