@@ -1,15 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Alkuino from 'public/assets/images/Alkuino.jpg';
 
-import RecWeekDeptCard from '@/components/ui/RecruitmentWeek/RecWeekDeptCard';
+import OfficerSmallCard from '@/components/ui/OfficerSmallCard';
 
-const meta: Meta<typeof RecWeekDeptCard> = {
+const meta: Meta<typeof OfficerSmallCard> = {
   title: 'UI/Rec Week Dept Card',
-  component: RecWeekDeptCard,
+  component: OfficerSmallCard,
 };
 
 export default meta;
-type Story = StoryObj<typeof RecWeekDeptCard>;
+type Story = StoryObj<typeof OfficerSmallCard>;
 
 export const Primary: Story = {
   args: {
@@ -20,5 +20,5 @@ export const Primary: Story = {
     email: 'akmalkuino@addu.edu.ph',
     textColorClass: 'text-blue',
   },
-  render: (args) => <RecWeekDeptCard {...args} />,
+  render: (args) => <OfficerSmallCard {...args} />,
 };

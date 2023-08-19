@@ -2,11 +2,11 @@ import React from 'react';
 
 import Alkuino from 'public/assets/images/Alkuino.jpg';
 
-import RecWeekDeptCard from '@/components/ui/RecruitmentWeek/RecWeekDeptCard';
+import OfficerSmallCard from '@/components/ui/OfficerSmallCard';
 const page = () => {
   return (
     <>
-      <RecWeekDeptCard
+      <OfficerSmallCard
         firstName="Angelli Kezzed"
         lastName="Alkuino"
         position="Deputy Director"
