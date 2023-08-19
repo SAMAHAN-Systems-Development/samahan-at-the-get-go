@@ -1,12 +1,12 @@
 import type { FC } from 'react';
 import React from 'react';
 
-type RIACardProps = {
+type RIAModalBodyCardProps = {
   children: React.ReactNode;
   title: string;
 };
 
-const RIACard: FC<RIACardProps> = ({ title, children }) => {
+const RIAModalBodyCard: FC<RIAModalBodyCardProps> = ({ title, children }) => {
   return (
     <div className="w-full bg-white overflow-hidden border-solid border-card border-lightBlue rounded-section-card">
       <div className="border-b-card border-lightBlue py-4 px-5 md:px-7 lg:py-6 lg:px-14">
@@ -21,4 +21,4 @@ const RIACard: FC<RIACardProps> = ({ title, children }) => {
   );
 };
 
-export default RIACard;
+export default RIAModalBodyCard;

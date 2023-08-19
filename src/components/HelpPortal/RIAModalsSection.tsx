@@ -1,13 +1,13 @@
 import React from 'react';
 
-import RIACard from '@/components/ui/HelpPortal/RIACard';
+import RIAModalBodyCard from '@/components/ui/HelpPortal/RIAModalBodyCard';
 import RIAModalUI from '@/components/ui/HelpPortal/RIAModalUI';
 
 const RIAModalsSection = () => {
   return (
-    <section className="container-xl grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+    <section className="container-2xl mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-3">
       <RIAModalUI title="1st Semester Schedule">
-        <RIACard title="Schedule for 1st Semester (A.Y. 2023-2024) Enrollment and Classes">
+        <RIAModalBodyCard title="Schedule for 1st Semester (A.Y. 2023-2024) Enrollment and Classes">
           <ul>
             <li>
               <h4>July 10</h4>
@@ -32,10 +32,10 @@ const RIAModalsSection = () => {
               </p>
             </li>
           </ul>
-        </RIACard>
+        </RIAModalBodyCard>
       </RIAModalUI>
       <RIAModalUI title="Enrollment and Payment">
-        <RIACard title="Enrollment">
+        <RIAModalBodyCard title="Enrollment">
           <ol className="list-decimal ml-[2ch]">
             <li>
               Clear all tagged obligations from the previous semester by
@@ -59,9 +59,9 @@ const RIAModalsSection = () => {
               semester.
             </li>
           </ol>
-        </RIACard>
+        </RIAModalBodyCard>
         <div className="mt-6">
-          <RIACard title="Late Enrollment">
+          <RIAModalBodyCard title="Late Enrollment">
             <ol className="list-decimal ml-[2ch]">
               <li>
                 Late enrollment may be allowed until the first week of the
@@ -75,10 +75,10 @@ const RIAModalsSection = () => {
                 has been made prior to the start of classes.
               </li>
             </ol>
-          </RIACard>
+          </RIAModalBodyCard>
         </div>
         <div className="mt-6">
-          <RIACard title="Payment Methods">
+          <RIAModalBodyCard title="Payment Methods">
             <p>There are 4 options to pay your fees.</p>
             <ol className="list-decimal ml-[2ch]">
               <li>Online Payments (Banks, GCASH)</li>
@@ -126,10 +126,10 @@ const RIAModalsSection = () => {
                 </ol>
               </li>
             </ol>
-          </RIACard>
+          </RIAModalBodyCard>
         </div>
         <div className="mt-6">
-          <RIACard title="Enrollment Hold">
+          <RIAModalBodyCard title="Enrollment Hold">
             <p className="mb-10">
               The student&apos;s enrollment registration for the current
               semester/summer term is not updated/created yet due to:
@@ -187,12 +187,12 @@ const RIAModalsSection = () => {
                 before his registration be created.
               </li>
             </ol>
-          </RIACard>
+          </RIAModalBodyCard>
         </div>
       </RIAModalUI>
       <RIAModalUI title="Contact Details">
         <div>
-          <RIACard title="Directory of Academic Departments">
+          <RIAModalBodyCard title="Directory of Academic Departments">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <ol className="mb-8">
@@ -253,10 +253,10 @@ const RIAModalsSection = () => {
                 </ol>
               </div>
             </div>
-          </RIACard>
+          </RIAModalBodyCard>
         </div>
         <div className="mt-6">
-          <RIACard title="Directory of Offices">
+          <RIAModalBodyCard title="Directory of Offices">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <ol className="mb-8">
@@ -344,12 +344,12 @@ const RIAModalsSection = () => {
                 </ol>
               </div>
             </div>
-          </RIACard>
+          </RIAModalBodyCard>
         </div>
       </RIAModalUI>
       <RIAModalUI title="Appeals">
         <div>
-          <RIACard title="QPI Appeal">
+          <RIAModalBodyCard title="QPI Appeal">
             <div>
               <ol className="list-decimal ml-[2ch]">
                 <li>Log on to your SIS Account.</li>
@@ -383,10 +383,10 @@ const RIAModalsSection = () => {
                 </li>
               </ol>
             </div>
-          </RIACard>
+          </RIAModalBodyCard>
         </div>
         <div className="mt-6">
-          <RIACard title="Grade Appeal">
+          <RIAModalBodyCard title="Grade Appeal">
             <ol className="list-decimal ml-[2ch]">
               <li>
                 Send an email to the faculty member containing the complaint on
@@ -405,11 +405,11 @@ const RIAModalsSection = () => {
                 student.
               </li>
             </ol>
-          </RIACard>
+          </RIAModalBodyCard>
         </div>
       </RIAModalUI>
       <RIAModalUI title="Shifting">
-        <RIACard title="Shifting">
+        <RIAModalBodyCard title="Shifting">
           <ol className="list-decimal ml-[2ch]">
             <li>Log on to your SIS Account.</li>
             <li>
@@ -436,10 +436,10 @@ const RIAModalsSection = () => {
               notification of approval to shift is received.
             </li>
           </ol>
-        </RIACard>
+        </RIAModalBodyCard>
       </RIAModalUI>
       <RIAModalUI title="Leave of Absences">
-        <RIACard title="Leave of Absences (LOA)">
+        <RIAModalBodyCard title="Leave of Absences (LOA)">
           <p>
             LOA is processed by a student who needs to temporarily discontinue
             his/her enrollment.
@@ -457,9 +457,9 @@ const RIAModalsSection = () => {
               account.
             </li>
           </ol>
-        </RIACard>
+        </RIAModalBodyCard>
         <div className="mt-4">
-          <RIACard title="Reinstatement of Application">
+          <RIAModalBodyCard title="Reinstatement of Application">
             <ol className="list-decimal ml-[2ch]">
               <li>
                 Accomplish the Leave of Absence (LOA) form and/or Reinstatement
@@ -482,7 +482,7 @@ const RIAModalsSection = () => {
                 MIS: <i>mis@addu.edu.ph</i>
               </p>
             </div>
-          </RIACard>
+          </RIAModalBodyCard>
         </div>
       </RIAModalUI>
     </section>
