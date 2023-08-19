@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FrequentlyAskedQuestionCard = () => {
+const FAQsHeaderCard = () => {
   return (
     <div className="grid h-[18.6875rem] content-between w-full px-[1.87rem] py-[2rem] md:px-[3.94rem] md:py-[3.25rem] lg:px-[5.38rem] lg:py-[4.3rem] text-white bg-lightBlue border-solid border-card rounded-card sm:h-[22rem] md:h-[29.375rem] lg:h-[30.875rem]">
       <div className="flex flex-row text-sm w-full justify-between">
@@ -20,4 +20,4 @@ const FrequentlyAskedQuestionCard = () => {
   );
 };
 
-export default FrequentlyAskedQuestionCard;
+export default FAQsHeaderCard;
