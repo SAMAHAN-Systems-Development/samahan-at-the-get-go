@@ -3,7 +3,7 @@ import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 import DCA from '/public/assets/images/Department Logos/samahan_campaigns_advocacies_logo.jpg';
-import RecWeekModalButton from '@/components/ui/RecruitmentWeek/RecWeekModalButton';
+import RecWeekModalButton from '@/components/ui/RecWeek/RecWeekModalButton';
 
 const meta: Meta<typeof RecWeekModalButton> = {
   title: 'Components/Rec Week Modal Button',
