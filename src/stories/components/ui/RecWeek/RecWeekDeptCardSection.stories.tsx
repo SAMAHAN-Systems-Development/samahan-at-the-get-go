@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import RecWeekDeptCardSection from '@/components/ui/RecruitmentWeek/RecWeekDeptCardSection';
+import RecWeekDeptCardSection from '@/components/ui/RecWeek/RecWeekDeptCardSection';
 
 const meta: Meta<typeof RecWeekDeptCardSection> = {
   title: 'RecruitmentWeek/Rec Week Dept Card Section',

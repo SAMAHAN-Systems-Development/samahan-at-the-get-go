@@ -8,7 +8,7 @@ import * as Dialog from '@radix-ui/react-dialog';
 
 import ModalWrapper from '@/components/ui/ModalWrapper';
 
-import RecWeekModalButton from '@/components/ui/RecruitmentWeek/RecWeekModalButton';
+import RecWeekModalButton from '@/components/ui/RecWeek/RecWeekModalButton';
 
 type RecWeekModalUIProps = {
   children: React.ReactNode;

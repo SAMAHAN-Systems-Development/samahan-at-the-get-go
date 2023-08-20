@@ -2,7 +2,7 @@ import React from 'react';
 
 import type { Meta, StoryObj } from '@storybook/react';
 
-import RecWeekModalBodyButton from '@/components/ui/RecruitmentWeek/RecWeekModalBodyButton';
+import RecWeekModalBodyButton from '@/components/ui/RecWeek/RecWeekModalBodyButton';
 
 const meta: Meta<typeof RecWeekModalBodyButton> = {
   title: 'Components/Rec Week Modal Body Button',

@@ -2,7 +2,7 @@ import React from 'react';
 
 import type { Meta, StoryObj } from '@storybook/react';
 
-import RecWeekHeader from '@/components/ui/RecruitmentWeek/RecWeekHeader';
+import RecWeekHeader from '@/components/ui/RecWeek/RecWeekHeader';
 
 const meta: Meta<typeof RecWeekHeader> = {
   title: 'Components/RecWeekHeader',
