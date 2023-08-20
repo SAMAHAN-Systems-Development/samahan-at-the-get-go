@@ -34,15 +34,15 @@ const RecWeekModalUI: FC<RecWeekModalUIProps> = ({
       </Dialog.Trigger>
       <Dialog.Portal>
         <ModalWrapper>
-          <div className="bg-white border-solid border-card border-lightBlue">
-            <Dialog.Close asChild>
-              <button className="flex justify-end w-full text-lightBlue p-3">
-                <FaTimes />
-              </button>
-            </Dialog.Close>
-            <div className="px-14 pb-14 max-h-[35rem] max-w-5xl w-screen overflow-y-auto">
-              <div className="flex justify-center mb-6">{name}</div>
+          <div className="bg-white border-solid border-card border-lightBlue h-screen w-screen">
+            <div className="h-full w-full overflow-y-auto">
+              <Dialog.Close asChild>
+                <button className="fixed top-0 right-0 lg:right-6 text-beige p-3 z-10">
+                  <FaTimes />
+                </button>
+              </Dialog.Close>
               {children}
+              <div className="h-28 w-full bg-lightBlue mt-10" />
             </div>
           </div>
         </ModalWrapper>
