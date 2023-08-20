@@ -1,19 +1,18 @@
 import React from 'react';
 
-import DAA from '/public/assets/images/Department Logos/samahan_academic_affairs_logo.jpg';
-import RecWeekModalUI from '@/components/ui/RecruitmentWeek/RecWeekModalUI';
-
+import RecWeekModalBodyButton from '@/components/ui/RecruitmentWeek/RecWeekModalBodyButton';
 const page = () => {
   return (
-    <section className="container-2xl mt-5">
-      <RecWeekModalUI
-        name="DAA"
-        fullName="Department of Academic Affairs"
-        imageSrc={DAA}
-      >
-        Hello
-      </RecWeekModalUI>
-    </section>
+    <div>
+      <RecWeekModalBodyButton
+        link="https://github.com/SAMAHAN-Systems-Development/"
+        title="Download our primer"
+      />
+      <RecWeekModalBodyButton
+        link="https://github.com/SAMAHAN-Systems-Development/"
+        title="Be part of SAMAHAN DCA"
+      />
+    </div>
   );
 };
 

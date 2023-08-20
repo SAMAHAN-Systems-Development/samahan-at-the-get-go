@@ -1,5 +1,5 @@
 import type { ModalDataType } from 'library/types/ModalDataType';
-import placeholder from 'public/assets/images/Cunanan.jpg';
+import placeholder from 'public/assets/images/initiatives/pride.jpg';
 
 export const initiativesOSP: ModalDataType[] = [
   {
