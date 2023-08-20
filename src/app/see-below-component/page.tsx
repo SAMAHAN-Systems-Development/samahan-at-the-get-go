@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import SeeBelow from "@/components/ui/Hero/SeeBelow";
+import SeeBelow from '@/components/ui/Hero/SeeBelow';
 
 const page = () => {
   return (

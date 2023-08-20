@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import AtTheGetGoDefinition from "@/components/ui/Hero/AtTheGetGoDefinition";
+import AtTheGetGoDefinition from '@/components/ui/Hero/AtTheGetGoDefinition';
 
 const page = () => {
   return (

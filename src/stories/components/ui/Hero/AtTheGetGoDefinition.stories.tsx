@@ -1,9 +1,9 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from '@storybook/react';
 
-import AtTheGetGoDefinition from "@/components/ui/Hero/AtTheGetGoDefinition";
+import AtTheGetGoDefinition from '@/components/ui/Hero/AtTheGetGoDefinition';
 
 const meta: Meta<typeof AtTheGetGoDefinition> = {
-  title: "Hero/At The Get Go Definition",
+  title: 'Hero/At The Get Go Definition',
   component: AtTheGetGoDefinition,
 };
 
