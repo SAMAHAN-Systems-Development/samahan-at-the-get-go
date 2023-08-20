@@ -10,18 +10,18 @@ type SocialsType = {
 };
 
 type RecWeekModalBodyCardProps = {
-  children: React.ReactNode;
   socials: SocialsType;
+  text: string;
 };
 
 const RecWeekModalBodyCard: FC<RecWeekModalBodyCardProps> = ({
-  children,
+  text,
   socials,
 }) => {
   return (
     <div className="flex flex-col bg-lightBlue rounded-section-card px-8 py-10 sm:px-14 sm:py-16 lg:px-24 lg:py-36">
       <p className="text-white text-xs text-justify sm:text-base lg:text-2xl">
-        {children}
+        {text}
       </p>
       <div className="flex flex-col space-y-2">
         <p className="font-appleGaramond-bold italic text-beige text-lg sm:text-2xl lg:text-3xl mt-8 sm:mt-14 lg:mt-20 mx-auto sm:mx-0 md:mx-0 lg:mx-0">
