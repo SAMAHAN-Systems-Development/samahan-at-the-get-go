@@ -1,3 +1,4 @@
+import type { FC } from 'react';
 import React from 'react';
 
 import type { departmentType } from 'lib/types/departmentType';
@@ -18,7 +19,7 @@ import RecWeekModalButton from '@/components/ui/RecruitmentWeek/RecWeekModalButt
 
 const departments: departmentType[] = [
   {
-    fullName: 'DCA',
+    fullName: 'SAMAHAN DCA',
     imageSrc: DCA,
     name: 'Department of Campaigns & Advocacies',
     office: 'OSP',
@@ -60,7 +61,7 @@ const departments: departmentType[] = [
     office: 'OSG',
   },
   {
-    fullName: 'Research & Development',
+    fullName: 'SAMAHAN R&D',
     imageSrc: RND,
     name: 'Department of Research & Development',
     office: 'OSG',
@@ -84,30 +85,36 @@ const departments: departmentType[] = [
     office: 'OST',
   },
   {
-    fullName: 'Logistics',
+    fullName: 'SLD',
     imageSrc: SLD,
     name: 'Samahan Logistics Department',
     office: 'OST',
   },
 ];
 
-const page = () => {
+type RecWeekModalsSectionProps = {
+  office: string;
+};
+
+const RecWeekModalsSection: FC<RecWeekModalsSectionProps> = ({ office }) => {
   return (
     <div className="container-lg grid gap-5">
       {departments.map((department, index) => {
-        return (
-          <React.Fragment key={index}>
-            <RecWeekModalButton
-              fullName={department.fullName}
-              imageSrc={department.imageSrc}
-              name={department.name}
-              office={department.office}
-            />
-          </React.Fragment>
-        );
+        if (office === department.office) {
+          return (
+            <React.Fragment key={index}>
+              <RecWeekModalButton
+                fullName={department.fullName}
+                imageSrc={department.imageSrc}
+                name={department.name}
+                office={department.office}
+              />
+            </React.Fragment>
+          );
+        }
       })}
     </div>
   );
 };
 
-export default page;
+export default RecWeekModalsSection;
