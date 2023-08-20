@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import RepresentativesSection from '@/components/ui/SCB/RepresentativesSection';
+import RepresentativesSection from '@/components/SCB/RepresentativesSection';
 
 const meta: Meta<typeof RepresentativesSection> = {
   title: 'SCB/Hero Section',

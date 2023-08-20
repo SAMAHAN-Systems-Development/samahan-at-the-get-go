@@ -6,4 +6,5 @@ export type OfficerType = {
   lastName: string;
   position: string;
   department?: string;
+  email?: string;
 };

@@ -56,7 +56,10 @@ const SCBOfficers: SCBOfficerType[] = [
 
 const SCBClickableCardsSection = () => {
   return (
-    <section className="bg-lightBlue mt-5 rounded-section-card py-12 px-5 md:py-12 lg:py-16 lg:px-7">
+    <section className="container mt-5 py-12 px-5 md:py-12 lg:py-16 lg:px-7">
+      <h3 className="font-artega uppercase text-lightBlue text-center mb-16 text-xl sm:text-title-sm lg:text-title-md">
+        Samahan Central Board
+      </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
         {SCBOfficers.map((scbOfficer, index) => {
           if (scbOfficer.link) {
