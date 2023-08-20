@@ -19,7 +19,6 @@ export const Default: Story = {
     fullName: 'DCA',
     imageSrc: DCA,
     name: 'Department of Campaigns & Advocacies',
-    office: 'OSP',
   },
   render: (args) => <RecWeekModalButton {...args} />,
 };
