@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
 const AtTheGetGoDefinition: React.FC = () => {
   return (
     <div className="m-2 md:ml-10 flex flex-col items-start text-blue">
       <div className="flex flex-col space-y-0">
         <h2 className="md:text-xl text-[0.625rem] font-artega leading-4">
-          At&nbsp;
-          <span className="md:text-sm font-sans text-[0.5rem] italic">
+          At
+          <span className="md:text-sm font-sans text-[0.5rem] italic block">
             (prep.)
           </span>
         </h2>
@@ -17,8 +17,8 @@ const AtTheGetGoDefinition: React.FC = () => {
       <div className="md:flex md:space-x-4">
         <div className="flex flex-col ">
           <h2 className="md:text-xl text-[0.625rem] font-artega leading-4">
-            The&nbsp;
-            <span className="md:text-sm font-sans text-[0.5rem] italic">
+            The
+            <span className="md:text-sm font-sans text-[0.5rem] italic block">
               (det.)
             </span>
           </h2>
@@ -28,8 +28,8 @@ const AtTheGetGoDefinition: React.FC = () => {
         </div>
         <div className="flex flex-col md:px-10">
           <h2 className="md:text-xl text-[0.625rem] font-artega leading-4">
-            Get-go&nbsp;
-            <span className="md:text-sm font-sans text-[0.5rem] italic">
+            Get-go
+            <span className="md:text-sm font-sans text-[0.5rem] italic block">
               (n.)
             </span>
           </h2>

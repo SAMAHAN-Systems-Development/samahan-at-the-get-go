@@ -3,7 +3,6 @@ import React from 'react';
 import AtTheGetGoDefinition from '@/components/ui/Hero/AtTheGetGoDefinition';
 import AtTheGetGoLogo from '@/components/ui/Hero/AtTheGetGoLogo';
 import MainPageMarquee from '@/components/ui/Hero/MainPageMarquee';
-import SeeBelow from '@/components/ui/Hero/SeeBelow';
 
 const HeroSection: React.FC = () => {
   return (
@@ -14,7 +13,6 @@ const HeroSection: React.FC = () => {
       </div>
       <div className="w-full flex flex-col justify-center items-center relative z-10">
         <MainPageMarquee />
-        <SeeBelow />
       </div>
     </div>
   );
