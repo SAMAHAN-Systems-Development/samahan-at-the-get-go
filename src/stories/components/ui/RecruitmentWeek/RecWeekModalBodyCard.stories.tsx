@@ -5,7 +5,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import RecWeekModalBodyCard from '@/components/ui/RecruitmentWeek/RecWeekModalBodyCard';
 
 const meta: Meta<typeof RecWeekModalBodyCard> = {
-  title: 'Components/Rec Week Modal Button',
+  title: 'Components/Rec Week Modal Body Card',
   component: RecWeekModalBodyCard,
 };
 
