@@ -1,10 +1,17 @@
 import React from 'react';
 
-import RecWeekHeader from '@/components/ui/RecruitmentWeek/RecWeekHeader';
+import RecWeekModalBodyButton from '@/components/ui/RecruitmentWeek/RecWeekModalBodyButton';
 const page = () => {
   return (
     <div>
-      <RecWeekHeader />
+      <RecWeekModalBodyButton
+        link="https://github.com/SAMAHAN-Systems-Development/"
+        title="Download our primer"
+      />
+      <RecWeekModalBodyButton
+        link="https://github.com/SAMAHAN-Systems-Development/"
+        title="Be part of SAMAHAN DCA"
+      />
     </div>
   );
 };
