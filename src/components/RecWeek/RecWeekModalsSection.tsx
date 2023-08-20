@@ -15,7 +15,7 @@ import RND from '/public/assets/images/Department Logos/samahan_r&d_logo.png';
 import SAS from '/public/assets/images/Department Logos/samahan_sponsorship_logo.jpg';
 import SYSDEV from '/public/assets/images/Department Logos/samahan_sysdev_logo.jpg';
 import SCT from '/public/assets/images/Department Logos/sct_logo.jpg';
-import RecWeekModalButton from '@/components/ui/RecruitmentWeek/RecWeekModalButton';
+import RecWeekModalButton from '@/components/ui/RecWeek/RecWeekModalButton';
 
 const departments: departmentType[] = [
   {

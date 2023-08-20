@@ -2,7 +2,7 @@ import React from 'react';
 
 import type { Meta, StoryObj } from '@storybook/react';
 
-import RecWeekOfficeCard from '@/components/ui/RecruitmentWeek/RecWeekOfficeCard';
+import RecWeekOfficeCard from '@/components/ui/RecWeek/RecWeekOfficeCard';
 
 const meta: Meta<typeof RecWeekOfficeCard> = {
   title: 'Components/Rec Week Office Card',
