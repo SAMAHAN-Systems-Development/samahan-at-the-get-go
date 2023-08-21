@@ -65,7 +65,7 @@ const RecWeekModalsSection: FC<RecWeekModalsSectionProps> = ({ office }) => {
               <div className="flex flex-col w-full items-center space-y-5">
                 <RecWeekModalBodyButton
                   link={item.recruitmentFormLink}
-                  title={`Be part of SAMAHAN ${item.name}`}
+                  title={`Be part of ${item.name}`}
                 />
                 <RecWeekModalBodyButton
                   link={item.primerLink}

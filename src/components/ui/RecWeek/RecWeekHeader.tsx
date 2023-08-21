@@ -15,7 +15,7 @@ const RecWeekHeader = () => {
         draggable={false}
         fill
       />
-      <div className="relative z-10 max-w-[7.5rem] sm:max-w-[14.6875rem] justify-self-end">
+      <div className="relative z-10 max-w-[7.5rem] sm:max-w-[14.6875rem] justify-self-end mt-10 lg:mt-14">
         <Image
           alt="AtTheGetGoLogo"
           src={WhiteArrowRight}
