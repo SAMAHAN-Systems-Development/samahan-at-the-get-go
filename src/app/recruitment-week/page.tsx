@@ -4,6 +4,7 @@ import RecWeekModalsSection from '@/components/RecWeek/RecWeekModalsSection';
 import BigSectionUI from '@/components/ui/BigSectionUI';
 import RecWeekHeader from '@/components/ui/RecWeek/RecWeekHeader';
 import RecWeekOfficeCard from '@/components/ui/RecWeek/RecWeekOfficeCard';
+import SolidBlueDivider from '@/components/ui/SolidBlueDivider';
 
 const page = () => {
   return (
@@ -33,7 +34,7 @@ const page = () => {
       <BigSectionUI>
         <RecWeekModalsSection office="OST" />
       </BigSectionUI>
-      <div className="h-28 w-full bg-lightBlue mt-10" />
+      <SolidBlueDivider />
     </>
   );
 };
