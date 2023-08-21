@@ -36,7 +36,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
           <div className="pt-[1.25rem]">
             <Accordion.Trigger>
               <div
-                className="w-full md:w-[50rem] border border-[#263167] rounded-full px-8 py-2 md:px-8 md:py-2 flex items-center"
+                className="w-auto md:w-[50rem] border border-[#263167] rounded-full px-8 py-2 md:px-8 md:py-2 flex items-center"
                 onClick={handleAccordionClick}
                 onKeyDown={handleAccordionKeyPress}
                 role="button"
