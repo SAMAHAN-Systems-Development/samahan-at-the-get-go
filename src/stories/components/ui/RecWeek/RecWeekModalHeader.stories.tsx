@@ -2,7 +2,7 @@ import React from 'react';
 
 import type { Meta, StoryObj } from '@storybook/react';
 
-import DCA from '/public/assets/images/Rec Week/SAMAHAN DCA.jpg';
+import DCA from '/public/assets/images/Rec Week/DCA Cover Photo.jpg';
 import RecWeekModalHeader from '@/components/ui/RecWeek/RecWeekModalHeader';
 
 const meta: Meta<typeof RecWeekModalHeader> = {

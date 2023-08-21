@@ -1,96 +1,79 @@
+import type { FC } from 'react';
 import React from 'react';
 
-import type { departmentType } from 'lib/types/departmentType';
+import RecWeekDeptCardSection from '@/components/ui/RecWeek/RecWeekDeptCardSection';
+import RecWeekDeptTitle from '@/components/ui/RecWeek/RecWeekDeptTitle';
+import RecWeekModalBodyButton from '@/components/ui/RecWeek/RecWeekModalBodyButton';
+import RecWeekModalBodyCard from '@/components/ui/RecWeek/RecWeekModalBodyCard';
+import RecWeekModalHeader from '@/components/ui/RecWeek/RecWeekModalHeader';
+import RecWeekModalUI from '@/components/ui/RecWeek/RecWeekModalUI';
+import RecWeekSectionUI from '@/components/ui/RecWeek/RecWeekSectionUI';
+import {
+  OSGRecWeekData,
+  OSPRecWeekData,
+  OSTRecWeekData,
+  OVPRecWeekData,
+} from '@/data/RecWeekData';
 
-import ASP from '/public/assets/images/Department Logos/asp_logo.jpg';
-import DAA from '/public/assets/images/Department Logos/samahan_academic_affairs_logo.jpg';
-import DCA from '/public/assets/images/Department Logos/samahan_campaigns_advocacies_logo.jpg';
-import SAMACOMMS from '/public/assets/images/Department Logos/samahan_communications_logo.jpg';
-import DRRM from '/public/assets/images/Department Logos/samahan_drrm_logo.jpg';
-import ESU from '/public/assets/images/Department Logos/samahan_ecoteneo_logo.jpg';
-import DEA from '/public/assets/images/Department Logos/samahan_external_affairs_logo.jpg';
-import SLD from '/public/assets/images/Department Logos/samahan_logistics_logo.jpg';
-import RND from '/public/assets/images/Department Logos/samahan_r&d_logo.png';
-import SAS from '/public/assets/images/Department Logos/samahan_sponsorship_logo.jpg';
-import SYSDEV from '/public/assets/images/Department Logos/samahan_sysdev_logo.jpg';
-import SCT from '/public/assets/images/Department Logos/sct_logo.jpg';
-import RecWeekModalButton from '@/components/ui/RecWeek/RecWeekModalButton';
+type RecWeekModalsSectionProps = {
+  office: string;
+};
 
-const departments: departmentType[] = [
-  {
-    fullName: 'SAMAHAN DCA',
-    imageSrc: DCA,
-    name: 'Department of Campaigns & Advocacies',
-  },
-  {
-    fullName: 'DEA',
-    imageSrc: DEA,
-    name: 'Department of External Affairs',
-  },
-  {
-    fullName: 'ESU',
-    imageSrc: ESU,
-    name: 'Ecoteneo Student Unit',
-  },
-  {
-    fullName: 'DAA',
-    imageSrc: DAA,
-    name: 'Department of Academic Affairs',
-  },
-  {
-    fullName: 'DRRM',
-    imageSrc: DRRM,
-    name: 'Disaster Risk Reduction and Managament',
-  },
-  {
-    fullName: 'ASP',
-    imageSrc: ASP,
-    name: 'Ateneo SAMAHAN Productions',
-  },
-  {
-    fullName: 'SAMACOMMS',
-    imageSrc: SAMACOMMS,
-    name: 'Samahan Department of Communications',
-  },
-  {
-    fullName: 'SAMAHAN R&D',
-    imageSrc: RND,
-    name: 'Department of Research & Development',
-  },
-  {
-    fullName: 'SCT',
-    imageSrc: SCT,
-    name: 'Samahan Creative Team',
-  },
-  {
-    fullName: 'SYSDEV',
-    imageSrc: SYSDEV,
-    name: 'Samahan Systems Development',
-  },
-  {
-    fullName: 'SAS',
-    imageSrc: SAS,
-    name: 'Samahan Sponsorship and Support',
-  },
-  {
-    fullName: 'SLD',
-    imageSrc: SLD,
-    name: 'Samahan Logistics Department',
-  },
-];
+const RecWeekModalsSection: FC<RecWeekModalsSectionProps> = ({ office }) => {
+  const handleData = (office: RecWeekModalsSectionProps['office']) => {
+    switch (office) {
+      case 'OSP':
+        return OSPRecWeekData;
+      case 'OVP':
+        return OVPRecWeekData;
+      case 'OSG':
+        return OSGRecWeekData;
+      case 'OST':
+        return OSTRecWeekData;
+      default:
+        return [];
+    }
+  };
 
-const RecWeekModalsSection = () => {
   return (
-    <div className="container-lg grid gap-5">
-      {departments.map((department, index) => {
+    <div className="grid gap-3">
+      {handleData(office).map((item, index) => {
         return (
-          <React.Fragment key={index}>
-            <RecWeekModalButton
-              fullName={department.fullName}
-              imageSrc={department.imageSrc}
-              name={department.name}
+          <RecWeekModalUI
+            fullName={item.fullName}
+            name={item.name}
+            imageSrc={item.buttonImageSrc}
+            key={index}
+          >
+            <RecWeekModalHeader
+              imageSrc={item.headerImageSrc}
+              name={item.name}
             />
-          </React.Fragment>
+            <RecWeekSectionUI>
+              <RecWeekDeptTitle
+                topText={item.topText}
+                bottomText={item.bottomText}
+              />
+            </RecWeekSectionUI>
+            <RecWeekSectionUI>
+              <RecWeekModalBodyCard text={item.text} socials={item.socials} />
+            </RecWeekSectionUI>
+            <RecWeekSectionUI>
+              <RecWeekDeptCardSection department={item.name} />
+            </RecWeekSectionUI>
+            <RecWeekSectionUI>
+              <div className="flex flex-col w-full items-center space-y-5">
+                <RecWeekModalBodyButton
+                  link={item.recruitmentFormLink}
+                  title={`Be part of SAMAHAN ${item.name}`}
+                />
+                <RecWeekModalBodyButton
+                  link={item.primerLink}
+                  title="Download our Primer"
+                />
+              </div>
+            </RecWeekSectionUI>
+          </RecWeekModalUI>
         );
       })}
     </div>

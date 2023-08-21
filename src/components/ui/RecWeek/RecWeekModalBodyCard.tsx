@@ -3,7 +3,7 @@ import React from 'react';
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 import Link from 'next/link';
 
-type SocialsType = {
+export type SocialsType = {
   facebook?: string;
   instagram?: string;
   twitter?: string;

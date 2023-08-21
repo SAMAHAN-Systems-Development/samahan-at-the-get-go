@@ -17,14 +17,14 @@ const RecWeekModalHeader: FC<RecWeekModalHeaderProps> = ({
       <Image
         src={imageSrc}
         alt={`${name} Header Picture`}
-        className="object-cover object-top"
+        className="object-cover object-center"
         placeholder="blur"
         draggable={false}
         fill
       />
       <div className="absolute w-full flex justify-between text-white px-8 py-10 sm:px-14 sm:py-16 lg:px-24 lg:py-36 text-xs sm:text-xl lg:text-2xl">
-        <p className="uppercase">Samahan Recruitment Week</p>
-        <p className="font-artega">{name}</p>
+        <p className="uppercase text-shadow-bold">Samahan Recruitment Week</p>
+        <p className="font-artega text-shadow-bold">{name}</p>
       </div>
     </div>
   );
