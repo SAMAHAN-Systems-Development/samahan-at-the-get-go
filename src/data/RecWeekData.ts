@@ -1,5 +1,6 @@
 import type { RecWeekDataType } from 'lib/types/recWeekContentType';
 
+import PlaceholderHeaderImage from '/public/assets/images/addu_bldg.jpg';
 // import PlaceholderLogo from '/public/assets/images/beige_arrow.png';
 import ASPLogo from '/public/assets/images/Department Logos/asp_logo.jpg';
 import DAALogo from '/public/assets/images/Department Logos/samahan_academic_affairs_logo.jpg';
@@ -12,15 +13,15 @@ import SLDLogo from '/public/assets/images/Department Logos/samahan_logistics_lo
 import RDLogo from '/public/assets/images/Department Logos/samahan_r&d_logo.png';
 import SASLogo from '/public/assets/images/Department Logos/samahan_sponsorship_logo.jpg';
 import SYSDEVLogo from '/public/assets/images/Department Logos/samahan_sysdev_logo.jpg';
-import PlaceholderHeaderImage from '/public/assets/images/HelpPortalImage.png';
 import ASPHeaderImage from '/public/assets/images/Rec Week/ASP Group Photo.jpg';
 import DAAHeaderImage from '/public/assets/images/Rec Week/DAA Group Photo.jpg';
+import DCAHeaderImage from '/public/assets/images/Rec Week/DCA Cover Photo.jpg';
 import DEAHeaderImage from '/public/assets/images/Rec Week/DEA Cover Photo.jpg';
 import DRRMHeaderImage from '/public/assets/images/Rec Week/DRRM Cover Photo.jpg';
+import ESUHeaderImage from '/public/assets/images/Rec Week/ESU Cover Photo.jpg';
 import RDHeaderImage from '/public/assets/images/Rec Week/RND Cover Photo.jpg';
 import SAMACOMMSHeaderImage from '/public/assets/images/Rec Week/SAMACOMMS Group Photo.jpg';
-import DCAHeaderImage from '/public/assets/images/Rec Week/SAMAHAN DCA.jpg';
-import SLDHeaderImage from '/public/assets/images/Rec Week/SLD Group Photo.jpg';
+import SLDHeaderImage from '/public/assets/images/Rec Week/SLD Cover Photo.jpg';
 import SYSDEVHeaderImage from '/public/assets/images/Rec Week/SYSDEV Cover Photo.jpg';
 
 export const OSPRecWeekData: RecWeekDataType[] = [
@@ -61,7 +62,7 @@ export const OSPRecWeekData: RecWeekDataType[] = [
     bottomText: 'Ecoteneo Student Unit',
     buttonImageSrc: ESULogo,
     fullName: 'Ecoteneo Student Unit',
-    headerImageSrc: DCAHeaderImage,
+    headerImageSrc: ESUHeaderImage,
     name: 'ESU',
     primerLink:
       'https://drive.google.com/open?id=1fc066bTzvgEAIsRL1LoUVffJZCV0Gwz7',
