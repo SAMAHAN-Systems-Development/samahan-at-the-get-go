@@ -4,5 +4,4 @@ export type departmentType = {
   fullName: string;
   imageSrc: StaticImageData;
   name: string;
-  office: string;
 };

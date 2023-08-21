@@ -1,9 +1,9 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from '@storybook/react';
 
-import HeroSection from "@/components/Home/HeroSection";
+import HeroSection from '@/components/Home/HeroSection';
 
 const meta: Meta<typeof HeroSection> = {
-  title: "Hero/Hero Section",
+  title: 'Hero/Hero Section',
   component: HeroSection,
 };
 
