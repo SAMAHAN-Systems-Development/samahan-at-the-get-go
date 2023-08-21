@@ -1,19 +1,29 @@
 import React from 'react';
 
-import FAQsHeaderSection from '@/components/HelpPortal/FAQsHeaderSection';
-import HelpPortalWelcomeSection from '@/components/HelpPortal/HelpPortalWelcomeSection';
-import RIAHeaderSection from '@/components/HelpPortal/RIAHeaderSection';
+import FAQsModalsSection from '@/components/HelpPortal/FAQsModalsSection';
 import RIAModalsSection from '@/components/HelpPortal/RIAModalsSection';
-import SamahanGuidebookSection from '@/components/HelpPortal/SamahanGuidebookSection';
+import BigSectionUI from '@/components/ui/BigSectionUI';
+import FAQsHeaderCard from '@/components/ui/HelpPortal/FAQsHeaderCard';
+import HelpPortalCard from '@/components/ui/HelpPortal/HelpPortalCard';
+import RIAHeaderCard from '@/components/ui/HelpPortal/RIAHeaderCard';
+import SamahanGuideBookCard from '@/components/ui/HelpPortal/SamahanGuideBookCard';
 
 const page = () => {
   return (
     <>
-      <HelpPortalWelcomeSection />
-      <SamahanGuidebookSection />
-      <RIAHeaderSection />
+      <HelpPortalCard />
+      <BigSectionUI>
+        <SamahanGuideBookCard />
+      </BigSectionUI>
+      <BigSectionUI>
+        <RIAHeaderCard />
+      </BigSectionUI>
       <RIAModalsSection />
-      <FAQsHeaderSection />
+      <BigSectionUI>
+        <FAQsHeaderCard />
+      </BigSectionUI>
+      <FAQsModalsSection />
+      <div className="h-28 w-full bg-lightBlue mt-10" />
     </>
   );
 };
