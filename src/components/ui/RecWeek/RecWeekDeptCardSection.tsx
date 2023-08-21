@@ -29,7 +29,8 @@ type RecWeekDeptCardSectionProps = {
     | 'SAS'
     | 'SCT'
     | 'SLD'
-    | 'SYSDEV';
+    | 'SYSDEV'
+    | string;
 };
 
 const RecWeekDeptCardSection: React.FC<RecWeekDeptCardSectionProps> = ({
@@ -49,9 +50,9 @@ const RecWeekDeptCardSection: React.FC<RecWeekDeptCardSectionProps> = ({
         return DEA;
       case 'DRRM':
         return DRRM;
-      case 'Ecoteneo':
+      case 'ESU':
         return Ecoteneo;
-      case 'RND':
+      case 'R&D':
         return RND;
       case 'SAMACOMMS':
         return SAMACOMMS;

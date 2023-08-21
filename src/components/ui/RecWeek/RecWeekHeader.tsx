@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import RecWeekHeaderImage from 'public/assets/images/RecWeekHeader.png';
+import RecWeekHeaderImage from 'public/assets/images/RecWeekHeader.jpg';
 import WhiteArrowRight from 'public/assets/images/WhiteArrow4.png';
 
 const RecWeekHeader = () => {
