@@ -11,7 +11,7 @@ const RepresentativesSection: React.FC = () => {
   const isLastCardCentered = Representatives.length % 2 === 1;
 
   return (
-    <section className="bg-[#1A275F] h-full relative rounded-section-card py-20 m-2 mb-10 gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+    <section className="bg-[#1A275F] h-full relative rounded-section-card py-20 m-5 sm:mx-6 md:mx-8 lg:mx-12 mb-10 gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
       <div className="col-span-full text-center mt-20 mb-7">
         <h2 className="text-white sm:text-xl lg:text-4xl font-artega font-medium uppercase">
           Cluster Representatives
