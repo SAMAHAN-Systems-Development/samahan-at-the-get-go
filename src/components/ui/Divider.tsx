@@ -11,9 +11,9 @@ const dividerVariants = cva(
     variants: {
       page: {
         AboutPage:
-          'bg-orange py-[1rem] px-4 text-sm sm:text-sm md:text-base lg:text-base italic',
+          'py-[1rem] px-4 text-sm sm:text-sm md:text-base lg:text-base italic',
         SCBPage:
-          'bg-blue py-8 px-4 md:py-[2rem] lg:py-[2rem] text-sm font-medium font-artega sm:text-base md:text-base lg:text-[1.625rem]',
+          'py-8 px-4 md:py-[2rem] lg:py-[2rem] text-sm font-medium font-artega sm:text-base md:text-base lg:text-[1.625rem]',
       },
     },
   }
@@ -26,10 +26,10 @@ type TextProps = {
 
 const Divider: React.FC<TextProps> = ({ page, text }) => {
   return (
-    <div className="relative flex overflow-x-hidden px-6">
+    <div className="relative flex overflow-x-hidden px-6 py-2">
       <div className={dividerVariants({ page })}>
-        <p className="text-white absolute animate-marquee">{text}</p>
-        <p className="text-white absolute animate-marquee2">{text}</p>
+        <p className="text-blue absolute animate-marquee">{text}</p>
+        <p className="text-blue absolute animate-marquee2">{text}</p>
       </div>
     </div>
   );
