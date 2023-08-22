@@ -9,14 +9,13 @@ const AboutSecondSection = () => {
           <hr className="divider w-full flex justify-center items-center bg-blue text-blue" />
         </div>
 
-        <div className="flex sm:flex-row flex-col justify-center items-center lg:space-x-10 sm:px-24 px-10 pt-6 pb-11">
-          <div className="flex flex-col">
-            <h3 className="text-blue sm:text-4xl text-base font-semibold font-artega flex flex-col mb-6">
-              Since 1982
-            </h3>
-          </div>
+        {/* <div className="flex sm:flex-row flex-col justify-center items-center lg:space-x-10 sm:px-24 px-10 pt-6 pb-11"> */}
+        <div className="grid lg:grid-cols-3 gap-3 py-6 lg:py-20 lg:px-12">
+          <h3 className="text-blue sm:text-4xl text-base font-semibold font-artega lg:col-span-1 mx-auto lg:mx-0">
+            Since 1982
+          </h3>
 
-          <p className="text-blue text-justify text-lg font-medium font-sans">
+          <p className="text-blue text-justify text-lg font-medium font-sans lg:col-span-2 lg:px-10">
             The SAMAHAN remains committed in our collective agenda of creating
             impactful results, solutions, and initiatives for the greater
             communities. For 41 long years, the SAMAHAN remains, endures, and
@@ -30,14 +29,12 @@ const AboutSecondSection = () => {
           <hr className="divider w-full flex justify-center items-center bg-blue text-blue" />
         </div>
 
-        <div className="flex sm:flex-row flex-col justify-center items-center gap-5 sm:px-24 px-10 lg:space-x-10 pt-6 pb-11">
-          <div className="flex flex-col">
-            <h3 className="text-blue sm:text-4xl text-base font-semibold font-artega flex flex-col mb-6">
-              This Year
-            </h3>
-          </div>
+        <div className="grid lg:grid-cols-3 gap-3 py-6 lg:py-20 lg:px-12">
+          <h3 className="text-blue sm:text-4xl text-base font-semibold font-artega lg:col-span-1 mx-auto lg:mx-0">
+            This Year
+          </h3>
 
-          <p className="text-blue text-justify text-lg font-medium font-sans">
+          <p className="text-blue text-justify text-lg font-medium font-sans lg:col-span-2 lg:px-10">
             This year, we venture back to the University life we yearned for so
             long, and actualize what we collectively envision as the next
             generation of Blue Knights. Not only do we thrive to achieve our

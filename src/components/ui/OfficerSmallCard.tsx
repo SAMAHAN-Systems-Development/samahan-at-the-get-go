@@ -14,6 +14,7 @@ const OfficerSmallCard: React.FC<OfficerSmallCardProps> = ({
   lastName,
   position,
   department,
+  email,
   imageUrl,
   textColorClass,
 }) => {
@@ -40,8 +41,13 @@ const OfficerSmallCard: React.FC<OfficerSmallCardProps> = ({
         </div>
       </div>
       <div className="flex-col flex-shrink-0 flex max-w-[12.063rem] max-h-[1.875rem]   text-[0.813rem] font-normal text-center leading-normal">
-        <p className={cn(department ? 'font-bold' : '')}>{position}</p>
+        <p
+          className={cn(department ? 'font-bold' : email ? 'font-normal' : '')}
+        >
+          {position}
+        </p>
         {department ? <p>{department}</p> : null}
+        {email ? <p>{email}</p> : null}
       </div>
     </div>
   );

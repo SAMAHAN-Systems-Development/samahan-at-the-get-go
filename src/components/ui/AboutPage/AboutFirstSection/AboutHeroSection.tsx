@@ -4,7 +4,7 @@ import Image from 'next/image';
 import AboutPageHeaderImage from 'public/assets/images/AboutPageHeaderImage.png';
 const AboutHeroSection = () => {
   return (
-    <div className="w-full overflow-y-hidden relative h-[25rem] sm:h-[28rem] md:h-[42.0625rem] lg:h-[66.25rem] lg:px-[7.87rem] lg:py-[13.94rem]">
+    <div className="w-full relative h-[25rem] sm:h-[28rem] md:h-[40rem] lg:h-[50rem] px-8 py-24 sm:px-20 sm:py-28 lg:px-28 lg:py-40">
       <Image
         alt="AboutPageHeaderImage"
         src={AboutPageHeaderImage}
@@ -15,7 +15,7 @@ const AboutHeroSection = () => {
       />
       <div className="absolute inset-x-0 bottom-0 h-[10rem] bg-gradient-to-b from-white/0 to-white" />
       <div className="grid content-between">
-        <div className="flex flex-row text-sm text-white w-full justify-between z-10 px-7 pt-6">
+        <div className="flex flex-row text-sm text-white w-full justify-between z-10">
           <p className="font-artega font-medium text-[0.875rem] sm:text-[1rem] md:text-[1.25rem] lg:text-[1.5625rem]">
             About Us
           </p>

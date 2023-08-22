@@ -5,7 +5,7 @@ import WeNavigateCard from '@/components/ui/AboutPage/AboutThirdSection/WeNaviga
 const AboutThirdSection = () => {
   return (
     <>
-      <div className="flex flex-col justify-start w-full gap-2 p-5">
+      <div className="flex flex-col justify-start w-full h-96 gap-2 p-5">
         <WeNavigateCard />
       </div>
     </>
