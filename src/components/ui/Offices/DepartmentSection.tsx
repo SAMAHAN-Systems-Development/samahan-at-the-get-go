@@ -1,7 +1,6 @@
 import React from 'react';
 
 import OfficerSmallCard from '@/components/ui/OfficerSmallCard';
-import SmallSectionUI from '@/components/ui/SmallSectionUI';
 import {
   OSGDepartment,
   OSPDepartment,
@@ -46,29 +45,27 @@ const DepartmentSection: React.FC<OfficeDepartmentSectionProps> = ({
   const gridColumns = departmentGridColumns[office];
 
   return (
-    <SmallSectionUI>
-      <section className="mt-5 rounded-section-card py-12 px-5 md:py-12 lg:py-16 lg:px-7">
-        <div className="col-span-full text-center mt-20 mb-7">
-          <h2 className="text-blue sm:text-xl lg:text-4xl font-artega font-medium uppercase">
-            Departments
-          </h2>
-        </div>
-        <div className={cn(`${gridColumns}`)}>
-          {departmentData.map((officer, index) => (
-            <div key={index} className="flex flex-col items-center">
-              <OfficerSmallCard
-                firstName={officer.firstName}
-                lastName={officer.lastName}
-                position={officer.position}
-                department={officer.department}
-                imageUrl={officer.imageUrl}
-                textColorClass="text-blue"
-              />
-            </div>
-          ))}
-        </div>
-      </section>
-    </SmallSectionUI>
+    <div className="mt-5 rounded-section-card py-12 px-5 md:py-12 lg:py-16 lg:px-7">
+      <div className="col-span-full text-center mt-20 mb-7">
+        <h2 className="text-blue sm:text-xl lg:text-4xl font-artega font-medium uppercase">
+          Departments
+        </h2>
+      </div>
+      <div className={cn(`${gridColumns}`)}>
+        {departmentData.map((officer, index) => (
+          <div key={index} className="flex flex-col items-center">
+            <OfficerSmallCard
+              firstName={officer.firstName}
+              lastName={officer.lastName}
+              position={officer.position}
+              department={officer.department}
+              imageUrl={officer.imageUrl}
+              textColorClass="text-blue"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 
