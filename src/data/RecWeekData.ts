@@ -1,7 +1,5 @@
 import type { RecWeekDataType } from 'lib/types/recWeekContentType';
 
-import PlaceholderHeaderImage from '/public/assets/images/addu_bldg.jpg';
-// import PlaceholderLogo from '/public/assets/images/beige_arrow.png';
 import ASPLogo from '/public/assets/images/Department Logos/asp_logo.jpg';
 import DAALogo from '/public/assets/images/Department Logos/samahan_academic_affairs_logo.jpg';
 import DCALogo from '/public/assets/images/Department Logos/samahan_campaigns_advocacies_logo.jpg';
@@ -15,12 +13,13 @@ import SASLogo from '/public/assets/images/Department Logos/samahan_sponsorship_
 import SYSDEVLogo from '/public/assets/images/Department Logos/samahan_sysdev_logo.jpg';
 import ASPHeaderImage from '/public/assets/images/Rec Week/ASP Group Photo.jpg';
 import DAAHeaderImage from '/public/assets/images/Rec Week/DAA Group Photo.jpg';
-import DCAHeaderImage from '/public/assets/images/Rec Week/DCA Cover Photo.jpg';
+import DCAHeaderImage from '/public/assets/images/Rec Week/DCA Cover Photo.png';
 import DEAHeaderImage from '/public/assets/images/Rec Week/DEA Cover Photo.jpg';
 import DRRMHeaderImage from '/public/assets/images/Rec Week/DRRM Cover Photo.jpg';
 import ESUHeaderImage from '/public/assets/images/Rec Week/ESU Cover Photo.jpg';
 import RDHeaderImage from '/public/assets/images/Rec Week/RND Cover Photo.jpg';
 import SAMACOMMSHeaderImage from '/public/assets/images/Rec Week/SAMACOMMS Group Photo.jpg';
+import SASHeaderImage from '/public/assets/images/Rec Week/SAS Cover Photo.png';
 import SLDHeaderImage from '/public/assets/images/Rec Week/SLD Cover Photo.jpg';
 import SYSDEVHeaderImage from '/public/assets/images/Rec Week/SYSDEV Cover Photo.jpg';
 
@@ -201,7 +200,7 @@ export const OSTRecWeekData: RecWeekDataType[] = [
     bottomText: 'Sponsorships and Support',
     buttonImageSrc: SASLogo,
     fullName: 'SAMAHAN Sponsorships and Support',
-    headerImageSrc: PlaceholderHeaderImage,
+    headerImageSrc: SASHeaderImage,
     name: 'SAS',
     primerLink:
       'https://drive.google.com/open?id=1JG1EQD405-ahWFv-JCrljrQtdOt_RfNp',

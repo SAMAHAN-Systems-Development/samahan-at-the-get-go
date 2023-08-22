@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import SCBPage from '@/components/SCB/SCBPage';
+import SCBPage from '@/app/samahan-central-board/page';
 
 const meta: Meta<typeof SCBPage> = {
-  title: 'UI/SCB/SCB Page',
+  title: 'pages/SCB Page',
   component: SCBPage,
 };
 

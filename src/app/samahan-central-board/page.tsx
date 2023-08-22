@@ -7,7 +7,7 @@ import InfiniteMarquee from '@/components/ui/InfiniteMarquee';
 import Navigation from '@/components/ui/Navigation';
 import SCBHeader from '@/components/ui/SCB/SCBHeader';
 
-const SCBPage = () => {
+const page = () => {
   return (
     <>
       <Navigation />
@@ -20,4 +20,4 @@ const SCBPage = () => {
   );
 };
 
-export default SCBPage;
+export default page;
