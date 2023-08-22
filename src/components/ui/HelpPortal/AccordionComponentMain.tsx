@@ -30,44 +30,40 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
   };
 
   return (
-    <div className="flex justify-center items-center">
-      <Accordion.Root type="single" collapsible>
-        <Accordion.Item value="item-1">
-          <div className="pt-[1.25rem]">
-            <Accordion.Trigger>
-              <div
-                className="w-full md:w-[50rem] border border-[#263167] rounded-full px-8 py-2 md:px-8 md:py-2 flex items-center"
-                onClick={handleAccordionClick}
-                onKeyDown={handleAccordionKeyPress}
-                role="button"
-                tabIndex={0}
-              >
-                <p className="text-[#263167] text-left flex-grow">{question}</p>
-                <div className="flex-shrink-0">
-                  <FiArrowUpRight
-                    color="#263167"
-                    className={cn(
-                      isAccordionOpen
-                        ? 'transform rotate-180'
-                        : 'transform rotate-0'
-                    )}
-                  />
-                </div>
-              </div>
-            </Accordion.Trigger>
-          </div>
-          <Accordion.Content
-            className={cn(
-              isAccordionOpen ? 'pt-2 animate-fadeIn' : 'pt-2 animate-fadeOut'
-            )}
+    <Accordion.Root type="single" collapsible>
+      <Accordion.Item value="item-1">
+        <Accordion.Trigger className="pt-[1.25rem] w-full">
+          <div
+            className="border border-lightBlue rounded-card px-8 py-2 flex items-center"
+            onClick={handleAccordionClick}
+            onKeyDown={handleAccordionKeyPress}
+            role="button"
+            tabIndex={0}
           >
-            <div className="w-full md:w-[50rem] px-4 md:px-10 py-6 bg-[#263167] rounded-[1.25rem]">
-              <div className="text-white">{children}</div>
+            <p className="text-lightBlue text-left flex-grow">{question}</p>
+            <div className="flex-shrink-0">
+              <FiArrowUpRight
+                color="#263167"
+                className={cn(
+                  isAccordionOpen
+                    ? 'transform rotate-180'
+                    : 'transform rotate-0'
+                )}
+              />
             </div>
-          </Accordion.Content>
-        </Accordion.Item>
-      </Accordion.Root>
-    </div>
+          </div>
+        </Accordion.Trigger>
+        <Accordion.Content
+          className={cn(
+            isAccordionOpen ? 'pt-2 animate-fadeIn' : 'pt-2 animate-fadeOut'
+          )}
+        >
+          <div className="w-full text-white px-4 md:px-10 py-6 bg-lightBlue rounded-[1.25rem]">
+            {children}
+          </div>
+        </Accordion.Content>
+      </Accordion.Item>
+    </Accordion.Root>
   );
 };
 

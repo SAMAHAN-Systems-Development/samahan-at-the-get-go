@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import placeholder from 'public/assets/images/placeholder.jpg';
+import placeholder from 'public/assets/images/HelpPortalImage.png';
 
 import InitiativesModalUI from '@/components/ui/Offices/InitiativesModalUI';
 

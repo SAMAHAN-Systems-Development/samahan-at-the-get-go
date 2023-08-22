@@ -13,7 +13,7 @@ const RecWeekModalHeader: FC<RecWeekModalHeaderProps> = ({
   name,
 }) => {
   return (
-    <div className="relative h-96 sm:h-[30rem] lg:h-[45rem]">
+    <div className="relative h-[20rem] sm:h-[28rem] lg:h-[38rem]">
       <Image
         src={imageSrc}
         alt={`${name} Header Picture`}
@@ -22,7 +22,7 @@ const RecWeekModalHeader: FC<RecWeekModalHeaderProps> = ({
         draggable={false}
         fill
       />
-      <div className="absolute w-full flex justify-between text-white px-8 py-10 sm:px-14 sm:py-16 lg:px-24 lg:py-36 text-xs sm:text-xl lg:text-2xl">
+      <div className="absolute w-full flex justify-between text-white space-x-2 px-8 py-10 sm:px-14 sm:py-16 lg:px-24 lg:py-36 text-xs sm:text-xl lg:text-2xl">
         <p className="uppercase text-shadow-bold">Samahan Recruitment Week</p>
         <p className="font-artega text-shadow-bold">{name}</p>
       </div>
