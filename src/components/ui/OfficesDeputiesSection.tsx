@@ -31,7 +31,7 @@ const OfficesDeputiesSection: React.FC<OfficesDeputiesSectionProps> = ({
   };
 
   return (
-    <section className="container mt-5 py-12 px-5 md:py-12 lg:py-16 lg:px-7">
+    <div className="mt-5 py-12 px-5 md:py-12 lg:py-16 lg:px-7">
       <h3 className="font-artega uppercase text-lightBlue text-center mb-16 text-xl sm:text-title-sm lg:text-title-md">
         Samahan Deputies
       </h3>
@@ -44,7 +44,7 @@ const OfficesDeputiesSection: React.FC<OfficesDeputiesSectionProps> = ({
           );
         })}
       </div>
-    </section>
+    </div>
   );
 };
 

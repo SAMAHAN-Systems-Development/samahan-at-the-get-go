@@ -32,15 +32,13 @@ const InitiativesModalsSection: FC<InitiativesModalsSectionProps> = ({
   const departmentData = handleData(office);
 
   return (
-    <section className="container">
-      <div className="flex flex-col md:flex-row md:flex-wrap justify-center">
-        {departmentData.map((item, index) => (
-          <React.Fragment key={index}>
-            <InitiativesModalUI {...item} />
-          </React.Fragment>
-        ))}
-      </div>
-    </section>
+    <div className="flex flex-col md:flex-row md:flex-wrap justify-center">
+      {departmentData.map((item, index) => (
+        <React.Fragment key={index}>
+          <InitiativesModalUI {...item} />
+        </React.Fragment>
+      ))}
+    </div>
   );
 };
 

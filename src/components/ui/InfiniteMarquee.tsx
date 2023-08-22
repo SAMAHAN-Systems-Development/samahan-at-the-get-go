@@ -21,16 +21,14 @@ const InfiniteMarquee = () => {
   };
 
   return (
-    <>
-      <div className="relative flex overflow-x-hidden text-blue uppercase">
-        <div className="py-12 animate-marquee whitespace-nowrap">
-          {renderPhrase()}
-        </div>
-        <div className="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
-          {renderPhrase()}
-        </div>
+    <div className="relative flex overflow-x-hidden text-blue uppercase">
+      <div className="py-12 animate-marquee whitespace-nowrap">
+        {renderPhrase()}
       </div>
-    </>
+      <div className="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
+        {renderPhrase()}
+      </div>
+    </div>
   );
 };
 
