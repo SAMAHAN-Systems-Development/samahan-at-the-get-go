@@ -1,5 +1,8 @@
 import React from 'react';
 
+import Carin from 'public/assets/images/Carin.jpg';
+import Panes from 'public/assets/images/Panes.jpg';
+
 import OfficerSmallCard from '@/components/ui/OfficerSmallCard';
 import { FrontEndDevs } from '@/data/FrontEndDevs';
 
@@ -14,7 +17,15 @@ const DeveloperSection = () => {
       </div>
 
       <div className="flex items-center md:col-span-2 md:justify-center lg:col-span-4 lg:justify-self-center">
-        <div>helo</div>
+        <OfficerSmallCard
+          firstName="Julienne"
+          lastName="Panes"
+          position="Secretary General"
+          department="SAMAHAN Systems Development"
+          imageUrl={Panes}
+          email=""
+          textColorClass="text-blue"
+        />
       </div>
 
       {/* front end devs */}
@@ -37,7 +48,15 @@ const DeveloperSection = () => {
       </div>
 
       <div className="flex items-center md:col-span-2 md:justify-center lg:col-span-4 lg:justify-self-center">
-        <div>helo</div>
+        <OfficerSmallCard
+          firstName="Mark Lyod"
+          lastName="Carin"
+          position="UX/UI Head"
+          department="SAMAHAN Systems Development"
+          imageUrl={Carin}
+          email=""
+          textColorClass="text-blue"
+        />
       </div>
     </section>
   );
