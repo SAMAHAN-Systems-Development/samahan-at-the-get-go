@@ -16,7 +16,7 @@ const DeveloperSection = () => {
         </h2>
       </div>
 
-      <div className="flex items-center md:col-span-2 md:justify-center lg:col-span-4 lg:justify-self-center">
+      <div className="flex items-center justify-center md:col-span-2 md:justify-center lg:col-span-4 lg:justify-self-center">
         <OfficerSmallCard
           firstName="Julienne"
           lastName="Panes"
@@ -47,7 +47,7 @@ const DeveloperSection = () => {
         </h2>
       </div>
 
-      <div className="flex items-center md:col-span-2 md:justify-center lg:col-span-4 lg:justify-self-center">
+      <div className="flex items-center justify-center md:col-span-2 md:justify-center lg:col-span-4 lg:justify-self-center mb-12">
         <OfficerSmallCard
           firstName="Mark Lyod"
           lastName="Carin"

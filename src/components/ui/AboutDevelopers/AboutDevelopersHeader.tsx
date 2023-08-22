@@ -22,7 +22,7 @@ const AboutDevelopersHeader = () => {
           <span className="font-appleGaramond block italic font-bold text-[1.5625rem] sm:text-[2.4rem] md:text-[3.4375rem] lg:text-[3.9375rem] leading-[1.2rem] sm:leading-[2rem] md:leading-[2.7rem] lg:leading-none">
             The
           </span>
-          <span className="font-artega uppercase font-medium text-[1.9375rem] sm:text-[2.5rem] md:text-[3.1875rem] lg:text-[4.6875rem] leading-[2rem] sm:leading-[3rem] md:leading-[4.5rem] lg:leading-none">
+          <span className="font-artega uppercase font-medium text-[1.3375rem] sm:text-[2.1rem] md:text-[3.1875rem] lg:text-[4.6875rem] leading-[2rem] sm:leading-[3rem] md:leading-[4.5rem] lg:leading-none">
             Developers
           </span>
         </h1>
