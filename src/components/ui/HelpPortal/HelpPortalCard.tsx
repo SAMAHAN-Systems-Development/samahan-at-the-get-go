@@ -1,12 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 
-import HelpPortalImage from 'public/assets/images/HelpPortalImage.png';
+import HelpPortalImage from 'public/assets/images/addu_bldg.jpg';
 import WhiteArrowRight from 'public/assets/images/WhiteArrow4.png';
 
 const HelpPortalCard = () => {
   return (
-    <div className="grid relative content-between h-[30rem] overflow-hidden -z-10 w-full py-[3rem] px-[1.8rem] md:py-[3.8rem] md:px-[2.75rem] lg:px-[5.88rem] lg:pt-[4.69rem] lg:pb-[]">
+    <div className="grid relative content-between h-[38rem] overflow-hidden -z-10 w-full py-[3rem] px-[1.8rem] md:py-[3.8rem] md:px-[2.75rem] lg:px-[5.88rem] lg:pt-[4.69rem] lg:pb-[]">
       <Image
         src={HelpPortalImage}
         alt="HelpPortalImage"
@@ -15,7 +15,7 @@ const HelpPortalCard = () => {
         draggable={false}
         fill
       />
-      <div className="relative z-10 max-w-[7.5rem] sm:max-w-[14.6875rem] justify-self-end">
+      <div className="relative z-10 max-w-[7.5rem] sm:max-w-[14.6875rem] justify-self-end mt-10 lg:mt-14">
         <Image
           alt="AtTheGetGoLogo"
           src={WhiteArrowRight}

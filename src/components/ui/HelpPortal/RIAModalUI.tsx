@@ -25,11 +25,11 @@ const RIAModalUI: FC<RIAMOdalUIProps> = ({ title, children }) => {
         <ModalWrapper>
           <div className="bg-white border-solid border-card border-lightBlue">
             <Dialog.Close asChild>
-              <button className="flex justify-end w-full text-lightBlue p-3">
+              <button className="flex justify-end w-full text-lightBlue pt-10 px-4 lg:px-3 lg:py-3">
                 <FaTimes />
               </button>
             </Dialog.Close>
-            <div className="px-14 pb-14 max-h-[35rem] max-w-5xl w-screen overflow-y-auto">
+            <div className="px-14 pb-14 h-screen lg:max-h-[35rem] max-w-5xl w-screen overflow-y-auto">
               <div className="flex justify-center mb-6">
                 <TitlePill title={title} />
               </div>

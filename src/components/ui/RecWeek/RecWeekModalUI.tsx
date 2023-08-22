@@ -9,6 +9,7 @@ import * as Dialog from '@radix-ui/react-dialog';
 import ModalWrapper from '@/components/ui/ModalWrapper';
 
 import RecWeekModalButton from '@/components/ui/RecWeek/RecWeekModalButton';
+import SolidBlueDivider from '@/components/ui/SolidBlueDivider';
 
 type RecWeekModalUIProps = {
   children: React.ReactNode;
@@ -42,7 +43,7 @@ const RecWeekModalUI: FC<RecWeekModalUIProps> = ({
                 </button>
               </Dialog.Close>
               {children}
-              <div className="h-28 w-full bg-lightBlue mt-10" />
+              <SolidBlueDivider />
             </div>
           </div>
         </ModalWrapper>

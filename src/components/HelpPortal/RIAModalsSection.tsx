@@ -5,7 +5,7 @@ import RIAModalUI from '@/components/ui/HelpPortal/RIAModalUI';
 
 const RIAModalsSection = () => {
   return (
-    <section className="container-2xl mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+    <section className="container-xs sm:container-sm md:container-md lg:container-lg grid my-5 lg:my-10 md:grid-cols-2 lg:grid-cols-3 gap-3">
       <RIAModalUI title="1st Semester Schedule">
         <RIAModalBodyCard title="Schedule for 1st Semester (A.Y. 2023-2024) Enrollment and Classes">
           <ul>
