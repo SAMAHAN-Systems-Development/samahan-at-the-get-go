@@ -11,7 +11,7 @@ const page = () => {
     return null;
   }
   return (
-    <div className="grid grid-flow-col gap-5">
+    <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3">
       <SmallOfficesCard
         officesTitle="OSP"
         imageUrl={OSPData.imageUrl}

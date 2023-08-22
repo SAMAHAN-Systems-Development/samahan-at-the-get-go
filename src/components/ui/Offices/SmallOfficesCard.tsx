@@ -15,7 +15,7 @@ const SmallOfficesCard: React.FC<SmallOfficesCard> = ({
   officesPosition,
 }) => {
   return (
-    <div className="overflow-hidden relative h-[29.9375rem] w-[22.5625rem] grid content-between text-white -z-10 px-[2.53rem] py-[2.31rem] border-solid border-card rounded-section-card">
+    <div className="overflow-hidden relative h-[30rem] w-full grid content-between text-white -z-10 px-[2.53rem] py-[2.31rem] border-solid border-card rounded-section-card">
       <Image
         src={imageUrl}
         alt={`Office Of The ${officesTitle}`}
