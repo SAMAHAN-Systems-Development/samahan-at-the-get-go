@@ -5,6 +5,7 @@ import AboutDevelopersImage from 'public/assets/images/AboutDevelopersImage.png'
 const AboutDevelopersHeader = () => {
   return (
     <div className="w-full grid content-between text-lightBlue">
+      {/* Image */}
       <div className="overflow-y-hidden relative w-full h-[23rem] sm:h-[23.9375rem] md:h-[42.0625rem]">
         <Image
           src={AboutDevelopersImage}
