@@ -5,6 +5,8 @@ import React from 'react';
 
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 
+import '@splidejs/react-splide/css';
+
 import SmallOfficesCard from '@/components/ui/Offices/SmallOfficesCard';
 import { OfficesDescription } from '@/data/OfficesDescription';
 
@@ -15,16 +17,16 @@ type SmallOfficesCardCarouselProps = {
 const SmallOfficesCardCarousel: FC<SmallOfficesCardCarouselProps> = ({
   officesPosition,
 }) => {
+  const handlePerPage = () => {
+    return window.innerWidth >= 992 ? 3 : 1;
+  };
   return (
     <Splide
       options={{
-        autoplay: true,
-        type: 'loop',
         arrows: false,
-        speed: 2000,
-        interval: 4000,
-        rewind: true,
-        perPage: 3,
+        perPage: handlePerPage(),
+        // fixedWidth: '435px',
+        pagination: false,
       }}
     >
       {OfficesDescription.map((item, index) => {
