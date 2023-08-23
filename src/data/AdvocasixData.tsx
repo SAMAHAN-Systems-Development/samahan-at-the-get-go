@@ -1,11 +1,16 @@
 import type { ModalDataType } from 'library/types/ModalDataType';
+import climate from 'public/assets/images/Advocasix/climate.jpg';
+import holistichealth from 'public/assets/images/Advocasix/holistichealth.jpg';
+import qualityed from 'public/assets/images/Advocasix/qualityed.jpg';
+import sogie from 'public/assets/images/Advocasix/sogie.jpg';
+import youth from 'public/assets/images/Advocasix/youth.jpg';
 import placeholder from 'public/assets/images/Cunanan.jpg';
 
 export const advocasixData: ModalDataType[] = [
   {
     title: 'Climate Action',
     number: '01',
-    imageUrl1: placeholder,
+    imageUrl1: climate,
     imageUrl2: placeholder,
     hashtag: '#GetGoingWithClimateAction',
     description:
@@ -23,7 +28,7 @@ export const advocasixData: ModalDataType[] = [
   {
     title: 'Youth Empowerment',
     number: '03',
-    imageUrl1: placeholder,
+    imageUrl1: youth,
     imageUrl2: placeholder,
     hashtag: '#GetGoingWithYouthEmpowerment',
     description:
@@ -32,7 +37,7 @@ export const advocasixData: ModalDataType[] = [
   {
     title: 'Quality Education',
     number: '04',
-    imageUrl1: placeholder,
+    imageUrl1: qualityed,
     imageUrl2: placeholder,
     hashtag: '#GetGoingWithQualityEducation',
     description:
@@ -41,7 +46,7 @@ export const advocasixData: ModalDataType[] = [
   {
     title: 'Holistic Health',
     number: '05',
-    imageUrl1: placeholder,
+    imageUrl1: holistichealth,
     imageUrl2: placeholder,
     hashtag: '#GetGoingWithHolisticHealth',
     description:
@@ -51,7 +56,7 @@ export const advocasixData: ModalDataType[] = [
     title:
       'Sexual Orientation, Gender Identity, Gender Expression, and Sex Characteristics (SOGIESC)',
     number: '06',
-    imageUrl1: placeholder,
+    imageUrl1: sogie,
     imageUrl2: placeholder,
     hashtag: '#GetGoingWithSOGIESEC',
     description:
