@@ -17,31 +17,32 @@ type SmallOfficesCardCarouselProps = {
 const SmallOfficesCardCarousel: FC<SmallOfficesCardCarouselProps> = ({
   officesPosition,
 }) => {
+  const handlePerPage = () => {
+    return window.innerWidth >= 992 ? 3 : 1;
+  };
   return (
-    <div className="">
-      <Splide
-        options={{
-          arrows: false,
-          perPage: 1,
-          fixedWidth: '435px',
-          pagination: false,
-        }}
-      >
-        {OfficesDescription.map((item, index) => {
-          if (officesPosition !== item.officesPosition) {
-            return (
-              <SplideSlide key={index}>
-                <SmallOfficesCard
-                  officesTitle={item.officesTitle}
-                  imageUrl={item.imageUrl}
-                  officesPosition={item.officesPosition}
-                />
-              </SplideSlide>
-            );
-          }
-        })}
-      </Splide>
-    </div>
+    <Splide
+      options={{
+        arrows: false,
+        perPage: handlePerPage(),
+        // fixedWidth: '435px',
+        pagination: false,
+      }}
+    >
+      {OfficesDescription.map((item, index) => {
+        if (officesPosition !== item.officesPosition) {
+          return (
+            <SplideSlide key={index}>
+              <SmallOfficesCard
+                officesTitle={item.officesTitle}
+                imageUrl={item.imageUrl}
+                officesPosition={item.officesPosition}
+              />
+            </SplideSlide>
+          );
+        }
+      })}
+    </Splide>
   );
 };
 

@@ -9,7 +9,7 @@ import DepartmentSection from '@/components/ui/Offices/DepartmentSection';
 import InitiativesTitleCard from '@/components/ui/Offices/InitiativesTitleCard';
 import OfficesCardNew from '@/components/ui/Offices/OfficesCardNew';
 import OfficesHeaderNew from '@/components/ui/Offices/OfficesHeaderNew';
-import SmallOfficesCardCarousel from '@/components/ui/Offices/SmallOfficesCardCarousel';
+import SmallOfficesCardSection from '@/components/ui/Offices/SmallOfficesCardSection';
 import OfficesDeputiesSection from '@/components/ui/OfficesDeputiesSection';
 import SmallSectionUI from '@/components/ui/SmallSectionUI';
 import SolidBlueDivider from '@/components/ui/SolidBlueDivider';
@@ -38,7 +38,8 @@ const page = () => {
         <InitiativesModalsSection office="OSP" />
       </BigSectionUI>
       <BigSectionUI>
-        <SmallOfficesCardCarousel officesPosition="PRESIDENT" />
+        {/* <SmallOfficesCardCarousel officesPosition="PRESIDENT" /> */}
+        <SmallOfficesCardSection officesPosition="PRESIDENT" />
       </BigSectionUI>
       <SolidBlueDivider />
     </>
