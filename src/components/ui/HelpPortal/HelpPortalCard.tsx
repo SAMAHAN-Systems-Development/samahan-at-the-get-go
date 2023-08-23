@@ -6,7 +6,7 @@ import WhiteArrowRight from 'public/assets/images/WhiteArrow4.png';
 
 const HelpPortalCard = () => {
   return (
-    <div className="grid relative content-between h-[38rem] overflow-hidden -z-10 w-full py-[3rem] px-[1.8rem] md:py-[3.8rem] md:px-[2.75rem] lg:px-[5.88rem] lg:pt-[4.69rem] lg:pb-[]">
+    <div className="grid relative content-between h-[30rem] sm:h-[38rem] md:h-[50rem] lg:h-screen overflow-hidden -z-10 w-full py-[3rem] px-[1.8rem] md:py-[3.8rem] md:px-[2.75rem] lg:px-[5.88rem] lg:pt-[4.69rem]">
       <Image
         src={HelpPortalImage}
         alt="HelpPortalImage"
