@@ -8,7 +8,7 @@ import { FrontEndDevs } from '@/data/FrontEndDevs';
 
 const DeveloperSection = () => {
   return (
-    <section className="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+    <section className="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       {/* Project head (iya) */}
       <div className="col-span-full text-center mt-20 mb-7">
         <h2 className="text-blue sm:text-xl lg:text-4xl font-artega font-medium uppercase">
@@ -35,7 +35,7 @@ const DeveloperSection = () => {
         </h2>
       </div>
       {FrontEndDevs.map((item, index) => (
-        <div key={index} className="flex flex-col items-center">
+        <div key={index} className="flex flex-col items-center justify-center">
           <OfficerSmallCard {...item} textColorClass="text-blue" />
         </div>
       ))}
