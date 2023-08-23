@@ -40,4 +40,46 @@ export const OfficesDescription: OfficesType[] = [
   },
 ];
 
-export default OfficesDescription;
+export const OSPData: OfficesType[] = [
+  {
+    officesNumber: '01',
+    officesTitle: 'The OSP',
+    officesPosition: 'PRESIDENT',
+    officesDescription:
+      'is the highest executive office, aims to establish harmony and efficiency in both the internal operations of the student government and external relations.',
+    imageUrl: OSPImage,
+  },
+];
+
+export const OVPData: OfficesType[] = [
+  {
+    officesNumber: '01',
+    officesTitle: 'The OVP',
+    officesPosition: 'VICE PRESIDENT',
+    officesDescription:
+      'aims to supervise the internal affairs of the SAMAHAN Central Board and lead the Student Assembly.',
+    imageUrl: OVPImage,
+  },
+];
+
+export const OSGData: OfficesType[] = [
+  {
+    officesNumber: '01',
+    officesTitle: 'The OSG',
+    officesPosition: 'SECRETARY GENERAL',
+    officesDescription:
+      'aims to ensure efficiency on administrative and secretariat works that shall mobilize the student government to operate its services and meet its goals.',
+    imageUrl: OSGImage,
+  },
+];
+
+export const OSTData: OfficesType[] = [
+  {
+    officesNumber: '01',
+    officesTitle: 'The OST',
+    officesPosition: 'TREASURER',
+    officesDescription:
+      'aims to establish a well-financed, transparent, and resourceful student government that can utilize its funds to meet its goals and implement its mandates.',
+    imageUrl: OSTImage,
+  },
+];
