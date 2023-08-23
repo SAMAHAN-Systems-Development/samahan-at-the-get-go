@@ -12,12 +12,6 @@ const HomePage: FC = () => {
       >
         Click Me!
       </Button>
-      <Button
-        href="https://www.samahan.addu.edu.ph/"
-        className="font-appleGaramound bg-beige text-white"
-      >
-        Click Me!
-      </Button>
     </>
   );
 };
