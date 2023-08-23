@@ -1,5 +1,6 @@
 import type { FC } from 'react';
 import React from 'react';
+import Link from 'next/link';
 
 import SmallOfficesCard from '@/components/ui/Offices/SmallOfficesCard';
 import ThinBlueDivider from '@/components/ui/ThinBlueDivider';
@@ -24,12 +25,13 @@ const SmallOfficesCardSection: FC<SmallOfficesCardSectionProps> = ({
         {OfficesDescription.map((item, index) => {
           if (officesPosition !== item.officesPosition) {
             return (
-              <SmallOfficesCard
-                key={index}
-                officesTitle={item.officesTitle}
-                imageUrl={item.imageUrl}
-                officesPosition={item.officesPosition}
-              />
+              <Link href={item.pageLink ? item.pageLink : '/'} key={index}>
+                <SmallOfficesCard
+                  officesTitle={item.officesTitle}
+                  imageUrl={item.imageUrl}
+                  officesPosition={item.officesPosition}
+                />
+              </Link>
             );
           }
         })}

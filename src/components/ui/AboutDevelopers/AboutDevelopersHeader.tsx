@@ -6,7 +6,7 @@ const AboutDevelopersHeader = () => {
   return (
     <div className="w-full grid content-between text-lightBlue">
       {/* Image */}
-      <div className="overflow-y-hidden relative w-full h-[23rem] sm:h-[23.9375rem] md:h-[42.0625rem]">
+      <div className="overflow-y-hidden relative w-full h-[23rem] sm:h-[24rem] md:h-[45rem]">
         <Image
           src={AboutDevelopersImage}
           alt="About Developers Image"
@@ -17,7 +17,7 @@ const AboutDevelopersHeader = () => {
         />
         <div className="absolute inset-x-0 bottom-0 h-[10rem] bg-gradient-to-b from-white/0 to-white" />
       </div>
-      <div className="mt-[1rem] md:mt-[3.88rem] lg:mt-[1.38rem] mb:[5.31rem] md:mb-[6.38rem] lg:mb-[10.25rem]">
+      <div className="mt-10 mb-6 lg:mb-16">
         <h1 className="text-center">
           <span className="font-appleGaramond block italic font-bold text-[1.5625rem] sm:text-[2.4rem] md:text-[3.4375rem] lg:text-[3.9375rem] leading-[1.2rem] sm:leading-[2rem] md:leading-[2.7rem] lg:leading-none">
             The

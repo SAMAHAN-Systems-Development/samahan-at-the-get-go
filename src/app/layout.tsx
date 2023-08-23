@@ -1,6 +1,7 @@
 import 'src/styles/globals.css';
 
 import Footer from '@/components/ui/Footer';
+import Navigation from '@/components/ui/Navigation';
 import {
   appleGaramond,
   appleGaramondBold,
@@ -24,7 +25,7 @@ export default function RootLayout({
       className={`${artega.variable} ${appleGaramond.variable} ${appleGaramondLight.variable} ${appleGaramondBold.variable} font-sans`}
     >
       <body>
-        {/* <Navigation /> */}
+        <Navigation />
         {children}
         <Footer />
       </body>

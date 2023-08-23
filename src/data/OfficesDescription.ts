@@ -8,35 +8,39 @@ import OVPImage from '/public/assets/images/OVPImage.png';
 export const OfficesDescription: OfficesType[] = [
   {
     officesNumber: '01',
-    officesTitle: 'The OSP',
+    officesTitle: 'OSP',
     officesPosition: 'PRESIDENT',
     officesDescription:
       'is the highest executive office, aims to establish harmony and efficiency in both the internal operations of the student government and external relations.',
     imageUrl: OSPImage,
+    pageLink: '/office-of-the-president',
   },
   {
     officesNumber: '01',
-    officesTitle: 'The OVP',
+    officesTitle: 'OVP',
     officesPosition: 'VICE PRESIDENT',
     officesDescription:
       'aims to supervise the internal affairs of the SAMAHAN Central Board and lead the Student Assembly.',
     imageUrl: OVPImage,
+    pageLink: '/office-of-the-vice-president',
   },
   {
     officesNumber: '01',
-    officesTitle: 'The OSG',
-    officesPosition: 'SECRETARY GENERAL',
+    officesTitle: 'OSG',
+    officesPosition: 'SECRETARY-GENERAL',
     officesDescription:
       'aims to ensure efficiency on administrative and secretariat works that shall mobilize the student government to operate its services and meet its goals.',
     imageUrl: OSGImage,
+    pageLink: '/office-of-the-secretary-general',
   },
   {
     officesNumber: '01',
-    officesTitle: 'The OST',
+    officesTitle: 'OST',
     officesPosition: 'TREASURER',
     officesDescription:
       'aims to establish a well-financed, transparent, and resourceful student government that can utilize its funds to meet its goals and implement its mandates.',
     imageUrl: OSTImage,
+    pageLink: '/office-of-the-treasurer',
   },
 ];
 

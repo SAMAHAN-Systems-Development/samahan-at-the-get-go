@@ -1,6 +1,6 @@
 import React from 'react';
 
-import OSP from 'public/assets/images/OSPImage.png';
+import OST from 'public/assets/images/OSTImage.png';
 
 import InitiativesModalsSection from '@/components/Offices/InitiativesModalsSection';
 import BigSectionUI from '@/components/ui/BigSectionUI';
@@ -17,28 +17,28 @@ import SolidBlueDivider from '@/components/ui/SolidBlueDivider';
 const page = () => {
   return (
     <>
-      <OfficesHeaderNew officesPosition="President" imageUrl={OSP} />
+      <OfficesHeaderNew officesPosition="Treasurer" imageUrl={OST} />
       <BigSectionUI>
         <OfficesCardNew
-          title="The OSP"
-          description="is the highest executive office, aims to establish harmony and efficiency in both the internal operations of the student government and external relations."
+          title="The OST"
+          description="aims to establish a well-financed, transparent, and resourceful student government that can utilize its funds to meet its goals and implement its mandates."
         />
       </BigSectionUI>
       <SmallSectionUI>
-        <OfficesDeputiesSection office="OSP" />
+        <OfficesDeputiesSection office="OST" />
       </SmallSectionUI>
       <SmallSectionUI>
-        <DepartmentSection office="OSP" />
+        <DepartmentSection office="OST" />
       </SmallSectionUI>
       <BigSectionUI>
         <InitiativesTitleCard />
       </BigSectionUI>
       <InfiniteMarquee />
       <BigSectionUI>
-        <InitiativesModalsSection office="OSP" />
+        <InitiativesModalsSection office="OST" />
       </BigSectionUI>
       <BigSectionUI>
-        <SmallOfficesCardSection officesPosition="PRESIDENT" />
+        <SmallOfficesCardSection officesPosition="TREASURER" />
       </BigSectionUI>
       <SolidBlueDivider />
     </>

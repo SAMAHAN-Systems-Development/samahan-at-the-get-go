@@ -1,6 +1,6 @@
 import React from 'react';
 
-import OSP from 'public/assets/images/OSPImage.png';
+import OVP from 'public/assets/images/OVPImage.png';
 
 import InitiativesModalsSection from '@/components/Offices/InitiativesModalsSection';
 import BigSectionUI from '@/components/ui/BigSectionUI';
@@ -17,28 +17,28 @@ import SolidBlueDivider from '@/components/ui/SolidBlueDivider';
 const page = () => {
   return (
     <>
-      <OfficesHeaderNew officesPosition="President" imageUrl={OSP} />
+      <OfficesHeaderNew officesPosition="Vice President" imageUrl={OVP} />
       <BigSectionUI>
         <OfficesCardNew
-          title="The OSP"
-          description="is the highest executive office, aims to establish harmony and efficiency in both the internal operations of the student government and external relations."
+          title="The OVP"
+          description="aims to supervise the internal affairs of the SAMAHAN Central Board and lead the Student Assembly."
         />
       </BigSectionUI>
       <SmallSectionUI>
-        <OfficesDeputiesSection office="OSP" />
+        <OfficesDeputiesSection office="OVP" />
       </SmallSectionUI>
       <SmallSectionUI>
-        <DepartmentSection office="OSP" />
+        <DepartmentSection office="OVP" />
       </SmallSectionUI>
       <BigSectionUI>
         <InitiativesTitleCard />
       </BigSectionUI>
       <InfiniteMarquee />
       <BigSectionUI>
-        <InitiativesModalsSection office="OSP" />
+        <InitiativesModalsSection office="OVP" />
       </BigSectionUI>
       <BigSectionUI>
-        <SmallOfficesCardSection officesPosition="PRESIDENT" />
+        <SmallOfficesCardSection officesPosition="VICE PRESIDENT" />
       </BigSectionUI>
       <SolidBlueDivider />
     </>
