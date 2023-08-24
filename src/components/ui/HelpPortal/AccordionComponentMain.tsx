@@ -59,7 +59,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
           )}
         >
           <div className="w-full text-white px-4 md:px-10 py-6 bg-lightBlue rounded-[1.25rem]">
-            {children}
+            <p>{children}</p>
           </div>
         </Accordion.Content>
       </Accordion.Item>
