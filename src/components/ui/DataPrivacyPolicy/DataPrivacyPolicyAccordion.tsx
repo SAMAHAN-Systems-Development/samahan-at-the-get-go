@@ -52,17 +52,6 @@ const DataPrivacyPolicyAccordionData: DataPrivacyPolicyAccordionDataType[] = [
 const DataPrivacyPolicyAccordion = () => {
   return (
     <>
-      <div className="text-lightBlue">
-        <h2 className="font-artega uppercase text-center lg:text-[2rem]">
-          Summary of key points
-        </h2>
-        <p className="my-10">
-          This summary provides key points from our privacy notice, but you can
-          find out more details about any of these topics by clicking the link
-          following each key point or by using our table of contents below to
-          find the section you are looking for.
-        </p>
-      </div>
       {DataPrivacyPolicyAccordionData.map((item, index) => {
         return (
           <AccordionComponent key={index} question={item.question}>

@@ -1,13 +1,18 @@
 import React from 'react';
 
-import BigSectionUI from '@/components/ui/BigSectionUI';
-import DataPrivacyPolicyAccordion from '@/components/ui/DataPrivacyPolicy/DataPrivacyPolicyAccordion';
+import DataPrivacyFirstSection from '@/components/ui/DataPrivacyPolicyPage/DataPrivacyFirstSection';
+import DataPrivacyFourthSection from '@/components/ui/DataPrivacyPolicyPage/DataPrivacyFourthSection';
+import DataPrivacySecondSection from '@/components/ui/DataPrivacyPolicyPage/DataPrivacySecondSection';
+import DataPrivacyThirdSection from '@/components/ui/DataPrivacyPolicyPage/DataPrivacyThirdSection';
 
 const page = () => {
   return (
-    <BigSectionUI>
-      <DataPrivacyPolicyAccordion />
-    </BigSectionUI>
+    <>
+      <DataPrivacyFirstSection />
+      <DataPrivacySecondSection />
+      <DataPrivacyThirdSection />
+      <DataPrivacyFourthSection />
+    </>
   );
 };
 

@@ -21,7 +21,7 @@ const DataPrivacyFirstSection = () => {
         <h2 className="font-artega text-[1.25rem] md:text-[1.5625rem] lg:text-[1.9375rem] mb-[3.12rem] mt-[7.44rem] md:mt-[11rem] md:mb-[3.5rem] lg:mb-[3.06rem]">
           PRIVACY NOTICE
         </h2>
-        <p className="text-justify font-[0.8125rem] md:text-[1rem] lg:text-[1.25rem]">
+        <p className="text-justify text-[0.8125rem] md:text-[1rem] lg:text-[1.25rem]">
           <span className="block mb-[2rem]">
             This privacy notice for Ateneo de Davao University
             (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our,&rdquo;)
@@ -47,7 +47,7 @@ const DataPrivacyFirstSection = () => {
         <h2 className="font-artega text-[1.25rem] md:text-[1.5625rem] lg:text-[1.9375rem] mb-[3.69rem]">
           SUMMARY OF KEY POINTS
         </h2>
-        <p className="text-justify font-[0.8125rem] md:text-[1rem] lg:text-[1.25rem]">
+        <p className="text-justify text-[0.8125rem] md:text-[1rem] lg:text-[1.25rem]">
           This summary provides key points from our privacy notice, but you can
           find out more details about any of these topics by clicking the link
           following each key point or by using our table of contents below to
