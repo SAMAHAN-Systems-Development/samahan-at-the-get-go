@@ -1,6 +1,5 @@
 import React from 'react';
 
-import AdvocasixDescriptionCard from '@/components/ui/Advocasix/AdvocasixDescriptionCard';
 import AdvocasixModalUI from '@/components/ui/Advocasix/AdvocasixModalUI';
 import BigSectionUI from '@/components/ui/BigSectionUI';
 import { advocasixData } from '@/data/AdvocasixData';
@@ -8,7 +7,6 @@ import { advocasixData } from '@/data/AdvocasixData';
 const AdvocasixModalsSection = () => {
   return (
     <div>
-      <AdvocasixDescriptionCard />
       <BigSectionUI>
         <div className="flex flex-col space-y-4">
           {advocasixData.map((item, index) => (

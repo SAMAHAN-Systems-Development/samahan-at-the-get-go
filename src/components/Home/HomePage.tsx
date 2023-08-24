@@ -3,7 +3,9 @@ import React from 'react';
 
 import AdvocasixModalsSection from '@/components/Home/AdvocasixModalsSection';
 import HeroSection from '@/components/Home/HeroSection';
+import AdvocasixDescriptionCard from '@/components/ui/Advocasix/AdvocasixDescriptionCard';
 import BigSectionUI from '@/components/ui/BigSectionUI';
+import SolidBlueDivider from '@/components/ui/SolidBlueDivider';
 
 const HomePage: FC = () => {
   return (
@@ -13,9 +15,11 @@ const HomePage: FC = () => {
           <HeroSection />
         </BigSectionUI>
       </div>
+      <AdvocasixDescriptionCard />
       <BigSectionUI>
         <AdvocasixModalsSection />
       </BigSectionUI>
+      <SolidBlueDivider />
     </div>
   );
 };
