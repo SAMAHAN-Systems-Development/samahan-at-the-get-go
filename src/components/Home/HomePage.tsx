@@ -1,18 +1,22 @@
 import type { FC } from 'react';
 import React from 'react';
 
-import Button from '@/components/ui/Button';
+import AdvocasixModalsSection from '@/components/Home/AdvocasixModalsSection';
+import HeroSection from '@/components/Home/HeroSection';
+import BigSectionUI from '@/components/ui/BigSectionUI';
 
 const HomePage: FC = () => {
   return (
-    <>
-      <Button
-        href="https://www.samahan.addu.edu.ph/"
-        className="font-artega bg-beige text-white"
-      >
-        Click Me!
-      </Button>
-    </>
+    <div className="overflow-x-hidden">
+      <div className="md:mb-20 mb-8">
+        <BigSectionUI>
+          <HeroSection />
+        </BigSectionUI>
+      </div>
+      <BigSectionUI>
+        <AdvocasixModalsSection />
+      </BigSectionUI>
+    </div>
   );
 };
 

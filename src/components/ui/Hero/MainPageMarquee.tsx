@@ -5,8 +5,8 @@ const MARQUEE_CONTENT =
 
 const MainPageMarquee: React.FC = () => {
   return (
-    <div className="relative flex overflow-x-hidden w-full">
-      <div className="w-full h-auto rounded-[1.25rem] relative flex whitespace-nowrap justify-center items-center m:py-[1rem] py-[0.5rem] px-4 uppercase md:text-[1rem] text-[0.6rem] overflow-hidden">
+    <div className="relative flex overflow-x-hidden w-screen">
+      <div className="w-full h-auto rounded-[1.25rem] relative flex whitespace-nowrap justify-center items-center py-[0.8rem] px-4 uppercase md:text-[1rem] text-[0.6rem] font-artega overflow-hidden">
         <p className="text-blue absolute animate-marquee">{MARQUEE_CONTENT}</p>
         <p className="text-blue absolute animate-marquee2">{MARQUEE_CONTENT}</p>
       </div>
