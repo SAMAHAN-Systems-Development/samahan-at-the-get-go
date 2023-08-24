@@ -7,6 +7,11 @@ const InfiniteMarquee = () => {
     'At the Get Go',
     'At the Get Go',
     'At the Get Go',
+    'At the Get Go',
+    'At the Get Go',
+    'At the Get Go',
+    'At the Get Go',
+    'At the Get Go',
   ];
 
   const renderPhrase = () => {
