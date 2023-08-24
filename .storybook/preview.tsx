@@ -6,6 +6,7 @@ import {
   artega,
 } from '../src/styles/fonts';
 import 'src/styles/globals.css';
+import '@splidejs/react-splide/css';
 import type { Preview } from '@storybook/react';
 
 const preview: Preview = {

@@ -1,4 +1,5 @@
 import 'src/styles/globals.css';
+import '@splidejs/react-splide/css';
 
 import Footer from '@/components/ui/Footer';
 import Navigation from '@/components/ui/Navigation';
