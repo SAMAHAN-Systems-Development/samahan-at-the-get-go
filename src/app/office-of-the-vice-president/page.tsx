@@ -16,7 +16,7 @@ import SolidBlueDivider from '@/components/ui/SolidBlueDivider';
 
 const page = () => {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <OfficesHeaderNew officesPosition="Vice President" imageUrl={OVP} />
       <BigSectionUI>
         <OfficesCardNew
@@ -33,7 +33,9 @@ const page = () => {
       <BigSectionUI>
         <InitiativesTitleCard />
       </BigSectionUI>
-      <InfiniteMarquee />
+      <div className="mb-10 lg:mb-20">
+        <InfiniteMarquee />
+      </div>
       <BigSectionUI>
         <InitiativesModalsSection office="OVP" />
       </BigSectionUI>
@@ -41,7 +43,7 @@ const page = () => {
         <SmallOfficesCardSection officesPosition="VICE PRESIDENT" />
       </BigSectionUI>
       <SolidBlueDivider />
-    </>
+    </div>
   );
 };
 

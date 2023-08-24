@@ -1,12 +1,12 @@
 import React from 'react';
 
+import HelpPortalModalUI from '@/components/ui/HelpPortal/HelpPortalModalUI';
 import RIAModalBodyCard from '@/components/ui/HelpPortal/RIAModalBodyCard';
-import RIAModalUI from '@/components/ui/HelpPortal/RIAModalUI';
 
 const RIAModalsSection = () => {
   return (
     <section className="container-xs sm:container-sm md:container-md lg:container-lg grid my-5 lg:my-10 md:grid-cols-2 lg:grid-cols-3 gap-3">
-      <RIAModalUI title="1st Semester Schedule">
+      <HelpPortalModalUI title="1st Semester Schedule">
         <RIAModalBodyCard title="Schedule for 1st Semester (A.Y. 2023-2024) Enrollment and Classes">
           <ul>
             <li>
@@ -33,8 +33,8 @@ const RIAModalsSection = () => {
             </li>
           </ul>
         </RIAModalBodyCard>
-      </RIAModalUI>
-      <RIAModalUI title="Enrollment and Payment">
+      </HelpPortalModalUI>
+      <HelpPortalModalUI title="Enrollment and Payment">
         <RIAModalBodyCard title="Enrollment">
           <ol className="list-decimal ml-[2ch]">
             <li>
@@ -189,8 +189,8 @@ const RIAModalsSection = () => {
             </ol>
           </RIAModalBodyCard>
         </div>
-      </RIAModalUI>
-      <RIAModalUI title="Contact Details">
+      </HelpPortalModalUI>
+      <HelpPortalModalUI title="Contact Details">
         <div>
           <RIAModalBodyCard title="Directory of Academic Departments">
             <div className="grid md:grid-cols-2 gap-8">
@@ -346,8 +346,8 @@ const RIAModalsSection = () => {
             </div>
           </RIAModalBodyCard>
         </div>
-      </RIAModalUI>
-      <RIAModalUI title="Appeals">
+      </HelpPortalModalUI>
+      <HelpPortalModalUI title="Appeals">
         <div>
           <RIAModalBodyCard title="QPI Appeal">
             <div>
@@ -407,8 +407,8 @@ const RIAModalsSection = () => {
             </ol>
           </RIAModalBodyCard>
         </div>
-      </RIAModalUI>
-      <RIAModalUI title="Shifting">
+      </HelpPortalModalUI>
+      <HelpPortalModalUI title="Shifting">
         <RIAModalBodyCard title="Shifting">
           <ol className="list-decimal ml-[2ch]">
             <li>Log on to your SIS Account.</li>
@@ -437,8 +437,8 @@ const RIAModalsSection = () => {
             </li>
           </ol>
         </RIAModalBodyCard>
-      </RIAModalUI>
-      <RIAModalUI title="Leave of Absences">
+      </HelpPortalModalUI>
+      <HelpPortalModalUI title="Leave of Absences">
         <RIAModalBodyCard title="Leave of Absences (LOA)">
           <p>
             LOA is processed by a student who needs to temporarily discontinue
@@ -484,7 +484,7 @@ const RIAModalsSection = () => {
             </div>
           </RIAModalBodyCard>
         </div>
-      </RIAModalUI>
+      </HelpPortalModalUI>
     </section>
   );
 };

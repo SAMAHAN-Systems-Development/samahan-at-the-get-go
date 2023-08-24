@@ -31,11 +31,11 @@ const OfficesDeputiesSection: React.FC<OfficesDeputiesSectionProps> = ({
   };
 
   return (
-    <div className="mt-5 py-12 px-5 md:py-12 lg:py-16 lg:px-7">
-      <h3 className="font-artega uppercase text-lightBlue text-center mb-16 text-xl sm:text-title-sm lg:text-title-md">
+    <div className="py-2 lg:py-5">
+      <h3 className="font-artega uppercase text-lightBlue text-center mb-7 lg:mb-16 text-xl sm:text-title-sm lg:text-title-md">
         Samahan Deputies
       </h3>
-      <div className="flex flex-wrap justify-center gap-2">
+      <div className="flex flex-wrap justify-center">
         {handleData(office).map((officer, index) => {
           return (
             <div key={index}>
