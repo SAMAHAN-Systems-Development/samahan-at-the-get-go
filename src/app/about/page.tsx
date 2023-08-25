@@ -52,7 +52,7 @@ const AboutPage = () => {
         <YearofMagis />
       </BigSectionUI>
       {/* SAMAHAN Picture */}
-      <div className="relative w-full h-[25rem] lg:h-[34.25rem] bg-lightBlue my-10">
+      <div className="relative w-full h-[25rem] lg:h-[34.25rem] bg-lightBlue mt-10">
         <Image
           src={SamahanMembersPhoto}
           placeholder="blur"

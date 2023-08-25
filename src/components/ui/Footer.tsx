@@ -108,8 +108,8 @@ const contactSection = [
 const Footer = () => {
   return (
     <footer className="w-full bg-beige text-lightBlue p-10">
-      <div className="grid grid-cols-1 gap-y-[2rem] sm:gap-y-[1.5rem] md:gap-y-[2.3rem] lg:grid-cols-2 lg:grid-rows-2 lg:gap-y-0">
-        <div className="grid grid-flow-row lg:grid-flow-col gap-[1.12rem] sm:gap-[1.5rem] md:gap-[1.5rem] lg:gap-[2rem]">
+      <div className="grid grid-cols-1 gap-y-[2rem] sm:gap-y-[1.5rem] md:gap-y-[2.3rem] lg:grid-cols-2 lg:grid-rows-2 lg:gap-y-0 h-fit">
+        <div className="grid grid-flow-row lg:grid-flow-col gap-[1.12rem] sm:gap-[1.5rem] md:gap-[1.5rem] lg:gap-[2rem] w-fit">
           <div className="grid grid-flow-col gap-[1.21rem] w-fit">
             <div className="relative h-[3.34975rem] w-[3.36206rem] md:h-[5.01006rem] md:w-[5.0285rem] lg:h-[5.01006rem] lg:w-[5.0285rem]">
               <Image
@@ -142,7 +142,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="grid row-start-3 sm:grid-cols-3 md:grid-cols-3 md:row-start-3 lg:grid-cols-3 lg:row-start-2 sm:w-[26rem] md:w-[28.8125rem] lg:w-[32rem] text-xs md:text-sm lg:text-sm gap-y-[1.12rem] sm:gap-x-[3rem] md:gap-x-[3.12rem] lg:gap-x-[3.12rem] lg:-mt-6">
+        <div className="grid row-start-3 sm:grid-cols-3 md:grid-cols-3 md:row-start-3 lg:grid-cols-3 lg:row-start-2 sm:w-[26rem] md:w-[28.8125rem] lg:w-[32rem] text-xs md:text-sm lg:text-sm gap-y-[1.12rem] sm:gap-x-[3rem] md:gap-x-[3.12rem] lg:gap-x-[3.12rem] lg:-mt-4">
           {quickLinksData.map((section, index) => (
             <div
               className="grid grid-flow-row h-fit gap-y-[0.75rem] font-normal"
