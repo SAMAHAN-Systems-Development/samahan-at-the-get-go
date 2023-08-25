@@ -6,7 +6,7 @@ type BigSectionUIProps = {
 };
 
 const BigSectionUI: FC<BigSectionUIProps> = ({ children }) => {
-  return <section className="container-2xl my-10">{children}</section>;
+  return <section className="container-2xl my-5 lg:my-10">{children}</section>;
 };
 
 export default BigSectionUI;
