@@ -18,8 +18,8 @@ const quickLinksData = [
     title: 'Quick Links',
     links: [
       { title: 'About', href: '/about' },
-      { title: 'Student Judicial Court', href: '/' },
-      { title: 'Events', href: '/' },
+      { title: 'Student Judicial Court', href: '/samahan-central-board' },
+      { title: 'Recruitment Week', href: '/recruitment-week' },
     ],
   },
   {
@@ -200,7 +200,7 @@ const Footer = () => {
             </a>
           </p>
           <p>
-            <Link className="flex flex-row" href="#">
+            <Link className="flex flex-row" href="/developers">
               <span className="align-baseline font-normal">
                 About the Developers
               </span>
