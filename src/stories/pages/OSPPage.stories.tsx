@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import OSPPage from '@/app/office-of-the-president/page';
+import OSPPage from '@/app/offices/office-of-the-president/page';
 
 const meta: Meta<typeof OSPPage> = {
   title: 'pages/OSP Page',

@@ -7,7 +7,6 @@ import {
   OSTDepartment,
   OVPDepartment,
 } from '@/data/Departments';
-import { cn } from '@/utils/cvaUtils';
 
 type OfficeDepartmentSectionProps = {
   office: 'OSP' | 'OVP' | 'OSG' | 'OST';
@@ -33,25 +32,14 @@ const DepartmentSection: React.FC<OfficeDepartmentSectionProps> = ({
 
   const departmentData = handleData(office);
 
-  const departmentGridColumns: {
-    [key in OfficeDepartmentSectionProps['office']]: string;
-  } = {
-    OSP: 'gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3',
-    OVP: 'gap-4 grid grid-cols-1 md:grid-cols-4',
-    OSG: 'flex flex-wrap justify-center gap-2',
-    OST: 'gap-4 grid grid-cols-1 md:grid-cols-4',
-  };
-
-  const gridColumns = departmentGridColumns[office];
-
   return (
-    <div className="mt-5 rounded-section-card py-12 px-5 md:py-12 lg:py-16 lg:px-7">
-      <div className="col-span-full text-center mt-20 mb-7">
-        <h2 className="text-blue sm:text-xl lg:text-4xl font-artega font-medium uppercase">
+    <div className="py-2 lg:py-5">
+      <div className="col-span-full text-center">
+        <h3 className="font-artega uppercase text-lightBlue text-center mb-7 lg:mb-16 text-xl sm:text-title-sm lg:text-title-md">
           Departments
-        </h2>
+        </h3>
       </div>
-      <div className={cn(`${gridColumns}`)}>
+      <div className="flex flex-wrap justify-center">
         {departmentData.map((officer, index) => (
           <div key={index} className="flex flex-col items-center">
             <OfficerSmallCard

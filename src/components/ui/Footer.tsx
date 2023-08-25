@@ -17,25 +17,25 @@ const quickLinksData = [
   {
     title: 'Quick Links',
     links: [
-      { title: 'About', href: '#' },
-      { title: 'Student Judicial Court', href: '#' },
-      { title: 'Events', href: '#' },
+      { title: 'About', href: '/about' },
+      { title: 'Student Judicial Court', href: '/' },
+      { title: 'Events', href: '/' },
     ],
   },
   {
     title: 'Offices',
     links: [
-      { title: 'President', href: '#' },
-      { title: 'Vice-President', href: '#' },
-      { title: 'Secretary-General', href: '#' },
-      { title: 'Treasurer', href: '#' },
+      { title: 'President', href: '/office-of-the-president' },
+      { title: 'Vice President', href: '/office-of-the-vice-president' },
+      { title: 'Secretary-General', href: '/office-of-the-secretary-general' },
+      { title: 'Treasurer', href: '/office-of-the-treasurer' },
     ],
   },
   {
     title: 'Policies',
     links: [
-      { title: 'Privacy Policy', href: '#' },
-      { title: 'Data', href: '#' },
+      { title: 'Privacy Policy', href: '/' },
+      { title: 'Data Policy', href: '/' },
     ],
   },
 ];
@@ -150,7 +150,7 @@ const Footer = () => {
             >
               <h4 className="font-bold text-sm">{section.title}</h4>
               {section.links.map((link, linkIndex) => (
-                <Link href={link.href} key={linkIndex}>
+                <Link href={link.href} key={linkIndex} className="w-fit">
                   {link.title}
                 </Link>
               ))}

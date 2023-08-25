@@ -11,37 +11,37 @@ const RepresentativesSection: React.FC = () => {
   const isLastCardCentered = Representatives.length % 2 === 1;
 
   return (
-    <section className="bg-[#1A275F] h-full relative rounded-section-card py-20 m-5 sm:mx-6 md:mx-8 lg:mx-12 mb-10 gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-      <div className="col-span-full text-center mt-20 mb-7">
+    <section className="bg-[#1A275F] h-full relative rounded-section-card py-20 m-5 sm:mx-6 md:mx-8 lg:mx-12 mb-10 flex flex-col gap-4">
+      <div className="text-center mt-20 mb-7">
         <h2 className="text-white sm:text-xl lg:text-4xl font-artega font-medium uppercase">
           Cluster Representatives
         </h2>
       </div>
-      {Representatives.map((item, index) => (
-        <div
-          key={index}
-          className={cn(
-            'flex flex-col items-center',
-            isLastCardCentered && index === Representatives.length - 1
-              ? 'md:col-span-2 md:justify-center lg:col-span-4 lg:justify-self-center'
-              : ''
-          )}
-        >
-          <OfficerSmallCard {...item} textColorClass="text-white" />
-        </div>
-      ))}
-      <div className="sm:my-32 my-14">
-        <div className="absolute right-0 bottom-0 mt-10">
-          <div className="relative sm:w-96 sm:h-96 w-36 h-36">
-            <Image
-              src={WhiteArrow}
-              placeholder="blur"
-              alt="White Arrow"
-              className="object-contain"
-              draggable={false}
-              fill
-            />
+      <div className="container flex flex-wrap justify-center">
+        {Representatives.map((item, index) => (
+          <div
+            key={index}
+            className={cn(
+              'flex flex-col items-center',
+              isLastCardCentered && index === Representatives.length - 1
+                ? 'md:w-full lg:w-full justify-center'
+                : 'md:w-1/2 lg:w-1/4'
+            )}
+          >
+            <OfficerSmallCard {...item} textColorClass="text-white" />
           </div>
+        ))}
+      </div>
+      <div className="self-end my-14">
+        <div className="relative w-36 h-36">
+          <Image
+            src={WhiteArrow}
+            placeholder="blur"
+            alt="White Arrow"
+            className="object-contain"
+            draggable={false}
+            fill
+          />
         </div>
       </div>
     </section>

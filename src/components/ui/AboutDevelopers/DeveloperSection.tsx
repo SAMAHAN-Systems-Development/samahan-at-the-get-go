@@ -8,17 +8,17 @@ import { FrontEndDevs } from '@/data/FrontEndDevs';
 
 const DeveloperSection = () => {
   return (
-    <section className="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+    <>
       {/* Project head (iya) */}
-      <div className="col-span-full text-center mt-20 mb-7">
+      <div className="col-span-full text-center mb-7 mt-10 lg:mt-16">
         <h2 className="text-blue sm:text-xl lg:text-4xl font-artega font-medium uppercase">
           Project Head
         </h2>
       </div>
 
-      <div className="flex items-center justify-center md:col-span-2 md:justify-center lg:col-span-4 lg:justify-self-center">
+      <div className="flex items-center justify-center space-y-14">
         <OfficerSmallCard
-          firstName="Julienne"
+          firstName="Julienne Andrea"
           lastName="Panes"
           position="Secretary General"
           department="SAMAHAN Systems Development"
@@ -34,11 +34,16 @@ const DeveloperSection = () => {
           front end developers
         </h2>
       </div>
-      {FrontEndDevs.map((item, index) => (
-        <div key={index} className="flex flex-col items-center justify-center">
-          <OfficerSmallCard {...item} textColorClass="text-blue" />
-        </div>
-      ))}
+      <div className="container-2xl flex flex-wrap justify-center items-center">
+        {FrontEndDevs.map((item, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center justify-center my-3"
+          >
+            <OfficerSmallCard {...item} textColorClass="text-blue" />
+          </div>
+        ))}
+      </div>
 
       {/* UX/UI (mark) */}
       <div className="col-span-full text-center mt-20 mb-7">
@@ -58,7 +63,7 @@ const DeveloperSection = () => {
           textColorClass="text-blue"
         />
       </div>
-    </section>
+    </>
   );
 };
 

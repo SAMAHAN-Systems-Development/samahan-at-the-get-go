@@ -7,7 +7,7 @@ import MainPageMarquee from '@/components/ui/Hero/MainPageMarquee';
 const HeroSection: React.FC = () => {
   return (
     <div className="flex flex-col justify-center items-center container">
-      <div className="flex-grow xl:pt-28 md:pt-16 pt-16 2xl:mb-32 xl:mb-16 lg:mb-40 md:mb-12 mb-4">
+      <div className="flex-grow xl:pt-28 md:pt-16 pt-16 2xl:mb-36 xl:mb-16 md:mb-12 mb-4">
         <AtTheGetGoLogo />
         <AtTheGetGoDefinition />
       </div>

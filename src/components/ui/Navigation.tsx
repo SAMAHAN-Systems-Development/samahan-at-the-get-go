@@ -30,25 +30,37 @@ type NavListType = {
 const navLinks: (NavLinkType | NavListType)[] = [
   {
     label: 'ABOUT',
-    href: '#',
+    href: '/about',
   },
   {
     label: 'OFFICES',
     list: [
       {
         label: 'Office of the President',
-        href: '#',
+        href: '/offices/office-of-the-president',
       },
       {
         label: 'Office of the Vice President',
-        href: '#',
+        href: '/offices/office-of-the-vice-president',
+      },
+      {
+        label: 'Office of the Secretary-General',
+        href: '/offices/office-of-the-secretary-general',
+      },
+      {
+        label: 'Office of the Treasurer',
+        href: '/offices/office-of-the-treasurer',
       },
     ],
   },
   {
     label: 'RECRUITMENT WEEK',
-    href: '#',
+    href: '/recruitment-week',
   },
+  {
+    label: 'CENTRAL BOARD',
+    href: '/samahan-central-board'
+  }
 ];
 
 /**
@@ -152,7 +164,7 @@ const Navigation: FC = () => {
 
   return (
     <header
-      className="container-xl top-4 left-[50%] translate-x-[-50%] z-[999] fixed lg:top-8 transition-all duration-300"
+      className="container-2xl top-4 left-[50%] translate-x-[-50%] z-[999] fixed lg:top-8 transition-all duration-300"
       ref={navigationRef}
     >
       {/* 
@@ -229,7 +241,7 @@ const Navigation: FC = () => {
             </NavigationMenu.List>
           </Accordion.Root>
           <Link
-            href="#"
+            href="/help-portal"
             className="bg-lightBlue text-white py-2 px-4 font-artega text-xs rounded-full block w-fit mx-auto mt-3 hover:scale-105 transition-all duration-300"
           >
             <span className="mt-[0.1rem] inline-block">HELP PORTAL</span>
@@ -317,7 +329,7 @@ const Navigation: FC = () => {
             )}
           </div>
           <Link
-            href="#"
+            href="/help-portal"
             className="bg-lightBlue text-white py-4 my-auto px-4 font-artega xl:text-xs rounded-full hover:scale-105 transition-all duration-300 flex items-center lg:px-6 text-[0.7rem]"
           >
             HELP PORTAL

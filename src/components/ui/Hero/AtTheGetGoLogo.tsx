@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
 
@@ -8,8 +9,6 @@ import Carousel2 from 'public/assets/images/carousel/carousel2.png';
 import Carousel3 from 'public/assets/images/carousel/carousel3.png';
 import Carousel4 from 'public/assets/images/carousel/carousel4.png';
 import Carousel5 from 'public/assets/images/carousel/carousel5.png';
-
-import '@splidejs/react-splide/css';
 
 const AtTheGetGoLogo: React.FC = () => {
   return (

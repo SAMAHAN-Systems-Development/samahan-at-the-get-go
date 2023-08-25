@@ -10,12 +10,12 @@ import ModalWrapper from '@/components/ui/ModalWrapper';
 import HelpPortalModalButton from '@/components/ui/HelpPortal/HelpPortalModalButton';
 import TitlePill from '@/components/ui/HelpPortal/TitlePill';
 
-type RIAMOdalUIProps = {
+type HelpPortalModalUIProps = {
   children: React.ReactNode;
   title: string;
 };
 
-const RIAModalUI: FC<RIAMOdalUIProps> = ({ title, children }) => {
+const HelpPortalModalUI: FC<HelpPortalModalUIProps> = ({ title, children }) => {
   return (
     <Dialog.Root>
       <Dialog.Trigger>
@@ -42,4 +42,4 @@ const RIAModalUI: FC<RIAMOdalUIProps> = ({ title, children }) => {
   );
 };
 
-export default RIAModalUI;
+export default HelpPortalModalUI;

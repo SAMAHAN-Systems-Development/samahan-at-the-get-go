@@ -2,11 +2,11 @@ import React from 'react';
 import Link from 'next/link';
 
 import AccordionComponent from '@/components/ui/HelpPortal/AccordionComponentMain';
-import RIAModalUI from '@/components/ui/HelpPortal/RIAModalUI';
+import HelpPortalModalUI from '@/components/ui/HelpPortal/HelpPortalModalUI';
 function FAQsModalsSection() {
   return (
     <section className="container-xs sm:container-sm md:container-md lg:container-lg my-5 lg:my-10 lg:flex lg:flex-wrap lg:justify-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-      <RIAModalUI title="SIS & ADDU Emails">
+      <HelpPortalModalUI title="SIS & ADDU Emails">
         <AccordionComponent question="What is the AdDU Student Information System?">
           The AdDU Student Information System (SIS) is the online portal for
           official transactions with the University for Student Services.
@@ -86,8 +86,8 @@ function FAQsModalsSection() {
           GSuite username, and your ADDU email account (@addu.edu.ph). Your
           GSuite password is the same default password above.
         </AccordionComponent>
-      </RIAModalUI>
-      <RIAModalUI title="AdDU Online Learning">
+      </HelpPortalModalUI>
+      <HelpPortalModalUI title="AdDU Online Learning">
         <AccordionComponent question="What applications will professors use?">
           Professors will be using Daigler20
           <Link href={'https://daigler20.addu.edu.ph/'}>
@@ -97,8 +97,8 @@ function FAQsModalsSection() {
           to receive the outputs from their students. For video conferences,
           Google Meet, Zoom, or the Big Blue Button (via Daigler) may be used.
         </AccordionComponent>
-      </RIAModalUI>
-      <RIAModalUI title="AdDU GSuite Account">
+      </HelpPortalModalUI>
+      <HelpPortalModalUI title="AdDU GSuite Account">
         <AccordionComponent question="What do I do if my GSuite has still not been activated even after I have submitted the requirements?">
           Contact your professors using your personal email account and inform
           them of your current situation.
@@ -109,8 +109,8 @@ function FAQsModalsSection() {
           personnel are working overtime to attend to each student’s requests
           and concerns.
         </AccordionComponent>
-      </RIAModalUI>
-      <RIAModalUI title="Scholarship">
+      </HelpPortalModalUI>
+      <HelpPortalModalUI title="Scholarship">
         <AccordionComponent question="What are the Scholarship Programs offered by the School?">
           <div className="leading-loose">
             <ol className="list-decimal list-inside">
@@ -209,8 +209,8 @@ function FAQsModalsSection() {
         <AccordionComponent question="Is there a grade that Scholars need to maintain?">
           A QPI of 2.5 (C+) for GIA and a QPI of 3 (B) for JSF scholars.
         </AccordionComponent>
-      </RIAModalUI>
-      <RIAModalUI title="Enrollment & Registration">
+      </HelpPortalModalUI>
+      <HelpPortalModalUI title="Enrollment & Registration">
         <AccordionComponent question="What is a “pre-registration?">
           Preregistration is the prelisting of students, prior to the enrollment
           period, of courses they desire to take for the succeeding semester.
@@ -400,7 +400,7 @@ function FAQsModalsSection() {
           program’s department or the Registrar’s Office to inquire on the
           creditability of the previously taken subject/s.
         </AccordionComponent>
-      </RIAModalUI>
+      </HelpPortalModalUI>
     </section>
   );
 }

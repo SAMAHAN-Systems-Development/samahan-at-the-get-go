@@ -6,4 +6,5 @@ export type OfficesType = {
   officesNumber: string;
   officesPosition: string;
   officesTitle: string;
+  pageLink?: string;
 };
