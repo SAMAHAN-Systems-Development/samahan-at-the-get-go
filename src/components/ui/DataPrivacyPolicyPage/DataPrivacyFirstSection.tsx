@@ -1,26 +1,11 @@
 import React from 'react';
-import Image from 'next/image';
-
-import PolicyPageImage from '/public/assets/images/PolicyPageImage.png';
-
 const DataPrivacyFirstSection = () => {
   return (
-    <div className="w-full grid content-between text-lightBlue mb-[3.75rem] md:mb-[5rem] lg:mb-[3.31rem] ">
-      <div className="overflow-y-hidden relative w-full h-[30.875rem]">
-        <Image
-          src={PolicyPageImage}
-          alt="PolicyImage"
-          className="object-cover"
-          placeholder="blur"
-          draggable={false}
-          layout="fill"
-        />
-      </div>
-
-      <div className="text-center text-lightBlue w-full justify-center px-[2rem] md:px-[4rem] lg:px-[7.87rem] mb-[4.69rem] md:mb-[6.44rem] lg:mb-[8.5rem]">
-        <h2 className="font-artega text-[1.25rem] md:text-[1.5625rem] lg:text-[1.9375rem] mb-[3.12rem] mt-[7.44rem] md:mt-[11rem] md:mb-[3.5rem] lg:mb-[3.06rem]">
+    <div className="w-full grid content-between text-lightBlue">
+      <div className="text-center text-lightBlue w-full justify-center mb-5 lg:mb-10">
+        <h1 className="font-artega text-[1.25rem] md:text-[1.5625rem] lg:text-[1.9375rem] mb-6 md:mb-10">
           PRIVACY NOTICE
-        </h2>
+        </h1>
         <p className="text-justify text-[0.8125rem] md:text-[1rem] lg:text-[1.25rem]">
           <span className="block mb-[2rem]">
             This privacy notice for Ateneo de Davao University
@@ -43,8 +28,8 @@ const DataPrivacyFirstSection = () => {
         </p>
       </div>
 
-      <div className="text-center text-lightBlue w-full justify-center px-[2rem] md:px-[4rem] lg:px-[7.87rem]">
-        <h2 className="font-artega text-[1.25rem] md:text-[1.5625rem] lg:text-[1.9375rem] mb-[3.69rem]">
+      <div className="text-center text-lightBlue w-full justify-center mt-5 lg:mt-10">
+        <h2 className="font-artega text-[1.25rem] md:text-[1.5625rem] lg:text-[1.9375rem] mb-6 md:mb-10">
           SUMMARY OF KEY POINTS
         </h2>
         <p className="text-justify text-[0.8125rem] md:text-[1rem] lg:text-[1.25rem]">

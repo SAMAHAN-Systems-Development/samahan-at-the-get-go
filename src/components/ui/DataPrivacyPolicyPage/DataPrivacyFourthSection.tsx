@@ -2,11 +2,11 @@ import React from 'react';
 
 const DataPrivacyFourthSection = () => {
   return (
-    <div className="grid gap-[5rem] text-lightBlue py-[5.88rem] md:py-[9.38rem] px-[2rem] md:px-[4rem] lg:px-[7.87rem] text-[0.8125rem] md:text-[1rem] lg:text-[1.25rem]">
-      <div className="text-left">
-        <h1 className="font-artega mb-[1.48rem] md:mb-[1.56rem] lg:mb-[1.25rem]">
+    <div className="grid gap-7 md:gap-10 lg:gap-12 text-left text-lightBlue my-5 lg:my-10 text-[0.8125rem] text-[1rem] lg:text-[1.25rem]">
+      <div>
+        <p className="font-artega mb-3 lg:mb-5">
           CONTROLS FOR DO-NOT-TRACK FEATURES
-        </h1>
+        </p>
         <p className="text-justify">
           Most web browsers and some mobile operating systems and mobile
           applications include a Do-Not-Track (&ldquo;DNT&rdquo;) feature or
@@ -21,10 +21,8 @@ const DataPrivacyFourthSection = () => {
           this privacy notice.
         </p>
       </div>
-      <div className="text-left">
-        <h1 className="font-artega mb-[1.48rem] md:mb-[1.56rem] lg:mb-[1.25rem]">
-          DATA PRIVACY NOTICE
-        </h1>
+      <div>
+        <p className="font-artega mb-3 lg:mb-5">DATA PRIVACY NOTICE</p>
         <p className="text-justify">
           Most web browsers and some mobile operating systems and mobile
           applications include a Do-Not-Track (&ldquo;DNT&rdquo;) feature or
@@ -39,10 +37,10 @@ const DataPrivacyFourthSection = () => {
           this privacy notice.
         </p>
       </div>
-      <div className="text-left">
-        <h1 className="font-artega mb-[1.48rem] md:mb-[1.56rem] lg:mb-[1.25rem]">
+      <div>
+        <p className="font-artega mb-3 lg:mb-5">
           DO WE MAKE UPDATES TO THIS NOTICE?
-        </h1>
+        </p>
         <p className="text-justify">
           <span>
             Yes, we will update this notice as necessary to stay compliant with
@@ -59,10 +57,10 @@ const DataPrivacyFourthSection = () => {
           </span>
         </p>
       </div>
-      <div className="text-left">
-        <h1 className="font-artega mb-[1.48rem] md:mb-[1.56rem] lg:mb-[1.25rem]">
+      <div>
+        <p className="font-artega mb-3 lg:mb-5">
           HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
-        </h1>
+        </p>
         <p className="text-justify">
           <span>
             If you have questions or comments about this notice, you may email
@@ -75,10 +73,10 @@ const DataPrivacyFourthSection = () => {
           </span>
         </p>
       </div>
-      <div className="text-left">
-        <h1 className="font-artega mb-[1.48rem] md:mb-[1.56rem] lg:mb-[1.25rem]">
+      <div>
+        <p className="font-artega mb-3 lg:mb-5">
           HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
-        </h1>
+        </p>
         <p className="text-justify">
           Based on the applicable laws of your country, you may have the right
           to request access to the personal information we collect from you,
