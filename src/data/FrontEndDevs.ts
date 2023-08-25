@@ -1,10 +1,10 @@
 import type { OfficerType } from 'lib/types/officerType';
-import Alkuino from 'public/assets/images/Alkuino.jpg';
+import Alkuino from 'public/assets/images/Alkuino2.jpg';
 import Bungag from 'public/assets/images/Bungag.jpg';
 import Dailisan from 'public/assets/images/Dailisan.jpg';
 import Mabano from 'public/assets/images/Mabano.jpg';
 import Olanolan from 'public/assets/images/Olanolan.jpg';
-import Pawaon from 'public/assets/images/Pawaon.jpg';
+import Pawaon from 'public/assets/images/Pawaon2.jpg';
 import Tan from 'public/assets/images/Tan.jpg';
 
 export const FrontEndDevs: OfficerType[] = [
