@@ -13,7 +13,7 @@ const RecWeekModalHeader: FC<RecWeekModalHeaderProps> = ({
   name,
 }) => {
   return (
-    <div className="relative h-[20rem] sm:h-[28rem] lg:h-[38rem]">
+    <div className="relative h-[20rem] sm:h-[28rem] lg:h-[38rem] bg-darkBeige">
       <Image
         src={imageSrc}
         alt={`${name} Header Picture`}

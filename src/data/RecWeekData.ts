@@ -11,6 +11,7 @@ import SLDLogo from '/public/assets/images/Department Logos/samahan_logistics_lo
 import RDLogo from '/public/assets/images/Department Logos/samahan_r&d_logo.png';
 import SASLogo from '/public/assets/images/Department Logos/samahan_sponsorship_logo.jpg';
 import SYSDEVLogo from '/public/assets/images/Department Logos/samahan_sysdev_logo.jpg';
+import SCTLogo from '/public/assets/images/Department Logos/sct_logo.jpg';
 import ASPHeaderImage from '/public/assets/images/Rec Week/ASP Group Photo.jpg';
 import DAAHeaderImage from '/public/assets/images/Rec Week/DAA Group Photo.jpg';
 import DCAHeaderImage from '/public/assets/images/Rec Week/DCA Cover Photo.png';
@@ -20,6 +21,7 @@ import ESUHeaderImage from '/public/assets/images/Rec Week/ESU Cover Photo.jpg';
 import RDHeaderImage from '/public/assets/images/Rec Week/RND Cover Photo.jpg';
 import SAMACOMMSHeaderImage from '/public/assets/images/Rec Week/SAMACOMMS Group Photo.jpg';
 import SASHeaderImage from '/public/assets/images/Rec Week/SAS Cover Photo.png';
+import SCTHeaderImage from '/public/assets/images/Rec Week/SCT Cover Photo.png';
 import SLDHeaderImage from '/public/assets/images/Rec Week/SLD Cover Photo.jpg';
 import SYSDEVHeaderImage from '/public/assets/images/Rec Week/SYSDEV Cover Photo.jpg';
 
@@ -160,22 +162,23 @@ export const OSGRecWeekData: RecWeekDataType[] = [
     text: 'The SAMAHAN Research and Development Department is a student-led research organization under the Office of the Secretary-General of the SAMAHAN Central Board. The Department asserts to construct well-rounded research that aims to analyze, interpret, and explain the timely and relevant encounters of the student body.',
     topText: 'SAMAHAN',
   },
-  //   {
-  //     bottomText: 'Creative Team',
-  //     buttonImageSrc: PlaceholderLogo,
-  //     fullName: 'SAMAHAN Creative Team',
-  //     headerImageSrc: PlaceholderHeaderImage,
-  //     name: 'SCT',
-  //     primerLink:
-  //       'https://drive.google.com/open?id=15Pywdnm4ZLHhQiuFF_e_tuSbCbpsX7V5',
-  //     recruitmentFormLink: 'https://bit.ly/RND-Apps-2023',
-  //     socials: {
-  //       facebook: 'https://www.facebook.com/SAMAHANResDev',
-  //       twitter: 'https://twitter.com/SAMAHANResDev',
-  //     },
-  //     text: 'The SAMAHAN Research and Development Department is a student-led research organization under the Office of the Secretary-General of the SAMAHAN Central Board. The Department asserts to construct well-rounded research that aims to analyze, interpret, and explain the timely and relevant encounters of the student body.',
-  //     topText: 'SAMAHAN',
-  //   },
+  {
+    bottomText: 'Creative Team',
+    buttonImageSrc: SCTLogo,
+    fullName: 'SAMAHAN Creative Team',
+    headerImageSrc: SCTHeaderImage,
+    name: 'SCT',
+    primerLink:
+      'https://drive.google.com/open?id=1U8T03nJghY-3ZYnvuFZYfXgFkZHl5by_',
+    recruitmentFormLink: 'https://tinyurl.com/SCTRecruitmentForm',
+    socials: {
+      facebook: 'https://www.facebook.com/SAMAHANCreativeTeam',
+      twitter: 'https://twitter.com/hey_SCT',
+      instagram: 'https://www.instagram.com/hey_sct/',
+    },
+    text: 'The SAMAHAN Creative Team is the official pixel creators, and creative solutions committee behind the Samahan Central Board established since 2009. They turn thoughts and develop ideas that give the project its edge. The SAMAHAN Creative Team is responsible for advertising and establishes conceptual action designed to entice and stimulate the interest of the students. They create schemes that can be for platforms, support campaigns, and execute the task with flair professionalism to push the council on its precedence.',
+    topText: 'SAMAHAN',
+  },
   {
     bottomText: 'Systems Development',
     buttonImageSrc: SYSDEVLogo,

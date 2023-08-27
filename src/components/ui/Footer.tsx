@@ -25,18 +25,21 @@ const quickLinksData = [
   {
     title: 'Offices',
     links: [
-      { title: 'President', href: '/office-of-the-president' },
-      { title: 'Vice President', href: '/office-of-the-vice-president' },
-      { title: 'Secretary-General', href: '/office-of-the-secretary-general' },
-      { title: 'Treasurer', href: '/office-of-the-treasurer' },
+      { title: 'President', href: '/offices/office-of-the-president' },
+      {
+        title: 'Vice President',
+        href: '/offices/office-of-the-vice-president',
+      },
+      {
+        title: 'Secretary-General',
+        href: '/offices/office-of-the-secretary-general',
+      },
+      { title: 'Treasurer', href: '/offices/office-of-the-treasurer' },
     ],
   },
   {
     title: 'Policies',
-    links: [
-      { title: 'Privacy Policy', href: '/' },
-      { title: 'Data Policy', href: '/' },
-    ],
+    links: [{ title: 'Privacy Policy', href: '/privacy-policy' }],
   },
 ];
 
