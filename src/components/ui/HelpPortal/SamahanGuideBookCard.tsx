@@ -9,7 +9,7 @@ const SamahanGuideBookCard = () => {
       <p className="flex-wrap max-w-[14.3125rem] text-[0.8125rem] md:mb-[1.25rem] md:max-w-[14.3125rem] md:text-[1rem] lg:text-[1.25rem] lg:w-full">
         A start-up kit for incoming first year students
       </p>
-      <button className="uppercase text-white text-[0.5625rem] py-[0.38rem] px-[1.3rem] bg-blue rounded-[1.25rem] md:text-[0.8125rem] lg:text-[1rem]">
+      <button className="uppercase text-white text-[0.5625rem] py-[0.38rem] px-[1.3rem] bg-lightBlue rounded-[1.25rem] md:text-[0.8125rem] lg:text-[1rem]">
         Download Here
       </button>
     </div>

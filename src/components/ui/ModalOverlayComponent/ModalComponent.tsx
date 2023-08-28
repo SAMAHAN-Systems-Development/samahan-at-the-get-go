@@ -54,7 +54,7 @@ const ModalOverlayComponent: React.FC<ModalComponentProps> = ({
                 </div>
               </div>
             </div>
-            <p className="font-Helvetica py-[2rem] text-[0.8rem] text-justify">
+            <p className="font-Helvetica py-[2rem] text-[0.8rem] text-justify whitespace-pre-line">
               {description}
             </p>
             <Dialog.Close asChild>
