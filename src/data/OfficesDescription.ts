@@ -13,7 +13,7 @@ export const OfficesDescription: OfficesType[] = [
     officesDescription:
       'is the highest executive office, aims to establish harmony and efficiency in both the internal operations of the student government and external relations.',
     imageUrl: OSPImage,
-    pageLink: '/office-of-the-president',
+    pageLink: '/offices/office-of-the-president',
   },
   {
     officesNumber: '01',
@@ -22,7 +22,7 @@ export const OfficesDescription: OfficesType[] = [
     officesDescription:
       'aims to supervise the internal affairs of the SAMAHAN Central Board and lead the Student Assembly.',
     imageUrl: OVPImage,
-    pageLink: '/office-of-the-vice-president',
+    pageLink: '/offices/office-of-the-vice-president',
   },
   {
     officesNumber: '01',
@@ -31,7 +31,7 @@ export const OfficesDescription: OfficesType[] = [
     officesDescription:
       'aims to ensure efficiency on administrative and secretariat works that shall mobilize the student government to operate its services and meet its goals.',
     imageUrl: OSGImage,
-    pageLink: '/office-of-the-secretary-general',
+    pageLink: '/offices/office-of-the-secretary-general',
   },
   {
     officesNumber: '01',
@@ -40,7 +40,7 @@ export const OfficesDescription: OfficesType[] = [
     officesDescription:
       'aims to establish a well-financed, transparent, and resourceful student government that can utilize its funds to meet its goals and implement its mandates.',
     imageUrl: OSTImage,
-    pageLink: '/office-of-the-treasurer',
+    pageLink: '/offices/office-of-the-treasurer',
   },
 ];
 
