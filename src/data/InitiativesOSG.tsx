@@ -1,5 +1,5 @@
 import type { ModalDataType } from 'library/types/ModalDataType';
-import paperboat from 'public/assets/images/Initiatives/paperboat.jpg';
+// import paperboat from 'public/assets/images/Initiatives/paperboat2.jpg';
 import waypoint from 'public/assets/images/Initiatives/waypoint.png';
 import paperboat2 from 'public/assets/images/InitiativesModal/paperboat2.jpg';
 import waypoint2 from 'public/assets/images/InitiativesModal/waypoint2.jpg';
@@ -16,7 +16,7 @@ export const initiativesOSG: ModalDataType[] = [
   {
     title: 'The Paper Boat Project: Year 3',
     number: '02',
-    imageUrl1: paperboat,
+    imageUrl1: paperboat2,
     imageUrl2: paperboat2,
     description:
       'As we continue the mission of partnering and connecting with our Mindanaoan learners, we ground ourselves on the vision to empower them as they set sail towards their dreams and aspirations. Through storytelling and dialogue, the Paper Boat Project aims to further the goals the younger generation will design themselves.',
