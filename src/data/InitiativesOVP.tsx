@@ -1,4 +1,4 @@
-import type { ModalDataType } from 'library/types/ModalDataType';
+import type { ModalDataType } from 'lib/types/ModalDataType';
 import iHelp from 'public/assets/images/Initiatives/iHelp.png';
 import knights from 'public/assets/images/Initiatives/knights.png';
 import legisleads from 'public/assets/images/Initiatives/legisleads.png';
