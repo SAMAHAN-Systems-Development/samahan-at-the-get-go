@@ -48,7 +48,7 @@ const DepartmentSection: React.FC<OfficeDepartmentSectionProps> = ({
               position={officer.position}
               department={officer.department}
               imageUrl={officer.imageUrl}
-              textColorClass="text-blue"
+              textColorClass="text-lightBlue"
             />
           </div>
         ))}

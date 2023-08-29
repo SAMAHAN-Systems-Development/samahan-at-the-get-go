@@ -3,10 +3,10 @@ import Image from 'next/image';
 
 import PolicyPageImage from '/public/assets/images/PolicyPageImage.png';
 import BigSectionUI from '@/components/ui/BigSectionUI';
+import DataPrivacyFirstSection from '@/components/ui/DataPrivacyPolicy/DataPrivacyFirstSection';
+import DataPrivacyFourthSection from '@/components/ui/DataPrivacyPolicy/DataPrivacyFourthSection';
 import DataPrivacyPolicyAccordion from '@/components/ui/DataPrivacyPolicy/DataPrivacyPolicyAccordion';
-import DataPrivacyFirstSection from '@/components/ui/DataPrivacyPolicyPage/DataPrivacyFirstSection';
-import DataPrivacyFourthSection from '@/components/ui/DataPrivacyPolicyPage/DataPrivacyFourthSection';
-import DataPrivacyThirdSection from '@/components/ui/DataPrivacyPolicyPage/DataPrivacyThirdSection';
+import DataPrivacyThirdSection from '@/components/ui/DataPrivacyPolicy/DataPrivacyThirdSection';
 
 const page = () => {
   return (

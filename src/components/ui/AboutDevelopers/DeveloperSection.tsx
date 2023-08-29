@@ -11,7 +11,7 @@ const DeveloperSection = () => {
     <>
       {/* Project head (iya) */}
       <div className="col-span-full text-center mb-7 mt-10 lg:mt-16">
-        <h2 className="text-blue sm:text-xl lg:text-4xl font-artega font-medium uppercase">
+        <h2 className="text-lightBlue sm:text-xl lg:text-4xl font-artega font-medium uppercase">
           Project Head
         </h2>
       </div>
@@ -24,13 +24,13 @@ const DeveloperSection = () => {
           department="SAMAHAN Systems Development"
           imageUrl={Panes}
           email=""
-          textColorClass="text-blue"
+          textColorClass="text-lightBlue"
         />
       </div>
 
       {/* front end devs */}
       <div className="col-span-full text-center mt-20 mb-7">
-        <h2 className="text-blue sm:text-xl lg:text-4xl font-artega font-medium uppercase">
+        <h2 className="text-lightBlue sm:text-xl lg:text-4xl font-artega font-medium uppercase">
           front end developers
         </h2>
       </div>
@@ -40,14 +40,14 @@ const DeveloperSection = () => {
             key={index}
             className="flex flex-col items-center justify-center my-3"
           >
-            <OfficerSmallCard {...item} textColorClass="text-blue" />
+            <OfficerSmallCard {...item} textColorClass="text-lightBlue" />
           </div>
         ))}
       </div>
 
       {/* UX/UI (mark) */}
       <div className="col-span-full text-center mt-20 mb-7">
-        <h2 className="text-blue sm:text-xl lg:text-4xl font-artega font-medium uppercase">
+        <h2 className="text-lightBlue sm:text-xl lg:text-4xl font-artega font-medium uppercase">
           ux/ui designer
         </h2>
       </div>
@@ -60,7 +60,7 @@ const DeveloperSection = () => {
           department="SAMAHAN Systems Development"
           imageUrl={Carin}
           email=""
-          textColorClass="text-blue"
+          textColorClass="text-lightBlue"
         />
       </div>
     </>

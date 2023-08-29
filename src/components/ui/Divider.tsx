@@ -28,8 +28,8 @@ const Divider: React.FC<TextProps> = ({ page, text }) => {
   return (
     <div className="relative flex overflow-x-hidden px-6 py-2">
       <div className={dividerVariants({ page })}>
-        <p className="text-blue absolute animate-marquee">{text}</p>
-        <p className="text-blue absolute animate-marquee2">{text}</p>
+        <p className="text-lightBlue absolute animate-marquee">{text}</p>
+        <p className="text-lightBlue absolute animate-marquee2">{text}</p>
       </div>
     </div>
   );

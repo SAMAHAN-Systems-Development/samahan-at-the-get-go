@@ -17,7 +17,7 @@ type SCBOfficerType = {
 
 const SCBOfficers: SCBOfficerType[] = [
   {
-    link: 'office-of-the-president',
+    link: '/offices/office-of-the-president',
     officer: {
       firstName: 'Chyna Marie',
       lastName: 'Legaspina',
@@ -26,7 +26,7 @@ const SCBOfficers: SCBOfficerType[] = [
     },
   },
   {
-    link: 'office-of-the-vice-president',
+    link: '/offices/office-of-the-vice-president',
     officer: {
       firstName: 'Daniel Dave',
       lastName: 'Gomez',
@@ -35,7 +35,7 @@ const SCBOfficers: SCBOfficerType[] = [
     },
   },
   {
-    link: 'office-of-the-secretary-general',
+    link: '/offices/office-of-the-secretary-general',
     officer: {
       firstName: 'Zoreyn Victorio',
       lastName: 'Dabon',
@@ -44,7 +44,7 @@ const SCBOfficers: SCBOfficerType[] = [
     },
   },
   {
-    link: 'office-of-the-treasurer',
+    link: '/offices/office-of-the-treasurer',
     officer: {
       firstName: 'Michelle Anne',
       lastName: 'Cunanan',

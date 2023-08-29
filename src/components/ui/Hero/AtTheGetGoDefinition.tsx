@@ -2,7 +2,7 @@ import React from 'react';
 
 const AtTheGetGoDefinition: React.FC = () => {
   return (
-    <div className="m-2 md:ml-10 flex flex-col items-start text-blue">
+    <div className="m-2 md:ml-10 flex flex-col items-start text-lightBlue">
       <div className="flex flex-col space-y-0">
         <h2 className="md:text-xl text-[0.625rem] font-artega leading-4">
           At
