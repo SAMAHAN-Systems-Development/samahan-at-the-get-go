@@ -1,4 +1,4 @@
-import type { ModalDataType } from 'library/types/ModalDataType';
+import type { ModalDataType } from 'lib/types/ModalDataType';
 import abakada from 'public/assets/images/Initiatives/abakada.png';
 import adduPerks from 'public/assets/images/Initiatives/adduPerks.png';
 import adduPremium from 'public/assets/images/Initiatives/adduPremium.png';

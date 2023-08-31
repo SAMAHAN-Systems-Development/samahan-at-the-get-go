@@ -26,7 +26,7 @@ const InfiniteMarquee = () => {
   };
 
   return (
-    <div className="relative flex overflow-x-hidden text-blue uppercase">
+    <div className="relative flex overflow-x-hidden text-lightBlue uppercase">
       <div className="animate-marquee whitespace-nowrap">{renderPhrase()}</div>
       <div className="absolute top-0 animate-marquee2 whitespace-nowrap">
         {renderPhrase()}

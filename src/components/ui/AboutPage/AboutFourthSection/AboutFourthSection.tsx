@@ -9,7 +9,7 @@ const AboutFourthSection = () => {
       <div className="relative flex flex-col justify-start w-full gap-2">
         {/* Divider */}
         <div className="px-10">
-          <hr className="divider w-full flex justify-center items-center bg-blue text-blue" />
+          <hr className="divider w-full flex justify-center items-center bg-blue text-lightBlue" />
         </div>
 
         <div className="flex xl:flex-row lg:flex-row md:flex-col flex-col justify-center items-center lg:space-x-24 space-y-11 sm:p-24 p-10">
@@ -25,7 +25,7 @@ const AboutFourthSection = () => {
           </div>
 
           <div className="flex justify-center">
-            <p className="text-justify text-blue font-medium lg:text-xl md:text-base text-sm">
+            <p className="text-justify text-lightBlue font-medium lg:text-xl md:text-base text-sm">
               For the past years, our SAMAHAN navigated a full circle of putting
               visions of every Atenean at the center. From there, we took a leap
               of faith to own the future, calling upon each Atenean to hold
@@ -39,7 +39,7 @@ const AboutFourthSection = () => {
 
         {/* Divider */}
         <div className="px-10">
-          <hr className="divider w-full flex justify-center items-center bg-blue text-blue" />
+          <hr className="divider w-full flex justify-center items-center bg-blue text-lightBlue" />
         </div>
       </div>
     </>

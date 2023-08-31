@@ -1,4 +1,4 @@
-import type { ModalDataType } from 'library/types/ModalDataType';
+import type { ModalDataType } from 'lib/types/ModalDataType';
 import allready from 'public/assets/images/Initiatives/allready.jpg';
 import alumni from 'public/assets/images/Initiatives/alumni.jpg';
 import ateneoYearStarter from 'public/assets/images/Initiatives/ateneoYearStarter.jpg';
