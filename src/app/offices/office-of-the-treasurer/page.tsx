@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from 'next';
 
 import OST from 'public/assets/images/OSTImage.png';
 
@@ -13,6 +14,12 @@ import SmallOfficesCardSection from '@/components/ui/Offices/SmallOfficesCardSec
 import OfficesDeputiesSection from '@/components/ui/OfficesDeputiesSection';
 import SmallSectionUI from '@/components/ui/SmallSectionUI';
 import SolidBlueDivider from '@/components/ui/SolidBlueDivider';
+
+export const metadata: Metadata = {
+  title: 'Office of the Treasurer | At the Get Go',
+  description:
+    'Explore the functions and initiatives of the SAMAHAN Treasurer. Understand the financial activities, responsibilities, and officers committed to ensuring fiscal responsibility and transparency within the Ateneo de Davao University community.',
+};
 
 const page = () => {
   return (

@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 
 import AtTheGetGo from 'public/assets/images/AtTheGetGo.png';
@@ -11,6 +12,12 @@ import AboutSecondSection from '@/components/ui/AboutPage/AboutSecondSection/Abo
 import WeNavigateCard from '@/components/ui/AboutPage/AboutThirdSection/WeNavigateCard';
 import BigSectionUI from '@/components/ui/BigSectionUI';
 import Divider from '@/components/ui/Divider';
+
+export const metadata: Metadata = {
+  title: 'About | At the Get Go',
+  description:
+    'Learn about SAMAHAN, the student government of Ateneo de Davao University, and discover our mission, vision, and the values that guide us in serving the student community.',
+};
 
 const AboutPage = () => {
   return (
