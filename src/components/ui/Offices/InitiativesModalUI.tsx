@@ -3,7 +3,7 @@
 import type { FC } from 'react';
 
 import * as Dialog from '@radix-ui/react-dialog';
-import type { ModalDataType } from 'library/types/ModalDataType';
+import type { ModalDataType } from 'lib/types/ModalDataType';
 
 import ModalOverlayComponent from '@/components/ui/ModalOverlayComponent/ModalComponent';
 import InitiativesCardButton from '@/components/ui/Offices/InitiativesCardButton';

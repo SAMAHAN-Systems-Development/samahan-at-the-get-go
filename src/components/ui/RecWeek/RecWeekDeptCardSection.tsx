@@ -82,7 +82,7 @@ const RecWeekDeptCardSection: React.FC<RecWeekDeptCardSectionProps> = ({
               email={department.email}
               position={department.position}
               imageUrl={department.imageUrl}
-              textColorClass="text-blue"
+              textColorClass="text-lightBlue"
             />
           </div>
         ))}

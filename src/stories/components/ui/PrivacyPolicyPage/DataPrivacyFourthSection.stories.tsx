@@ -2,7 +2,7 @@ import React from 'react';
 
 import type { Meta, StoryObj } from '@storybook/react';
 
-import DataPrivacyFourthSection from '@/components/ui/DataPrivacyPolicyPage/DataPrivacyFourthSection';
+import DataPrivacyFourthSection from '@/components/ui/DataPrivacyPolicy/DataPrivacyFourthSection';
 
 const meta: Meta<typeof DataPrivacyFourthSection> = {
   title: 'Components/DataPrivacyFourthSection',

@@ -18,7 +18,7 @@ export const Primary: Story = {
     position: 'Deputy Director',
     imageUrl: Alkuino,
     email: 'akmalkuino@addu.edu.ph',
-    textColorClass: 'text-blue',
+    textColorClass: 'text-lightBlue',
   },
   render: (args) => <OfficerSmallCard {...args} />,
 };

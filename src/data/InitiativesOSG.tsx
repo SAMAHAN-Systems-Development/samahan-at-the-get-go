@@ -1,4 +1,4 @@
-import type { ModalDataType } from 'library/types/ModalDataType';
+import type { ModalDataType } from 'lib/types/ModalDataType';
 import paperboat from 'public/assets/images/Initiatives/paperboat.jpg';
 import waypoint from 'public/assets/images/Initiatives/waypoint.png';
 import paperboat2 from 'public/assets/images/InitiativesModal/paperboat2.jpg';

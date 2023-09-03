@@ -1,4 +1,4 @@
-import type { ModalDataType } from 'library/types/ModalDataType';
+import type { ModalDataType } from 'lib/types/ModalDataType';
 import climate from 'public/assets/images/Advocasix/climate.jpg';
 import goodgov from 'public/assets/images/Advocasix/goodgov.jpg';
 import holistichealth from 'public/assets/images/Advocasix/holistichealth.jpg';

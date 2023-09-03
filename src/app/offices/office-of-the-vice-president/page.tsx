@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from 'next';
 
 import OVP from 'public/assets/images/OVPImage.png';
 
@@ -13,6 +14,12 @@ import SmallOfficesCardSection from '@/components/ui/Offices/SmallOfficesCardSec
 import OfficesDeputiesSection from '@/components/ui/OfficesDeputiesSection';
 import SmallSectionUI from '@/components/ui/SmallSectionUI';
 import SolidBlueDivider from '@/components/ui/SolidBlueDivider';
+
+export const metadata: Metadata = {
+  title: 'Office of the Vice President | At the Get Go',
+  description:
+    'Learn about the role and initiatives of the SAMAHAN Vice President. Discover the activities, responsibilities, and officers dedicated to supporting the President and serving the Ateneo de Davao University community.',
+};
 
 const page = () => {
   return (

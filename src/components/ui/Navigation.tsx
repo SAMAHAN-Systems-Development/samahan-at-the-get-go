@@ -59,8 +59,8 @@ const navLinks: (NavLinkType | NavListType)[] = [
   },
   {
     label: 'CENTRAL BOARD',
-    href: '/samahan-central-board'
-  }
+    href: '/samahan-central-board',
+  },
 ];
 
 /**

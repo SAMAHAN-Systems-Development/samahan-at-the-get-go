@@ -1,12 +1,19 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 
 import PolicyPageImage from '/public/assets/images/PolicyPageImage.png';
 import BigSectionUI from '@/components/ui/BigSectionUI';
+import DataPrivacyFirstSection from '@/components/ui/DataPrivacyPolicy/DataPrivacyFirstSection';
+import DataPrivacyFourthSection from '@/components/ui/DataPrivacyPolicy/DataPrivacyFourthSection';
 import DataPrivacyPolicyAccordion from '@/components/ui/DataPrivacyPolicy/DataPrivacyPolicyAccordion';
-import DataPrivacyFirstSection from '@/components/ui/DataPrivacyPolicyPage/DataPrivacyFirstSection';
-import DataPrivacyFourthSection from '@/components/ui/DataPrivacyPolicyPage/DataPrivacyFourthSection';
-import DataPrivacyThirdSection from '@/components/ui/DataPrivacyPolicyPage/DataPrivacyThirdSection';
+import DataPrivacyThirdSection from '@/components/ui/DataPrivacyPolicy/DataPrivacyThirdSection';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy | At the Get Go',
+  description:
+    'Review our Privacy Policy to understand how SAMAHAN collects, uses, and protects your personal information. We are committed to ensuring the privacy and security of the Ateneo de Davao University community.',
+};
 
 const page = () => {
   return (

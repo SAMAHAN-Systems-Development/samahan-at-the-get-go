@@ -2,7 +2,7 @@ import React from 'react';
 
 const DataPrivacyFourthSection = () => {
   return (
-    <div className="grid gap-7 md:gap-10 lg:gap-12 text-left text-lightBlue my-5 lg:my-10 text-[0.8125rem] text-[1rem] lg:text-[1.25rem]">
+    <div className="grid gap-7 md:gap-10 lg:gap-12 text-left text-lightBlue my-5 lg:my-10 text-[0.8125rem] sm:text-[1rem] lg:text-[1.25rem]">
       <div>
         <p className="font-artega mb-3 lg:mb-5">
           CONTROLS FOR DO-NOT-TRACK FEATURES

@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from 'next';
 
 import OSG from 'public/assets/images/OSGImage.png';
 
@@ -13,6 +14,12 @@ import SmallOfficesCardSection from '@/components/ui/Offices/SmallOfficesCardSec
 import OfficesDeputiesSection from '@/components/ui/OfficesDeputiesSection';
 import SmallSectionUI from '@/components/ui/SmallSectionUI';
 import SolidBlueDivider from '@/components/ui/SolidBlueDivider';
+
+export const metadata: Metadata = {
+  title: 'Office of the Secretary-General | At the Get Go',
+  description:
+    'Discover the role and initiatives of the SAMAHAN Secretary-General. Learn about the activities, responsibilities, and officers dedicated to maintaining transparency and communication within the Ateneo de Davao University community.',
+};
 
 const page = () => {
   return (
