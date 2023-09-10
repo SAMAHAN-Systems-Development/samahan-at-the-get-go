@@ -24,7 +24,7 @@ const RepresentativesSection: React.FC = () => {
             className={cn(
               'flex flex-col items-center',
               isLastCardCentered && index === Representatives.length - 1
-                ? 'md:w-full lg:w-full justify-center'
+                ? 'md:w-full lg:w-full justify-center text-center'
                 : 'md:w-1/2 lg:w-1/4'
             )}
           >

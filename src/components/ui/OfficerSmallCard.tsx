@@ -19,7 +19,7 @@ const OfficerSmallCard: React.FC<OfficerSmallCardProps> = ({
   textColorClass,
 }) => {
   return (
-    <div className={`flex flex-col items-center gap-y-5 p-4 ${textColorClass}`}>
+    <div className={`flex flex-col items-center gap-y-5 p-8 ${textColorClass}`}>
       <div className="h-[10.188rem] md:h-[11.688rem] w-[9.25rem] md:w-[10.688rem] relative rounded-card">
         <Image
           src={imageUrl}
