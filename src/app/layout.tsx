@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: 'public/assets/images/SAMAHANSocialImage.jpg',
   },
+  metadataBase: new URL('https://samahan.addu.edu.ph/'),
 };
 
 export default function RootLayout({
