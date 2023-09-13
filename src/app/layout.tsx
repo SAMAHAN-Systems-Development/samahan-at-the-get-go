@@ -16,10 +16,6 @@ export const metadata: Metadata = {
   title: 'SAMAHAN - At the Get Go',
   description:
     "The official website of the Ateneo de Davao University's Student Government",
-  openGraph: {
-    images: 'public/assets/images/SAMAHANSocialImage.jpg',
-  },
-  metadataBase: new URL('https://samahan.addu.edu.ph/'),
 };
 
 export default function RootLayout({
