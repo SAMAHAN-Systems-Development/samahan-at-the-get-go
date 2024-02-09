@@ -1,38 +1,63 @@
 import React from 'react';
 
+import AccordionComponent from '@/components/ui/HelpPortal/AccordionComponentMain';
 import HelpPortalModalUI from '@/components/ui/HelpPortal/HelpPortalModalUI';
 import RIAModalBodyCard from '@/components/ui/HelpPortal/RIAModalBodyCard';
 
 const RIAModalsSection = () => {
   return (
-    <section className="container-xs sm:container-sm md:container-md lg:container-lg grid my-5 lg:my-10 md:grid-cols-2 lg:grid-cols-3 gap-3">
-      <HelpPortalModalUI title="1st Semester Schedule">
-        <RIAModalBodyCard title="Schedule for 1st Semester (A.Y. 2023-2024) Enrollment and Classes">
+    <section className="container-xs sm:container-sm md:container-md lg:container-lg my-5 lg:my-10 lg:flex lg:flex-wrap lg:justify-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+      <HelpPortalModalUI title="2nd Semester Schedule">
+        <RIAModalBodyCard title="Schedule for 2nd Semester (A.Y. 2023-2024) Enrollment and Classes">
           <ul>
             <li>
-              <h4>July 10</h4>
+              <h4>December 16, 2023</h4>
               <p className="font-appleGaramond-bold italic">Pre-registration</p>
             </li>
             <li>
-              <h4>July 31 to Aug 5</h4>
+              <h4>January 2 to January 9</h4>
               <p className="font-appleGaramond-bold italic">
                 Enrollment Period
               </p>
             </li>
             <li>
-              <h4>Aug 7 to 11</h4>
+              <h4>January 15, 2024 5:00PM</h4>
+              <p className="font-appleGaramond-bold italic">
+                Enrollment Confirmation & Reservation Cancelling
+              </p>
+            </li>
+            <li>
+              <h4>Within the first week of class</h4>
               <p className="font-appleGaramond-bold italic">
                 Late Enrollment Period
               </p>
             </li>
             <li>
-              <h4>Aug 7</h4>
+              <h4>January 10, 2024</h4>
               <p className="font-appleGaramond-bold italic">
-                Start of 1st Semester Classes
+                Start of 2nd Semester Classes
               </p>
             </li>
           </ul>
         </RIAModalBodyCard>
+        <div className="mt-6">
+          <RIAModalBodyCard title="Enrollment Reminders">
+            <ol className="list-decimal ml-[2ch]">
+              <li>
+                Courses to be offered must be within the curriculum intended for
+                the semester.
+              </li>
+              <li>
+                Students will not be allowed to enroll for advanced classes, nor
+                shall such be offered for these purposes.
+              </li>
+              <li>
+                must settle their enrollment issues during the enrollment period
+                only.
+              </li>
+            </ol>
+          </RIAModalBodyCard>
+        </div>
       </HelpPortalModalUI>
       <HelpPortalModalUI title="Enrollment and Payment">
         <RIAModalBodyCard title="Enrollment">
@@ -79,7 +104,7 @@ const RIAModalsSection = () => {
         </div>
         <div className="mt-6">
           <RIAModalBodyCard title="Payment Methods">
-            <p>There are 4 options to pay your fees.</p>
+            <p>There are 3 options to pay your fees.</p>
             <ol className="list-decimal ml-[2ch]">
               <li>Online Payments (Banks, GCASH)</li>
               <li>
@@ -90,19 +115,6 @@ const RIAModalsSection = () => {
                     You can still make payments using any of AdDU&apos;s
                     recognized banks or online payment channels. For further
                     information, please visit SAMAHAN&apos;s prior postings.
-                  </li>
-                </ol>
-              </li>
-              <li>
-                Drive-thru Payment Counter - no more google forms
-                <ol className="list-disc ml-[2ch]">
-                  <li>
-                    The Drive-thru Payment Center is located at AdDU (1)
-                    entrance gate of the Community Center building, Jacinto
-                    campus; (2) GS/JHS Matina Campus; and (3) SHS Bangkal
-                    Campus. Please make sure that you pay the exact amount in
-                    cash for a faster transaction. Daily Schedule: 8AM to 4PM
-                    only Mondays to Fridays and 8AM to 11:30AM on Saturdays.
                   </li>
                 </ol>
               </li>
@@ -190,6 +202,345 @@ const RIAModalsSection = () => {
           </RIAModalBodyCard>
         </div>
       </HelpPortalModalUI>
+      {/* NEW ADDITION - ONLINE PAYMENT METHODS - CONTENT TO BE UPDATED LATER*/}
+      <HelpPortalModalUI title="Online Payment Methods List">
+        <AccordionComponent question="GCash">
+          <ol className="list-decimal ml-[2ch]">
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+              <ol className="list-[lower-alpha] ml-[4ch]">
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus, est debitis ea quas eaque voluptatum corporis vero
+                  pariatur reiciendis recusandae facilis veritatis molestias
+                  perferendis optio qui excepturi placeat ut ad.
+                </li>
+              </ol>
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+          </ol>
+        </AccordionComponent>
+        <AccordionComponent question="Banco De Oro (BDO) -  Mobile App">
+          <ol className="list-decimal ml-[2ch]">
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+              <ol className="list-[lower-alpha] ml-[4ch]">
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus, est debitis ea quas eaque voluptatum corporis vero
+                  pariatur reiciendis recusandae facilis veritatis molestias
+                  perferendis optio qui excepturi placeat ut ad.
+                </li>
+              </ol>
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+          </ol>
+        </AccordionComponent>
+        <AccordionComponent question="Banco De Oro (BDO) -  Website">
+          <ol className="list-decimal ml-[2ch]">
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+              <ol className="list-[lower-alpha] ml-[4ch]">
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus, est debitis ea quas eaque voluptatum corporis vero
+                  pariatur reiciendis recusandae facilis veritatis molestias
+                  perferendis optio qui excepturi placeat ut ad.
+                </li>
+              </ol>
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+          </ol>
+        </AccordionComponent>
+        <AccordionComponent question="Bank of the Philippine Islands (BPI)">
+          <ol className="list-decimal ml-[2ch]">
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+              <ol className="list-[lower-alpha] ml-[4ch]">
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus, est debitis ea quas eaque voluptatum corporis vero
+                  pariatur reiciendis recusandae facilis veritatis molestias
+                  perferendis optio qui excepturi placeat ut ad.
+                </li>
+              </ol>
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+          </ol>
+        </AccordionComponent>
+        <AccordionComponent question="Unionbank">
+          <ol className="list-decimal ml-[2ch]">
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+              <ol className="list-[lower-alpha] ml-[4ch]">
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus, est debitis ea quas eaque voluptatum corporis vero
+                  pariatur reiciendis recusandae facilis veritatis molestias
+                  perferendis optio qui excepturi placeat ut ad.
+                </li>
+              </ol>
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+          </ol>
+        </AccordionComponent>
+        <AccordionComponent question="Rizal Commercial Banking Corporation (RCBC)">
+          <ol className="list-decimal ml-[2ch]">
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+              <ol className="list-[lower-alpha] ml-[4ch]">
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus, est debitis ea quas eaque voluptatum corporis vero
+                  pariatur reiciendis recusandae facilis veritatis molestias
+                  perferendis optio qui excepturi placeat ut ad.
+                </li>
+              </ol>
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+          </ol>
+        </AccordionComponent>
+        <AccordionComponent question="Metrobank - Online Bills Payment">
+          <ol className="list-decimal ml-[2ch]">
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+              <ol className="list-[lower-alpha] ml-[4ch]">
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus, est debitis ea quas eaque voluptatum corporis vero
+                  pariatur reiciendis recusandae facilis veritatis molestias
+                  perferendis optio qui excepturi placeat ut ad.
+                </li>
+              </ol>
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+          </ol>
+        </AccordionComponent>
+        <AccordionComponent question="LandBank">
+          <ol className="list-decimal ml-[2ch]">
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+              <ol className="list-[lower-alpha] ml-[4ch]">
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus, est debitis ea quas eaque voluptatum corporis vero
+                  pariatur reiciendis recusandae facilis veritatis molestias
+                  perferendis optio qui excepturi placeat ut ad.
+                </li>
+              </ol>
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, est debitis ea quas eaque voluptatum corporis vero
+              pariatur reiciendis recusandae facilis veritatis molestias
+              perferendis optio qui excepturi placeat ut ad.
+            </li>
+          </ol>
+        </AccordionComponent>
+      </HelpPortalModalUI>
       <HelpPortalModalUI title="Contact Details">
         <div>
           <RIAModalBodyCard title="Directory of Academic Departments">
@@ -203,7 +554,7 @@ const RIAModalsSection = () => {
                     Contact Number: <i>09435742785</i>
                   </li>
                   <li>
-                    Email: <i>sas.dean@addu.edu.ph</i>
+                    Email: <i>sas.dean@addu.edu.ph | rdpilapil@addu.edu.ph </i>
                   </li>
                 </ol>
                 <ol className="mb-8">
@@ -223,7 +574,7 @@ const RIAModalsSection = () => {
                     Contact Number: <i>09338599018</i>
                   </li>
                   <li>
-                    Email: <i>mmbulac@addu.edu.ph</i>
+                    Email: <i>mmbulac@addu.edu.ph | lgfloresca@addu.edu.ph</i>
                   </li>
                 </ol>
               </div>
@@ -285,17 +636,17 @@ const RIAModalsSection = () => {
                     Email: <i>admission@addu.edu.ph</i>
                   </li>
                   <li>
-                    Facebook/Messenger:{' '}
-                    <i>https://www.facebook.com/ADDUCollegeAdmission</i>
+                    For Scholarship inquiries: <i>scholarship@addu.edu.ph</i>
                   </li>
                   <li>
-                    Google Forms for Concerns: <i>tiny.cc/Admissions20</i>
+                    Facebook/Messenger:{' '}
+                    <i>https://www.facebook.com/ADDUCollegeAdmission</i>
                   </li>
                 </ol>
                 <ol>
                   <li className="font-bold">Physical Plant Office (PPO)</li>
                   <li>
-                    Email: <i>fzremolino@addu.edu.ph</i>
+                    Email: <i>tpferolin@addu.edu.ph</i>
                   </li>
                 </ol>
               </div>
@@ -318,9 +669,6 @@ const RIAModalsSection = () => {
                     Facebook/Messenger:{' '}
                     <i>https://www.facebook.com/addufinance</i>
                   </li>
-                  <li>
-                    Google Forms for Concerns: <i>tiny.cc/Finance20</i>
-                  </li>
                 </ol>
                 <ol className="mb-8">
                   <li className="font-bold">Registrar</li>
@@ -328,18 +676,23 @@ const RIAModalsSection = () => {
                     Email: <i>registrar@addu.edu.ph</i>
                   </li>
                 </ol>
-                <ol>
+                <ol className="mb-8">
                   <li className="font-bold">
                     Management Information Office (MIS)
                   </li>
                   <li>
-                    Email: <i>mis@addu.edu.ph</i>
+                    Email: <i>mis@addu.edu.ph | bmjereza@addu.edu.ph</i>
                   </li>
                   <li>
                     Twitter: <i>@addu_mis</i>
                   </li>
+                </ol>
+                <ol>
+                  <li className="font-bold">
+                    Community Center and Martin Hall Operations Office
+                  </li>
                   <li>
-                    Google Forms for Concerns: <i>tiny.cc/MIS20</i>
+                    Email: <i>smadoromal@addu.edu.ph | cmapayart@addu.edu.ph</i>
                   </li>
                 </ol>
               </div>
