@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 import HomePage from '@/components/Home/HomePage';
+import ChatPlugin from '@/components/MessengerPlugin/ChatPlugin';
 
 export const metadata: Metadata = {
   title: 'SAMAHAN - At the Get Go',
@@ -12,6 +13,7 @@ export default function Home() {
   return (
     <main>
       <HomePage />
+      <ChatPlugin />
     </main>
   );
 }
