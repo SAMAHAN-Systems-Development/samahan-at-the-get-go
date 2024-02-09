@@ -54,10 +54,6 @@ const navLinks: (NavLinkType | NavListType)[] = [
     ],
   },
   {
-    label: 'RECRUITMENT WEEK',
-    href: '/recruitment-week',
-  },
-  {
     label: 'CENTRAL BOARD',
     href: '/samahan-central-board',
   },
