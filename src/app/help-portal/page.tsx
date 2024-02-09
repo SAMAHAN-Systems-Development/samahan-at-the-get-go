@@ -3,11 +3,12 @@ import type { Metadata } from 'next';
 
 import FAQsModalsSection from '@/components/HelpPortal/FAQsModalsSection';
 import RIAModalsSection from '@/components/HelpPortal/RIAModalsSection';
+import StudentServicesModalsSection from '@/components/HelpPortal/StudentServicesModalsSection';
 import BigSectionUI from '@/components/ui/BigSectionUI';
 import FAQsHeaderCard from '@/components/ui/HelpPortal/FAQsHeaderCard';
 import HelpPortalCard from '@/components/ui/HelpPortal/HelpPortalCard';
 import RIAHeaderCard from '@/components/ui/HelpPortal/RIAHeaderCard';
-// import SamahanGuideBookCard from '@/components/ui/HelpPortal/SamahanGuideBookCard';
+import StudentServicesHeaderCard from '@/components/ui/HelpPortal/StudentServicesHeaderCard';
 import SolidBlueDivider from '@/components/ui/SolidBlueDivider';
 
 export const metadata: Metadata = {
@@ -28,6 +29,10 @@ const page = () => {
         <RIAHeaderCard />
       </BigSectionUI>
       <RIAModalsSection />
+      <BigSectionUI>
+        <StudentServicesHeaderCard />
+      </BigSectionUI>
+      <StudentServicesModalsSection />
       <BigSectionUI>
         <FAQsHeaderCard />
       </BigSectionUI>
