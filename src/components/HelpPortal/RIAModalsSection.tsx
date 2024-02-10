@@ -1,4 +1,15 @@
 import React from 'react';
+import Image from 'next/image';
+
+import BDO1 from 'public/assets/images/OnlinePayments/BDO_1.png';
+import BDO2 from 'public/assets/images/OnlinePayments/BDO_2.png';
+import BPI1 from 'public/assets/images/OnlinePayments/BPI_1.png';
+import BPI2 from 'public/assets/images/OnlinePayments/BPI_2.png';
+import GCash from 'public/assets/images/OnlinePayments/GCASH.png';
+import Landbank from 'public/assets/images/OnlinePayments/LANDBANK.png';
+import Metrobank from 'public/assets/images/OnlinePayments/METROBANK.png';
+import RCBC from 'public/assets/images/OnlinePayments/RCBC.png';
+import Unionbank from 'public/assets/images/OnlinePayments/UNIONBANK.png';
 
 import AccordionComponent from '@/components/ui/HelpPortal/AccordionComponentMain';
 import HelpPortalModalUI from '@/components/ui/HelpPortal/HelpPortalModalUI';
@@ -205,340 +216,29 @@ const RIAModalsSection = () => {
       {/* NEW ADDITION - ONLINE PAYMENT METHODS - CONTENT TO BE UPDATED LATER*/}
       <HelpPortalModalUI title="Online Payment Methods List">
         <AccordionComponent question="GCash">
-          <ol className="list-decimal ml-[2ch]">
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-              <ol className="list-[lower-alpha] ml-[4ch]">
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Temporibus, est debitis ea quas eaque voluptatum corporis vero
-                  pariatur reiciendis recusandae facilis veritatis molestias
-                  perferendis optio qui excepturi placeat ut ad.
-                </li>
-              </ol>
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-          </ol>
+          <Image src={GCash} alt="Gcash Guide" />
         </AccordionComponent>
-        <AccordionComponent question="Banco De Oro (BDO) -  Mobile App">
-          <ol className="list-decimal ml-[2ch]">
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-              <ol className="list-[lower-alpha] ml-[4ch]">
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Temporibus, est debitis ea quas eaque voluptatum corporis vero
-                  pariatur reiciendis recusandae facilis veritatis molestias
-                  perferendis optio qui excepturi placeat ut ad.
-                </li>
-              </ol>
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-          </ol>
+        <AccordionComponent question="Banco De Oro (BDO)">
+          <Image src={BDO1} alt="BDO Guide" />
         </AccordionComponent>
         <AccordionComponent question="Banco De Oro (BDO) -  Website">
-          <ol className="list-decimal ml-[2ch]">
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-              <ol className="list-[lower-alpha] ml-[4ch]">
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Temporibus, est debitis ea quas eaque voluptatum corporis vero
-                  pariatur reiciendis recusandae facilis veritatis molestias
-                  perferendis optio qui excepturi placeat ut ad.
-                </li>
-              </ol>
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-          </ol>
+          <Image src={BDO2} alt="BDO Guide" />
         </AccordionComponent>
         <AccordionComponent question="Bank of the Philippine Islands (BPI)">
-          <ol className="list-decimal ml-[2ch]">
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-              <ol className="list-[lower-alpha] ml-[4ch]">
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Temporibus, est debitis ea quas eaque voluptatum corporis vero
-                  pariatur reiciendis recusandae facilis veritatis molestias
-                  perferendis optio qui excepturi placeat ut ad.
-                </li>
-              </ol>
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-          </ol>
+          <Image src={BPI1} alt="BPI Guide" />
+          <Image src={BPI2} alt="BPI Guide" />
         </AccordionComponent>
         <AccordionComponent question="Unionbank">
-          <ol className="list-decimal ml-[2ch]">
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-              <ol className="list-[lower-alpha] ml-[4ch]">
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Temporibus, est debitis ea quas eaque voluptatum corporis vero
-                  pariatur reiciendis recusandae facilis veritatis molestias
-                  perferendis optio qui excepturi placeat ut ad.
-                </li>
-              </ol>
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-          </ol>
+          <Image src={Unionbank} alt="Unionbank Guide" />
         </AccordionComponent>
         <AccordionComponent question="Rizal Commercial Banking Corporation (RCBC)">
-          <ol className="list-decimal ml-[2ch]">
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-              <ol className="list-[lower-alpha] ml-[4ch]">
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Temporibus, est debitis ea quas eaque voluptatum corporis vero
-                  pariatur reiciendis recusandae facilis veritatis molestias
-                  perferendis optio qui excepturi placeat ut ad.
-                </li>
-              </ol>
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-          </ol>
+          <Image src={RCBC} alt="RCBC Guide" />
         </AccordionComponent>
         <AccordionComponent question="Metrobank - Online Bills Payment">
-          <ol className="list-decimal ml-[2ch]">
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-              <ol className="list-[lower-alpha] ml-[4ch]">
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Temporibus, est debitis ea quas eaque voluptatum corporis vero
-                  pariatur reiciendis recusandae facilis veritatis molestias
-                  perferendis optio qui excepturi placeat ut ad.
-                </li>
-              </ol>
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-          </ol>
+          <Image src={Metrobank} alt="Metrobank Guide" />
         </AccordionComponent>
         <AccordionComponent question="LandBank">
-          <ol className="list-decimal ml-[2ch]">
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-              <ol className="list-[lower-alpha] ml-[4ch]">
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Temporibus, est debitis ea quas eaque voluptatum corporis vero
-                  pariatur reiciendis recusandae facilis veritatis molestias
-                  perferendis optio qui excepturi placeat ut ad.
-                </li>
-              </ol>
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, est debitis ea quas eaque voluptatum corporis vero
-              pariatur reiciendis recusandae facilis veritatis molestias
-              perferendis optio qui excepturi placeat ut ad.
-            </li>
-          </ol>
+          <Image src={Landbank} alt="Landbank Guide" />
         </AccordionComponent>
       </HelpPortalModalUI>
       <HelpPortalModalUI title="Contact Details">
