@@ -8,6 +8,7 @@ import BPI2 from 'public/assets/images/OnlinePayments/BPI_2.png';
 import GCash from 'public/assets/images/OnlinePayments/GCASH.png';
 import Landbank from 'public/assets/images/OnlinePayments/LANDBANK.png';
 import Metrobank from 'public/assets/images/OnlinePayments/METROBANK.png';
+import OverTheCounter from 'public/assets/images/OnlinePayments/OTC.png';
 import RCBC from 'public/assets/images/OnlinePayments/RCBC.png';
 import Unionbank from 'public/assets/images/OnlinePayments/UNIONBANK.png';
 
@@ -119,8 +120,8 @@ const RIAModalsSection = () => {
             <ol className="list-decimal ml-[2ch]">
               <li>Online Payments (Banks, GCASH)</li>
               <li>
-                Over-The-Counter (OTC) Payment Center (Banks, Cebuana, Savemore,
-                etc.)
+                Over-The-Counter (OTC) Payment Center
+                <Image src={OverTheCounter} alt="OverTheCounter Guide" />
                 <ol className="list-disc ml-[2ch]">
                   <li>
                     You can still make payments using any of AdDU&apos;s
