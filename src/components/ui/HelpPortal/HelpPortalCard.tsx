@@ -29,11 +29,11 @@ const HelpPortalCard = () => {
             Welcome to
           </span>
           <span className="font-artega font-medium text-[1.9375rem] md:text-[2.4375rem] lg:text-[3.125rem]">
-            HELP PORTAL
+            SupportAdDU
           </span>
         </h1>
         <p className="text-[0.625rem] md:text-[1rem] lg:text-[1rem] sm:max-w-[25rem] md:max-w-[37.4375rem] lg:max-w-[37.4375rem]">
-          The SAMAHAN Help Portal aims to assist the student with the different
+          SupportAdDU aims to assist the student with the different
           academic-related processes online. It will answer frequently asked
           questions (FAQs) and respond to student concerns that deal with online
           transactions.
