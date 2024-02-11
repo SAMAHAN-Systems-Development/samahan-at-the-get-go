@@ -19,7 +19,7 @@ const quickLinksData = [
     links: [
       { title: 'About', href: '/about' },
       { title: 'Student Judicial Court', href: '/samahan-central-board' },
-      { title: 'Recruitment Week', href: '/recruitment-week' },
+      { title: 'SupportAdDU', href: '/help-portal' },
     ],
   },
   {
