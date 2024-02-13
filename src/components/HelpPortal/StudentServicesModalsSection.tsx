@@ -34,8 +34,14 @@ const StudentServicesModalsSection = () => {
       <Link href="https://forms.gle/KtAoAz5TanBershC9">
         <StudentServicesButton title="Facility Damage Incident Report" />
       </Link>
-      <Link href="Remote Library">
+      <Link href="https://remotelibrary.addu.edu.ph/">
         <StudentServicesButton title="Remote Library" />
+      </Link>
+      <Link href="https://library.addu.edu.ph/hub/">
+        <StudentServicesButton title="Book a Collaboration Hub at the Learning Commons" />
+      </Link>
+      <Link href="https://library.addu.edu.ph/mpr/">
+        <StudentServicesButton title="Book a Multi-Purpose Room at the Learning Commons" />
       </Link>
     </section>
   );
