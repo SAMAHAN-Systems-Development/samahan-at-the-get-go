@@ -8,6 +8,7 @@ import BigSectionUI from '@/components/ui/BigSectionUI';
 import FAQsHeaderCard from '@/components/ui/HelpPortal/FAQsHeaderCard';
 import HelpPortalCard from '@/components/ui/HelpPortal/HelpPortalCard';
 import RIAHeaderCard from '@/components/ui/HelpPortal/RIAHeaderCard';
+import StrawCard from '@/components/ui/HelpPortal/StrawCard';
 import StudentServicesHeaderCard from '@/components/ui/HelpPortal/StudentServicesHeaderCard';
 import SolidBlueDivider from '@/components/ui/SolidBlueDivider';
 
@@ -22,9 +23,9 @@ const page = () => {
     <>
       <HelpPortalCard />
       {/* TO BE REPLACED WITH STRAW COMPLAINT DESK */}
-      {/* <BigSectionUI>
-        <SamahanGuideBookCard />
-      </BigSectionUI> */}
+      <BigSectionUI>
+        <StrawCard />
+      </BigSectionUI>
       <BigSectionUI>
         <RIAHeaderCard />
       </BigSectionUI>
