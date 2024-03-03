@@ -136,7 +136,6 @@ const Footer = () => {
           <div className="flex flex-col">
             <h2 className="font-artega mb-1 font-medium sm:max-w-[30.6875rem] md:max-w-[30.6875rem] lg-max-w-[29.6875rem] text-sm md:text-base lg:text-base">
               Samahan ng mga Mag-aaral ng Pamantasan ng Ateneo de Davao
-              Universidad
             </h2>
             <h3 className="font-normal text-xs sm:w-[30.6875rem] md:w-[30.6875rem] lg-w[29.6875rem] md:text-sm lg:text-sm">
               The Student Government of College Unit of the Ateneo de Davao
