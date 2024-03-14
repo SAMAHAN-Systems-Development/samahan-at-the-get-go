@@ -61,7 +61,7 @@ const StudentServicesModalsSection = () => {
             </RIAModalBodyCard>
           </HelpPortalModalUI>
           <Link href="https://insite.addu.edu.ph/">
-            <StudentServicesButton title="UITO-TSO HelpDesk" />
+            <StudentServicesButton title="AdDU Insite" />
           </Link>
         </div>
       </div>
